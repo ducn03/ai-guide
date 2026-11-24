@@ -2,177 +2,177 @@
   {
     "id": "hr-01",
     "category": "hr",
-    "categoryName": "Hành chính - Nhân sự (HR)",
-    "title": "Soạn thảo Bản mô tả công việc (JD) thu hút nhân tài",
-    "description": "Tạo JD chuẩn chỉnh gồm trách nhiệm, yêu cầu năng lực, quyền lợi hấp dẫn và văn hóa doanh nghiệp mà không bị khô cứng.",
+    "categoryName": "Hành chính - Nhân sự",
+    "tool": "Claude / ChatGPT",
+    "title": "Viết tin tuyển dụng (JD) gần gũi, hút người làm được việc",
+    "description": "Thay vì liệt kê khô khan như bản nội quy, mẫu này nhấn vào công việc thật hàng ngày và cơ hội phát triển.",
     "level": "Cơ bản",
-      "HR",
-      "Tuyển dụng",
-      "JD",
-      "Nhân sự"
-    ],
-    "prompt": "Bạn là Trưởng phòng Tuyển dụng (Talent Acquisition Lead) với 10 năm kinh nghiệm trong ngành [Ngành nghề của công ty].\nHãy giúp tôi viết một bản Mô tả công việc (Job Description - JD) cho vị trí: [Tên vị trí, ví dụ: Chuyên viên Content Marketing / Nhân viên Kinh doanh B2B].\n\nThông tin cơ bản:\n- Cấp bậc: [Nhân viên / Trưởng nhóm / Thực tập sinh]\n- Địa điểm làm việc: [Văn phòng / Hybrid / Remote]\n- Mức lương dự kiến: [Khoảng lương, ví dụ: 12 - 18 triệu + Thưởng KPI]\n- Yêu cầu chính: [Ví dụ: Tối thiểu 1 năm kinh nghiệm, biết quay dựng CapCut cơ bản]\n\nYêu cầu cấu trúc JD chuyên nghiệp:\n1. Giới thiệu ngắn về sứ mệnh và cơ hội phát triển ở vị trí này (Hook thu hút ứng viên trong 5 giây đầu).\n2. Trách nhiệm công việc chính (Liệt kê 5-7 gạch đầu dòng rõ ràng, tập trung vào kết quả đầu ra).\n3. Yêu cầu năng lực & kinh nghiệm (Tách rõ: Bắt buộc phải có vs Ưu tiên điểm cộng).\n4. Quyền lợi & Phúc lợi hấp dẫn (Lương thưởng, lộ trình thăng tiến, văn hóa cởi mở, chế độ bảo hiểm).\n5. Quy trình ứng tuyển và thời hạn nộp hồ sơ."
+    "tags": ["HR", "Tuyển dụng", "JD"],
+    "prompt": "Bạn là Trưởng phòng Tuyển dụng có 10 năm kinh nghiệm, giọng văn hiện đại, chân thành và không sáo rỗng.\nHãy viết giúp tôi 1 bài đăng tuyển dụng cho vị trí: [Tên vị trí, VD: Chuyên viên Content Marketing].\n\nThông tin thật của công ty:\n- Địa điểm & giờ làm: [Địa chỉ văn phòng, giờ làm việc]\n- Thu nhập: [Lương cứng + thưởng hiệu quả]\n- Yêu cầu bắt buộc: [3 kỹ năng quan trọng nhất cần làm được ngay]\n- Điểm dễ thương của môi trường: [VD: Đồng nghiệp trẻ, hỗ trợ ăn trưa, không hay họp vặt]\n\nViết gọn thành 4 phần:\n1. Mở đầu 2-3 câu chạm đúng mong muốn của người tìm việc.\n2. Hàng ngày bạn sẽ làm những việc gì (5 gạch đầu dòng sát thực tế).\n3. Yêu cầu (tách rõ phần Bắt buộc và phần Điểm cộng ưu tiên).\n4. Quyền lợi và cách gửi hồ sơ."
   },
   {
+    "id": "hr-02",
     "category": "hr",
-    "categoryName": "Hành chính - Nhân sự (HR)",
-    "title": "Phân tích, so khớp và chấm điểm CV ứng viên so với JD",
-    "description": "Đưa CV của ứng viên và JD vị trí vào, AI sẽ đóng vai giám khảo sàng lọc, chỉ rõ điểm mạnh, điểm yếu và câu hỏi phỏng vấn cần đào sâu.",
-    "level": "Trung cấp",
-    "tags": [
-      "Lọc CV",
-      "Phỏng vấn",
-      "HR",
-      "Tuyển dụng"
-    ],
-    "prompt": "Bạn là Chuyên viên Tuyển dụng cấp cao.\nDưới đây là JD vị trí và CV của ứng viên:\n\n=== BẢN MÔ TẢ CÔNG VIỆC (JD) ===\n[Dán yêu cầu JD vào đây]\n\n=== NỘI DUNG CV CỦA ỨNG VIÊN ===\n[Dán toàn bộ nội dung văn bản CV vào đây]\n\nHãy phân tích khách quan và trả lời theo cấu trúc sau:\n1. Điểm số tương thích: Chấm điểm từ 1-100% kèm giải thích lý do ngắn gọn.\n2. Bảng đối chiếu năng lực: | Tiêu chí trong JD | Thực tế trong CV | Đánh giá (Đạt / Chưa đạt / Vượt kỳ vọng) |\n3. Điểm sáng lớn nhất của ứng viên này đối với công ty.\n4. Những điểm nghi vấn hoặc lỗ hổng kinh nghiệm cần làm rõ.\n5. Đề xuất 3 câu hỏi phỏng vấn chuyên sâu có tính phản biện dành riêng cho ứng viên này."
+    "categoryName": "Hành chính - Nhân sự",
+    "tool": "Claude / ChatGPT",
+    "title": "Lọc nhanh CV ứng viên và gợi ý câu hỏi phỏng vấn",
+    "description": "Đỡ tốn công đọc thủ công hàng chục hồ sơ. Nhớ xóa tên thật, số điện thoại và email của ứng viên trước khi dán vào AI.",
+    "level": "Cơ bản",
+    "tags": ["Lọc CV", "Phỏng vấn", "HR"],
+    "prompt": "Bạn là Chuyên viên Tuyển dụng kỹ tính và công tâm. Hãy đọc yêu cầu công việc (JD) và hồ sơ ứng viên dưới đây rồi đánh giá mức độ phù hợp giúp tôi:\n\n=== YÊU CẦU CÔNG VIỆC ===\n[Dán nội dung JD]\n\n=== HỒ SƠ ỨNG VIÊN (ĐÃ XÓA THÔNG TIN CÁ NHÂN) ===\n[Dán nội dung CV]\n\nTrả lời ngắn gọn gồm 4 mục:\n1. Điểm phù hợp (thang 100%) kèm 3 lý do chính.\n2. Bảng đối chiếu: | Yêu cầu vị trí | Kinh nghiệm thật trong CV | Đánh giá (Đạt / Thiếu / Tốt hơn mong đợi) |\n3. 3 điểm còn mập mờ trong CV cần hỏi lại cho rõ.\n4. Gợi ý 3 câu hỏi tình huống thực tế dành riêng cho ứng viên này."
   },
   {
     "id": "hr-03",
     "category": "hr",
-    "categoryName": "Hành chính - Nhân sự (HR)",
-    "title": "Soạn thảo Thông báo nội bộ & Chính sách công ty",
-    "description": "Viết thông báo nghỉ lễ, thay đổi giờ làm việc, phát động thi đua hoặc thông báo quy chế nội bộ với văn phong trang trọng, chuẩn mực.",
+    "categoryName": "Hành chính - Nhân sự",
+    "tool": "Claude",
+    "title": "Viết thư cảm ơn & từ chối ứng viên khéo léo",
+    "description": "Từ chối lịch sự để ứng viên vẫn giữ thiện cảm với thương hiệu tuyển dụng của công ty.",
     "level": "Cơ bản",
-      "Thông báo",
-      "Văn hóa nội bộ",
-      "HR"
-    ],
-    "prompt": "Bạn là Trưởng phòng Truyền thông nội bộ (Internal Communications).\nHãy giúp tôi soạn một Thông báo nội bộ gửi toàn thể Cán bộ Nhân viên công ty.\n\nThông tin cần truyền tải:\n- Chủ đề thông báo: [Ví dụ: Lịch nghỉ lễ Quốc khánh 2/9 / Quy định chấm công mới / Phát động phong trào thể thao quý 3]\n- Thời gian áp dụng: [Từ ngày ... đến ngày ...]\n- Lưu ý quan trọng: [Ví dụ: Bàn giao công việc trước kỳ nghỉ, cài đặt email phản hồi tự động...]\n\nYêu cầu định dạng:\n1. Tiêu đề thông báo chuẩn chỉnh theo thể thức văn bản doanh nghiệp.\n2. Lời mở đầu trang trọng, ấm áp.\n3. Các mốc thời gian và nhiệm vụ được trình bày bằng gạch đầu dòng rõ ràng, dễ nhớ.\n4. Lời chúc mừng và chữ ký đại diện Ban Giám đốc/Phòng Nhân sự."
+    "tags": ["Email", "HR", "Tuyển dụng"],
+    "prompt": "Bạn là Chuyên viên Nhân sự tinh tế. Hãy viết giúp tôi 1 email cảm ơn và từ chối ứng viên cho vị trí [Tên vị trí] sau vòng phỏng vấn.\n- Điểm ứng viên làm tốt: [VD: Thái độ cầu thị, am hiểu thị trường]\n- Lý do chưa phù hợp lần này: [VD: Công ty cần người có thêm kinh nghiệm chạy ngân sách lớn]\n\nYêu cầu: Giọng chân thành, tôn trọng thời gian của ứng viên, tuyệt đối không dùng lời lẽ rập khuôn lạnh lùng, giữ cửa mở cho các cơ hội sau. Độ dài dưới 130 chữ."
   },
   {
     "id": "mkt-01",
     "category": "marketing",
-    "categoryName": "Marketing & Truyền thông",
-    "title": "Lập Lịch nội dung Social Media 7 ngày đa kênh",
-    "description": "Lên kế hoạch 7 bài đăng Facebook/TikTok theo các trụ cột Awareness, Education, Trust và Conversion có tỷ lệ tương tác cao.",
+    "categoryName": "Marketing & Nội dung",
+    "tool": "Claude / ChatGPT",
+    "title": "Lên lịch đăng bài Facebook / TikTok cho cả tuần",
+    "description": "Đỡ bí ý tưởng mỗi tuần, cân bằng giữa bài chia sẻ mẹo hay, kể chuyện hậu trường và bài bán hàng.",
     "level": "Cơ bản",
-      "Content Calendar",
-      "Social Media",
-      "Marketing"
-    ],
-    "prompt": "Bạn là Giám đốc Sáng tạo Nội dung (Content Lead) với kinh nghiệm xây dựng các kênh truyền thông triệu view.\nTôi đang lên kế hoạch nội dung cho: [Tên sản phẩm/dịch vụ của công ty].\nKhách hàng mục tiêu: [Độ tuổi, nghề nghiệp, vấn đề họ đang gặp phải].\n\nHãy lập bảng Lịch nội dung 7 ngày (Thứ 2 đến Chủ nhật) chi tiết gồm các cột:\n| Thứ | Mục tiêu truyền thông | Tiêu đề giật tít (Hook 3s) | Ý tưởng nội dung cốt lõi | Định dạng (Reels ngắn / Ảnh đơn / Carousel / Minigame) | Kêu gọi hành động (CTA) |\n\nYêu cầu: Xen kẽ hài hòa giữa các trụ cột: 40% Chia sẻ giá trị hữu ích, 30% Kể chuyện tạo niềm tin, 20% Bắt trend giải trí, 10% Bán hàng trực tiếp."
+    "tags": ["Content", "Social Media", "Marketing"],
+    "prompt": "Bạn là Trưởng nhóm Nội dung nhiều kinh nghiệm trên mạng xã hội Việt Nam.\nHãy lập giúp tôi bảng kế hoạch đăng bài 7 ngày (Thứ 2 đến Chủ nhật) cho sản phẩm/dịch vụ: [Tên sản phẩm].\nKhách hàng mục tiêu: [Độ tuổi, công việc, vấn đề họ hay than phiền].\n\nLưu ý: Đừng ngày nào cũng đăng bài bán hàng. Xen kẽ tự nhiên giữa: chia sẻ mẹo hữu ích, kể chuyện hậu trường tạo niềm tin, giải đáp thắc mắc khách hay hỏi và bài chốt bán.\nTrình bày dạng bảng gồm các cột:\n| Thứ | Mục tiêu | Câu mở đầu 3 giây gây tò mò | Tóm tắt nội dung | Định dạng (Video ngắn / Bộ ảnh / Bài ngắn) | Lời kêu gọi cuối bài |"
   },
   {
     "id": "mkt-02",
     "category": "marketing",
-    "categoryName": "Marketing & Truyền thông",
-    "title": "Viết kịch bản Video ngắn TikTok/Reels công thức Hook-Body-CTA",
-    "description": "Kịch bản video dọc 45-60 giây giữ chân người xem từ 3 giây đầu tiên đến lời kêu gọi hành động cuối video.",
+    "categoryName": "Marketing & Nội dung",
+    "tool": "Claude / ChatGPT",
+    "title": "Viết kịch bản Video ngắn 45–60 giây (TikTok / Reels)",
+    "description": "Chia sẵn góc quay, lời nói miệng và dòng chữ hiện trên màn hình cho team media bấm máy ngay.",
     "level": "Trung cấp",
-      "TikTok",
-      "Reels",
-      "Video ngắn",
-      "Kịch bản"
-    ],
-    "prompt": "Bạn là Đạo diễn kịch bản video ngắn viral trên TikTok và Facebook Reels.\nHãy viết kịch bản chi tiết 45-60 giây cho video giới thiệu về: [Chủ đề hoặc tính năng sản phẩm].\n\nCấu trúc kịch bản dạng bảng 4 cột: | Thời lượng | Lời thoại (Voice-over) | Hành động khung hình (Visual) | Chữ hiện trên màn hình (Text Overlay) |\n- Cảnh 1 (0-3s): 3 phương án câu mở đầu gây tò mò hoặc đánh trúng nỗi đau người xem.\n- Cảnh 2 (4-40s): Giải thích giải pháp, nhịp điệu nhanh, hình ảnh đổi cảnh liên tục mỗi 3-4 giây.\n- Cảnh 3 (40-50s): Lời kêu gọi hành động (CTA) kích thích để lại bình luận hoặc nhấp vào link bio."
+    "tags": ["TikTok", "Reels", "Kịch bản"],
+    "prompt": "Bạn là đạo diễn chuyên làm video ngắn hút tương tác trên TikTok và Reels.\nHãy viết kịch bản 1 video dọc dài 45-60 giây về chủ đề: [Chủ đề hoặc tính năng nổi bật của sản phẩm].\n\nChia thành bảng 4 cột: | Thời gian | Lời nói miệng | Cảnh quay gì | Chữ chạy trên màn hình |\nYêu cầu:\n- 3 giây đầu: Đưa ra 3 gợi ý câu mở đầu thật đời, đánh đúng nỗi bực hoặc tò mò của người xem để họ dừng lại.\n- Đoạn giữa (4-45s): Giải thích nhanh gọn, cứ 3-5 giây đổi cảnh quay một lần cho đỡ chán.\n- Đoạn cuối (45-60s): Kêu gọi bình luận hoặc bấm giỏ hàng thật tự nhiên.\nGiọng nói: Đời thường như hai người bạn nói chuyện, cấm viết kiểu văn quảng cáo truyền hình."
   },
   {
     "id": "mkt-03",
     "category": "marketing",
-    "title": "Sáng tạo 10 Tiêu đề (Headlines) giật tít tăng tỷ lệ nhấp chuột (CTR)",
-    "description": "Tạo 10 tiêu đề bài viết blog, video hoặc email theo các công thức tâm lý kinh điển: FOMO, con số cụ thể, bật mí bí mật.",
-    "level": "Cơ bản",
-    "tags": [
-      "Copywriting",
-      "Tiêu đề",
-      "CTR",
-      "Marketing"
-    ],
-    "prompt": "Bạn là chuyên gia Copywriting hàng đầu chuyên viết tiêu đề quảng cáo chuyển đổi cao.\nNội dung chính của bài viết/video của tôi là: [Tóm tắt nội dung của bạn].\nĐối tượng độc giả: [Độc giả mục tiêu].\n\nHãy sáng tạo cho tôi 10 tiêu đề hấp dẫn phân loại theo 5 công thức tâm lý:\n1. Công thức Nỗi đau / Nỗi sợ bị bỏ lỡ (FOMO) (2 tiêu đề)\n2. Công thức Bật mí bí quyết / Sự thật ít ai biết (Curiosity Gap) (2 tiêu đề)\n3. Công thức Con số cụ thể & Giới hạn thời gian (Listicle) (2 tiêu đề)\n4. Công thức Đi ngược số đông / Phản trực giác (Counter-intuitive) (2 tiêu đề)\n5. Công thức Làm thế nào để... mà không cần... (How-to without pain) (2 tiêu đề)"
+    "categoryName": "Marketing & Nội dung",
+    "tool": "Claude",
+    "title": "Đọc bình luận của khách để tìm ý tưởng viết bài bán hàng",
+    "description": "Dán mấy chục bình luận hoặc đánh giá thật của khách hàng vào, AI sẽ rút ra đúng câu chữ khiến khách chốt đơn.",
+    "level": "Trung cấp",
+    "tags": ["Insight", "Marketing", "Khách hàng"],
+    "prompt": "Bạn là chuyên gia nghiên cứu tâm lý người mua hàng.\nDưới đây là loạt đánh giá và bình luận thật của khách hàng (kể cả khen lẫn chê) về sản phẩm [Tên sản phẩm]:\n\"\"\"\n[Dán 15-30 bình luận khách hàng vào đây]\n\"\"\"\n\nHãy đọc kỹ và trích ra giúp tôi:\n1. 3 lý do thật sự khiến khách hài lòng và muốn mua lại (trích nguyên những từ ngữ bình dân khách hay dùng).\n2. 3 nỗi lo hoặc điểm khách hay chê nhất.\n3. Từ những lời nói thật đó, gợi ý 5 tiêu đề bài viết quảng cáo chạm đúng tâm lý khách hàng."
   },
   {
+    "id": "sales-01",
     "category": "sales",
     "categoryName": "Kinh doanh & CSKH",
-    "title": "Kịch bản Telesale & Gọi điện tư vấn khách hàng mới",
-    "description": "Kịch bản gọi điện mở đầu tự nhiên, không bị dập máy trong 15 giây đầu, khơi gợi nhu cầu và chốt lịch hẹn gặp.",
+    "tool": "Claude / ChatGPT",
+    "title": "Xử lý 3 câu từ chối quen thuộc nhất của khách hàng",
+    "description": "Có sẵn cách đáp khéo khi khách chê giá cao, hẹn suy nghĩ thêm hoặc đang lấy hàng mối quen.",
     "level": "Cơ bản",
-    "tags": [
-      "Telesale",
-      "Sales",
-      "Kịch bản gọi điện"
-    ],
-    "prompt": "Bạn là Giám đốc Kinh doanh hàng đầu với kỹ năng Telesale đỉnh cao.\nHãy soạn kịch bản gọi điện thoại tư vấn (Cold Call / Warm Call) cho sản phẩm: [Tên sản phẩm/dịch vụ của công ty].\nĐối tượng nhận cuộc gọi: [Khách hàng cá nhân / Chủ doanh nghiệp / Trưởng phòng mua hàng].\n\nCấu trúc kịch bản gồm:\n1. Mở đầu (0-15s): Chào hỏi ngắn gọn, nêu lý do cuộc gọi chạm ngay vào lợi ích khách hàng quan tâm (tránh nói 'Em xin 5 phút làm phiền anh/chị').\n2. Khơi gợi vấn đề: 2 câu hỏi mở để khách hàng tự chia sẻ khó khăn hiện tại.\n3. Giới thiệu giải pháp cô đọng (30s): Nêu đúng 2 giá trị vượt trội nhất giải quyết khó khăn đó.\n4. Chốt mục tiêu cuộc gọi: Đề xuất thời gian cụ thể cho một buổi hẹn tư vấn trực tiếp hoặc gửi bản demo trải nghiệm."
+    "tags": ["Sales", "Xử lý từ chối", "Zalo"],
+    "prompt": "Bạn là chuyên gia đào tạo bán hàng khéo léo và hiểu tâm lý khách hàng Việt Nam.\nSản phẩm công ty tôi là: [Mô tả sản phẩm, giá bán và điểm hơn so với thị trường].\n\nHãy viết câu trả lời tự nhiên (dùng nhắn Zalo hoặc gọi điện) cho 3 câu khách hay nói nhất:\n1. \"Giá bên em cao hơn chỗ khác nhiều quá.\"\n2. \"Để anh/chị suy nghĩ thêm rồi có gì báo sau nhé.\"\n3. \"Bên anh đang lấy của mối quen rồi, không muốn đổi.\"\n\nMỗi tình huống đi theo 3 bước: Đồng cảm nhẹ nhàng -> Hỏi khéo 1 câu để hiểu băn khoăn thật -> Nêu giá trị xứng đáng và gợi ý bước tiếp theo nhẹ nhàng. Tuyệt đối không tranh cãi với khách."
   },
   {
     "id": "sales-02",
     "category": "sales",
     "categoryName": "Kinh doanh & CSKH",
-    "title": "Bộ kịch bản Xử lý Lời từ chối kinh điển của khách hàng",
-    "description": "Chiến thuật xử lý chuyên nghiệp các câu từ chối: 'Giá bên em đắt quá', 'Để anh suy nghĩ thêm', 'Bên anh đang dùng dịch vụ khác rồi'.",
-    "level": "Trung cấp",
-      "Xử lý từ chối",
-      "Chốt sale",
-      "Kinh doanh"
-    ],
-    "prompt": "Bạn là Chuyên gia Đào tạo Kỹ năng Bán hàng (Sales Coach).\nHãy giúp đội ngũ kinh doanh công ty xử lý lời từ chối của khách hàng đối với sản phẩm: [Mô tả sản phẩm và mức giá].\n\nHãy cung cấp câu phản hồi mẫu cho 3 tình huống từ chối phổ biến nhất:\n1. Khách chê: 'Giá bên em cao hơn các bên khác trên thị trường.'\n2. Khách trì hoãn: 'Anh/chị thấy cũng hay đấy nhưng để anh suy nghĩ thêm đã nhé.'\n3. Khách từ chối: 'Bên anh đang hợp tác với đối tác quen rồi, không có nhu cầu đổi.'\n\nVới mỗi tình huống, hãy áp dụng nguyên tắc Đồng cảm -> Đặt câu hỏi cô lập vấn đề -> Đưa ra dẫn chứng thuyết phục và Kêu gọi bước tiếp theo."
+    "tool": "Claude",
+    "title": "Soạn tin nhắn xin lỗi và giữ chân khách khi có sự cố",
+    "description": "Xử lý gọn gàng lúc giao hàng trễ, móp hộp hay nhầm món để khách nguôi giận và quay lại ủng hộ.",
+    "level": "Cơ bản",
+    "tags": ["CSKH", "Khiếu nại", "Zalo"],
+    "prompt": "Bạn là Trưởng bộ phận Chăm sóc Khách hàng tinh tế và có trách nhiệm.\nMột khách hàng đang rất bực vì sự cố: [Mô tả sự cố: giao trễ 2 ngày / giao nhầm món / hộp bị móp].\n\nHãy viết 1 tin nhắn Zalo/Email phản hồi khách đảm bảo:\n1. Xin lỗi thẳng thắn, nhận trách nhiệm về phía công ty (tuyệt đối không đổ lỗi cho shipper hay thời tiết).\n2. Báo rõ cách giải quyết dứt điểm trong [Thời gian cụ thể, VD: 2 giờ tới / chiều nay].\n3. Gửi kèm quà nhỏ hoặc mã giảm giá bù đắp thiện chí: [Mô tả ưu đãi].\n4. Ngắn dưới 130 chữ, giọng ấm áp, đọc vào thấy được tôn trọng ngay."
   },
   {
     "id": "sales-03",
     "category": "sales",
     "categoryName": "Kinh doanh & CSKH",
-    "title": "Soạn Email phản hồi khiếu nại khách hàng khéo léo (CSKH 5 Sao)",
-    "description": "Hạ nhiệt cơn giận của khách hàng khi gặp sự cố sản phẩm/dịch vụ, nhận trách nhiệm văn minh và đề xuất phương án bù đắp thỏa đáng.",
+    "tool": "Claude / ChatGPT",
+    "title": "Viết tin nhắn hỏi thăm khách cũ không bị cảm giác spam",
+    "description": "Hâm nóng lại quan hệ với khách từng hỏi giá hoặc từng mua hàng mà không khiến họ thấy phiền.",
     "level": "Cơ bản",
-      "CSKH",
-      "Xử lý khiếu nại",
-      "Email"
-    ],
-    "prompt": "Bạn là Trưởng bộ phận Chăm sóc khách hàng (Customer Support Lead).\nKhách hàng [Tên khách hàng] vừa gửi phản ánh gay gắt về sự cố: [Mô tả sự cố: Giao hàng chậm 3 ngày / Sản phẩm bị lỗi đóng gói / Nhân viên tư vấn chưa nhiệt tình].\n\nHãy viết thư phản hồi gửi khách hàng đảm bảo các tiêu chí:\n1. Lời xin lỗi chân thành, nhận diện rõ cảm xúc thất vọng của khách hàng (tuyệt đối không đổ lỗi cho bên thứ ba).\n2. Giải thích ngắn gọn nguyên nhân sự cố một cách minh bạch.\n3. Phương án xử lý ngay lập tức (Đổi mới / Hoàn tiền / Đẩy nhanh giao dịch).\n4. Chính sách bù đắp thiện chí (Tặng voucher giảm giá cho đơn tiếp theo hoặc quà tri ân).\n5. Lời cam kết cải tiến quy trình để không tái diễn sự cố."
+    "tags": ["CSKH", "Follow-up", "Sales"],
+    "prompt": "Bạn là nhân viên kinh doanh khéo léo. Tôi cần nhắn Zalo hỏi thăm lại khách hàng [đã từng mua sản phẩm cách đây 1 tháng / đã từng hỏi giá tuần trước nhưng chưa chốt] về sản phẩm [Tên sản phẩm].\n\nViết giúp tôi 3 mẫu tin nhắn thật ngắn (dưới 50 chữ mỗi mẫu), tự nhiên như hỏi thăm bình thường, mang lại một chút giá trị hoặc sự quan tâm thật chứ không sỗ sàng thúc giục mua hàng."
   },
   {
     "id": "fin-01",
     "category": "finance",
-    "categoryName": "Kế toán & Dữ liệu",
-    "title": "Tạo công thức Excel/Google Sheets phức tạp (XLOOKUP, SUMIFS, INDEX-MATCH)",
-    "description": "Mô tả bài toán đối soát, lọc dữ liệu trùng hoặc tính tổng có nhiều điều kiện, AI sẽ sinh công thức chính xác và giải thích cặn kẽ.",
-    "level": "Trung cấp",
-      "Excel",
-      "Google Sheets",
-      "Hàm tính",
-      "Kế toán"
-    ],
-    "prompt": "Bạn là Chuyên gia Phân tích Dữ liệu và Bậc thầy Excel/Google Sheets.\nTôi đang có một bảng dữ liệu bảng tính như sau:\n- Cột A: [Mã đơn hàng / Mã nhân viên]\n- Cột B: [Ngày phát sinh giao dịch]\n- Cột C: [Tên khách hàng / Phòng ban]\n- Cột D: [Số tiền / Doanh thu]\n- Cột E: [Trạng thái thanh toán (Đã thanh toán / Chưa thanh toán / Hủy)]\n\nBài toán tôi cần giải quyết:\n[Mô tả chính xác điều bạn cần tính, ví dụ: Tính tổng doanh thu của khách hàng X trong quý 3 có trạng thái Đã thanh toán].\n\nVui lòng cung cấp:\n1. Công thức chuẩn (cho cả Excel đời mới và Google Sheets).\n2. Giải thích ý nghĩa của từng tham số trong công thức.\n3. Những lưu ý để không bị lỗi #N/A hoặc lỗi định dạng ngày tháng."
+    "categoryName": "Kế toán & Excel",
+    "tool": "ChatGPT",
+    "title": "Nhờ AI viết hộ công thức Excel / Google Sheets phức tạp",
+    "description": "Không cần nhớ cấu trúc hàm khó, cứ kể tên từng cột và thứ bạn muốn tính bằng lời thường.",
+    "level": "Cơ bản",
+    "tags": ["Excel", "Google Sheets", "Công thức"],
+    "prompt": "Bạn là chuyên gia xử lý bảng tính Excel và Google Sheets.\nFile của tôi gồm các cột sau:\n- Cột A: [Mã đơn hàng]\n- Cột B: [Ngày bán (dd/mm/yyyy)]\n- Cột C: [Tên phòng ban hoặc nhân viên]\n- Cột D: [Số tiền]\n- Cột E: [Trạng thái (Đã thu tiền / Chưa thu / Đã hủy)]\n\nViệc tôi cần tính: [Mô tả bằng lời bình thường, VD: Tính tổng tiền ở Cột D của riêng phòng Kinh doanh trong tháng 10 mà trạng thái là Đã thu tiền].\n\nGửi giúp tôi:\n1. Công thức chuẩn để dán thẳng vào ô Excel (ghi rõ cả bản dùng dấu phẩy và dấu chấm phẩy nếu cần).\n2. Giải thích ngắn từng khúc trong công thức để tôi kiểm tra lại.\n3. Cách bọc hàm để nếu ô trống thì hiện số 0 chứ không báo lỗi #N/A."
   },
   {
+    "id": "fin-02",
     "category": "finance",
-    "categoryName": "Kế toán & Dữ liệu",
-    "title": "Tóm tắt và Trích xuất Insight từ Báo cáo Tài chính / Doanh thu",
-    "description": "Dán các số liệu doanh thu thô, chi phí và lợi nhuận, AI sẽ phân tích xu hướng tăng trưởng, biên lợi nhuận và điểm cảnh báo rủi ro.",
-    "level": "Nâng cao",
-    "tags": [
-      "Báo cáo tài chính",
-      "Doanh số",
-      "Phân tích số liệu"
-    ],
-    "prompt": "Bạn là Chuyên viên Phân tích Tài chính Doanh nghiệp (Financial Analyst).\nDưới đây là bảng số liệu doanh thu và chi phí của công ty:\n\"\"\"\n[Dán số liệu bảng tính hoặc báo cáo thô vào đây]\n\"\"\"\n\nHãy phân tích và lập báo cáo tài chính điều hành cho Ban Giám đốc gồm:\n1. Bảng tóm tắt chỉ số chính: Doanh thu thuần, Chi phí vận hành, Lợi nhuận gộp, Biên lợi nhuận ròng (%)\n2. Phân tích xu hướng: Chỉ ra 3 nguồn doanh thu tăng trưởng mạnh nhất và 3 khoản chi phí tăng bất thường.\n3. Cảnh báo rủi ro về dòng tiền hoặc quản trị chi phí.\n4. 3 Khuyến nghị hành động cụ thể để tối ưu hóa lợi nhuận cho tháng tới."
+    "categoryName": "Kế toán & Excel",
+    "tool": "ChatGPT",
+    "title": "Dọn sạch dữ liệu bẩn trong bảng Excel",
+    "description": "Tách họ và tên, chuẩn hóa số điện thoại thiếu số 0, lọc bỏ khoảng trắng thừa hay tìm dòng bị trùng lặp.",
+    "level": "Trung cấp",
+    "tags": ["Excel", "Dữ liệu", "Kế toán"],
+    "prompt": "Tôi đang có một cột dữ liệu Excel bị lộn xộn ở Cột A (ví dụ: [dán 3-4 dòng mẫu dữ liệu giả lập, như '  nguyen van a - 912345678  ']).\nTôi muốn chuẩn hóa lại thành các cột sạch đẹp: [VD: Cột B viết hoa chữ cái đầu tên người, Cột C lấy riêng số điện thoại và thêm số 0 ở đầu nếu bị thiếu].\n\nHãy cho tôi công thức Excel tương ứng cho từng cột và hướng dẫn từng bước kéo công thức xuống hết bảng."
   },
   {
-    "id": "ops-01",
-    "category": "office",
-    "categoryName": "Văn phòng & Vận hành",
-    "title": "Tóm tắt Biên bản cuộc họp thành Danh sách Action Items có Deadline",
-    "description": "Chuyển đổi ghi chú cuộc họp lộn xộn thành biên bản súc tích, phân công rõ người phụ trách (Owner) và thời hạn hoàn thành.",
-    "level": "Cơ bản",
-      "Cuộc họp",
-      "Action Items",
-      "Vận hành",
-      "Quản lý công việc"
-    ],
-    "prompt": "Bạn là Thư ký điều hành chuyên nghiệp của Ban Giám đốc.\nDưới đây là ghi chú thô của cuộc họp hôm nay:\n\"\"\"\n[Dán ghi chép cuộc họp vào đây]\n\"\"\"\n\nHãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:\n1. 3 Quyết định quan trọng nhất đã được thống nhất tại cuộc họp.\n2. Bảng Action Items phân công nhiệm vụ: | STT | Nhiệm vụ cụ thể | Người phụ trách (Owner) | Thời hạn (Deadline) | Mức độ ưu tiên (Cao/Trung bình/Thấp) |\n3. Các vấn đề chưa thống nhất cần xin ý kiến thêm ở cuộc họp tiếp theo."
+    "id": "fin-03",
+    "category": "finance",
+    "categoryName": "Kế toán & Excel",
+    "tool": "ChatGPT / Claude",
+    "title": "Đọc bảng số liệu doanh thu tìm điểm bất thường",
+    "description": "Nhớ che tên khách hàng và nhân viên thật trước khi đưa số liệu lên để AI phân tích xu hướng tăng giảm.",
+    "level": "Trung cấp",
+    "tags": ["Báo cáo", "Doanh số", "Phân tích"],
+    "prompt": "Bạn là chuyên viên phân tích số liệu kinh doanh. Dưới đây là bảng doanh thu và chi phí (đã ẩn danh) của 3 tháng gần nhất:\n\"\"\"\n[Dán bảng số liệu vào đây]\n\"\"\"\n\nHãy đọc kỹ và tóm gọn lại cho buổi họp tuần gồm:\n1. 3 nhóm hàng/kênh bán tăng trưởng tốt nhất.\n2. 3 khoản chi hoặc nhóm hàng giảm sút bất thường cần chú ý.\n3. Gợi ý 3 câu hỏi quan trọng nhất ban quản lý nên đặt ra cho các bộ phận trong cuộc họp tới."
   },
   {
-    "id": "ops-02",
+    "id": "office-01",
     "category": "office",
-    "categoryName": "Văn phòng & Vận hành",
-    "title": "Lập Báo cáo tiến độ tuần (Weekly Report) gửi Lãnh đạo mô hình PPP",
-    "description": "Báo cáo tiến độ chuẩn chỉnh theo mô hình Progress (Việc đã làm) - Plans (Kế hoạch tuần tới) - Problems (Vướng mắc & Đề xuất giải pháp).",
+    "categoryName": "Họp hành & Văn phòng",
+    "tool": "Claude / ChatGPT",
+    "title": "Gom ghi chú cuộc họp thành bảng phân công việc rõ ràng",
+    "description": "Ném đống ghi chép rời rạc sau buổi họp vào đây, 10 giây sau có ngay biên bản gửi cả nhóm.",
     "level": "Cơ bản",
-      "Báo cáo tuần",
-      "Weekly Report",
-      "PPP",
-      "Báo cáo sếp"
-    ],
-    "prompt": "Bạn là Trợ lý Quản lý Dự án cấp cao.\nHãy giúp tôi viết một bản Báo cáo tuần (Weekly Report) gửi cho Ban Giám đốc theo mô hình PPP (Progress - Plans - Problems).\n\nThông tin đầu vào của tôi:\n- Vị trí của tôi: [Vị trí công việc]\n- Những việc đã hoàn thành trong tuần: [Liệt kê các việc đã làm xong kèm số liệu nếu có]\n- Kế hoạch tuần tới: [Các mục tiêu trọng tâm]\n- Khó khăn đang gặp phải: [Vướng mắc về tiến độ đối tác, ngân sách, nhân sự...]\n\nYêu cầu: Viết súc tích, đi thẳng vào số liệu, mỗi khó khăn phải có đề xuất hướng giải quyết đi kèm."
+    "tags": ["Họp giao ban", "Biên bản", "Văn phòng"],
+    "prompt": "Bạn là thư ký cuộc họp cẩn trọng và gọn gàng.\nDưới đây là toàn bộ ghi chép thô trong buổi họp hôm nay:\n\"\"\"\n[Dán ghi chép cuộc họp vào đây]\n\"\"\"\n\nHãy tóm gọn lại để gửi vào nhóm chat chung gồm 3 phần:\n1. 3 quyết định quan trọng nhất đã chốt được.\n2. Bảng phân công việc 4 cột: | STT | Việc cần làm | Người phụ trách chính | Hạn chót (Deadline) |\n3. Những vấn đề còn vướng chưa chốt được để nhắc lại vào buổi họp sau."
+  },
+  {
+    "id": "office-02",
+    "category": "office",
+    "categoryName": "Họp hành & Văn phòng",
+    "tool": "Claude / ChatGPT",
+    "title": "Viết báo cáo tuần ngắn gọn gửi cấp trên",
+    "description": "Tổng hợp việc đã xong, việc tuần tới và chỗ đang vướng cần hỗ trợ để sếp đọc 30 giây là nắm hết.",
+    "level": "Cơ bản",
+    "tags": ["Báo cáo tuần", "Văn phòng", "Email"],
+    "prompt": "Hãy giúp tôi sắp xếp các ý rời rạc dưới đây thành một bản báo cáo tuần gọn gàng gửi cấp trên:\n- Việc đã làm xong tuần này: [Liệt kê ý thô + con số nếu có]\n- Việc trọng tâm tuần tới: [Liệt kê]\n- Chỗ đang vướng cần hỗ trợ: [Liệt kê]\n\nTrình bày gọn thành 3 mục rõ ràng, dùng gạch đầu dòng ngắn, đi thẳng vào kết quả và đề xuất hướng xử lý cho từng chỗ vướng. Không viết dài dòng."
+  },
+  {
+    "id": "office-03",
+    "category": "office",
+    "categoryName": "Họp hành & Văn phòng",
+    "tool": "Claude / ChatGPT",
+    "title": "Lên khung Slide thuyết trình PowerPoint từng trang",
+    "description": "Đưa ý tưởng hoặc báo cáo dài vào, AI chia sẵn bố cục từng trang slide kèm gợi ý hình ảnh minh họa.",
+    "level": "Trung cấp",
+    "tags": ["Slide", "Thuyết trình", "PowerPoint"],
+    "prompt": "Tôi cần chuẩn bị một bài thuyết trình khoảng [số lượng, VD: 8-10] trang slide cho buổi [VD: báo cáo kế hoạch quý tới / giới thiệu sản phẩm cho đối tác].\nNội dung chính muốn truyền tải: [Mô tả ngắn hoặc dán dàn ý thô].\n\nHãy chia bố cục chi tiết từng trang slide giúp tôi gồm:\n- Tiêu đề trang slide (ngắn gọn, rõ ý chính)\n- 3-4 gạch đầu dòng nội dung hiển thị trên slide (ít chữ để người nghe dễ nhìn)\n- Gợi ý hình ảnh hoặc biểu đồ nên đặt bên cạnh cho đẹp mắt\n- 2 câu gợi ý lời nói dẫn dắt cho người thuyết trình."
+  },
+  {
+    "id": "office-04",
+    "category": "office",
+    "categoryName": "Họp hành & Văn phòng",
+    "tool": "Claude / ChatGPT",
+    "title": "Đóng vai sếp hoặc khách hàng khó tính để tập phản biện",
+    "description": "Tập dượt trước những cuộc họp căng thẳng, đàm phán tăng lương hay thuyết trình dự án quan trọng.",
+    "level": "Trung cấp",
+    "tags": ["Phản biện", "Luyện tập", "Kỹ năng"],
+    "prompt": "Hãy đóng vai một [vị khách hàng rất khó tính / giám đốc tài chính cực kỳ kỹ lưỡng].\nTôi chuẩn bị trình bày đề xuất sau: [Tóm tắt ngắn đề xuất của bạn].\n\nQuy tắc tập luyện:\n1. Đặt cho tôi từng câu hỏi vặn vẹo hóc búa một (tổng cộng 5 câu).\n2. Dừng lại đợi tôi trả lời xong rồi mới góp ý ngắn xem câu trả lời của tôi đã thuyết phục chưa, thiếu ý nào, sau đó mới hỏi tiếp câu sau.\nBắt đầu ngay câu hỏi số 1!"
   }
 ]

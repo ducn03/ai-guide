@@ -268,11 +268,11 @@ function renderShell() {
     }
   });
 
-  // Mobile search toggle
-  const mobileSearchBtn = document.querySelector('.mobile-search-btn');
-  const searchBox = document.querySelector('.search-box');
-  const searchInput = document.querySelector('.search-box input');
-  const suggestionsBox = document.querySelector('.search-suggestions');
+  // Mobile search toggle & live search (only for pages using #site-header shell)
+  const mobileSearchBtn = headerRoot?.querySelector('.mobile-search-btn');
+  const searchBox = headerRoot?.querySelector('.search-box');
+  const searchInput = headerRoot?.querySelector('.search-box input');
+  const suggestionsBox = headerRoot?.querySelector('.search-suggestions');
 
   if (mobileSearchBtn && searchBox) {
     mobileSearchBtn.addEventListener('click', () => {
