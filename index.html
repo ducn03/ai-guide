@@ -176,7 +176,7 @@
           Hiểu Đúng Bản Chất &amp; Thành Thạo Sử Dụng AI
         </h1>
         <p style="font-size:16px;line-height:1.75;color:var(--ink-soft);margin-bottom:0;">
-          Tài liệu này viết cho người dùng phổ thông — không dùng bất kỳ từ ngữ kỹ thuật phức tạp nào. Phần đầu giúp bạn hiểu tận gốc bản chất <b>AI, Token, Credit, Prompt, Skill, Agent</b> bằng các ví dụ đời thường; các phần sau hướng dẫn chi tiết từng bước bấm nút và làm từng đầu việc hàng ngày.
+          Tài liệu này viết cho người dùng phổ thông — không dùng ngôn ngữ kỹ thuật. Chỉ cần nắm vừa đủ bản chất của <b>AI, Token, Credit, Prompt, Skill, Agent</b> bằng các ví dụ đời thường, sau đó đi thẳng vào hướng dẫn chi tiết từng bước bấm nút và xử lý công việc hàng ngày.
         </p>
       </header>
 
@@ -185,78 +185,56 @@
            ======================================================== -->
       <article class="doc-chapter" id="ch1-1">
         <span class="chapter-badge">Chương 1</span>
-        <h2 class="chapter-title">1. Hiểu Bản Chất Bằng Ví Dụ Đời Thường</h2>
+        <h2 class="chapter-title">1. Nắm Đủ Bản Chất Bằng Ví Dụ Đời Thường</h2>
         <p class="chapter-lead">
-          Hiểu bản chất giúp bạn làm chủ mọi công cụ AI sau này chứ không chỉ học vẹt vài câu mẫu. Mọi khái niệm dưới đây đều được giải thích không qua ngôn ngữ kỹ thuật.
+          Không cần học sâu kỹ thuật, chỉ cần nắm đúng 6 khái niệm cốt lõi dưới đây là bạn dùng được trơn tru mọi công cụ AI.
         </p>
 
         <!-- 1.1 -->
         <section class="doc-section">
-          <h3>1.1 AI là gì? (Và cách nó thực sự làm việc)</h3>
+          <h3>1.1 AI là gì? (Hãy coi nó như một nhân viên mới vừa vào công ty)</h3>
           <p>
-            Hãy tưởng tượng <b>AI (như ChatGPT, Claude, Gemini) giống như một cậu thực tập sinh vừa đọc thuộc lòng gần như toàn bộ sách vở, báo chí và bài viết trên mạng Internet</b>. Cậu ta gõ máy với tốc độ hàng nghìn chữ một giây và biết gần như mọi thứ tiếng trên đời.
+            Cách hiểu đơn giản và chính xác nhất để dùng được ngay: <b>Hãy coi AI (như ChatGPT, Claude, Gemini) giống như một cậu thực tập sinh mới vào công ty</b>. Cậu ta rất thông minh, đã đọc rất nhiều sách báo kiến thức chung trên mạng, gõ máy siêu nhanh và biết nhiều thứ tiếng — nhưng hoàn toàn chưa biết gì về công việc riêng của bạn hay quy định bên trong công ty bạn.
           </p>
           <p>
-            Tuy nhiên, có 2 sự thật về bản chất bạn bắt buộc phải biết:
+            Vì coi nó như một người mới vào làm, bạn chỉ cần nhớ 3 điểm này để sai việc không bị bực mình:
           </p>
           <ol>
             <li>
-              <b>Nó không "hiểu" và không có ý thức như con người:</b> Thực chất, cậu thực tập sinh này chỉ làm giỏi một trò là <b>"đoán chữ nối tiếp sao cho nghe xuôi tai và hợp lý nhất"</b> dựa trên những sách báo từng đọc. Ví dụ bạn gõ <i>"Trời hôm nay đẹp..."</i>, vì trong sách báo chữ hay đi sau nhất là <i>"quá"</i> nên nó viết ra chữ <i>"quá"</i>. Nó cứ nối lần lượt từng chữ như vậy rất nhanh.
+              <b>Không đưa ngữ cảnh thì chịu thua, không hiểu bạn muốn gì:</b> Tưởng tượng bạn đi qua bàn của một nhân viên mới và nói cộc lốc 5 chữ <i>"Viết email xin hoãn nhé"</i> rồi bỏ đi — người thật cũng đứng hình không hiểu hoãn cái gì, gửi cho ai, lý do ra sao. AI cũng y hệt vậy: muốn nó làm đúng ý, bạn phải nói đủ đầu đuôi câu chuyện.
             </li>
             <li>
-              <b>Bệnh "sĩ diện", hay tự bịa chuyện khi thiếu thông tin:</b> Vì bản năng chỉ cố viết sao cho trôi chảy và nghe có vẻ thông minh, nên nếu bạn hỏi những chuyện không có trên mạng (ví dụ: <i>"Quy định nghỉ phép của công ty mình thế nào?"</i> hoặc <i>"Tìm giúp điều luật mới ra hôm qua"</i>), thay vì nhận không biết, nó rất hay <b>tỉnh bơ bịa ra câu trả lời nghe cực kỳ thuyết phục</b> (có đủ cả số liệu, tên điều luật giả). Ngoài ra, vì chơi trò đoán chữ chứ không mở máy tính bấm, nó cũng hay cộng trừ nhẩm sai nếu không có công cụ tính toán hỗ trợ.
+              <b>Hay đoán mò khi thiếu thông tin:</b> Nếu bạn hỏi những chuyện không có trên mạng (như số liệu nội bộ công ty, văn bản mới vừa ra hôm qua) mà không đưa tài liệu kèm theo, thay vì nói không biết, nó rất hay tự đoán mò một câu trả lời nghe cho xuôi tai — nên mọi con số hay điều luật AI đưa ra bạn đều cần kiểm tra lại bằng mắt.
+            </li>
+            <li>
+              <b>Hay chiều lòng người hỏi:</b> Nếu bạn đưa một ý tưởng chưa tốt rồi hỏi <i>"Ổn không?"</i>, nó hay khen cho vui lòng. Muốn nó góp ý thật, bạn cứ dặn thẳng: <i>"Đừng khen, hãy đóng vai khách hàng khó tính chỉ ra điểm yếu để tôi sửa"</i>.
             </li>
           </ol>
         </section>
 
         <!-- 1.2 -->
         <section class="doc-section" id="ch1-2">
-          <h3>1.2 Token là gì? (Và trí nhớ ngắn hạn của AI)</h3>
+          <h3>1.2 Token là gì? (Sức chứa và trí nhớ trong một khung chat)</h3>
           <p>
-            <b>Token giống như đơn vị đong đếm độ dài câu chữ (mảnh chữ) mà máy tính dùng để tính công sức làm việc và giới hạn trí nhớ của AI.</b>
+            <b>Token đơn giản là đơn vị đong đếm lượng chữ mà AI đọc và viết ra</b> (nôm na <b>1.000 Token bằng khoảng 1.5 trang giấy Word A4</b>; tiếng Việt có dấu tốn nhiều Token hơn tiếng Anh một chút). Bạn không cần tự ngồi đếm Token làm gì, chỉ cần hiểu tác động thực tế của nó qua hình ảnh <b>chiếc bàn làm việc</b>:
           </p>
           <p>
-            Con người đếm từng chữ. Còn AI sẽ cắt câu văn ra từng mảnh nhỏ gọi là Token (giống như chia một ổ bánh mì thành từng miếng nhỏ).
-          </p>
-
-          <div class="token-demo-box">
-            <span class="token-demo-label">Minh họa cách AI chia nhỏ câu tiếng Việt thành các mảnh Token</span>
-            <div class="token-stream">
-              <span class="tok tok-1">Hôm</span>
-              <span class="tok tok-2">nay</span>
-              <span class="tok tok-3">nộp</span>
-              <span class="tok tok-4">báo</span>
-              <span class="tok tok-1">cáo</span>
-              <span class="tok tok-2">nhé</span>
-              <span class="tok tok-3">!</span>
-            </div>
-            <div class="token-meta">
-              Vì phần lớn AI do nước ngoài làm, tiếng Anh ngắn gọn không dấu nên 1 chữ tiếng Anh thường chỉ tính là 1 Token. Còn <b>tiếng Việt có dấu thanh (sắc, huyền, hỏi, ngã, nặng) nên máy phải cắt nhỏ nhiều mảnh hơn</b> (1 chữ tiếng Việt thường tốn 1.5 đến 2.5 Token). Ước chừng <b>1.000 Token bằng khoảng 1.5 trang giấy Word A4</b>.
-            </div>
-          </div>
-
-          <p>
-            <b>Bản chất trí nhớ ngắn hạn của AI:</b> Hãy tưởng tượng cậu thực tập sinh AI ngồi làm việc trên <b>một chiếc bàn có kích thước cố định</b> (chứa được tối đa một số lượng Token / trang giấy nhất định, ví dụ 250 trang sách). Mỗi lần bạn hỏi thêm câu mới trong cùng 1 khung chat, cậu ta phải đọc lại toàn bộ đống giấy từ đầu buổi bày trên bàn. Khi bạn chat quá dài làm đầy bàn, <b>những tờ giấy đặt lên bàn đầu tiên sẽ bị đẩy rớt xuống gầm bàn</b> — tức là AI sẽ quên sạch những gì bạn dặn lúc đầu!
+            Mỗi khung chat là một chiếc bàn có diện tích cố định. Mọi tin nhắn bạn gửi lên, file đính kèm và câu trả lời của AI đều bày lên chiếc bàn đó. Nếu bạn hỏi quá dài suốt cả ngày trong duy nhất một khung chat làm bàn bị đầy tràn, những gì bạn dặn ở đầu buổi sẽ bị đẩy rớt ra ngoài khiến AI quên mất tiêu!
+            <br><b>Cách dùng chuẩn:</b> Xong việc nào là bấm <b>New Chat (Cuộc trò chuyện mới)</b> ngay để làm sạch bàn cho việc tiếp theo.
           </p>
         </section>
 
         <!-- 1.3 -->
         <section class="doc-section" id="ch1-3">
           <h3>1.3 Credit là gì? (Tiền nong và giới hạn sử dụng)</h3>
-          <p>
-            Mỗi lần AI đọc chữ và viết chữ trả lời, hệ thống máy chủ khổng lồ chạy rất tốn điện và máy móc đắt tiền. Vì thế các ứng dụng AI tính phí theo 2 hình thức chính rất dễ hiểu:
-          </p>
           <ul>
             <li>
-              <b>1. Credit (Giống như hũ Xu chơi game trong siêu thị):</b> Thường gặp ở các trang tạo hình ảnh, làm video hoặc đọc giọng nói (như Midjourney, Kling, ElevenLabs). Trong ví của bạn có sẵn một số điểm gọi là <b>Credit (Xu)</b>. Cứ bấm tạo 1 tấm ảnh tốn 5 xu, làm 1 đoạn video 5 giây tốn 20 xu — bấm sai ý là mất xu đó luôn. Hết xu thì phải đợi hôm sau được tặng lại hoặc nạp thêm tiền mua xu mới.
+              <b>Credit (Giống như hũ Xu chơi game):</b> Thường gặp ở các trang vẽ ảnh, làm video, lồng tiếng (như Midjourney, Kling, ElevenLabs). Trong ví có sẵn một lượng xu, cứ bấm tạo 1 tấm ảnh hay 5 giây video là bị trừ số xu tương ứng — bấm sai ý là mất xu đó luôn. <i>Mẹo:</i> Luôn dùng ChatGPT miễn phí chỉnh câu mô tả bằng chữ cho thật ưng rồi mới qua app ảnh/video bấm tạo cho đỡ phí xu.
             </li>
             <li>
-              <b>2. Gói thuê bao theo lượt hỏi (Giống vé ăn Buffet giới hạn theo giờ):</b> Gặp ở ChatGPT hay Claude. Bạn có thể dùng miễn phí hoặc đóng tiền theo tháng. Tuy nhiên trong mỗi 3-5 tiếng bạn chỉ được hỏi tối đa vài chục lượt. Nếu chat chung một khung quá dài hoặc gửi file quá nặng, mỗi lần bạn nhắn thêm một câu máy phải đọc lại cả cục nặng đó nên sẽ rất nhanh bị báo hết lượt tạm thời.
+              <b>Lượt hỏi theo giờ (Giống vé Buffet giới hạn theo khung giờ):</b> Gặp ở các app chat chữ như ChatGPT hay Claude. Tài khoản miễn phí hoặc trả phí tháng đều có giới hạn số câu hỏi trong mỗi 3–5 tiếng (hết lượt thì đợi một chút hoặc mở sang công cụ khác dùng tiếp).
             </li>
           </ul>
-          <p>
-            <i>Mẹo thực tế:</i> Với các trang tạo ảnh hoặc video tính bằng Credit, đừng bấm thử lung tung cho tốn xu. Hãy qua ChatGPT (miễn phí) viết và chỉnh câu mô tả bằng chữ cho thật chuẩn trước, ưng ý rồi mới copy qua trang làm ảnh/video bấm 1 lần ăn ngay.
-          </p>
         </section>
 
         <!-- 1.4 -->
