@@ -46,10 +46,10 @@ const rootPath = isNestedPage ? '../' : '';
     const link = e.target.closest('a');
     if (!link || !link.href) return;
     if (link.target === '_blank' || link.href.startsWith('#') || link.href.startsWith('javascript:')) return;
-    if (link.hostname === window.location.hostname && link.pathname !== window.location.pathname) {
-      start();
-    }
-  });
+      if (link.hostname === window.location.hostname && link.pathname !== window.location.pathname) {
+        start();
+      }
+    });
 
   window.aiLoading = { start, finish, setProgress };
 })();
@@ -70,35 +70,35 @@ const rootPath = isNestedPage ? '../' : '';
   }
 
   const interval = setInterval(() => {
-    if (progress < 90 && !isDone) {
-      progress += Math.floor(Math.random() * 12) + 10;
-      if (progress > 90) progress = 90;
-      updateUI(progress);
-    }
-  }, 25);
+      if (progress < 90 && !isDone) {
+        progress += Math.floor(Math.random() * 12) + 10;
+        if (progress > 90) progress = 90;
+        updateUI(progress);
+      }
+}, 25);
 
-  function finish() {
-    if (isDone) return;
-    isDone = true;
-    clearInterval(interval);
-    updateUI(100);
+function finish() {
+  if (isDone) return;
+  isDone = true;
+  clearInterval(interval);
+  updateUI(100);
+  setTimeout(() => {
+    loader.classList.add('loader-hidden');
     setTimeout(() => {
-      loader.classList.add('loader-hidden');
-      setTimeout(() => {
-        loader.style.display = 'none';
-      }, 350);
-    }, 100);
-  }
+      loader.style.display = 'none';
+    }, 350);
+  }, 100);
+}
 
-  if (document.readyState === 'complete') {
-    finish();
-  } else {
-    window.addEventListener('load', finish);
-  }
+if (document.readyState === 'complete') {
+  finish();
+} else {
+  window.addEventListener('load', finish);
+}
 
-  // Fallback ensure quick exit
-  setTimeout(finish, 650);
-})();
+// Fallback ensure quick exit
+setTimeout(finish, 650);
+}) ();
 
 // 3. Global Toast Notifications
 function showToast(message, iconSvg) {
