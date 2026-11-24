@@ -175,111 +175,107 @@
         <h1 style="font-size:clamp(28px, 3.2vw, 38px);font-weight:800;color:var(--ink);line-height:1.22;margin:12px 0 16px;letter-spacing:-0.02em;">
           Hiểu Đúng Bản Chất &amp; Thành Thạo Sử Dụng AI
         </h1>
-        <p style="font-size:16px;line-height:1.75;color:var(--ink-soft);margin-bottom:0;">
-          Tài liệu này viết cho người dùng phổ thông — không dùng ngôn ngữ kỹ thuật. Chỉ cần nắm vừa đủ bản chất của <b>AI, Token, Credit, Prompt, Skill, Agent</b> bằng các ví dụ đời thường, sau đó đi thẳng vào hướng dẫn chi tiết từng bước bấm nút và xử lý công việc hàng ngày.
+        <p style="font-size:16px;line-height:1.8;color:var(--ink-soft);margin-bottom:0;">
+          Tài liệu này viết cho tất cả mọi người dùng văn phòng, hoàn toàn không dùng ngôn ngữ kỹ thuật phức tạp. Bạn chỉ cần lướt qua phần đầu để nắm vừa đủ bản chất của AI, Token, Credit, Prompt, Skill và Agent thông qua những hình dung quen thuộc trong đời sống; các phần tiếp theo sẽ đi thẳng vào từng thao tác bấm nút và cách xử lý các đầu việc hàng ngày.
         </p>
       </header>
 
       <!-- ========================================================
-           CHƯƠNG 1: HIỂU ĐÚNG BẢN CHẤT (KHÔNG DÙNG TỪ KỸ THUẬT)
+           CHƯƠNG 1: HIỂU ĐÚNG BẢN CHẤT
            ======================================================== -->
       <article class="doc-chapter" id="ch1-1">
         <span class="chapter-badge">Chương 1</span>
         <h2 class="chapter-title">1. Nắm Đủ Bản Chất Bằng Ví Dụ Đời Thường</h2>
         <p class="chapter-lead">
-          Không cần học sâu kỹ thuật, chỉ cần nắm đúng 6 khái niệm cốt lõi dưới đây là bạn dùng được trơn tru mọi công cụ AI.
+          Không cần đi sâu vào kỹ thuật máy móc, chỉ cần hiểu đúng sáu khái niệm cốt lõi dưới đây là bạn đủ nền tảng để làm chủ mọi công cụ AI.
         </p>
 
         <!-- 1.1 -->
         <section class="doc-section">
-          <h3>1.1 AI là gì? (Hãy coi nó như một nhân viên mới vừa vào công ty)</h3>
+          <h3>1.1 AI là gì?</h3>
           <p>
-            Cách hiểu đơn giản và chính xác nhất để dùng được ngay: <b>Hãy coi AI (như ChatGPT, Claude, Gemini) giống như một cậu thực tập sinh mới vào công ty</b>. Cậu ta rất thông minh, đã đọc rất nhiều sách báo kiến thức chung trên mạng, gõ máy siêu nhanh và biết nhiều thứ tiếng — nhưng hoàn toàn chưa biết gì về công việc riêng của bạn hay quy định bên trong công ty bạn.
+            Cách đơn giản và thực tế nhất để hiểu AI — dù là ChatGPT, Claude hay Gemini — là hãy coi nó như một cậu thực tập sinh mới vào công ty. Cậu thực tập sinh này rất thông minh, đã đọc qua lượng sách báo khổng lồ trên mạng, gõ máy siêu nhanh và thông thạo nhiều thứ tiếng, nhưng lại chưa từng biết gì về công việc riêng hay quy định nội bộ bên trong công ty bạn.
           </p>
           <p>
-            Vì coi nó như một người mới vào làm, bạn chỉ cần nhớ 3 điểm này để sai việc không bị bực mình:
+            Chính vì giống một nhân viên mới, bạn chỉ cần ghi nhớ ba đặc điểm này để làm việc ăn ý với nó:
           </p>
           <ol>
             <li>
-              <b>Không đưa ngữ cảnh thì chịu thua, không hiểu bạn muốn gì:</b> Tưởng tượng bạn đi qua bàn của một nhân viên mới và nói cộc lốc 5 chữ <i>"Viết email xin hoãn nhé"</i> rồi bỏ đi — người thật cũng đứng hình không hiểu hoãn cái gì, gửi cho ai, lý do ra sao. AI cũng y hệt vậy: muốn nó làm đúng ý, bạn phải nói đủ đầu đuôi câu chuyện.
+              <b>Thiếu ngữ cảnh thì không thể hiểu bạn muốn gì.</b> Hãy thử tưởng tượng bạn đi ngang qua bàn một nhân viên mới, buông mỗi một câu cộc lốc rằng viết giúp email xin hoãn rồi bỏ đi. Ngay cả người thật còn đứng ngẩn ra không biết hoãn việc gì, gửi cho ai và lý do ra sao, huống chi là AI. Bạn cung cấp đầu đuôi câu chuyện càng rõ ràng, kết quả nó trả về càng trúng ý.
             </li>
             <li>
-              <b>Hay đoán mò khi thiếu thông tin:</b> Nếu bạn hỏi những chuyện không có trên mạng (như số liệu nội bộ công ty, văn bản mới vừa ra hôm qua) mà không đưa tài liệu kèm theo, thay vì nói không biết, nó rất hay tự đoán mò một câu trả lời nghe cho xuôi tai — nên mọi con số hay điều luật AI đưa ra bạn đều cần kiểm tra lại bằng mắt.
+              <b>Khi thiếu thông tin, nó dễ đoán mò cho xuôi tai.</b> Nếu bạn hỏi những chuyện nội bộ không có trên mạng hoặc bạn quên đính kèm tài liệu gốc, thay vì chịu nhận không biết, AI thường có thói quen tự ghép ra một câu trả lời nghe cực kỳ thuyết phục. Vì thế, mọi số liệu hay điều luật do AI viết ra bạn đều cần kiểm tra lại cẩn thận.
             </li>
             <li>
-              <b>Hay chiều lòng người hỏi:</b> Nếu bạn đưa một ý tưởng chưa tốt rồi hỏi <i>"Ổn không?"</i>, nó hay khen cho vui lòng. Muốn nó góp ý thật, bạn cứ dặn thẳng: <i>"Đừng khen, hãy đóng vai khách hàng khó tính chỉ ra điểm yếu để tôi sửa"</i>.
+              <b>Khá chiều lòng người hỏi.</b> Giống như một nhân viên mới muốn lấy lòng cấp trên, khi bạn đưa một bản kế hoạch chưa tốt rồi hỏi có ổn không, AI thường sẽ khen cho vui lòng. Nếu muốn nghe góp ý thẳng thắn, bạn nên dặn trước là đừng khen mà hãy chỉ ra các điểm yếu để bạn sửa.
             </li>
           </ol>
         </section>
 
         <!-- 1.2 -->
         <section class="doc-section" id="ch1-2">
-          <h3>1.2 Token là gì? (Sức chứa và trí nhớ trong một khung chat)</h3>
+          <h3>1.2 Token và trí nhớ trong một khung chat</h3>
           <p>
-            <b>Token đơn giản là đơn vị đong đếm lượng chữ mà AI đọc và viết ra</b> (nôm na <b>1.000 Token bằng khoảng 1.5 trang giấy Word A4</b>; tiếng Việt có dấu tốn nhiều Token hơn tiếng Anh một chút). Bạn không cần tự ngồi đếm Token làm gì, chỉ cần hiểu tác động thực tế của nó qua hình ảnh <b>chiếc bàn làm việc</b>:
+            Token thực chất là đơn vị dùng để máy đo độ dài câu chữ khi AI đọc và viết. Cứ khoảng một nghìn Token thì tương đương với một trang rưỡi giấy Word khổ A4, trong đó tiếng Việt có dấu thường tốn nhiều Token hơn tiếng Anh một chút.
           </p>
           <p>
-            Mỗi khung chat là một chiếc bàn có diện tích cố định. Mọi tin nhắn bạn gửi lên, file đính kèm và câu trả lời của AI đều bày lên chiếc bàn đó. Nếu bạn hỏi quá dài suốt cả ngày trong duy nhất một khung chat làm bàn bị đầy tràn, những gì bạn dặn ở đầu buổi sẽ bị đẩy rớt ra ngoài khiến AI quên mất tiêu!
-            <br><b>Cách dùng chuẩn:</b> Xong việc nào là bấm <b>New Chat (Cuộc trò chuyện mới)</b> ngay để làm sạch bàn cho việc tiếp theo.
+            Tuy nhiên, bạn không cần ngồi đếm Token làm gì mà chỉ cần hình dung khung chat của mình giống như một chiếc bàn làm việc có diện tích cố định. Toàn bộ câu hỏi bạn gửi lên, file đính kèm và câu trả lời của AI đều được bày lên chiếc bàn ấy. Nếu bạn cứ hỏi đi hỏi lại suốt cả ngày trong duy nhất một khung chat khiến mặt bàn đầy tràn, những điều bạn dặn dò từ đầu buổi sẽ bị đẩy rớt ra ngoài, dẫn đến việc AI quên mất yêu cầu ban đầu. Vì thế, thói quen tốt nhất là cứ xong một đầu việc lại bấm mở cuộc trò chuyện mới để chiếc bàn luôn gọn gàng.
           </p>
         </section>
 
         <!-- 1.3 -->
         <section class="doc-section" id="ch1-3">
-          <h3>1.3 Credit là gì? (Tiền nong và giới hạn sử dụng)</h3>
-          <ul>
-            <li>
-              <b>Credit (Giống như hũ Xu chơi game):</b> Thường gặp ở các trang vẽ ảnh, làm video, lồng tiếng (như Midjourney, Kling, ElevenLabs). Trong ví có sẵn một lượng xu, cứ bấm tạo 1 tấm ảnh hay 5 giây video là bị trừ số xu tương ứng — bấm sai ý là mất xu đó luôn. <i>Mẹo:</i> Luôn dùng ChatGPT miễn phí chỉnh câu mô tả bằng chữ cho thật ưng rồi mới qua app ảnh/video bấm tạo cho đỡ phí xu.
-            </li>
-            <li>
-              <b>Lượt hỏi theo giờ (Giống vé Buffet giới hạn theo khung giờ):</b> Gặp ở các app chat chữ như ChatGPT hay Claude. Tài khoản miễn phí hoặc trả phí tháng đều có giới hạn số câu hỏi trong mỗi 3–5 tiếng (hết lượt thì đợi một chút hoặc mở sang công cụ khác dùng tiếp).
-            </li>
-          </ul>
+          <h3>1.3 Credit và giới hạn sử dụng</h3>
+          <p>
+            Mỗi lần AI xử lý câu hỏi của bạn đều tiêu tốn rất nhiều điện năng từ hệ thống máy chủ, vì vậy các ứng dụng AI thường áp dụng hai kiểu tính phí khá quen thuộc.
+          </p>
+          <p>
+            Kiểu thứ nhất là <b>Credit</b>, hoạt động hệt như những đồng xu chơi game trong siêu thị. Bạn sẽ hay gặp cách tính này trên các trang vẽ ảnh, làm video hoặc tạo giọng đọc như Midjourney, Kling hay ElevenLabs. Trong tài khoản có sẵn một lượng xu; cứ mỗi lần bấm tạo một bức ảnh hay vài giây video là ví của bạn bị trừ đi một số xu tương ứng, bấm sai ý là mất luôn phần xu đó. Mẹo để đỡ lãng phí là hãy dùng ChatGPT miễn phí chỉnh sửa câu chữ mô tả cho thật ưng ý trước rồi mới mang sang ứng dụng tạo ảnh hay video bấm tạo.
+          </p>
+          <p>
+            Kiểu thứ hai là <b>giới hạn lượt hỏi theo khung giờ</b>, giống như vé ăn buffet quy định số lượt lấy món trong vài tiếng. Cách này áp dụng phổ biến trên ChatGPT và Claude. Dù dùng bản miễn phí hay trả phí hàng tháng, bạn đều có một định mức câu hỏi nhất định trong mỗi ba đến năm tiếng; nếu dùng hết lượt tạm thời, bạn chỉ cần nghỉ một lát hoặc mở sang công cụ khác làm tiếp.
+          </p>
         </section>
 
         <!-- 1.4 -->
         <section class="doc-section" id="ch1-4">
           <h3>1.4 Prompt là gì?</h3>
           <p>
-            <b>Prompt chính là tờ giấy giao việc (câu lệnh, đề bài) mà bạn đưa cho cậu thực tập sinh AI.</b>
-          </p>
-          <p>
-            Khác hoàn toàn với việc gõ vài từ khóa rời rạc lên Google để tìm bài viết có sẵn trên mạng, khi bạn gõ Prompt cho AI, nó sẽ ngồi viết mới hoàn toàn từ tờ giấy trắng dựa trên đúng những gì bạn dặn. Nếu tờ giấy giao việc bạn viết sơ sài vài chữ (<i>"Viết email cho khách"</i>), cậu thực tập sinh phải đoán mò và viết ra một bài chung chung vô hồn. Ngược lại, tờ giấy giao việc càng rõ ràng chi tiết, bài làm trả về càng xuất sắc.
+            Prompt chính là tờ giấy giao việc mà bạn đưa cho cậu thực tập sinh AI. Điểm khác biệt quan trọng nhất là bạn đừng dùng AI theo kiểu gõ từ khóa vào thanh tìm kiếm Google. Google là công cụ đi tìm những bài viết có sẵn trên mạng; còn khi bạn gõ Prompt cho AI, bạn đang đặt đề bài để nó tự viết mới hoàn toàn từ đầu. Bạn giao việc qua loa vài chữ thì kết quả trả về sẽ chung chung vô hồn, còn bạn dặn dò rành mạch thì bài viết ra sẽ sắc sảo ngay lập tức.
           </p>
         </section>
 
         <!-- 1.5 -->
         <section class="doc-section" id="ch1-5">
-          <h3>1.5 Skill (Kỹ năng) &amp; Đồ nghề là gì?</h3>
+          <h3>1.5 Skill và Đồ nghề là gì?</h3>
           <p>
-            Một mình bộ não AI thông thường giống như <b>cậu thực tập sinh ngồi trong phòng kín cửa không có điện thoại, không có Internet, không có máy tính cầm tay</b>. Cậu ta rất giỏi viết văn nhưng nếu hỏi: <i>"Sáng nay giá vàng bao nhiêu?"</i> hoặc <i>"Mở file Excel này cộng giúp tôi 5.000 dòng"</i> thì chịu thua.
+            Nếu chỉ đứng một mình, AI giống như cậu thực tập sinh ngồi trong căn phòng đóng kín cửa không có điện thoại hay máy tính. Cậu ta rất giỏi viết văn nhưng hễ bị hỏi sáng nay giá vàng bao nhiêu hoặc nhờ mở bảng Excel lên cộng giúp năm nghìn dòng thì đành chịu thua.
           </p>
-          <ul>
-            <li><b>Đồ nghề gắn thêm (Tools):</b> Là việc gắn thêm cho cậu thực tập sinh chiếc <b>kính lúp tìm kiếm Internet</b> (để tự lên mạng đọc tin mới hôm nay), chiếc <b>máy tính siêu cấp</b> (để tính toán số liệu Excel chính xác không bao giờ sai), hoặc nối đường dây sang kho tài liệu công ty để tự tìm file.</li>
-            <li><b>Skill (Kỹ năng đóng gói sẵn):</b> Giống như một <b>cuốn sổ tay hướng dẫn từng bước nghề nghiệp kèm sẵn đồ nghề</b> mà công ty soạn sẵn (ví dụ: <i>Bí kíp soi lỗi hợp đồng chuẩn</i>, <i>Bí kíp lọc hồ sơ ứng viên</i>). Khi AI được lắp Skill này, bạn chỉ cần đưa tài liệu vào, nó tự mở đúng cuốn sổ tay đó ra làm chuẩn chỉnh từng bước mà bạn không phải gõ lại hướng dẫn dài dòng mỗi ngày.</li>
-          </ul>
+          <p>
+            Để khắc phục giới hạn đó, người ta đưa thêm <b>đồ nghề</b> vào căn phòng ấy, chẳng hạn như công cụ tìm kiếm mạng giúp AI đọc tin tức mới nhất hôm nay, công cụ tính toán giúp cộng trừ hàng nghìn dòng dữ liệu chính xác, hoặc khả năng nhìn hiểu hình ảnh. Còn <b>Skill</b> chính là một cuốn sổ tay hướng dẫn công việc kèm sẵn bộ đồ nghề được đóng gói theo quy trình chuẩn. Khi AI được trang bị sẵn Skill như rà soát hợp đồng hay lọc hồ sơ ứng viên, bạn chỉ việc đưa file vào là nó tự mở cuốn sổ tay đó ra làm chuẩn từng bước mà bạn không cần giải thích lại mỗi ngày.
+          </p>
         </section>
 
         <!-- 1.6 -->
         <section class="doc-section" id="ch1-6">
-          <h3>1.6 AI Agent là gì? (Khác gì với Chatbot bình thường?)</h3>
+          <h3>1.6 AI Agent là gì?</h3>
           <p>
-            Hiểu sự khác biệt giữa Chatbot thông thường và AI Agent trong 10 giây qua hình tượng thực tế:
+            Sự khác biệt giữa Chatbot thông thường và AI Agent giống hệt khoảng cách giữa một nhân viên ngồi trực quầy và một trợ lý riêng tự chạy việc trọn gói từ đầu đến cuối.
           </p>
           <div class="agent-compare-table">
             <div class="act-col chat">
-              <h4>Chatbot bình thường = Nhân viên trực quầy</h4>
+              <h4>Chatbot thông thường giống nhân viên trực quầy</h4>
               <ul>
-                <li>Bạn hỏi 1 câu &rarr; AI trả lời 1 câu &rarr; xong ngồi im chờ bạn nhắc tiếp.</li>
-                <li>Để làm xong việc lớn gồm 5 bước, bạn phải tự ngồi chỉ tay gõ lệnh cả 5 lần.</li>
-                <li>Gặp trục trặc giữa chừng (ví dụ trang web bị lỗi) là đứng hình, đẩy việc lại cho bạn.</li>
+                <li>Bạn hỏi một câu thì nó trả lời một câu rồi ngồi im chờ bạn nhắc bước tiếp theo.</li>
+                <li>Để xong một việc gồm năm bước, bạn vẫn phải tự chỉ tay gõ lệnh cả năm lần.</li>
+                <li>Gặp trục trặc giữa chừng như đường link hỏng là nó dừng lại, đẩy việc về cho bạn.</li>
               </ul>
             </div>
             <div class="act-col agent">
-              <h4>AI Agent = Trợ lý riêng tự làm trọn gói</h4>
+              <h4>AI Agent giống trợ lý tự làm trọn gói</h4>
               <ul>
-                <li>Bạn chỉ giao <b>mục tiêu cuối cùng</b> (ví dụ: <i>"Tìm giá bán 3 đối thủ lớn nhất rồi lập bảng so sánh"</i>).</li>
-                <li>Agent tự vạch kế hoạch, tự lên mạng tìm từng nơi. Nếu thấy trang web bên A bị lỗi không đọc được, nó <b>tự biết xoay xở đi tìm nguồn khác thay thế</b>, tự kiểm tra thấy thiếu là tự tìm thêm cho đến khi ra bảng hoàn chỉnh mới nộp cho bạn.</li>
+                <li>Bạn chỉ cần giao mục tiêu cuối cùng, ví dụ như tìm giá bán của ba đối thủ lớn nhất rồi lập bảng so sánh.</li>
+                <li>Agent sẽ tự vạch kế hoạch và mở mạng tìm từng nơi. Nếu thấy trang web bên nào bị lỗi, nó tự biết đi tìm nguồn khác thay thế, kiểm tra thấy thiếu thông tin là tự tìm tiếp cho đến khi ra bảng hoàn chỉnh mới nộp lại cho bạn.</li>
               </ul>
             </div>
           </div>
@@ -294,81 +290,84 @@
         <span class="chapter-badge">Chương 2</span>
         <h2 class="chapter-title">2. Hướng Dẫn Mở Công Cụ &amp; Các Nút Trên Màn Hình</h2>
         <p class="chapter-lead">
-          Nắm vững bản chất rồi, đây là cách chọn đúng công cụ miễn phí và thao tác từng nút bấm ngay trên màn hình.
+          Khi đã nắm được bản chất, bước tiếp theo là chọn đúng trang web miễn phí cho từng nhu cầu và làm quen với vài nút bấm cơ bản trên màn hình.
         </p>
 
         <!-- 2.1 -->
         <section class="doc-section">
-          <h3>2.1 Chọn đúng trang web AI để mở (Đăng nhập miễn phí bằng Gmail)</h3>
+          <h3>2.1 Chọn đúng công cụ AI để mở</h3>
           <p>
-            Tất cả các trang web dưới đây đều dùng được miễn phí hàng ngày. Vào trang web, bấm <b>Sign up / Log in</b> rồi chọn <b>Continue with Google</b> là vào dùng ngay lập tức.
+            Tất cả các công cụ phổ biến dưới đây đều có bản miễn phí dùng hàng ngày. Bạn chỉ cần truy cập vào trang web, nhấn nút đăng nhập và chọn tiếp tục bằng tài khoản Google là sử dụng được ngay.
           </p>
           <div class="matrix-card" style="margin:20px 0;">
             <div class="matrix-scroll">
               <table class="table-compare">
                 <thead>
                   <tr>
-                    <th>Trang web nên mở</th>
-                    <th>Thế mạnh thực tế</th>
-                    <th>Nên dùng cho việc gì?</th>
+                    <th>Công cụ nên mở</th>
+                    <th>Điểm mạnh nổi bật</th>
+                    <th>Phù hợp nhất khi nào?</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td><b>ChatGPT</b><br><small>chatgpt.com</small></td>
-                    <td>Đa năng, dễ dùng nhất, xử lý bảng tính Excel rất tốt, vẽ ảnh nhanh và có thể trò chuyện bằng giọng nói để luyện ngoại ngữ.</td>
-                    <td>Hỏi đáp nhanh hàng ngày, viết công thức Excel, tạo ảnh minh họa, lên dàn ý ý tưởng.</td>
+                    <td>Đa năng và dễ dùng nhất, xử lý bảng tính Excel rất ổn, vẽ ảnh nhanh và cho phép trò chuyện bằng giọng nói để luyện ngoại ngữ.</td>
+                    <td>Hỏi đáp nhanh hàng ngày, viết công thức Excel, tạo ảnh minh họa hoặc lên dàn ý ban đầu.</td>
                   </tr>
                   <tr>
                     <td><b>Claude</b><br><small>claude.ai</small></td>
-                    <td>Viết tiếng Việt mượt mà, tự nhiên và ít bị gượng gạo nhất hiện nay; đọc hiểu văn bản dài rất tốt.</td>
-                    <td>Viết bài quảng cáo, soạn email quan trọng, thư xin lỗi khách hàng, viết báo cáo, dịch tài liệu cho tự nhiên.</td>
+                    <td>Viết tiếng Việt mượt mà, tự nhiên và ít gượng gạo nhất hiện nay, đồng thời đọc hiểu các tài liệu dài rất tốt.</td>
+                    <td>Viết bài quảng cáo, soạn email quan trọng, thư xin lỗi khách hàng, viết báo cáo hoặc dịch tài liệu.</td>
                   </tr>
                   <tr>
                     <td><b>Google Gemini</b><br><small>gemini.google.com</small></td>
-                    <td>Kết nối thẳng với Google Search nên tìm tin tức mới hôm nay cực nhanh; tóm tắt được cả video YouTube dài chỉ bằng cách dán link vào.</td>
-                    <td>Tìm tin tức thời sự mới diễn ra, tóm tắt nhanh video YouTube 1 tiếng, chuyển kết quả sang Google Docs / Gmail.</td>
+                    <td>Nối thẳng với công cụ tìm kiếm của Google nên cập nhật tin tức mới rất nhạy; có thể tóm tắt cả video YouTube dài chỉ qua đường link.</td>
+                    <td>Tra cứu tin tức thời sự mới diễn ra, tóm tắt video YouTube dài hoặc xuất nhanh sang Gmail và Google Docs.</td>
                   </tr>
                   <tr>
                     <td><b>NotebookLM</b><br><small>notebooklm.google.com</small></td>
-                    <td>Miễn phí hoàn toàn. Chỉ đọc và trả lời đúng theo các file PDF/Word bạn tải lên, chỉ rõ nằm ở trang nào — không bao giờ tự bịa thêm.</td>
-                    <td>Đọc tài liệu đào tạo dày cộp, tra cứu quy định nội bộ công ty, rà soát điều khoản hợp đồng dài.</td>
+                    <td>Miễn phí hoàn toàn. Chỉ đọc và trả lời đúng theo các file PDF hoặc Word bạn tải lên, ghi rõ số trang trích dẫn và không bao giờ tự bịa thêm.</td>
+                    <td>Đọc tài liệu đào tạo dày cộp, tra cứu quy định nội bộ hoặc rà soát điều khoản hợp đồng dài.</td>
                   </tr>
                   <tr>
                     <td><b>Perplexity</b><br><small>perplexity.ai</small></td>
-                    <td>Thay thế Google tìm kiếm thông thường: tự đọc hàng chục trang báo rồi viết bản tóm tắt kèm đường link nguồn uy tín ở từng câu.</td>
-                    <td>Nghiên cứu thị trường, tìm số liệu đối thủ, tìm hiểu kiến thức mới có dẫn chứng rõ ràng.</td>
+                    <td>Hoạt động như bản nâng cấp của Google: tự đọc hàng chục trang báo rồi tóm tắt lại kèm đường link nguồn uy tín ở từng câu.</td>
+                    <td>Nghiên cứu thị trường, tìm số liệu đối thủ hoặc kiểm tra kiến thức mới có dẫn chứng rõ ràng.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
           <p>
-            <i>Mẹo:</i> Nếu đang làm việc gấp mà hết lượt miễn phí ở ChatGPT, bạn chỉ cần mở tab mới chuyển qua <b>Claude</b> hoặc <b>Gemini</b> dùng tiếp để không bị ngắt quãng.
+            Một mẹo nhỏ rất hữu ích là nếu đang làm việc gấp mà hết lượt hỏi miễn phí trên ChatGPT, bạn hãy mở sang Claude hoặc Gemini để làm tiếp mà không phải chờ đợi.
           </p>
         </section>
 
         <!-- 2.2 -->
         <section class="doc-section" id="ch2-2">
-          <h3>2.2 Ý nghĩa và cách dùng 6 nút bấm quan trọng trên màn hình</h3>
+          <h3>2.2 Làm quen với 6 nút bấm quan trọng trên màn hình</h3>
+          <p>
+            Giao diện của hầu hết các trang chat AI hiện nay khá giống nhau và xoay quanh sáu thao tác chính sau đây:
+          </p>
           <ol>
             <li>
-              <b>Nút "New Chat" (Cuộc trò chuyện mới — góc trên bên trái):</b> Cứ mỗi khi xong việc này và chuyển sang đầu việc khác, hãy bấm ngay nút <b>New Chat</b> để làm sạch "chiếc bàn làm việc", giúp AI không bị lẫn lộn việc cũ sang việc mới và đỡ tốn lượt dùng.
+              <b>Nút Cuộc trò chuyện mới (New Chat)</b> nằm ở góc trên bên trái. Cứ mỗi khi giải quyết xong việc cũ và chuyển sang một chủ đề khác, bạn hãy bấm vào nút này để mở ra một chiếc bàn làm việc sạch sẽ, tránh việc AI bị rối thông tin cũ và giúp tiết kiệm lượt dùng.
             </li>
             <li>
-              <b>Nút "Kẹp ghim" hoặc dấu "+" (Nằm ngay trong ô gõ chữ):</b> Bấm vào đây để tải thẳng file <b>Word, PDF, bảng Excel hoặc ảnh chụp màn hình</b> lên cho AI đọc và làm hộ luôn, không cần ngồi gõ lại hay copy lỉnh kỉnh.
+              <b>Nút Đính kèm (biểu tượng kẹp ghim hoặc dấu cộng)</b> nằm ngay trong ô gõ chữ. Thay vì ngồi gõ lại văn bản hay copy thủ công từng dòng, bạn hãy bấm nút này để tải thẳng file Word, PDF, bảng Excel hoặc ảnh chụp màn hình lên rồi đặt câu hỏi trực tiếp trên file đó.
             </li>
             <li>
-              <b>Nút "Cây bút" (Edit / Sửa — hiện ra khi rê chuột vào câu hỏi bạn vừa gửi):</b> Thấy AI hiểu sai ý ngay từ câu đầu tiên, đừng mất công chat cãi nhau 4-5 câu tiếp theo. Hãy bấm vào biểu tượng <b>Cây bút</b> ở câu hỏi gốc, sửa lại cho rõ ý rồi gửi lại — nó sẽ dọn sạch câu trả lời sai cũ và làm lại từ đầu.
+              <b>Nút Sửa câu hỏi (biểu tượng cây bút)</b> sẽ hiện ra khi bạn rê chuột lên tin nhắn mình vừa gửi. Nếu thấy AI hiểu sai ý ngay từ đầu, bạn đừng mất công nhắn thêm vài câu giải thích qua lại làm loãng khung chat. Hãy bấm thẳng vào cây bút ở câu hỏi gốc, sửa lại cho rõ ràng rồi gửi lại để hệ thống làm mới câu trả lời.
             </li>
             <li>
-              <b>Nút "Quả địa cầu / Search" (Tìm kiếm trên mạng — dưới ô gõ chữ):</b> Bật sáng nút này khi cần hỏi tin tức hôm nay, giá cả thị trường hay quy định mới ban hành để AI lên mạng đọc thông tin mới nhất trước khi trả lời.
+              <b>Nút Tìm kiếm web (biểu tượng quả địa cầu)</b> nằm dưới ô gõ chữ trên ChatGPT. Khi cần hỏi về giá cả hôm nay, tin tức vừa ra hoặc các quy định mới ban hành, hãy nhớ bật sáng nút này để AI lên mạng đọc thông tin cập nhật rồi mới trả lời.
             </li>
             <li>
-              <b>Nút "Copy" (Biểu tượng 2 tờ giấy — dưới mỗi câu trả lời của AI):</b> Bấm nút này để chép sạch sẽ nội dung (giữ nguyên bảng biểu, in đậm) thay vì bôi đen bằng chuột hay bị dính màu nền xám khi dán qua Word hay Email.
+              <b>Nút Sao chép (biểu tượng hai tờ giấy)</b> đặt ngay dưới mỗi câu trả lời của AI. Nút này giúp bạn chép trọn vẹn nội dung cùng định dạng bảng biểu, in đậm mà không bị dính nền xám khó chịu khi dán sang Word hay Email.
             </li>
             <li>
-              <b>Nút "Temporary Chat" (Chat tạm thời / Ẩn danh — góc trên màn hình):</b> Bấm bật lên khi xử lý tài liệu công việc để cuộc trò chuyện không bị lưu lại vào lịch sử và không bị dùng để huấn luyện hệ thống.
+              <b>Chế độ Chat tạm thời (Temporary Chat)</b> nằm ở góc trên màn hình. Bật chế độ này khi bạn cần xử lý các văn bản nhạy cảm của công việc; ngay sau khi đóng cửa sổ, toàn bộ lịch sử trò chuyện sẽ biến mất và không được giữ lại để huấn luyện hệ thống.
             </li>
           </ol>
         </section>
@@ -382,38 +381,38 @@
         <span class="chapter-badge">Chương 3</span>
         <h2 class="chapter-title">3. Cách Đặt Câu Hỏi Để AI Làm Đúng Ý Ngay Lần Đầu</h2>
         <p class="chapter-lead">
-          Đừng đối xử với AI như thanh tìm kiếm Google. Giao việc rõ ràng theo công thức đơn giản sau, kết quả trả về sẽ khác hẳn.
+          Thay vì gõ vài từ khóa rời rạc như khi dùng Google, bạn chỉ cần viết lại yêu cầu theo mạch tự nhiên gồm ba phần rõ ràng dưới đây.
         </p>
 
         <!-- 3.1 -->
         <section class="doc-section">
-          <h3>3.1 Công thức "3 Bước + 1 Mẫu" cực dễ nhớ</h3>
+          <h3>3.1 Công thức 3 Bước và 1 Mẫu tham khảo</h3>
+          <p>
+            Mỗi khi cần nhờ AI giải quyết một công việc quan trọng, bạn hãy sắp xếp câu hỏi đủ ba bước sau, và đính kèm thêm một bài mẫu nếu muốn AI bắt chước đúng phong cách của mình:
+          </p>
           <div class="concept-grid">
             <div class="concept-card">
-              <h4>Bước 1: Nói rõ vai trò &amp; bối cảnh</h4>
-              <p><b>Ai viết cho ai đọc?</b> Cho AI đóng một vai chuyên môn cụ thể và kể ngắn gọn tình huống đang xảy ra.
-              <br><i>Ví dụ: "Bạn là chuyên viên Chăm sóc Khách hàng tận tâm. Công ty mình bán đồ gia dụng, vừa giao trễ đơn hàng 2 ngày cho một khách quen tên Lan."</i></p>
+              <h4>Bước 1: Nêu rõ vai trò và bối cảnh</h4>
+              <p>Cho AI biết nó đang đóng vai ai, làm việc cho ai đọc và tình huống thực tế đang diễn ra như thế nào. Chẳng hạn, bạn có thể mở đầu bằng việc dặn AI đóng vai chuyên viên chăm sóc khách hàng đang cần nhắn tin xin lỗi một vị khách quen bị giao trễ hai ngày.</p>
             </div>
             <div class="concept-card">
-              <h4>Bước 2: Nói rõ việc cần làm &amp; điều CẤM</h4>
-              <p><b>Cần làm gì và không được làm gì?</b> Giao rõ mục tiêu và dặn luôn những lỗi hay mắc phải.
-              <br><i>Ví dụ: "Hãy viết tin nhắn Zalo xin lỗi chị Lan, hẹn giao hỏa tốc chiều nay và tặng mã giảm 15%. Tuyệt đối không đổ lỗi cho shipper, không dùng từ sáo rỗng."</i></p>
+              <h4>Bước 2: Nói rõ việc cần làm và điều cần tránh</h4>
+              <p>Đặt yêu cầu cụ thể về việc AI phải viết gì và dặn luôn những lỗi không được phép mắc phải. Ví dụ, bạn dặn nó viết tin nhắn hẹn giao hỏa tốc trong chiều nay kèm mã giảm giá bù đắp, đồng thời tuyệt đối không đổ lỗi cho shipper và không dùng từ sáo rỗng.</p>
             </div>
             <div class="concept-card accent-orange">
-              <h4>Bước 3: Chốt cách trình bày &amp; độ dài</h4>
-              <p><b>Trình bày kiểu gì? Bao nhiêu chữ?</b>
-              <br><i>Ví dụ: "Viết ngắn gọn dưới 120 chữ, giọng điệu chân thành ấm áp như người nhà, chia rõ 2 đoạn dễ đọc trên điện thoại."</i></p>
+              <h4>Bước 3: Chốt cách trình bày và độ dài</h4>
+              <p>Định sẵn hình thức bạn muốn nhận về như viết ngắn gọn dưới 120 chữ, chia thành hai đoạn dễ đọc trên điện thoại, kẻ thành bảng chia cột hay dùng giọng điệu chân thành, ấm áp.</p>
             </div>
             <div class="concept-card accent-orange">
-              <h4>Cộng thêm: Đưa 1 mẫu có sẵn (Nếu có)</h4>
-              <p><b>Cách nhanh nhất để AI viết giống hệt phong cách của bạn:</b> Dán 1 email hoặc bài viết cũ bạn thấy ưng nhất vào cuối câu hỏi và dặn: <i>"Hãy học đúng cách xưng hô và giọng văn của bài mẫu này để viết bài mới giúp tôi."</i></p>
+              <h4>Cộng thêm: Gửi kèm một bài mẫu có sẵn</h4>
+              <p>Nếu bạn từng có một email hay bài viết cũ rất ưng ý, hãy dán kèm nó vào cuối câu hỏi và dặn AI học đúng cách xưng hô, cách ngắt câu của bài mẫu đó để viết nội dung mới. Đây là cách nhanh nhất giúp câu chữ giữ đúng chất riêng của bạn.</p>
             </div>
           </div>
         </section>
 
         <!-- 3.2 -->
         <section class="doc-section" id="ch3-2">
-          <h3>3.2 So sánh trực tiếp: Cách hỏi qua loa vs Cách hỏi ra việc ngay</h3>
+          <h3>3.2 So sánh cách hỏi qua loa và cách hỏi rõ ý</h3>
           
           <div class="case-study-box">
             <div class="cs-head">
@@ -424,14 +423,14 @@
               <div class="cs-col bad">
                 <div class="cs-label">Cách hỏi ngắn cụt lủn</div>
                 <div class="cs-code">"Viết email xin hoãn deadline báo cáo gửi sếp."</div>
-                <p class="cs-result"><b>Kết quả nhận về:</b> Thư viết máy móc, thiếu lý do cụ thể, đọc lên có cảm giác làm việc thiếu kế hoạch và thoái thác.</p>
+                <p class="cs-result">Kết quả nhận về thường sáo rỗng, thiếu lý do cụ thể và tạo cảm giác làm việc thiếu kế hoạch.</p>
               </div>
               <div class="cs-col good">
-                <div class="cs-label">Cách hỏi theo 3 Bước</div>
+                <div class="cs-label">Cách hỏi rõ theo 3 Bước</div>
                 <div class="cs-code">"Bạn là một nhân viên làm việc cẩn trọng và có trách nhiệm. Tôi cần viết email gửi Trưởng phòng xin lùi hạn nộp báo cáo doanh số tháng từ thứ 4 sang sáng thứ 6.
 Lý do: Chi nhánh vừa báo có một vài hóa đơn hoàn trả phát sinh cuối tháng nên cần đối chiếu lại cho khớp 100% trước khi nộp.
 Yêu cầu: Giữ thái độ cầu thị, chủ động cam kết gửi trước bản số liệu tạm chiều nay, viết dưới 120 chữ, đi thẳng vào vấn đề."</div>
-                <p class="cs-result"><b>Kết quả nhận về:</b> Thể hiện sự chuyên nghiệp, minh bạch tiến độ và giữ uy tín với cấp trên — chỉ cần copy điền tên là gửi ngay.</p>
+                <p class="cs-result">Kết quả nhận về rành mạch, thể hiện sự minh bạch và giữ uy tín tốt, bạn chỉ cần điền tên là gửi được ngay.</p>
               </div>
             </div>
           </div>
@@ -440,11 +439,14 @@ Yêu cầu: Giữ thái độ cầu thị, chủ động cam kết gửi trướ
         <!-- 3.3 -->
         <section class="doc-section" id="ch3-3">
           <h3>3.3 Bốn câu "gỡ bí" khi AI làm chưa đúng ý</h3>
+          <p>
+            Không phải lúc nào câu trả lời đầu tiên cũng vừa ý bạn ngay. Khi gặp trường hợp đó, bạn chỉ cần nhắn thêm một trong bốn câu ngắn gọn sau ngay ở phía dưới:
+          </p>
           <ul>
-            <li><b>1. Khi trong đầu bạn cũng chưa biết diễn đạt sao cho đủ ý:</b> Hãy gõ: <i>"Tôi đang muốn nhờ bạn làm việc [tên việc]. Trước khi bắt tay vào viết, hãy hỏi lại tôi 3-4 câu hỏi ngắn gọn để hiểu rõ ý tôi muốn nhất nhé."</i> (AI hỏi đâu bạn trả lời ngắn gọn tới đó, xong kết quả ra cực kỳ sát ý).</li>
-            <li><b>2. Khi thấy AI viết lan man, sáo rỗng, quá dài:</b> Hãy gõ: <i>"Viết lại ngắn gọn còn một nửa, bỏ hết lời mở đầu rườm rà và dùng ngôn ngữ đời thường hơn."</i></li>
-            <li><b>3. Khi cần làm việc khó (lập kế hoạch, tính toán, so sánh):</b> Thêm vào cuối câu hỏi: <i>"Hãy phân tích kỹ từng bước một trước khi đưa ra kết luận cuối cùng."</i></li>
-            <li><b>4. Khi cần kiểm tra lại ý tưởng của chính mình:</b> Hãy gõ: <i>"Đừng khen kế hoạch này! Hãy đóng vai một khách hàng cực kỳ khó tính và chỉ ra 5 điểm yếu lớn nhất khiến kế hoạch này có thể thất bại."</i></li>
+            <li><b>Khi chính bạn cũng chưa biết mô tả sao cho đủ ý</b>, hãy nhắn rằng trước khi bắt tay vào viết, AI hãy hỏi lại bạn ba đến bốn câu ngắn gọn để hiểu rõ mong muốn nhất. AI hỏi tới đâu bạn trả lời tới đó thì bài viết sau cùng sẽ cực kỳ sát thực tế.</li>
+            <li><b>Khi thấy bài viết bị dài dòng và sáo rỗng</b>, hãy yêu cầu viết lại ngắn gọn chỉ bằng một nửa, cắt bỏ hết lời chào rườm rà và chuyển sang ngôn ngữ đời thường hơn.</li>
+            <li><b>Khi gặp những việc đòi hỏi tính toán hoặc lập kế hoạch khó</b>, bạn nên thêm một câu dặn ở cuối yêu cầu AI phân tích kỹ từng bước một trước khi chốt lại phương án cuối cùng.</li>
+            <li><b>Khi muốn rà soát lỗ hổng trong kế hoạch của mình</b>, hãy dặn AI đừng khen vội mà hãy đóng vai một khách hàng cực kỳ khó tính để chỉ ra năm điểm yếu lớn nhất dễ làm kế hoạch thất bại.</li>
           </ul>
         </section>
       </article>
@@ -457,48 +459,39 @@ Yêu cầu: Giữ thái độ cầu thị, chủ động cam kết gửi trướ
         <span class="chapter-badge">Chương 4</span>
         <h2 class="chapter-title">4. Hướng Dẫn Thực Hành Cho Từng Đầu Việc Hàng Ngày</h2>
         <p class="chapter-lead">
-          Cách xử lý nhanh gọn 4 đầu việc phổ biến nhất của dân văn phòng.
+          Cách áp dụng trực tiếp vào bốn nhóm công việc thường gặp nhất nơi công sở để tiết kiệm tối đa thời gian xử lý.
         </p>
 
         <!-- 4.1 -->
         <section class="doc-section">
-          <h3>4.1 Viết Email, Thông báo &amp; Dịch văn bản tự nhiên</h3>
-          <ol>
-            <li>Gõ ra tất cả những ý thô trong đầu bạn (kể cả viết lủng củng chưa thành câu).</li>
-            <li>Dán vào <b>Claude</b> hoặc <b>ChatGPT</b> kèm câu dặn: <i>"Hãy sắp xếp lại các ý dưới đây thành một email hoàn chỉnh gửi [Sếp / Đối tác / Nhân viên]. Giọng văn lịch sự, rõ ràng, ngắn gọn dưới 150 chữ, tránh dùng các cụm từ sáo rỗng kiểu dịch máy."</i></li>
-            <li>Khi dịch tài liệu tiếng Anh, nhớ dặn: <i>"Dịch theo đúng ngữ cảnh giao tiếp kinh doanh tự nhiên, đừng dịch từng chữ khô cứng."</i></li>
-          </ol>
+          <h3>4.1 Viết Email, Thông báo và Dịch văn bản tự nhiên</h3>
+          <p>
+            Để tránh văn phong cứng nhắc như máy dịch, bạn cứ gõ thẳng toàn bộ các ý thô trong đầu ra, dù câu cú còn lủng củng cũng không sao. Sau đó dán vào Claude hoặc ChatGPT và dặn AI sắp xếp lại thành một email hoàn chỉnh gửi đúng đối tượng, giữ giọng văn lịch sự, ngắn gọn dưới 150 chữ và loại bỏ các cụm từ khuôn mẫu. Nếu cần dịch tài liệu tiếng Anh, hãy nhắc AI dịch theo đúng ngữ cảnh giao tiếp kinh doanh tự nhiên chứ không dịch sát từng chữ.
+          </p>
         </section>
 
         <!-- 4.2 -->
         <section class="doc-section" id="ch4-2">
-          <h3>4.2 Đọc Hợp đồng, File PDF dài &amp; Tóm tắt tài liệu</h3>
-          <ol>
-            <li>Bấm nút <b>Kẹp ghim</b> để tải thẳng file PDF/Word lên <b>Claude</b> hoặc <b>NotebookLM</b>.</li>
-            <li>Đừng chỉ bảo <i>"Tóm tắt hết cho tôi"</i> (rất dễ bị sót thông tin ở giữa file). Hãy hỏi thẳng vào điều bạn cần kiểm tra: <i>"Đọc file này và lập bảng liệt kê giúp tôi: (1) Thời hạn thanh toán, (2) Các khoản phạt vi phạm, (3) Điểm nào đang bất lợi cho bên mua hàng?"</i></li>
-          </ol>
+          <h3>4.2 Đọc Hợp đồng, File PDF dài và Tóm tắt tài liệu</h3>
+          <p>
+            Khi nhận một bản hợp đồng hoặc tài liệu dài hàng chục trang, bạn hãy bấm nút Đính kèm để tải thẳng file lên Claude hoặc NotebookLM. Thay vì hỏi chung chung là hãy tóm tắt hết file này vì rất dễ bị bỏ sót chi tiết ở giữa, bạn nên hỏi thẳng vào trọng tâm cần kiểm tra. Ví dụ, bạn yêu cầu nó đọc kỹ hợp đồng và kẻ bảng liệt kê rõ thời hạn thanh toán, các khoản phạt vi phạm, đồng thời chỉ ra xem có điều khoản nào đang bất lợi cho bên mình hay không.
+          </p>
         </section>
 
         <!-- 4.3 -->
         <section class="doc-section" id="ch4-3">
-          <h3>4.3 Giải quyết bảng tính Excel &amp; Google Sheets không cần nhớ hàm</h3>
-          <ol>
-            <li>Mở file Excel lên xem dữ liệu đang nằm ở cột nào (Ví dụ: Cột A là Mã đơn, Cột B là Ngày bán, Cột D là Số tiền, Cột E là Trạng thái).</li>
-            <li>Mở ChatGPT và mô tả bằng lời nói bình thường: <i>"Tôi dùng Excel. Cột A là..., Cột D là Số tiền, Cột E là Trạng thái. Viết giúp tôi công thức ở ô F2 để tính tổng tiền ở Cột D của những đơn có trạng thái 'Đã thanh toán' trong tháng 11. Nếu trống thì hiện số 0 chứ đừng báo lỗi #N/A."</i></li>
-            <li>Copy công thức AI trả về dán thẳng vào ô Excel là chạy. Nếu máy báo lỗi công thức, chụp ảnh màn hình lỗi dán lại vào khung chat để AI chỉ chỗ sửa ngay.</li>
-          </ol>
+          <h3>4.3 Viết công thức Excel và Google Sheets không cần nhớ hàm</h3>
+          <p>
+            Bạn hoàn toàn không phải học thuộc lòng các hàm rắc rối. Chỉ cần mở bảng tính lên xem dữ liệu đang nằm ở cột nào, rồi vào ChatGPT mô tả lại y như lời nói bình thường. Chẳng hạn bạn nói rõ cột A là mã đơn, cột D là số tiền, cột E là trạng thái, rồi nhờ viết giúp công thức tính tổng tiền ở cột D cho những đơn đã thu tiền trong tháng 11, nếu trống thì hiện số 0 để không dính lỗi. Sau đó bạn chỉ cần sao chép công thức đó dán vào Excel; nếu lỡ bị báo lỗi trên màn hình, hãy chụp ảnh dán lại vào khung chat để AI chỉ đúng chỗ cần chỉnh sửa.
+          </p>
         </section>
 
         <!-- 4.4 -->
         <section class="doc-section" id="ch4-4">
           <h3>4.4 Chụp ảnh màn hình lỗi hoặc hóa đơn dán thẳng vào ô chat</h3>
           <p>
-            Thay vì gõ lại chữ hay mô tả bằng miệng, bạn nhấn phím chụp màn hình (<code>Windows + Shift + S</code> trên Windows hoặc <code>Cmd + Shift + 4</code> trên Mac), sau đó bấm vào ô chat AI nhấn dán (<code>Ctrl + V</code>) kèm yêu cầu:
+            Khi phần mềm máy tính hiện thông báo lỗi bằng tiếng Anh hoặc khi bạn cần chép lại số liệu từ một ảnh chụp hóa đơn hay slide thuyết trình, bạn không cần tốn công gõ lại. Chỉ cần bấm tổ hợp phím chụp màn hình (<code>Windows + Shift + S</code> trên Windows hoặc <code>Cmd + Shift + 4</code> trên Mac), sau đó bấm vào ô gõ chữ của AI rồi nhấn <code>Ctrl + V</code> dán thẳng bức ảnh đó vào và hỏi xem đó là lỗi gì, cần bấm vào đâu để sửa, hoặc nhờ chép lại số liệu trong ảnh thành bảng để copy sang Excel.
           </p>
-          <ul>
-            <li><i>"Phần mềm đang báo lỗi như trong ảnh, đây là lỗi gì và bấm vào đâu để sửa từng bước?"</i></li>
-            <li><i>"Chép lại toàn bộ chữ và số liệu trong ảnh hóa đơn/bảng biểu này thành bảng chuẩn để tôi copy qua Excel."</i></li>
-          </ul>
         </section>
       </article>
 
@@ -510,7 +503,7 @@ Yêu cầu: Giữ thái độ cầu thị, chủ động cam kết gửi trướ
         <span class="chapter-badge">Chương 5</span>
         <h2 class="chapter-title">5. Kiểm Tra Trước Khi Gửi &amp; Cấm Kỵ Bảo Mật</h2>
         <p class="chapter-lead">
-          AI chỉ là người làm nháp cực nhanh; người bấm nút gửi đi mới là người chịu trách nhiệm cuối cùng.
+          AI là trợ thủ lên bản nháp cực nhanh, nhưng người bấm nút gửi đi mới là người chịu trách nhiệm cuối cùng về tính chuẩn xác và an toàn thông tin.
         </p>
 
         <!-- 5.1 -->
@@ -539,11 +532,11 @@ Yêu cầu: Giữ thái độ cầu thị, chủ động cam kết gửi trướ
 
         <!-- 5.2 -->
         <section class="doc-section" id="ch5-2">
-          <h3>5.2 Cấm kỵ bảo mật &amp; Mẹo ẩn danh trong 10 giây</h3>
+          <h3>5.2 Cấm kỵ bảo mật và Mẹo ẩn danh trong 10 giây</h3>
           <div class="callout warning">
             <div class="callout-content">
-              <b>Thao tác tắt lưu dữ liệu trong 10 giây (Nên làm ngay):</b>
-              <p>Trên ChatGPT: Bấm vào ảnh đại diện tài khoản &rarr; <b>Settings (Cài đặt)</b> &rarr; <b>Data Controls</b> &rarr; Gạt TẮT dòng <b>"Improve the model for everyone"</b>. Hoặc bật nút <b>Temporary Chat</b> khi xử lý tài liệu công việc.</p>
+              <b>Thao tác tắt lưu dữ liệu trong 10 giây nên làm ngay:</b>
+              <p>Trên ChatGPT, bạn bấm vào ảnh đại diện tài khoản, chọn mục Settings, vào phần Data Controls rồi gạt tắt dòng Improve the model for everyone. Khi xử lý các văn bản công việc, bạn cũng nên tạo thói quen bật chế độ Temporary Chat ở góc trên để nói chuyện xong là xóa sạch dấu vết.</p>
             </div>
           </div>
 
@@ -555,7 +548,7 @@ Yêu cầu: Giữ thái độ cầu thị, chủ động cam kết gửi trướ
               <ul>
                 <li>Soạn ý tưởng bài viết, thông báo, email công việc phổ thông.</li>
                 <li>Nhờ viết công thức Excel, dịch văn bản, sửa câu chữ.</li>
-                <li>Tài liệu đã được <b>che tên và thay số thật</b>: Trước khi dán lên AI, bấm <code>Ctrl + H</code> trong Word/Excel đổi tên khách hàng thật thành <i>"Khách hàng X"</i>, <i>"Công ty A"</i>.</li>
+                <li>Tài liệu đã được che tên và thay số thật: trước khi dán lên AI, hãy bấm <code>Ctrl + H</code> trong Word hoặc Excel để đổi tên khách hàng thật thành <i>"Khách hàng X"</i> hay <i>"Công ty A"</i>.</li>
               </ul>
             </div>
 
