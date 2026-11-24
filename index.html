@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-  <title>AI Training Wiki - Cẩm nang Đào tạo & Quy chuẩn AI Doanh nghiệp</title>
-  <meta name="description" content="Tài liệu đào tạo nội bộ chuẩn hóa quy trình ứng dụng Trí tuệ Nhân tạo (AI) cho toàn thể cán bộ nhân viên công ty: Onboarding, Chính sách bảo mật, Kỹ năng giao việc và SOPs theo phòng ban.">
+  <title>AI Training Wiki - Tài liệu Đào tạo &amp; Bản chất Hệ thống AI</title>
+  <meta name="description" content="Cẩm nang Wiki đào tạo AI từ bản chất cốt lõi: AI, Token, Context Window, Credit, Prompt, Skill, Agent và hướng dẫn sử dụng chi tiết cho nhân sự doanh nghiệp.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
@@ -12,7 +12,7 @@
 </head>
 <body>
 
-  <!-- FULL-PAGE SPLASH LOADER (Fast Smooth Exit) -->
+  <!-- FULL-PAGE SPLASH LOADER -->
   <div id="page-loader">
     <div class="loader-box">
       <div class="loader-logo-wrap">
@@ -22,7 +22,7 @@
         <div class="loader-bar-fill" id="loader-bar-fill"></div>
       </div>
       <div class="loader-pct" id="loader-pct">0%</div>
-      <div class="loader-text">Đang tải AI Training Wiki...</div>
+      <div class="loader-text">Đang tải Tài liệu Đào tạo AI...</div>
     </div>
   </div>
 
@@ -43,13 +43,13 @@
 
       <div class="search-box" style="flex:1;max-width:480px;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <input type="text" id="wiki-quick-search" placeholder="Tìm nhanh quy trình, SOP, từ khoá trong Wiki (Ctrl + K)..." aria-label="Tìm kiếm nội bộ">
+        <input type="text" id="wiki-quick-search" placeholder="Tìm nhanh khái niệm: token, credit, agent, SOP... (Ctrl + K)" aria-label="Tìm kiếm nội bộ">
         <div class="search-suggestions" hidden></div>
       </div>
 
       <div class="header-actions" style="display:flex;align-items:center;gap:12px;">
-        <a href="#ch1-2" class="tag-pill pill-orange" style="font-size:12px;text-decoration:none;">Bảo mật</a>
-        <a href="#ch3-1" class="tag-pill pill-green" style="font-size:12px;text-decoration:none;">SOPs</a>
+        <a href="#ch3-2" class="tag-pill pill-orange" style="font-size:12px;text-decoration:none;">Bảo mật</a>
+        <a href="#ch4-1" class="tag-pill pill-green" style="font-size:12px;text-decoration:none;">SOP Phòng ban</a>
       </div>
     </div>
   </header>
@@ -62,732 +62,765 @@
 
     <!-- 1. LEFT VERTICAL NAVIGATION SIDEBAR -->
     <aside class="wiki-sidebar" id="wiki-sidebar">
-      
+
       <!-- Group 1 -->
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">1. Khởi đầu &amp; Chính sách</div>
+        <div class="wiki-group-title">1. Bản chất cốt lõi của AI</div>
         <a href="#ch1-1" class="wiki-nav-item active">
-          <span>1.1 Tổng quan &amp; Tư duy AI</span>
+          <span>1.1 AI, ML, Deep Learning &amp; LLM</span>
         </a>
         <a href="#ch1-2" class="wiki-nav-item">
-          <span>1.2 Chính sách Bảo mật (Bắt buộc)</span>
+          <span>1.2 Token &amp; Context Window</span>
         </a>
         <a href="#ch1-3" class="wiki-nav-item">
-          <span>1.3 Tài khoản &amp; Công cụ cấp phép</span>
+          <span>1.3 Credit, API, Quota &amp; Rate Limit</span>
         </a>
       </div>
 
       <!-- Group 2 -->
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">2. Kỹ năng Giao việc (Prompt)</div>
+        <div class="wiki-group-title">2. Prompt, Skill &amp; Agent</div>
         <a href="#ch2-1" class="wiki-nav-item">
-          <span>2.1 Prompt Engineering là gì?</span>
+          <span>2.1 Bản chất Prompt (System vs User)</span>
         </a>
         <a href="#ch2-2" class="wiki-nav-item">
-          <span>2.2 Framework C-R-E-A-T-E</span>
+          <span>2.2 Cấu trúc C-R-E-A-T-E &amp; Kỹ thuật</span>
         </a>
         <a href="#ch2-3" class="wiki-nav-item">
-          <span>2.3 So sánh Before &amp; After</span>
+          <span>2.3 Skill &amp; Tool (Function Calling)</span>
         </a>
         <a href="#ch2-4" class="wiki-nav-item">
-          <span>2.4 Kỹ thuật suy luận nâng cao</span>
-        </a>
-        <a href="#ch2-5" class="wiki-nav-item">
-          <span>2.5 Kiểm chứng &amp; Chống ảo giác</span>
+          <span>2.4 AI Agent là gì? Khác gì Chatbot?</span>
         </a>
       </div>
 
       <!-- Group 3 -->
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">3. SOPs Thực chiến Phòng ban</div>
+        <div class="wiki-group-title">3. Hướng dẫn sử dụng chi tiết</div>
         <a href="#ch3-1" class="wiki-nav-item">
-          <span>3.1 Hành chính - Nhân sự (HR)</span>
+          <span>3.1 Quy trình thao tác chuẩn hàng ngày</span>
         </a>
         <a href="#ch3-2" class="wiki-nav-item">
-          <span>3.2 Marketing &amp; Content</span>
+          <span>3.2 Bảo mật &amp; Kiểm duyệt 3 bước</span>
         </a>
         <a href="#ch3-3" class="wiki-nav-item">
-          <span>3.3 Kinh doanh &amp; CSKH (Sales)</span>
-        </a>
-        <a href="#ch3-4" class="wiki-nav-item">
-          <span>3.4 Kế toán &amp; Phân tích Excel</span>
-        </a>
-        <a href="#ch3-5" class="wiki-nav-item">
-          <span>3.5 Quản trị họp &amp; Vận hành</span>
+          <span>3.3 Chọn đúng công cụ AI (2026)</span>
         </a>
       </div>
 
       <!-- Group 4 -->
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">4. Bản đồ Công cụ AI</div>
+        <div class="wiki-group-title">4. SOPs Thực chiến Phòng ban</div>
         <a href="#ch4-1" class="wiki-nav-item">
-          <span>4.1 So sánh 4 Ông Lớn AI</span>
+          <span>4.1 Hành chính - Nhân sự (HR)</span>
         </a>
         <a href="#ch4-2" class="wiki-nav-item">
-          <span>4.2 Công cụ Media &amp; Nghiên cứu</span>
+          <span>4.2 Marketing &amp; Truyền thông</span>
+        </a>
+        <a href="#ch4-3" class="wiki-nav-item">
+          <span>4.3 Kinh doanh &amp; CSKH (Sales)</span>
+        </a>
+        <a href="#ch4-4" class="wiki-nav-item">
+          <span>4.4 Kế toán, Tài chính &amp; Excel</span>
+        </a>
+        <a href="#ch4-5" class="wiki-nav-item">
+          <span>4.5 Quản trị họp &amp; Vận hành</span>
         </a>
       </div>
 
       <!-- Group 5 -->
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">5. Tự động hóa &amp; Agents</div>
-        <a href="#ch5-1" class="wiki-nav-item">
-          <span>5.1 Cài đặt Custom Instructions</span>
-        </a>
-        <a href="#ch5-2" class="wiki-nav-item">
-          <span>5.2 Phân tích PDF &amp; Bảng tính</span>
-        </a>
-        <a href="#ch5-3" class="wiki-nav-item">
-          <span>5.3 Tự động hóa quy trình No-code</span>
-        </a>
-      </div>
-
-      <!-- Interactive Widget Link -->
-      <div class="wiki-nav-group" style="margin-top:auto;padding-top:14px;border-top:1px solid var(--line);">
-        <a href="#tool-builder" class="btn btn-secondary btn-sm" style="width:100%;font-size:12.5px;">Trình tạo Prompt nhanh
+        <div class="wiki-group-title">5. Công cụ hỗ trợ</div>
+        <a href="#tool-builder" class="wiki-nav-item">
+          <span>5.1 Trình tạo Prompt C-R-E-A-T-E</span>
         </a>
       </div>
 
     </aside>
 
-    <!-- 2. CENTER VERTICAL DOCUMENT ARTICLE (MAIN READING AREA) -->
+    <!-- 2. CENTER VERTICAL DOCUMENT ARTICLE -->
     <main class="wiki-doc-article">
 
       <!-- DOC HEADER -->
-      <header class="doc-header" style="margin-bottom:40px;border-bottom:1px solid var(--line);padding-bottom:28px;">
-        <span class="chapter-badge">Tài liệu đào tạo nội bộ • Ban hành 2026</span>
-        <h1 style="font-size:clamp(28px, 3.2vw, 40px);font-weight:800;color:var(--ink);line-height:1.2;margin:12px 0 16px;letter-spacing:-0.02em;">
-          AI Training Wiki: Chuẩn Hóa Kỹ Năng Ứng Dụng Trí Tuệ Nhân Tạo
+      <header class="doc-header">
+        <span class="chapter-badge">Tài liệu đào tạo nội bộ • Phiên bản 2026</span>
+        <h1 style="font-size:clamp(28px, 3.2vw, 38px);font-weight:800;color:var(--ink);line-height:1.22;margin:12px 0 16px;letter-spacing:-0.02em;">
+          AI Training Wiki: Đi Từ Bản Chất Đến Làm Chủ Thực Chiến
         </h1>
         <p style="font-size:16px;line-height:1.7;color:var(--ink-soft);margin-bottom:0;">
-          Cẩm nang quy chuẩn nội bộ dành cho toàn thể nhân sự công ty. Tài liệu được thiết kế dạng <b>Wiki tài liệu hàng dọc</b> giúp bạn dễ dàng tra cứu quy định bảo mật, kỹ thuật giao việc chuẩn mực và các quy trình thao tác chuẩn (SOPs) theo từng phòng ban.
+          Tài liệu đào tạo nhân sự đi từ gốc rễ bản chất kỹ thuật (<b>AI, Token, Context Window, Credit, Prompt, Skill, Agent</b>) đến quy trình thao tác chi tiết, chính sách bảo mật và kho SOPs thực chiến theo từng phòng ban.
         </p>
       </header>
 
-      <!-- ==========================================
-           CHƯƠNG 1: ONBOARDING & CHÍNH SÁCH BẢO MẬT
-           ========================================== -->
+      <!-- ========================================================
+           CHƯƠNG 1: BẢN CHẤT CỐT LÕI CỦA AI
+           ======================================================== -->
       <article class="doc-chapter" id="ch1-1">
         <span class="chapter-badge">Chương 1</span>
-        <h2 class="chapter-title">1. Onboarding &amp; Chính Sách Sử Dụng AI Nội Bộ</h2>
+        <h2 class="chapter-title">1. Bản Chất Cốt Lõi: AI Hoạt Động Như Thế Nào?</h2>
         <p class="chapter-lead">
-          Nền tảng tư duy đúng đắn và quy định pháp lý, an toàn bảo mật thông tin khi nhân sự sử dụng các công cụ Trí tuệ Nhân tạo trong công việc hàng ngày.
+          Để sử dụng AI hiệu quả và không bị bối rối khi AI trả lời sai, trước hết bạn cần hiểu rõ bản chất cơ học bên dưới của các mô hình hiện đại.
         </p>
 
-        <!-- Section 1.1 -->
+        <!-- 1.1 -->
         <section class="doc-section">
-          <h3>1.1 Bản chất của AI &amp; Trách nhiệm Nhân sự</h3>
+          <h3>1.1 AI là gì? Phân biệt AI, Machine Learning, Deep Learning và LLM</h3>
           <p>
-            Trong môi trường doanh nghiệp, hãy luôn ghi nhớ hình tượng cốt lõi: <b>AI là một bạn Thực tập sinh Thiên tài nhưng còn ngây ngô</b>.
+            Trong thực tế, mọi người hay gọi chung ChatGPT, Claude hay Gemini là "AI", nhưng chính xác hơn chúng nằm ở tầng sâu nhất của hệ thống phân cấp công nghệ:
           </p>
+
+          <div class="concept-grid">
+            <div class="concept-card">
+              <h4>1. AI (Artificial Intelligence - Trí tuệ Nhân tạo)</h4>
+              <p>Là khái niệm rộng nhất: Bất kỳ hệ thống máy tính nào có thể thực hiện các tác vụ đòi hỏi trí thông minh con người (từ hệ thống lọc spam, chơi cờ vua đến xe tự lái).</p>
+            </div>
+            <div class="concept-card">
+              <h4>2. Machine Learning (Học máy)</h4>
+              <p>Thay vì lập trình viên viết cứng hàng nghìn luật <code>if ... else ...</code>, máy tính tự học quy luật từ hàng triệu dữ liệu mẫu (ví dụ: xem 100.000 hóa đơn để tự nhận biết giao dịch gian lận).</p>
+            </div>
+            <div class="concept-card accent-orange">
+              <h4>3. Deep Learning (Học sâu)</h4>
+              <p>Sử dụng mạng nơ-ron nhân tạo nhiều tầng mô phỏng cấu trúc não người để xử lý dữ liệu phi cấu trúc cực lớn như hình ảnh, giọng nói và ngôn ngữ tự nhiên.</p>
+            </div>
+            <div class="concept-card accent-orange">
+              <h4>4. Generative AI &amp; LLM (Mô hình Ngôn ngữ Lớn)</h4>
+              <p>Là nhánh tạo ra nội dung mới (chữ, ảnh, video). ChatGPT, Claude, Gemini là các <b>LLM (Large Language Model)</b> được huấn luyện trên toàn bộ kho tàng văn bản của nhân loại.</p>
+            </div>
+          </div>
+
+          <h4>Cơ chế hoạt động thực sự bên dưới: Dự đoán Token tiếp theo (Next-Token Prediction)</h4>
+          <p>
+            Khi bạn gõ một câu hỏi vào ChatGPT, nó <b>không "hiểu" và không "suy nghĩ" có ý thức như con người</b>. Thực chất, nó là một cỗ máy tính toán xác suất thống kê khổng lồ trả lời câu hỏi: <i>"Với chuỗi chữ vừa xuất hiện ở trên, từ (token) nào có xác suất xuất hiện tiếp theo cao nhất?"</i>
+          </p>
+
+          <div class="flow-diagram">
+            <div class="flow-step">
+              <span class="flow-step-num">Bước 1</span>
+              <b>Đầu vào (Input)</b>
+              <p>"Thủ đô của Việt Nam là..."</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <span class="flow-step-num">Bước 2</span>
+              <b>Tính xác suất</b>
+              <p>"Hà" (98.5%), "TP" (0.8%), "Đà" (0.2%)...</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <span class="flow-step-num">Bước 3</span>
+              <b>Sinh từng chữ</b>
+              <p>Chọn "Hà", sau đó tiếp tục đoán chữ sau "Hà" là "Nội".</p>
+            </div>
+          </div>
+
           <div class="quote-card">
             <div class="qc-text">
-              <b>Nguyên tắc trách nhiệm cuối cùng (Human-in-the-loop):</b>
-              <p>AI gõ phím với tốc độ siêu thanh, tổng hợp tài liệu trong chớp mắt nhưng <b>không có nhận thức pháp lý hay đạo đức</b>. Mọi email gửi khách hàng, mọi báo cáo gửi lãnh đạo, mọi dòng code đưa lên production do AI viết ra — <b>Nhân sự trực tiếp bấm nút gửi là người chịu 100% trách nhiệm về tính chính xác và an toàn của nội dung đó</b>.</p>
+              <b>Tại sao hiểu cơ chế này lại quan trọng?</b>
+              <p>Vì AI hoạt động dựa trên xác suất ghép chữ cho "hợp lý nhất", nên: (1) Nếu thiếu thông tin, nó vẫn tự ghép ra câu trả lời nghe rất xuôi tai nhưng sai sự thật (gọi là <b>Ảo giác - Hallucination</b>); (2) Thông số <b>Temperature (Nhiệt độ)</b> quyết định độ liều lĩnh khi chọn từ: Temperature thấp (0 - 0.2) cho kết quả chính xác, ổn định (dùng viết code, phân tích số); Temperature cao (0.7 - 1.0) cho kết quả sáng tạo, bay bổng (dùng viết content, đặt tên thương hiệu).</p>
             </div>
           </div>
         </section>
 
-        <!-- Section 1.2 -->
+        <!-- 1.2 -->
         <section class="doc-section" id="ch1-2">
-          <h3>1.2 Chính Sách Bảo Mật Doanh Nghiệp (Bắt buộc tuân thủ)</h3>
+          <h3>1.2 Token là gì? Cửa sổ ngữ cảnh (Context Window) là gì?</h3>
           <p>
-            Các mô hình AI công cộng (Public AI) có thể sử dụng dữ liệu hội thoại của người dùng để huấn luyện mô hình. Do đó, việc bảo vệ tài sản thông tin công ty là nghĩa vụ bắt buộc:
+            Con người đọc văn bản theo từng chữ cái hoặc từng từ. Nhưng máy tính không hiểu chữ cái — nó cắt nhỏ văn bản thành các mảnh gọi là <b>Token</b> và quy đổi mỗi Token thành một con số ID.
           </p>
 
-          <div class="security-grid">
-            <div class="sec-card safe">
-              <div class="sc-head">
-                <b>ĐƯỢC PHÉP CHIA SẺ</b>
-              </div>
-              <ul>
-                <li>Bản thảo bài viết, ý tưởng truyền thông, kịch bản video.</li>
-                <li>Mẫu email, văn bản hành chính không chứa thông tin riêng tư.</li>
-                <li>Đoạn mã lập trình đã xóa bỏ mật khẩu, token, API keys.</li>
-                <li>Dữ liệu kinh doanh đã được ẩn danh (thay tên công ty bằng A, B, C; thay số tiền thật bằng số tượng trưng).</li>
-              </ul>
+          <div class="token-demo-box">
+            <span class="token-demo-label">Minh họa cách AI cắt câu thành Token</span>
+            <div class="token-stream">
+              <span class="tok tok-1">Xin</span>
+              <span class="tok tok-2">chào</span>
+              <span class="tok tok-3">nhân</span>
+              <span class="tok tok-4">sự</span>
+              <span class="tok tok-1">mới</span>
+              <span class="tok tok-2">của</span>
+              <span class="tok tok-3">công</span>
+              <span class="tok tok-4">ty</span>
+              <span class="tok tok-1">!</span>
             </div>
-
-            <div class="sec-card danger">
-              <div class="sc-head">
-                <b>TUYỆT ĐỐI NGHIÊM CẤM</b>
-              </div>
-              <ul>
-                <li>Mật khẩu đăng nhập hệ thống, Private Key, mã OTP, token nội bộ.</li>
-                <li>Danh sách dữ liệu khách hàng (Họ tên, SĐT, CCCD, Email, địa chỉ).</li>
-                <li>Báo cáo tài chính nội bộ, biên lợi nhuận mật chưa công bố.</li>
-                <li>Bí mật kinh doanh có ký cam kết bảo mật thông tin (NDA).</li>
-              </ul>
+            <div class="token-meta">
+              <b>Quy đổi thực tế:</b> Trong tiếng Anh, <code>1 từ ≈ 1.3 tokens</code>. Với <b>tiếng Việt có dấu</b>, bộ ký tự phức tạp hơn nên <code>1 từ tiếng Việt thường tốn từ 1.5 đến 2.5 tokens</code>. Trung bình <code>1.000 tokens ≈ 500 - 650 từ tiếng Việt</code> (tương đương 1.5 trang Word).
             </div>
           </div>
+
+          <h4>Context Window (Cửa sổ ngữ cảnh / Trí nhớ ngắn hạn)</h4>
+          <p>
+            AI không có trí nhớ vô hạn. Trong một cuộc hội thoại, toàn bộ <b>Prompt bạn gửi vào + Toàn bộ lịch sử chat trước đó + File bạn đính kèm + Câu trả lời AI sinh ra</b> đều phải nằm gọn trong một giới hạn gọi là <b>Context Window</b>.
+          </p>
+          <ul>
+            <li><b>ChatGPT (GPT-4o)</b>: Context Window là <code>128.000 tokens</code> (tương đương ~250 trang sách tiếng Việt).</li>
+            <li><b>Claude 3.5 Sonnet</b>: Context Window là <code>200.000 tokens</code> (~400 trang sách).</li>
+            <li><b>Google Gemini 1.5 Pro</b>: Context Window lên tới <code>1.000.000 - 2.000.000 tokens</code> (đọc được cả bộ mã nguồn lớn hoặc video dài 1 tiếng).</li>
+          </ul>
 
           <div class="callout warning">
             <div class="callout-content">
-              <b>Mẹo ẩn danh nhanh:</b> Trước khi dán dữ liệu vào ô chat AI, hãy dùng tính năng Find &amp; Replace để thay thế tên khách hàng thật bằng <code>[Khách Hàng X]</code>, số dư tài khoản bằng <code>[Số Tiền Y]</code>.
+              <b>Hiện tượng "Quên đầu quên đuôi" (Context Overflow &amp; Lost in the middle):</b>
+              <p>Nếu bạn chat liên tục 100 tin nhắn trong cùng một cửa sổ chat vượt quá Context Window, AI sẽ âm thầm đẩy những lời dặn dò ở đầu cuộc chat ra khỏi bộ nhớ. Ngoài ra, nếu bạn ném một tài liệu dài 100 trang vào, AI thường nhớ rất rõ phần đầu và phần cuối, nhưng dễ bỏ sót chi tiết nằm ở giữa tài liệu.</p>
             </div>
           </div>
         </section>
 
-        <!-- Section 1.3 -->
+        <!-- 1.3 -->
         <section class="doc-section" id="ch1-3">
-          <h3>1.3 Danh mục Công cụ AI được Công ty Cấp phép</h3>
-          <p>Nhân sự được khuyến khích sử dụng các công cụ đã được bộ phận IT &amp; An ninh thông tin thẩm định:</p>
-          <ul class="check-list">
-            <li><b>ChatGPT (OpenAI)</b>: Dùng cho soạn thảo văn bản, đàm thoại, tra cứu tổng hợp đa ngành.</li>
-            <li><b>Claude (Anthropic)</b>: Ưu tiên số 1 cho người làm Content, PR, dịch thuật và lập trình web nhờ văn phong tự nhiên.</li>
-            <li><b>Google Gemini</b>: Tích hợp sâu với Google Docs, Sheets, tra cứu dữ liệu mới thời gian thực.</li>
-            <li><b>DeepSeek</b>: Phân tích tư duy logic sâu, hỗ trợ giải toán và kiểm tra thuật toán miễn phí.</li>
-          </ul>
-        </section>
-      </article>
-
-
-      <!-- ==========================================
-           CHƯƠNG 2: KỸ NĂNG GIAO VIỆC (PROMPT ENGINEERING)
-           ========================================== -->
-      <article class="doc-chapter" id="ch2-1">
-        <span class="chapter-badge">Chương 2</span>
-        <h2 class="chapter-title">2. Kỹ Năng Giao Việc Chuẩn Mực Cho AI</h2>
-        <p class="chapter-lead">
-          Nghệ thuật điều khiển AI: Tại sao cùng một công cụ, người nhận được câu trả lời rác, người nhận được bản kế hoạch bạc triệu?
-        </p>
-
-        <!-- Section 2.1 -->
-        <section class="doc-section">
-          <h3>2.1 Bản chất của Prompt Engineering trong Doanh nghiệp</h3>
+          <h3>1.3 Credit, API Pricing, Quota &amp; Rate Limit là gì?</h3>
           <p>
-            <b>Prompt Engineering</b> thực chất chính là <b>Kỹ năng Ủy quyền và Giao việc rõ ràng</b>. Người quản lý giỏi không bao giờ nói cộc lốc với cấp dưới: <i>"Làm việc đi"</i>, mà sẽ cung cấp mục tiêu, nguồn lực, tiêu chuẩn đầu ra và thời hạn. Với AI cũng chính xác như vậy!
+            Mỗi Token mà AI đọc vào hoặc sinh ra đều tiêu tốn điện năng và năng lực tính toán của hàng nghìn chip GPU đắt đỏ. Đó là lý do các hãng AI áp dụng 3 cơ chế tính phí và giới hạn khác nhau mà nhân sự cần nắm rõ:
           </p>
-        </section>
 
-        <!-- Section 2.2 -->
-        <section class="doc-section" id="ch2-2">
-          <h3>2.2 Framework C-R-E-A-T-E Chuẩn Doanh Nghiệp</h3>
-          <p>Mỗi khi ra lệnh cho AI, nhân sự hãy áp dụng công thức 6 yếu tố vàng:</p>
-
-          <div class="create-card-grid">
-            <div class="c-item">
-              <div class="c-letter">C</div>
-              <div class="c-info">
-                <h4>Context (Bối cảnh thực tế)</h4>
-                <p>Nêu rõ bạn là ai, công ty đang làm gì, tình huống cụ thể đang diễn ra.</p>
-                <div class="c-snippet"><i>"Tôi là nhân viên CSKH công ty thời trang, vừa nhận khiếu nại về đơn hàng giao trễ 2 ngày..."</i></div>
-              </div>
-            </div>
-
-            <div class="c-item">
-              <div class="c-letter">R</div>
-              <div class="c-info">
-                <h4>Role (Vai trò chuyên môn)</h4>
-                <p>Gán danh xưng chuyên gia để AI kích hoạt đúng vùng kiến thức.</p>
-                <div class="c-snippet"><i>"Bạn là Trưởng bộ phận Chăm sóc Khách hàng với 8 năm kinh nghiệm xử lý khủng hoảng truyền thông..."</i></div>
-              </div>
-            </div>
-
-            <div class="c-item">
-              <div class="c-letter">E</div>
-              <div class="c-info">
-                <h4>Explicit Instructions (Chỉ thị rõ ràng)</h4>
-                <p>Nêu rõ từng bước thực hiện, những điều ĐƯỢC LÀM và KHÔNG ĐƯỢC LÀM.</p>
-                <div class="c-snippet"><i>"Hãy viết thư xin lỗi và đề xuất bồi thường voucher 100k. Tuyệt đối không đổ lỗi cho đơn vị vận chuyển..."</i></div>
-              </div>
-            </div>
-
-            <div class="c-item">
-              <div class="c-letter">A</div>
-              <div class="c-info">
-                <h4>Audience (Đối tượng tiếp nhận)</h4>
-                <p>Người đọc tài liệu này là ai: Khách hàng khó tính, Ban Giám đốc hay nhân viên mới?</p>
-                <div class="c-snippet"><i>"Thư này gửi cho một khách hàng VIP đã gắn bó 3 năm với công ty..."</i></div>
-              </div>
-            </div>
-
-            <div class="c-item">
-              <div class="c-letter">T</div>
-              <div class="c-info">
-                <h4>Tone &amp; Style (Văn phong &amp; Giọng điệu)</h4>
-                <p>Sắc thái cảm xúc: Chân thành, đồng cảm, lịch thiệp, cô đọng, chuyên nghiệp.</p>
-                <div class="c-snippet"><i>"Giọng văn chân thành, ấm áp, nhã nhặn, câu cú gãy gọn, không dùng từ ngữ sáo rỗng..."</i></div>
-              </div>
-            </div>
-
-            <div class="c-item">
-              <div class="c-letter">E</div>
-              <div class="c-info">
-                <h4>Examples (Ví dụ mẫu - Few-shot)</h4>
-                <p>Cung cấp 1 mẫu văn phong hoặc bảng dữ liệu mẫu để AI bắt chước chuẩn 100%.</p>
-                <div class="c-snippet"><i>"Dưới đây là một email mẫu đã được duyệt trong trường hợp tương tự: [Dán mẫu]..."</i></div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 2.3 -->
-        <section class="doc-section" id="ch2-3">
-          <h3>2.3 So Sánh Trước &amp; Sau (Before vs After)</h3>
-          
-          <div class="case-study-box">
-            <div class="cs-head">
-              <span class="cs-tag">Tình huống thực tế</span>
-              <h3>Soạn Email từ chối đề xuất hợp tác của đối tác</h3>
-            </div>
-            <div class="cs-compare">
-              <div class="cs-col bad">
-                <div class="cs-label"> Nhân sự giao việc cẩu thả</div>
-                <div class="cs-code">"Viết email từ chối đối tác giúp tôi."</div>
-                <p class="cs-result">Kết quả: Cụt lủn, lạnh lùng, nghe như đối thoại cắt đứt quan hệ, đối tác phật ý.</p>
-              </div>
-              <div class="cs-col good">
-                <div class="cs-label"> Áp dụng công thức C-R-E-A-T-E</div>
-                <div class="cs-code">"Bạn là Chuyên viên Truyền thông Doanh nghiệp. Hãy giúp tôi viết email từ chối lời mời tài trợ từ [Tên công ty đối tác].
-Lý do: Hiện tại ngân sách quý 3 của công ty đã được phân bổ trọn vẹn cho các dự án trọng điểm, chưa thể đồng hành trong chương trình lần này.
-Thái độ: Lịch thiệp, tôn trọng, đánh giá cao ý nghĩa của sự kiện và bày tỏ mong muốn giữ liên lạc để có cơ hội hợp tác trong các quý tiếp theo. Độ dài dưới 120 từ."</div>
-                <p class="cs-result">Kết quả: Giữ trọn quan hệ tốt đẹp, thể hiện đẳng cấp văn minh của doanh nghiệp!</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 2.4 -->
-        <section class="doc-section" id="ch2-4">
-          <h3>2.4 Kỹ Thuật Suy Luận Nâng Cao Cho Nhân Sự</h3>
-          
-          <div class="technique-list">
-            <div class="tech-card">
-              <div class="tc-top">
-                <span class="tc-badge">Kỹ thuật 1</span>
-                <h3>Chain-of-Thought (Tư duy từng bước)</h3>
-              </div>
-              <p>Khi giải bài toán kinh doanh phức tạp, thêm câu lệnh này để AI không đoán ẩu:</p>
-              <div class="prompt-snippet-box">
-                <code>"Trước khi đưa ra kết luận, hãy suy nghĩ từng bước một (Step-by-step thinking). Trình bày rõ giả định, công thức và suy luận của bạn ở từng bước."</code>
-                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
-              </div>
-            </div>
-
-            <div class="tech-card">
-              <div class="tc-top">
-                <span class="tc-badge">Kỹ thuật 2</span>
-                <h3>Reverse Prompting (Kỹ thuật AI hỏi ngược)</h3>
-              </div>
-              <p>Khi bạn có một mục tiêu lớn nhưng chưa đủ dữ kiện, hãy để AI phỏng vấn ngược lại bạn:</p>
-              <div class="prompt-snippet-box">
-                <code>"Tôi muốn lên kế hoạch [Mục tiêu công việc]. Đừng trả lời vội! Hãy đóng vai chuyên gia tư vấn chiến lược và đặt cho tôi 3 câu hỏi quan trọng nhất để làm rõ bối cảnh và mục tiêu trước khi bắt đầu lập kế hoạch."</code>
-                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Section 2.5 -->
-        <section class="doc-section" id="ch2-5">
-          <h3>2.5 Quy Trình 3 Bước Kiểm Chứng Chống Ảo Giác (Fact-Checking)</h3>
-          <p>
-            Hiện tượng <b>Ảo giác (Hallucination)</b> là khi AI tự "bịa" ra thông tin rất trôi chảy. Quy trình kiểm duyệt bắt buộc của nhân sự trước khi nộp báo cáo:
-          </p>
-          <div class="workflow-sample-card">
-            <h4>Quy trình kiểm duyệt thông tin 3 bước</h4>
-            <div class="wf-flow">
-              <div class="wf-node">
-                <span class="wf-badge">Bước 1</span>
-                <b>Kiểm tra con số</b>
-                <p>Đối soát lại từng con số doanh thu, tỷ lệ % với bảng tính gốc.</p>
-              </div>
-              <div class="wf-node">
-                <span class="wf-badge">Bước 2</span>
-                <b>Kiểm tra nguồn trích dẫn</b>
-                <p>Bấm trực tiếp vào các đường link, điều luật, văn bản AI viện dẫn.</p>
-              </div>
-              <div class="wf-node">
-                <span class="wf-badge">Bước 3</span>
-                <b>Đọc phản biện con người</b>
-                <p>Đọc lại bằng trực giác con người: Câu chữ có phù hợp văn hóa công ty không?</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </article>
-
-
-      <!-- ==========================================
-           CHƯƠNG 3: SOPS THỰC CHIẾN THEO PHÒNG BAN
-           ========================================== -->
-      <article class="doc-chapter" id="ch3-1">
-        <span class="chapter-badge">Chương 3</span>
-        <h2 class="chapter-title">3. Thư Viện Quy Trình Chuẩn (SOPs) Theo Phòng Ban</h2>
-        <p class="chapter-lead">
-          Các mẫu câu lệnh giao việc chuẩn hóa theo từng khối nghiệp vụ. Nhân sự chỉ cần bấm <b>Sao chép</b>, thay đổi các thông tin trong ngoặc vuông <code>[...]</code> và sử dụng ngay.
-        </p>
-
-        <!-- 3.1 Hành chính - Nhân sự (HR) -->
-        <section class="doc-section">
-          <h3>3.1 Hành Chính - Nhân Sự (HR &amp; Tuyển dụng)</h3>
-          
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-HR-01: Soạn thảo Bản mô tả công việc (JD) thu hút</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">Dùng khi phòng ban cần tuyển thêm nhân sự mới, tạo JD mạch lạc, nêu rõ quyền lợi và lộ trình thăng tiến.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Trưởng phòng Tuyển dụng (Talent Acquisition Lead) với 10 năm kinh nghiệm trong ngành [Ngành nghề công ty].
-Hãy giúp tôi viết một bản Mô tả công việc (Job Description - JD) cho vị trí: [Tên vị trí, ví dụ: Chuyên viên Content Marketing / Nhân viên Kinh doanh B2B].
-
-Thông tin cơ bản:
-- Cấp bậc: [Nhân viên / Trưởng nhóm / Thực tập sinh]
-- Địa điểm làm việc: [Văn phòng / Hybrid / Remote]
-- Mức lương dự kiến: [Khoảng lương, ví dụ: 12 - 18 triệu + Thưởng KPI]
-- Yêu cầu chính: [Ví dụ: Tối thiểu 1 năm kinh nghiệm, biết quay dựng CapCut cơ bản]
-
-Yêu cầu cấu trúc JD chuyên nghiệp:
-1. Giới thiệu ngắn về sứ mệnh và cơ hội phát triển ở vị trí này (Hook thu hút ứng viên trong 5 giây đầu).
-2. Trách nhiệm công việc chính (Liệt kê 5-7 gạch đầu dòng rõ ràng, tập trung vào kết quả đầu ra).
-3. Yêu cầu năng lực & kinh nghiệm (Tách rõ: Bắt buộc phải có vs Ưu tiên điểm cộng).
-4. Quyền lợi & Phúc lợi hấp dẫn (Lương thưởng, lộ trình thăng tiến, văn hóa cởi mở, chế độ bảo hiểm).
-5. Quy trình ứng tuyển và thời hạn nộp hồ sơ.</pre>
-            </div>
-          </div>
-
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-HR-02: Lọc, so khớp và chấm điểm CV ứng viên</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">So khớp nhanh năng lực ứng viên so với tiêu chuẩn JD và đề xuất 3 câu hỏi phỏng vấn đào sâu.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Chuyên viên Tuyển dụng cấp cao.
-Dưới đây là JD vị trí và CV của ứng viên:
-
-=== BẢN MÔ TẢ CÔNG VIỆC (JD) ===
-[Dán yêu cầu JD vào đây]
-
-=== NỘI DUNG CV CỦA ỨNG VIÊN ===
-[Dán toàn bộ nội dung văn bản CV vào đây]
-
-Hãy phân tích khách quan và trả lời theo cấu trúc sau:
-1. Điểm số tương thích: Chấm điểm từ 1-100% kèm giải thích lý do ngắn gọn.
-2. Bảng đối chiếu năng lực: | Tiêu chí trong JD | Thực tế trong CV | Đánh giá (Đạt / Chưa đạt / Vượt kỳ vọng) |
-3. Điểm sáng lớn nhất của ứng viên này đối với công ty.
-4. Những điểm nghi vấn hoặc lỗ hổng kinh nghiệm cần làm rõ.
-5. Đề xuất 3 câu hỏi phỏng vấn chuyên sâu có tính phản biện dành riêng cho ứng viên này.</pre>
-            </div>
-          </div>
-        </section>
-
-        <!-- 3.2 Marketing & Content -->
-        <section class="doc-section" id="ch3-2">
-          <h3>3.2 Marketing &amp; Truyền Thông</h3>
-          
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-MKT-01: Lập Lịch nội dung 7 ngày đa trụ cột</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">Lên kế hoạch nội dung Fanpage/TikTok hàng tuần cân bằng giữa Giá trị, Niềm tin và Bán hàng.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Giám đốc Sáng tạo Nội dung (Content Lead) với kinh nghiệm xây dựng các kênh truyền thông triệu view.
-Tôi đang lên kế hoạch nội dung cho: [Tên sản phẩm/dịch vụ của công ty].
-Khách hàng mục tiêu: [Độ tuổi, nghề nghiệp, vấn đề họ đang gặp phải].
-
-Hãy lập bảng Lịch nội dung 7 ngày (Thứ 2 đến Chủ nhật) chi tiết gồm các cột:
-| Thứ | Mục tiêu truyền thông | Tiêu đề giật tít (Hook 3s) | Ý tưởng nội dung cốt lõi | Định dạng (Reels ngắn / Ảnh đơn / Carousel / Minigame) | Kêu gọi hành động (CTA) |
-
-Yêu cầu: Xen kẽ hài hòa giữa các trụ cột: 40% Chia sẻ giá trị hữu ích, 30% Kể chuyện tạo niềm tin, 20% Bắt trend giải trí, 10% Bán hàng trực tiếp.</pre>
-            </div>
-          </div>
-
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-MKT-02: Viết kịch bản Video ngắn TikTok/Reels triệu view</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">Kịch bản chi tiết 45-60 giây chia theo từng khung hình: Lời thoại, Hành động và Text overlay.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Đạo diễn kịch bản video ngắn viral trên TikTok và Facebook Reels.
-Hãy viết kịch bản chi tiết 45-60 giây cho video giới thiệu về: [Chủ đề hoặc tính năng sản phẩm].
-
-Cấu trúc kịch bản dạng bảng 4 cột: | Thời lượng | Lời thoại (Voice-over) | Hành động khung hình (Visual) | Chữ hiện trên màn hình (Text Overlay) |
-- Cảnh 1 (0-3s): 3 phương án câu mở đầu gây tò mò hoặc đánh trúng nỗi đau người xem.
-- Cảnh 2 (4-40s): Giải thích giải pháp, nhịp điệu nhanh, hình ảnh đổi cảnh liên tục mỗi 3-4 giây.
-- Cảnh 3 (40-50s): Lời kêu gọi hành động (CTA) kích thích để lại bình luận hoặc nhấp vào link bio.</pre>
-            </div>
-          </div>
-        </section>
-
-        <!-- 3.3 Kinh doanh & CSKH (Sales) -->
-        <section class="doc-section" id="ch3-3">
-          <h3>3.3 Kinh Doanh &amp; Chăm Sóc Khách Hàng (Sales/CSKH)</h3>
-          
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-SALES-01: Kịch bản Telesale mở đầu tự nhiên</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">Tránh bị khách dập máy trong 15 giây đầu, khơi gợi đúng nhu cầu và chốt lịch tư vấn.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Giám đốc Kinh doanh hàng đầu với kỹ năng Telesale đỉnh cao.
-Hãy soạn kịch bản gọi điện thoại tư vấn (Cold Call / Warm Call) cho sản phẩm: [Tên sản phẩm/dịch vụ của công ty].
-Đối tượng nhận cuộc gọi: [Khách hàng cá nhân / Chủ doanh nghiệp / Trưởng phòng mua hàng].
-
-Cấu trúc kịch bản gồm:
-1. Mở đầu (0-15s): Chào hỏi ngắn gọn, nêu lý do cuộc gọi chạm ngay vào lợi ích khách hàng quan tâm (tránh nói 'Em xin 5 phút làm phiền anh/chị').
-2. Khơi gợi vấn đề: 2 câu hỏi mở để khách hàng tự chia sẻ khó khăn hiện tại.
-3. Giới thiệu giải pháp cô đọng (30s): Nêu đúng 2 giá trị vượt trội nhất giải quyết khó khăn đó.
-4. Chốt mục tiêu cuộc gọi: Đề xuất thời gian cụ thể cho một buổi hẹn tư vấn trực tiếp hoặc gửi bản demo trải nghiệm.</pre>
-            </div>
-          </div>
-
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-SALES-02: Xử lý 3 lời từ chối kinh điển của khách hàng</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">Kịch bản hạ nhiệt và thuyết phục khi khách chê giá đắt, đòi suy nghĩ thêm hoặc đang dùng bên khác.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Chuyên gia Đào tạo Kỹ năng Bán hàng (Sales Coach).
-Hãy giúp đội ngũ kinh doanh công ty xử lý lời từ chối của khách hàng đối với sản phẩm: [Mô tả sản phẩm và mức giá].
-
-Hãy cung cấp câu phản hồi mẫu cho 3 tình huống từ chối phổ biến nhất:
-1. Khách chê: 'Giá bên em cao hơn các bên khác trên thị trường.'
-2. Khách trì hoãn: 'Anh/chị thấy cũng hay đấy nhưng để anh suy nghĩ thêm đã nhé.'
-3. Khách từ chối: 'Bên anh đang hợp tác với đối tác quen rồi, không có nhu cầu đổi.'
-
-Với mỗi tình huống, hãy áp dụng nguyên tắc Đồng cảm -> Đặt câu hỏi cô lập vấn đề -> Đưa ra dẫn chứng thuyết phục và Kêu gọi bước tiếp theo.</pre>
-            </div>
-          </div>
-
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-SALES-03: Soạn Email phản hồi khiếu nại (CSKH 5 Sao)</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">Hạ nhiệt cơn giận của khách hàng khi gặp lỗi dịch vụ, nhận trách nhiệm văn minh và đề xuất bù đắp.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Trưởng bộ phận Chăm sóc khách hàng (Customer Support Lead).
-Khách hàng [Tên khách hàng] vừa gửi phản ánh gay gắt về sự cố: [Mô tả sự cố: Giao hàng chậm 3 ngày / Sản phẩm bị lỗi đóng gói / Nhân viên tư vấn chưa nhiệt tình].
-
-Hãy viết thư phản hồi gửi khách hàng đảm bảo các tiêu chí:
-1. Lời xin lỗi chân thành, nhận diện rõ cảm xúc thất vọng của khách hàng (tuyệt đối không đổ lỗi cho bên thứ ba).
-2. Giải thích ngắn gọn nguyên nhân sự cố một cách minh bạch.
-3. Phương án xử lý ngay lập tức (Đổi mới / Hoàn tiền / Đẩy nhanh giao dịch).
-4. Chính sách bù đắp thiện chí (Tặng voucher giảm giá cho đơn tiếp theo hoặc quà tri ân).
-5. Lời cam kết cải tiến quy trình để không tái diễn sự cố.</pre>
-            </div>
-          </div>
-        </section>
-
-        <!-- 3.4 Kế toán & Phân tích Excel -->
-        <section class="doc-section" id="ch3-4">
-          <h3>3.4 Kế Toán, Tài Chính &amp; Bảng Tính Excel</h3>
-          
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-FIN-01: Tạo công thức Excel/Sheets phức tạp theo yêu cầu</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">Sinh công thức XLOOKUP, INDEX-MATCH, SUMIFS nhiều điều kiện không lo lỗi #N/A.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Chuyên gia Phân tích Dữ liệu và Bậc thầy Excel/Google Sheets.
-Tôi đang có một bảng dữ liệu bảng tính như sau:
-- Cột A: [Mã đơn hàng / Mã nhân viên]
-- Cột B: [Ngày phát sinh giao dịch]
-- Cột C: [Tên khách hàng / Phòng ban]
-- Cột D: [Số tiền / Doanh thu]
-- Cột E: [Trạng thái thanh toán (Đã thanh toán / Chưa thanh toán / Hủy)]
-
-Bài toán tôi cần giải quyết:
-[Mô tả chính xác điều bạn cần tính, ví dụ: Tính tổng doanh thu của khách hàng X trong quý 3 có trạng thái Đã thanh toán].
-
-Vui lòng cung cấp:
-1. Công thức chuẩn (cho cả Excel đời mới và Google Sheets).
-2. Giải thích ý nghĩa của từng tham số trong công thức.
-3. Những lưu ý để không bị lỗi #N/A hoặc lỗi định dạng ngày tháng.</pre>
-            </div>
-          </div>
-        </section>
-
-        <!-- 3.5 Quản trị họp & Vận hành -->
-        <section class="doc-section" id="ch3-5">
-          <h3>3.5 Quản Trị Cuộc Họp &amp; Vận Hành (Operations)</h3>
-          
-          <div class="sop-box">
-            <div class="sop-top">
-              <span class="sop-title">SOP-OPS-01: Tóm tắt biên bản họp thành Action Items có Deadline</span>
-              <button class="btn-copy-card" onclick="copySnippetBox(this)">
-                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
-                Sao chép SOP
-              </button>
-            </div>
-            <p class="sop-desc">Chuyển đổi ghi chú cuộc họp lộn xộn thành đầu việc rõ ràng có người phụ trách (Owner) và thời hạn hoàn thành.</p>
-            <div class="sop-code-wrapper">
-              <pre class="sop-pre">Bạn là Thư ký điều hành chuyên nghiệp của Ban Giám đốc.
-Dưới đây là ghi chú thô của cuộc họp hôm nay:
-"""
-[Dán ghi chép cuộc họp vào đây]
-"""
-
-Hãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:
-1. 3 Quyết định quan trọng nhất đã được thống nhất tại cuộc họp.
-2. Bảng Action Items phân công nhiệm vụ: | STT | Nhiệm vụ cụ thể | Người phụ trách (Owner) | Thời hạn (Deadline) | Mức độ ưu tiên (Cao/Trung bình/Thấp) |
-3. Các vấn đề chưa thống nhất cần xin ý kiến thêm ở cuộc họp tiếp theo.</pre>
-            </div>
-          </div>
-        </section>
-      </article>
-
-
-      <!-- ==========================================
-           CHƯƠNG 4: BẢN ĐỒ CÔNG CỤ AI
-           ========================================== -->
-      <article class="doc-chapter" id="ch4-1">
-        <span class="chapter-badge">Chương 4</span>
-        <h2 class="chapter-title">4. Bản Đồ Công Cụ AI Doanh Nghiệp 2026</h2>
-        <p class="chapter-lead">
-          So sánh khách quan và thẩm định chi tiết 4 mô hình AI hàng đầu thế giới để nhân sự chọn đúng vũ khí cho từng tác vụ.
-        </p>
-
-        <section class="doc-section">
-          <h3>4.1 Bảng So Sánh 4 Ông Lớn AI</h3>
-          <div class="matrix-card">
+          <div class="matrix-card" style="margin:20px 0;">
             <div class="matrix-scroll">
               <table class="table-compare">
                 <thead>
                   <tr>
-                    <th>Mô hình AI</th>
-                    <th>Thế mạnh nổi bật</th>
-                    <th>Văn phong Tiếng Việt</th>
-                    <th>Xử lý File &amp; Tài liệu</th>
-                    <th>Khuyên dùng cho ai</th>
+                    <th>Khái niệm / Mô hình</th>
+                    <th>Cách tính hoạt động</th>
+                    <th>Ví dụ công cụ áp dụng</th>
+                    <th>Lưu ý cho nhân sự</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
-                    <td><b>ChatGPT</b></td>
-                    <td><span class="tag-pill pill-green">Đa năng nhất</span></td>
-                    <td>Rất tốt, lưu loát</td>
-                    <td>Tốt (Phân tích dữ liệu, vẽ biểu đồ)</td>
-                    <td>Tất cả nhân sự, văn phòng, dịch thuật</td>
+                    <td><b>Subscription &amp; Rate Limit</b><br><small>(Thuê bao theo tháng)</small></td>
+                    <td>Trả phí cố định hàng tháng. Không đếm từng đồng token, nhưng giới hạn số tin nhắn trong một khung giờ (VD: 40-80 tin / 3 tiếng).</td>
+                    <td>ChatGPT Plus ($20/tháng), Claude Pro ($20/tháng)</td>
+                    <td>Nếu hỏi dồn dập quá mức Rate Limit, tài khoản sẽ bị khóa tạm vài tiếng hoặc tự động chuyển sang model yếu hơn.</td>
                   </tr>
                   <tr>
-                    <td><b>Claude</b></td>
-                    <td><span class="tag-pill pill-orange">Văn phong đỉnh cao</span></td>
-                    <td>Mượt mà nhất, tự nhiên như người</td>
-                    <td>Rất mạnh (Đọc 200k tokens tài liệu dài)</td>
-                    <td>Content, PR, Marketing, Lập trình</td>
+                    <td><b>Token-based API</b><br><small>(Trả tiền theo lượng chữ)</small></td>
+                    <td>Nạp tiền trước và trừ theo từng 1 triệu Tokens. <b>Output Tokens</b> (AI viết ra) thường đắt gấp 3 đến 5 lần <b>Input Tokens</b> (bạn gửi vào).</td>
+                    <td>OpenAI API, Claude API, tích hợp hệ thống nội bộ / Make.com</td>
+                    <td>Mỗi lần gửi kèm file dài hay lịch sử chat dài là tốn tiền Input. Yêu cầu AI trả lời ngắn gọn sẽ tiết kiệm chi phí Output.</td>
                   </tr>
                   <tr>
-                    <td><b>Google Gemini</b></td>
-                    <td><span class="tag-pill pill-blue">Realtime &amp; Google Docs</span></td>
-                    <td>Chuẩn xác, tự nhiên</td>
-                    <td>Khổng lồ (1-2 triệu tokens, đọc video)</td>
-                    <td>Tra cứu tin tức mới, tích hợp Docs/Sheets</td>
-                  </tr>
-                  <tr>
-                    <td><b>DeepSeek</b></td>
-                    <td><span class="tag-pill pill-purple">Toán &amp; Logic sâu</span></td>
-                    <td>Mạch lạc, khá tốt</td>
-                    <td>Cơ bản (Văn bản &amp; Code)</td>
-                    <td>Kế toán, Phân tích số liệu, IT (0đ)</td>
+                    <td><b>Credits &amp; Quota</b><br><small>(Tín dụng theo tác vụ)</small></td>
+                    <td>Mua hoặc được cấp một quỹ điểm (Credit) hàng ngày/hàng tháng. Mỗi hành động tạo ảnh, tạo 5s video hoặc chạy Agent trừ số điểm cố định.</td>
+                    <td>Midjourney, Kling AI, ElevenLabs, Recraft, Cursor (Fast requests)</td>
+                    <td>Tạo video hoặc chạy Agent tự động ngốn Credit rất nhanh. Phải chốt kỹ câu lệnh chữ (Prompt) trước khi bấm nút tạo.</td>
                   </tr>
                 </tbody>
               </table>
             </div>
           </div>
         </section>
-
-        <section class="doc-section" id="ch4-2">
-          <h3>4.2 Công Cụ AI Chuyên Biệt Bổ Trợ</h3>
-          <ul class="check-list">
-            <li><b>Google NotebookLM</b>: Đọc tài liệu PDF nghiên cứu, tự động tạo Podcast trò chuyện 2 người siêu thực (100% miễn phí).</li>
-            <li><b>Perplexity AI</b>: Thay thế công cụ tìm kiếm Google truyền thống, tổng hợp câu trả lời kèm số trích dẫn nguồn uy tín.</li>
-            <li><b>Recraft.ai</b>: Tạo đồ họa vector SVG, icon và ảnh minh họa cho thuyết trình không bị vỡ hạt.</li>
-          </ul>
-        </section>
       </article>
 
 
-      <!-- ==========================================
-           CHƯƠNG 5: TỰ ĐỘNG HÓA & AI AGENTS
-           ========================================== -->
-      <article class="doc-chapter" id="ch5-1">
-        <span class="chapter-badge">Chương 5</span>
-        <h2 class="chapter-title">5. Tự Động Hóa &amp; Kỷ Nguyên AI Agents</h2>
+      <!-- ========================================================
+           CHƯƠNG 2: PROMPT, SKILL & AGENT
+           ======================================================== -->
+      <article class="doc-chapter" id="ch2-1">
+        <span class="chapter-badge">Chương 2</span>
+        <h2 class="chapter-title">2. Prompt, Skill &amp; Agent: Cấu Trúc Vận Hành</h2>
         <p class="chapter-lead">
-          Nâng cấp từ những câu hỏi đáp đơn lẻ sang hệ thống tự động hóa công việc giúp tiết kiệm 50% thời gian mỗi ngày.
+          Hiểu rõ sự tiến hóa từ việc "ra lệnh bằng văn bản" (Prompt), gắn "công cụ chuyên môn" (Skill/Tool) cho đến xây dựng "tác nhân tự hành" (Agent).
         </p>
 
+        <!-- 2.1 -->
         <section class="doc-section">
-          <h3>5.1 Cài Đặt "Trí Nhớ Vĩnh Viễn" (Custom Instructions)</h3>
+          <h3>2.1 Bản chất Prompt là gì? (System Prompt vs User Prompt)</h3>
           <p>
-            Nhân viên không cần lặp lại chức danh và phong cách mỗi ngày. Hãy sao chép mẫu sau vào phần <b>Custom Instructions</b> trong tài khoản ChatGPT hoặc Claude cá nhân:
+            <b>Prompt</b> không phải là từ khóa tìm kiếm như trên Google. Prompt là <b>một đoạn "lập trình" bằng ngôn ngữ tự nhiên</b> dùng để thu hẹp không gian xác suất của mô hình AI, ép nó đi vào đúng vùng kiến thức chuyên môn bạn muốn.
           </p>
+          <ul>
+            <li><b>System Prompt (Lệnh hệ thống - Luật ngầm):</b> Là phần cài đặt ẩn phía sau (hoặc bạn tự cấu hình trong mục <i>Custom Instructions / Project Instructions</i>). Nó quy định nhân cách, quy tắc ứng xử và những điều AI tuyệt đối không được vi phạm trong suốt mọi cuộc trò chuyện.</li>
+            <li><b>User Prompt (Lệnh người dùng):</b> Là câu yêu cầu cụ thể cho từng đầu việc bạn gõ vào ô chat mỗi ngày.</li>
+          </ul>
+        </section>
 
-          <div class="ci-card" style="margin-top:16px;">
-            <div class="ci-head">
-              <span class="ci-num">Mẫu chuẩn nội bộ</span>
-              <b>Hướng dẫn tùy chỉnh phản hồi:</b>
+        <!-- 2.2 -->
+        <section class="doc-section" id="ch2-2">
+          <h3>2.2 Cấu trúc viết Prompt chuẩn C-R-E-A-T-E &amp; Kỹ thuật nâng cao</h3>
+          <p>Mỗi Prompt chuyên nghiệp nên tuân thủ 6 yếu tố cốt lõi:</p>
+
+          <div class="create-card-grid">
+            <div class="c-item">
+              <div class="c-letter">C</div>
+              <div class="c-info">
+                <h4>Context (Bối cảnh thực tế)</h4>
+                <p>Nêu rõ tình huống, sản phẩm, dữ kiện đầu vào. Không có bối cảnh, AI sẽ trả lời chung chung sáo rỗng.</p>
+              </div>
             </div>
-            <div class="prompt-snippet-box">
-              <code>- Vị trí của tôi: Nhân sự tại công ty [Tên công ty], phụ trách mảng [Mảng công việc].
-- Luôn trả lời đi thẳng vào giải pháp, không cần mở đầu bằng "Chào bạn" hay lời khen sáo rỗng.
-- Dùng tiếng Việt chuẩn mực doanh nghiệp, từ ngữ sắc sảo, tự nhiên.
-- Luôn chỉ ra các rủi ro hoặc lỗ hổng tiềm ẩn trong đề xuất của tôi trước khi đồng ý.
-- Nếu không chắc chắn về thông tin, hãy thẳng thắn nói "Tôi không biết", tuyệt đối không tự bịa ra số liệu.</code>
-              <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép cấu hình</button>
+            <div class="c-item">
+              <div class="c-letter">R</div>
+              <div class="c-info">
+                <h4>Role (Vai trò chuyên gia)</h4>
+                <p>Gán vai trò cụ thể (VD: <i>"Bạn là Chuyên viên Kiểm toán nội bộ 10 năm kinh nghiệm"</i>) để định hướng tư duy và từ vựng chuyên ngành.</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-letter">E</div>
+              <div class="c-info">
+                <h4>Explicit Instructions &amp; Constraints (Chỉ thị &amp; Ràng buộc)</h4>
+                <p>Chia nhỏ từng bước làm và nêu rõ điều <b>KHÔNG ĐƯỢC LÀM</b> (Negative Constraints, VD: <i>"Không dùng lời chào mở đầu, không tự bịa số liệu"</i>).</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-letter">A</div>
+              <div class="c-info">
+                <h4>Audience (Đối tượng tiếp nhận)</h4>
+                <p>Chỉ rõ người đọc kết quả cuối cùng là Ban Giám đốc, khách hàng VIP, hay nhân viên mới để điều chỉnh độ sâu.</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-letter">T</div>
+              <div class="c-info">
+                <h4>Tone &amp; Format (Giọng điệu &amp; Định dạng đầu ra)</h4>
+                <p>Chỉ định văn phong (chuyên nghiệp, ngắn gọn) và định dạng (Bảng Markdown, JSON, gạch đầu dòng, tối đa 200 từ).</p>
+              </div>
+            </div>
+            <div class="c-item">
+              <div class="c-letter">E</div>
+              <div class="c-info">
+                <h4>Examples (Ví dụ mẫu - Few-Shot Prompting)</h4>
+                <p>Đưa 1-2 mẫu đầu vào và kết quả chuẩn mà bạn mong muốn. Đây là kỹ thuật mạnh nhất giúp AI bắt chước văn phong đạt độ chuẩn xác trên 95%.</p>
+              </div>
+            </div>
+          </div>
+
+          <h4>Hai kỹ thuật bổ trợ bắt buộc phải biết:</h4>
+          <ul>
+            <li><b>Chain-of-Thought (Suy nghĩ từng bước):</b> Thêm câu <i>"Hãy phân tích và lập luận từng bước một trước khi đưa ra đáp án cuối cùng"</i>. Kỹ thuật này buộc AI tạo ra các "token suy luận nháp", giúp giảm tới 60% lỗi sai logic và tính toán.</li>
+            <li><b>Reverse Prompting (Đặt câu hỏi ngược):</b> Khi bài toán phức tạp, hãy kết thúc prompt bằng: <i>"Trước khi bắt tay vào làm, hãy hỏi tôi 3-5 câu hỏi quan trọng nhất để làm rõ bối cảnh và yêu cầu còn thiếu."</i></li>
+          </ul>
+        </section>
+
+        <!-- 2.3 -->
+        <section class="doc-section" id="ch2-3">
+          <h3>2.3 Skill &amp; Tool (Function Calling / MCP) là gì?</h3>
+          <p>
+            Một mô hình AI thuần túy (chỉ gồm LLM) giống như <b>một bộ não thiên tài bị nhốt trong căn phòng kín không có Internet và không có tay chân</b>:
+          </p>
+          <ul>
+            <li>Nó không biết tỷ giá đô la hay tin tức ngày hôm nay.</li>
+            <li>Nó rất dễ tính nhầm phép nhân hai số 8 chữ số vì nó đoán số theo xác suất chứ không bấm máy tính.</li>
+            <li>Nó không thể tự mở file Excel trên máy bạn hay tự gửi email đi được.</li>
+          </ul>
+
+          <div class="concept-grid">
+            <div class="concept-card">
+              <h4>Tool (Công cụ / Function Calling)</h4>
+              <p>Là những "tay chân" kỹ thuật được gắn thêm vào bộ não AI. Ví dụ: <b>Web Search</b> (để tự lên mạng tra cứu), <b>Code Interpreter / Python</b> (để chạy công thức tính toán chính xác 100% và vẽ biểu đồ), hoặc <b>MCP (Model Context Protocol)</b> (cổng kết nối giúp AI đọc dữ liệu trực tiếp từ Google Drive, Notion, Slack, Database công ty).</p>
+            </div>
+            <div class="concept-card accent-orange">
+              <h4>Skill (Kỹ năng chuyên biệt)</h4>
+              <p>Trong hệ sinh thái AI hiện đại, một <b>Skill</b> là một bộ quy trình đóng gói sẵn kết hợp giữa <b>Hệ thống hướng dẫn chuyên sâu (Playbook) + Các Tool cần thiết</b> để AI thực hiện hoàn hảo một nghiệp vụ đặc thù (ví dụ: Skill phân tích báo cáo tài chính xuất file Excel, Skill kiểm tra hợp đồng pháp lý theo chuẩn công ty, Skill thiết kế giao diện web).</p>
             </div>
           </div>
         </section>
 
-        <section class="doc-section" id="ch5-2">
-          <h3>5.2 Khai Thác AI Đa Phương Thức (Multimodal)</h3>
+        <!-- 2.4 -->
+        <section class="doc-section" id="ch2-4">
+          <h3>2.4 AI Agent là gì? Khác gì so với Chatbot thông thường?</h3>
           <p>
-            Hiện nay AI đã có "mắt" và "tai". Nhân sự có thể tải trực tiếp file Excel doanh số hoặc chụp màn hình lỗi báo cáo lên khung chat để AI tự động vẽ đồ thị phân tích và chỉ điểm bất thường.
+            Nhiều người nhầm lẫn giữa việc chat với ChatGPT và việc vận hành một <b>AI Agent (Tác nhân AI tự hành)</b>. Điểm khác biệt nằm ở <b>tính tự chủ và khả năng lặp để tự sửa lỗi</b>.
           </p>
-        </section>
 
-        <section class="doc-section" id="ch5-3">
-          <h3>5.3 Tự Động Hóa Quy Trình Với Make.com / Zapier</h3>
-          <p>
-            Nhân sự có thể kết nối AI với Gmail, Google Sheets và Telegram để tạo cỗ máy tự động: Khách gửi form đăng ký -> AI đọc nhu cầu và phân loại khách tiềm năng -> Tự động điền vào Sheets và bắn thông báo về điện thoại nhân viên Sales phụ trách.
-          </p>
+          <div class="agent-compare-table">
+            <div class="act-col chat">
+              <h4>Chatbot thông thường (Thụ động)</h4>
+              <ul>
+                <li>Hoạt động theo mô hình 1-1: Người hỏi 1 câu -> AI trả lời 1 đoạn rồi dừng lại chờ.</li>
+                <li>Không có khả năng tự lập kế hoạch nhiều bước.</li>
+                <li>Nếu kết quả sai hoặc thiếu dữ liệu, con người phải tự phát hiện và gõ lệnh sửa lại.</li>
+                <li>Con người tự làm công đoạn copy kết quả dán vào báo cáo/email.</li>
+              </ul>
+            </div>
+            <div class="act-col agent">
+              <h4>AI Agent (Chủ động tự hành)</h4>
+              <ul>
+                <li>Người dùng chỉ giao <b>Mục tiêu cuối cùng (Goal)</b>.</li>
+                <li>Agent tự chia nhỏ mục tiêu thành danh sách việc cần làm (Planning).</li>
+                <li>Tự động chọn <b>Skill / Tool</b> để hành động (lên web tìm dữ liệu, đọc file, viết code, chạy thử).</li>
+                <li>Tự quan sát kết quả: Nếu thấy lỗi, nó <b>tự suy luận nguyên nhân và sửa lại</b> cho đến khi đạt chuẩn mới báo cáo người dùng.</li>
+              </ul>
+            </div>
+          </div>
+
+          <h4>Vòng lặp vận hành của một AI Agent (Agentic Loop):</h4>
+          <div class="flow-diagram">
+            <div class="flow-step">
+              <span class="flow-step-num">1. Goal</span>
+              <b>Nhận mục tiêu</b>
+              <p>VD: "Nghiên cứu 3 đối thủ và xuất bảng so sánh giá."</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <span class="flow-step-num">2. Think</span>
+              <b>Lập kế hoạch</b>
+              <p>Tự tách thành: Tìm website đối thủ -> Đọc bảng giá -> Tổng hợp.</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <span class="flow-step-num">3. Act</span>
+              <b>Gọi Tool / Skill</b>
+              <p>Dùng Tool Search &amp; Trình duyệt để lấy số liệu thực tế.</p>
+            </div>
+            <div class="flow-arrow">&rarr;</div>
+            <div class="flow-step">
+              <span class="flow-step-num">4. Observe &amp; Loop</b>
+              <b>Kiểm tra &amp; Sửa</b>
+              <p>Thiếu giá? Tự tìm tiếp. Đủ dữ liệu -> Xuất bảng hoàn chỉnh.</p>
+            </div>
+          </div>
         </section>
       </article>
 
-      <!-- ==========================================
-           INTERACTIVE PROMPT BUILDER UTILITY WIDGET
-           ========================================== -->
-      <section class="section" id="tool-builder" style="scroll-margin-top:86px;">
-        <div class="sec-head">
-          <div>
-            <span class="badge-tag">Tiện ích Wiki</span>
-            <h2 class="sec-title">Trình Tạo Prompt Công Việc Nhanh</h2>
-            <p class="sec-subtitle">Lắp ghép nhanh câu lệnh giao việc theo chuẩn C-R-E-A-T-E công ty để copy dùng ngay.</p>
+
+      <!-- ========================================================
+           CHƯƠNG 3: HƯỚNG DẪN SỬ DỤNG CHI TIẾT TỪ A-Z
+           ======================================================== -->
+      <article class="doc-chapter" id="ch3-1">
+        <span class="chapter-badge">Chương 3</span>
+        <h2 class="chapter-title">3. Hướng Dẫn Sử Dụng Chi Tiết Cho Nhân Sự</h2>
+        <p class="chapter-lead">
+          Quy trình thao tác thực tế hàng ngày giúp nhân viên sử dụng AI nhanh, chuẩn, tiết kiệm Token/Rate Limit và an toàn tuyệt đối.
+        </p>
+
+        <!-- 3.1 -->
+        <section class="doc-section">
+          <h3>3.1 Quy trình thao tác chuẩn hàng ngày (Daily Workflow)</h3>
+          
+          <h4>1. Quy tắc "New Chat" (Khi nào phải mở cuộc trò chuyện mới?)</h4>
+          <p>
+            Sai lầm phổ biến nhất của nhân sự mới là chat tất cả mọi việc (từ hỏi nấu ăn, viết email sếp đến sửa code Excel) trong <b>duy nhất 1 cửa sổ chat kéo dài cả tháng</b>. Điều này làm rác Context Window, khiến AI trả lời chậm, lẫn lộn ngữ cảnh và tốn rất nhiều hạn mức.
+          </p>
+          <ul>
+            <li><b>LUÔN BẤM "NEW CHAT"</b> mỗi khi bạn chuyển sang một chủ đề hoặc một đầu việc hoàn toàn khác.</li>
+            <li><b>CHỈ CHAT TIẾP TRONG CÙNG LUỒNG</b> khi bạn đang tinh chỉnh, sửa đổi liên quan trực tiếp đến kết quả ở trên (ví dụ: <i>"Đoạn 2 hơi dài, hãy rút gọn lại một nửa"</i>).</li>
+          </ul>
+
+          <h4>2. Sử dụng Temporary Chat (Chat Ẩn danh / Tạm thời)</h4>
+          <p>
+            Cả ChatGPT và Claude đều có nút <b>Temporary Chat</b> (hoặc tắt tùy chọn <i>"Improve the model for everyone"</i> trong phần Settings &rarr; Data Controls). Khi xử lý các văn bản nội bộ nhạy cảm (sau khi đã ẩn danh tên riêng), nhân sự nên bật chế độ này để lịch sử không bị lưu lại dùng cho việc huấn luyện AI.
+          </p>
+
+          <h4>3. Tận dụng Projects (Claude) / Custom GPTs (ChatGPT) / Gems (Gemini)</h4>
+          <p>
+            Nếu công việc của bạn lặp lại hàng tuần (VD: viết báo cáo tuần theo mẫu công ty, viết bài chuẩn bộ nhận diện thương hiệu), đừng copy-paste lại hướng dẫn mỗi ngày. Hãy tạo một <b>Project</b> (trên Claude) hoặc <b>GPT riêng</b> (trên ChatGPT), tải sẵn file Quy chuẩn thương hiệu và biểu mẫu công ty vào đó. Từ đó về sau bạn chỉ cần đưa ý chính, AI sẽ tự động xuất ra đúng chuẩn công ty.
+          </p>
+
+          <h4>4. Xử lý khi AI bị đơ, ngắt giữa chừng hoặc sai ý</h4>
+          <ul>
+            <li><b>Bị ngắt chữ giữa chừng:</b> Gõ lệnh <code>Tiếp tục từ đoạn "[3 từ cuối cùng AI vừa viết]"</code> để nối mạch văn mượt mà.</li>
+            <li><b>Hiểu sai ý ngay từ câu đầu:</b> Đừng cãi nhau với AI qua 5-6 tin nhắn tiếp theo (sẽ làm rác ngữ cảnh). Hãy bấm nút <b>Edit (Sửa)</b> ngay tại tin nhắn gốc của bạn, bổ sung rõ thông tin hơn rồi gửi lại — cách này giúp làm sạch bộ nhớ hoàn toàn.</li>
+          </ul>
+        </section>
+
+        <!-- 3.2 -->
+        <section class="doc-section" id="ch3-2">
+          <h3>3.2 Chính sách Bảo mật &amp; Quy trình Kiểm duyệt 3 bước</h3>
+          
+          <div class="security-grid">
+            <div class="sec-card safe">
+              <div class="sc-head">
+                <b>ĐƯỢC PHÉP SỬ DỤNG</b>
+              </div>
+              <ul>
+                <li>Soạn thảo bản nháp email, thông báo, bài truyền thông.</li>
+                <li>Tạo công thức Excel/Sheets, cấu trúc dữ liệu mẫu giả lập.</li>
+                <li>Dịch thuật tài liệu chuyên ngành, tóm tắt sách, tài liệu công khai.</li>
+                <li>Dữ liệu đã được mã hóa ẩn danh (thay tên thật bằng Ký hiệu A, B).</li>
+              </ul>
+            </div>
+
+            <div class="sec-card danger">
+              <div class="sc-head">
+                <b>TUYỆT ĐỐI NGHIÊM CẤM ĐƯA LÊN AI CÔNG CỘNG</b>
+              </div>
+              <ul>
+                <li>Mật khẩu, mã OTP, Token hệ thống, Private Key nội bộ.</li>
+                <li>Thông tin định danh khách hàng (Họ tên thật, SĐT, CCCD, Email, Địa chỉ).</li>
+                <li>Báo cáo tài chính nội bộ, bảng lương nhân sự, hợp đồng có NDA.</li>
+                <li>Mã nguồn lõi chứa cấu hình bảo mật hoặc thông tin hạ tầng máy chủ.</li>
+              </ul>
+            </div>
           </div>
-        </div>
+
+          <div class="workflow-sample-card">
+            <h4>Quy trình kiểm duyệt bắt buộc 3 bước trước khi xuất bản / gửi sếp:</h4>
+            <div class="wf-flow">
+              <div class="wf-node">
+                <span class="wf-badge">Bước 1</span>
+                <b>Kiểm tra Số liệu</b>
+                <p>Không bao giờ tin vào con số AI tự tính nhẩm hoặc trích xuất. Luôn đối chiếu lại bảng tính gốc.</p>
+              </div>
+              <div class="wf-node">
+                <span class="wf-badge">Bước 2</span>
+                <b>Kiểm tra Nguồn &amp; Luật</b>
+                <p>Mọi thông tư, nghị định, trích dẫn báo chí AI đưa ra đều phải tự mở trình duyệt kiểm chứng lại.</p>
+              </div>
+              <div class="wf-node">
+                <span class="wf-badge">Bước 3</span>
+                <b>Chỉnh sửa Văn phong</b>
+                <p>Loại bỏ các từ ngữ dịch máy sáo rỗng ("trong bối cảnh hiện đại", "hành trình đầy cảm xúc"), giữ giọng văn tự nhiên của bạn.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 3.3 -->
+        <section class="doc-section" id="ch3-3">
+          <h3>3.3 Bảng So Sánh Chọn Đúng Công Cụ AI (Cập nhật 2026)</h3>
+          <div class="matrix-card">
+            <div class="matrix-scroll">
+              <table class="table-compare">
+                <thead>
+                  <tr>
+                    <th>Công cụ</th>
+                    <th>Thế mạnh cốt lõi</th>
+                    <th>Văn phong Tiếng Việt</th>
+                    <th>Khuyên dùng cho việc gì</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>ChatGPT (OpenAI)</b></td>
+                    <td>Đa năng, xử lý dữ liệu Python mạnh, đàm thoại giọng nói tốt</td>
+                    <td>Tốt, lưu loát</td>
+                    <td>Tác vụ văn phòng hàng ngày, phân tích file CSV/Excel, tạo ảnh nhanh</td>
+                  </tr>
+                  <tr>
+                    <td><b>Claude (Anthropic)</b></td>
+                    <td>Văn phong tự nhiên nhất, đọc tài liệu dài xuất sắc, Artifacts</td>
+                    <td>Xuất sắc, tinh tế như người viết</td>
+                    <td>Viết Content, PR, Email quan trọng, tóm tắt hợp đồng, lập trình web</td>
+                  </tr>
+                  <tr>
+                    <td><b>Google Gemini</b></td>
+                    <td>Kết nối trực tiếp Google Search, YouTube, Docs, Sheets, Gmail</td>
+                    <td>Chuẩn ngữ pháp, tự nhiên</td>
+                    <td>Tra cứu thông tin thời gian thực, tóm tắt video YouTube dài, làm việc trên Google Workspace</td>
+                  </tr>
+                  <tr>
+                    <td><b>DeepSeek</b></td>
+                    <td>Suy luận logic sâu (DeepThink), giải thuật &amp; toán, miễn phí hoàn toàn</td>
+                    <td>Mạch lạc, rõ ràng</td>
+                    <td>Giải bài toán logic khó, rà soát công thức, hỗ trợ lập trình chi phí 0đ</td>
+                  </tr>
+                  <tr>
+                    <td><b>Perplexity &amp; NotebookLM</b></td>
+                    <td>Tìm kiếm kèm nguồn trích dẫn chuẩn xác &amp; Hỏi đáp khóa chặt trên file PDF</td>
+                    <td>Tốt</td>
+                    <td>Nghiên cứu thị trường (Perplexity) và ôn luyện, đọc tài liệu nội bộ không bịa chuyện (NotebookLM)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+      </article>
+
+
+      <!-- ========================================================
+           CHƯƠNG 4: THƯ VIỆN SOPS THỰC CHIẾN THEO PHÒNG BAN
+           ======================================================== -->
+      <article class="doc-chapter" id="ch4-1">
+        <span class="chapter-badge">Chương 4</span>
+        <h2 class="chapter-title">4. Thư Viện SOPs Thực Chiến Theo Phòng Ban</h2>
+        <p class="chapter-lead">
+          Các mẫu câu lệnh giao việc chuẩn hóa theo quy trình nghiệp vụ công ty. Bấm <b>Sao chép SOP</b>, thay thông tin trong ngoặc vuông <code>[...]</code> và dán vào công cụ AI.
+        </p>
+
+        <!-- 4.1 HR -->
+        <section class="doc-section">
+          <h3>4.1 Hành Chính - Nhân Sự (HR &amp; Tuyển dụng)</h3>
+
+          <div class="sop-box">
+            <div class="sop-top">
+              <span class="sop-title">SOP-HR-01: Soạn thảo Bản mô tả công việc (JD) thu hút</span>
+              <button class="btn-copy-card" onclick="copySnippetBox(this)">Sao chép SOP</button>
+            </div>
+            <p class="sop-desc">Chuẩn hóa JD tuyển dụng rõ ràng về trách nhiệm, KPI đầu ra, yêu cầu và phúc lợi.</p>
+            <div class="sop-code-wrapper">
+              <pre class="sop-pre">Bạn là Trưởng phòng Tuyển dụng với 10 năm kinh nghiệm trong ngành [Ngành nghề công ty].
+Hãy giúp tôi viết một bản Mô tả công việc (Job Description - JD) cho vị trí: [Tên vị trí, VD: Chuyên viên Content Marketing].
+
+Thông tin đầu vào:
+- Cấp bậc &amp; Địa điểm: [Nhân viên / Trưởng nhóm] - [Văn phòng / Hybrid]
+- Thu nhập dự kiến: [Khoảng lương + Thưởng KPI]
+- Yêu cầu cốt lõi: [Liệt kê 3 kỹ năng bắt buộc]
+
+Cấu trúc JD bắt buộc:
+1. Giới thiệu sứ mệnh vị trí (2-3 câu thu hút ứng viên).
+2. Trách nhiệm công việc chính (5-7 gạch đầu dòng tập trung vào đầu việc và kết quả).
+3. Yêu cầu năng lực (Tách rõ: Bắt buộc phải có vs Điểm cộng ưu tiên).
+4. Quyền lợi, chế độ đãi ngộ và lộ trình phát triển.</pre>
+            </div>
+          </div>
+
+          <div class="sop-box">
+            <div class="sop-top">
+              <span class="sop-title">SOP-HR-02: Sàng lọc &amp; Chấm điểm CV ứng viên so với JD</span>
+              <button class="btn-copy-card" onclick="copySnippetBox(this)">Sao chép SOP</button>
+            </div>
+            <p class="sop-desc">Lưu ý: Xóa tên, SĐT, email cá nhân của ứng viên trước khi dán CV vào AI để đảm bảo bảo mật.</p>
+            <div class="sop-code-wrapper">
+              <pre class="sop-pre">Bạn là Chuyên viên Tuyển dụng cấp cao. Hãy đánh giá mức độ phù hợp của hồ sơ ứng viên dưới đây so với JD (Lưu ý: Đánh giá khách quan, không thiên vị).
+
+=== YÊU CẦU JD ===
+[Dán nội dung JD]
+
+=== NỘI DUNG CV (ĐÃ ẨN DANH) ===
+[Dán nội dung CV đã xóa thông tin liên hệ cá nhân]
+
+Xuất kết quả gồm:
+1. Điểm tương thích (Thang 100%) kèm nhận xét tổng quan.
+2. Bảng đối chiếu: | Tiêu chí JD | Thực tế trong CV | Đánh giá (Đạt / Chưa đạt / Vượt kỳ vọng) |
+3. 3 Lỗ hổng hoặc điểm chưa rõ cần kiểm tra kỹ.
+4. Đề xuất 3 câu hỏi phỏng vấn tình huống (Behavioral) dành riêng cho ứng viên này.</pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4.2 Marketing -->
+        <section class="doc-section" id="ch4-2">
+          <h3>4.2 Marketing &amp; Truyền Thông</h3>
+
+          <div class="sop-box">
+            <div class="sop-top">
+              <span class="sop-title">SOP-MKT-01: Lập Lịch nội dung Social Media 7 ngày</span>
+              <button class="btn-copy-card" onclick="copySnippetBox(this)">Sao chép SOP</button>
+            </div>
+            <p class="sop-desc">Cân bằng nội dung chia sẻ giá trị, xây dựng niềm tin và chuyển đổi đơn hàng.</p>
+            <div class="sop-code-wrapper">
+              <pre class="sop-pre">Bạn là Giám đốc Sáng tạo Nội dung (Content Lead).
+Hãy lập Lịch nội dung 7 ngày (Thứ 2 đến Chủ nhật) cho sản phẩm/dịch vụ: [Tên sản phẩm].
+Khách hàng mục tiêu: [Độ tuổi, nghề nghiệp, nỗi đau chính].
+
+Xuất kết quả dạng Bảng Markdown gồm các cột:
+| Thứ | Trụ cột nội dung (Giá trị / Niềm tin / Bán hàng) | Câu mở đầu thu hút (Hook 3s) | Tóm tắt nội dung cốt lõi | Định dạng (Video ngắn / Ảnh đơn / Carousel) | Kêu gọi hành động (CTA) |</pre>
+            </div>
+          </div>
+
+          <div class="sop-box">
+            <div class="sop-top">
+              <span class="sop-title">SOP-MKT-02: Kịch bản Video ngắn 45-60s (TikTok / Reels)</span>
+              <button class="btn-copy-card" onclick="copySnippetBox(this)">Sao chép SOP</button>
+            </div>
+            <p class="sop-desc">Kịch bản chia khung thời gian chi tiết để bộ phận quay dựng thực thi ngay.</p>
+            <div class="sop-code-wrapper">
+              <pre class="sop-pre">Bạn là Đạo diễn kịch bản video ngắn viral.
+Hãy viết kịch bản video dọc 45-60 giây giới thiệu về: [Chủ đề / Tính năng sản phẩm].
+
+Trình bày dạng bảng 4 cột: | Thời lượng | Lời thoại (Voice-over) | Hành động khung hình (Visual) | Chữ trên màn hình (Text Overlay) |
+- 0-3s: Đưa ra 3 phương án câu Hook đánh trúng nỗi đau người xem.
+- 4-45s: Triển khai giải pháp, chuyển cảnh nhanh mỗi 3-5 giây.
+- 45-60s: CTA tự nhiên kêu gọi bình luận hoặc nhấp vào link.</pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4.3 Sales & CSKH -->
+        <section class="doc-section" id="ch4-3">
+          <h3>4.3 Kinh Doanh &amp; Chăm Sóc Khách Hàng (Sales/CSKH)</h3>
+
+          <div class="sop-box">
+            <div class="sop-top">
+              <span class="sop-title">SOP-SALES-01: Xử lý 3 lời từ chối kinh điển của khách hàng</span>
+              <button class="btn-copy-card" onclick="copySnippetBox(this)">Sao chép SOP</button>
+            </div>
+            <p class="sop-desc">Kịch bản phản hồi khéo léo khi khách chê giá cao, trì hoãn hoặc đã có nhà cung cấp cũ.</p>
+            <div class="sop-code-wrapper">
+              <pre class="sop-pre">Bạn là Chuyên gia Đào tạo Bán hàng B2B/B2C.
+Sản phẩm của công ty tôi là: [Mô tả sản phẩm, điểm khác biệt và phân khúc giá].
+
+Hãy soạn kịch bản xử lý 3 lời từ chối phổ biến sau theo cấu trúc (Đồng cảm -> Cô lập vấn đề -> Giải pháp &amp; Chốt bước tiếp theo):
+1. "Giá bên em cao hơn đối thủ nhiều quá."
+2. "Để anh/chị xem xét rồi có gì báo lại sau nhé."
+3. "Bên anh đang dùng dịch vụ của bên khác quen rồi."
+
+Văn phong: Tự tin, tôn trọng khách hàng, không tranh cãi hơn thua.</pre>
+            </div>
+          </div>
+
+          <div class="sop-box">
+            <div class="sop-top">
+              <span class="sop-title">SOP-SALES-02: Email xử lý khiếu nại khách hàng (CSKH 5 Sao)</span>
+              <button class="btn-copy-card" onclick="copySnippetBox(this)">Sao chép SOP</button>
+            </div>
+            <p class="sop-desc">Hạ nhiệt sự cố giao trễ/lỗi sản phẩm, nhận trách nhiệm và giữ chân khách hàng.</p>
+            <div class="sop-code-wrapper">
+              <pre class="sop-pre">Bạn là Trưởng bộ phận Chăm sóc Khách hàng.
+Khách hàng [Tên/Danh xưng ẩn danh] đang rất bức xúc vì sự cố: [Mô tả sự cố thực tế].
+
+Hãy viết email phản hồi đảm bảo:
+1. Xin lỗi chân thành, ghi nhận sự bất tiện của khách hàng (không đổ lỗi vòng vo).
+2. Nêu rõ phương án khắc phục ngay lập tức trong [Thời gian cụ thể].
+3. Đề xuất chính sách bù đắp thiện chí: [Voucher / Đổi trả miễn phí].
+4. Ngắn gọn dưới 150 từ, giọng điệu ấm áp, cầu thị.</pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4.4 Finance & Excel -->
+        <section class="doc-section" id="ch4-4">
+          <h3>4.4 Kế Toán, Tài Chính &amp; Bảng Tính Excel</h3>
+
+          <div class="sop-box">
+            <div class="sop-top">
+              <span class="sop-title">SOP-FIN-01: Tạo công thức Excel / Google Sheets phức tạp</span>
+              <button class="btn-copy-card" onclick="copySnippetBox(this)">Sao chép SOP</button>
+            </div>
+            <p class="sop-desc">Mô tả cấu trúc cột bằng lời, AI viết công thức XLOOKUP/SUMIFS chuẩn và giải thích từng tham số.</p>
+            <div class="sop-code-wrapper">
+              <pre class="sop-pre">Bạn là Chuyên gia Dữ liệu và Bậc thầy Excel/Google Sheets.
+Bảng tính của tôi có cấu trúc:
+- Cột A: [Mã đơn / Mã nhân viên]
+- Cột B: [Ngày phát sinh (dd/mm/yyyy)]
+- Cột C: [Phòng ban / Phân loại]
+- Cột D: [Số tiền]
+- Cột E: [Trạng thái (Hoàn thành / Hủy)]
+
+Yêu cầu tính toán: [Mô tả điều kiện cần lọc/tính tổng, VD: Tính tổng cột D của phòng Kinh doanh trong tháng 10 có trạng thái Hoàn thành].
+
+Hãy cung cấp:
+1. Công thức chính xác (tương thích cả Excel và Google Sheets).
+2. Giải thích từng phần của công thức để tôi dễ kiểm tra.
+3. Cách bọc hàm IFERROR để tránh hiển thị lỗi #N/A.</pre>
+            </div>
+          </div>
+        </section>
+
+        <!-- 4.5 Operations -->
+        <section class="doc-section" id="ch4-5">
+          <h3>4.5 Quản Trị Cuộc Họp &amp; Vận Hành (Operations)</h3>
+
+          <div class="sop-box">
+            <div class="sop-top">
+              <span class="sop-title">SOP-OPS-01: Tóm tắt biên bản họp thành Action Items có Deadline</span>
+              <button class="btn-copy-card" onclick="copySnippetBox(this)">Sao chép SOP</button>
+            </div>
+            <p class="sop-desc">Biến ghi chú cuộc họp rời rạc thành bảng phân công trách nhiệm rõ ràng.</p>
+            <div class="sop-code-wrapper">
+              <pre class="sop-pre">Bạn là Thư ký Điều hành Ban Giám đốc.
+Dưới đây là ghi chú thô của cuộc họp:
+"""
+[Dán ghi chép hoặc transcript cuộc họp]
+"""
+
+Hãy tổng hợp thành báo cáo cô đọng gồm:
+1. 3 Quyết định quan trọng nhất đã thống nhất.
+2. Bảng Action Items: | STT | Đầu việc cụ thể | Người phụ trách (Owner) | Thời hạn (Deadline) | Mức ưu tiên |
+3. Những điểm tồn đọng cần đưa vào lịch họp tuần sau.</pre>
+            </div>
+          </div>
+        </section>
+      </article>
+
+
+      <!-- ========================================================
+           CHƯƠNG 5: TRÌNH TẠO PROMPT CÔNG VIỆC NHANH
+           ======================================================== -->
+      <section class="doc-chapter" id="tool-builder">
+        <span class="chapter-badge">Chương 5 • Tiện ích thực hành</span>
+        <h2 class="chapter-title">5. Trình Tạo Prompt Công Việc Nhanh (C-R-E-A-T-E)</h2>
+        <p class="chapter-lead">
+          Chọn nhanh vai trò, mục tiêu và định dạng để hệ thống lắp ghép thành câu lệnh giao việc hoàn chỉnh, bấm sao chép và dán ngay vào công cụ AI.
+        </p>
 
         <div class="builder-card">
           <div class="builder-grid">
@@ -795,10 +828,10 @@ Hãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:
               <div class="control-group">
                 <label for="b-role">1. Vai trò của AI (Role):</label>
                 <select id="b-role" class="input-select">
-                  <option value="Chuyên gia Truyền thông & Copywriting 10 năm kinh nghiệm">Chuyên gia Marketing &amp; Copywriter</option>
-                  <option value="Trưởng phòng Tuyển dụng & Đào tạo Nhân sự cấp cao">Trưởng phòng Nhân sự &amp; Tuyển dụng</option>
-                  <option value="Giám đốc Bán hàng & Chuyên gia Telesale hàng đầu">Giám đốc Kinh doanh &amp; CSKH</option>
-                  <option value="Chuyên gia Phân tích Tài chính & Bậc thầy Excel/Sheets">Chuyên viên Phân tích Số liệu / Kế toán</option>
+                  <option value="Chuyên gia Truyền thông &amp; Copywriting 10 năm kinh nghiệm">Chuyên gia Marketing &amp; Copywriter</option>
+                  <option value="Trưởng phòng Tuyển dụng &amp; Đào tạo Nhân sự cấp cao">Trưởng phòng Nhân sự &amp; Tuyển dụng</option>
+                  <option value="Giám đốc Bán hàng &amp; Chuyên gia Telesale hàng đầu">Giám đốc Kinh doanh &amp; CSKH</option>
+                  <option value="Chuyên gia Phân tích Tài chính &amp; Bậc thầy Excel/Sheets">Chuyên viên Phân tích Số liệu / Kế toán</option>
                   <option value="Thư ký Điều hành Ban Giám đốc Chuyên nghiệp">Trợ lý Dự án / Thư ký Vận hành</option>
                 </select>
               </div>
@@ -851,22 +884,12 @@ Hãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:
               </div>
               <pre class="output-pre" id="builder-result"></pre>
               <div class="output-tips">
-                 <b>Ghi chú:</b> Dán trực tiếp vào ChatGPT hoặc Claude để nhận ngay kết quả chuẩn mực!
+                <b>Ghi chú:</b> Dán trực tiếp vào ChatGPT hoặc Claude để nhận ngay kết quả chuẩn mực.
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      <!-- COMPLETION CONGRATS -->
-      <div class="congrats-card" style="margin-top:48px;">
-        <h3>Bạn đã nắm vững toàn bộ Cẩm nang Wiki AI!</h3>
-        <p>Hãy lưu lại trang Wiki này vào thanh dấu trang (Bookmark) để tiện tra cứu các mẫu SOPs bất kỳ lúc nào trong quá trình làm việc.</p>
-        <div class="cc-actions">
-          <button class="btn btn-primary" onclick="window.scrollTo({top:0, behavior:'smooth'})">Cuộn lên đầu trang ↑</button>
-          <a href="#ch3-1" class="btn btn-secondary">Xem lại kho SOPs</a>
-        </div>
-      </div>
 
     </main>
 
@@ -874,20 +897,22 @@ Hãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:
     <aside class="wiki-right-toc">
       <div class="right-toc-card">
         <span class="right-toc-head">Trong trang này</span>
-        <a href="#ch1-1" class="toc-anchor is-active">1.1 Tổng quan &amp; Tư duy</a>
-        <a href="#ch1-2" class="toc-anchor">1.2 Chính sách Bảo mật</a>
-        <a href="#ch1-3" class="toc-anchor">1.3 Công cụ cấp phép</a>
-        <a href="#ch2-2" class="toc-anchor">2.2 Framework C-R-E-A-T-E</a>
-        <a href="#ch2-3" class="toc-anchor">2.3 Before &amp; After</a>
-        <a href="#ch2-5" class="toc-anchor">2.5 Chống ảo giác</a>
-        <a href="#ch3-1" class="toc-anchor">3.1 SOP Nhân sự (HR)</a>
-        <a href="#ch3-2" class="toc-anchor">3.2 SOP Marketing</a>
-        <a href="#ch3-3" class="toc-anchor">3.3 SOP Sales &amp; CSKH</a>
-        <a href="#ch3-4" class="toc-anchor">3.4 SOP Excel &amp; Kế toán</a>
-        <a href="#ch3-5" class="toc-anchor">3.5 SOP Họp &amp; Vận hành</a>
-        <a href="#ch4-1" class="toc-anchor">4.1 So sánh 4 Ông Lớn</a>
-        <a href="#ch5-1" class="toc-anchor">5.1 Custom Instructions</a>
-        <a href="#tool-builder" class="toc-anchor">Trình tạo Prompt</a>
+        <a href="#ch1-1" class="toc-anchor is-active">1.1 AI, ML, DL &amp; LLM</a>
+        <a href="#ch1-2" class="toc-anchor">1.2 Token &amp; Context Window</a>
+        <a href="#ch1-3" class="toc-anchor">1.3 Credit, API &amp; Rate Limit</a>
+        <a href="#ch2-1" class="toc-anchor">2.1 Bản chất Prompt</a>
+        <a href="#ch2-2" class="toc-anchor">2.2 Cấu trúc C-R-E-A-T-E</a>
+        <a href="#ch2-3" class="toc-anchor">2.3 Skill &amp; Tool (MCP)</a>
+        <a href="#ch2-4" class="toc-anchor">2.4 AI Agent là gì?</a>
+        <a href="#ch3-1" class="toc-anchor">3.1 Thao tác hàng ngày</a>
+        <a href="#ch3-2" class="toc-anchor">3.2 Bảo mật &amp; Kiểm duyệt</a>
+        <a href="#ch3-3" class="toc-anchor">3.3 So sánh công cụ AI</a>
+        <a href="#ch4-1" class="toc-anchor">4.1 SOP Nhân sự (HR)</a>
+        <a href="#ch4-2" class="toc-anchor">4.2 SOP Marketing</a>
+        <a href="#ch4-3" class="toc-anchor">4.3 SOP Sales &amp; CSKH</a>
+        <a href="#ch4-4" class="toc-anchor">4.4 SOP Kế toán &amp; Excel</a>
+        <a href="#ch4-5" class="toc-anchor">4.5 SOP Họp &amp; Vận hành</a>
+        <a href="#tool-builder" class="toc-anchor">5.1 Trình tạo Prompt</a>
       </div>
     </aside>
 
@@ -921,7 +946,6 @@ Hãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:
       toggleBtn?.addEventListener('click', openSidebar);
       backdrop?.addEventListener('click', closeSidebar);
 
-      // Close when clicking nav items on mobile
       document.querySelectorAll('.wiki-nav-item').forEach(item => {
         item.addEventListener('click', () => {
           if (window.innerWidth <= 900) closeSidebar();
@@ -939,7 +963,7 @@ Hãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:
         const scrollY = window.scrollY;
 
         sections.forEach(sec => {
-          const top = sec.offsetTop - 120;
+          const top = sec.offsetTop - 130;
           const height = sec.offsetHeight;
           if (scrollY >= top && scrollY < top + height) {
             currentId = sec.getAttribute('id');
@@ -959,18 +983,11 @@ Hãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:
       }, { passive: true });
     })();
 
-    // 3. COPY SNIPPET & SOP BOX HELPERS
-    function copySnippet(btn) {
-      const code = btn.previousElementSibling?.textContent;
-      if (code) {
-        copyText(code.trim(), 'Đã sao chép cấu hình vào bộ nhớ tạm!');
-      }
-    }
-
+    // 3. COPY SOP BOX HELPER
     function copySnippetBox(btn) {
       const pre = btn.closest('.sop-box')?.querySelector('.sop-pre');
       if (pre) {
-        copyText(pre.textContent.trim(), 'Đã sao chép SOP vào bộ nhớ tạm! Dán ngay vào ChatGPT / Claude.');
+        copyText(pre.textContent.trim(), 'Đã sao chép SOP vào bộ nhớ tạm!');
       }
     }
 
@@ -1018,13 +1035,68 @@ Yêu cầu thực hiện chi tiết:
       });
     })();
 
-    // 5. QUICK LIVE SEARCH (CTRL + K)
-    (function initQuickSearch() {
+    // 5. LIVE WIKI SEARCH FILTER (CTRL + K)
+    (function initWikiSearch() {
       const input = document.getElementById('wiki-quick-search');
+      const suggestionsBox = document.querySelector('.search-suggestions');
+      if (!input || !suggestionsBox) return;
+
+      const wikiSections = [
+        { title: '1.1 Bản chất AI, Machine Learning, Deep Learning & LLM', tag: 'Bản chất', href: '#ch1-1' },
+        { title: '1.2 Token là gì? Cửa sổ ngữ cảnh (Context Window)', tag: 'Bản chất', href: '#ch1-2' },
+        { title: '1.3 Credit, API Pricing, Quota & Rate Limit', tag: 'Chi phí', href: '#ch1-3' },
+        { title: '2.1 Bản chất Prompt (System Prompt vs User Prompt)', tag: 'Prompt', href: '#ch2-1' },
+        { title: '2.2 Cấu trúc viết Prompt chuẩn C-R-E-A-T-E & Chain-of-Thought', tag: 'Prompt', href: '#ch2-2' },
+        { title: '2.3 Skill & Tool (Function Calling / MCP) là gì?', tag: 'Skill', href: '#ch2-3' },
+        { title: '2.4 AI Agent là gì? Vòng lặp Agentic Loop & Khác gì Chatbot', tag: 'Agent', href: '#ch2-4' },
+        { title: '3.1 Quy trình thao tác chuẩn hàng ngày (New Chat, Temp Chat, Projects)', tag: 'Hướng dẫn', href: '#ch3-1' },
+        { title: '3.2 Chính sách Bảo mật & Quy trình kiểm duyệt 3 bước', tag: 'Bảo mật', href: '#ch3-2' },
+        { title: '3.3 Bảng so sánh chọn đúng công cụ AI (ChatGPT, Claude, Gemini, DeepSeek)', tag: 'Công cụ', href: '#ch3-3' },
+        { title: '4.1 SOP Hành chính - Nhân sự (Soạn JD, Lọc & Chấm điểm CV)', tag: 'SOP HR', href: '#ch4-1' },
+        { title: '4.2 SOP Marketing & Truyền thông (Lịch 7 ngày, Kịch bản TikTok)', tag: 'SOP MKT', href: '#ch4-2' },
+        { title: '4.3 SOP Kinh doanh & CSKH (Xử lý từ chối, Phản hồi khiếu nại)', tag: 'SOP Sales', href: '#ch4-3' },
+        { title: '4.4 SOP Kế toán & Bảng tính Excel (XLOOKUP, SUMIFS)', tag: 'SOP Excel', href: '#ch4-4' },
+        { title: '4.5 SOP Quản trị cuộc họp (Tóm tắt Action Items có Deadline)', tag: 'SOP Ops', href: '#ch4-5' },
+        { title: '5.1 Trình tạo Prompt công việc nhanh C-R-E-A-T-E', tag: 'Tiện ích', href: '#tool-builder' }
+      ];
+
+      function removeAccents(str) {
+        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+      }
+
+      input.addEventListener('input', () => {
+        const q = removeAccents(input.value.trim());
+        if (!q) {
+          suggestionsBox.hidden = true;
+          return;
+        }
+        const matches = wikiSections.filter(item =>
+          removeAccents(item.title).includes(q) || removeAccents(item.tag).includes(q)
+        );
+        if (!matches.length) {
+          suggestionsBox.innerHTML = '<div style="padding:14px;color:var(--ink-soft);font-size:13px;text-align:center;">Không tìm thấy mục phù hợp.</div>';
+          suggestionsBox.hidden = false;
+          return;
+        }
+        suggestionsBox.innerHTML = matches.map(item => `
+          <a href="${item.href}" class="search-suggestion-item" onclick="document.querySelector('.search-suggestions').hidden=true;">
+            <span>${item.title}</span>
+            <span class="s-tag">${item.tag}</span>
+          </a>
+        `).join('');
+        suggestionsBox.hidden = false;
+      });
+
+      document.addEventListener('click', e => {
+        if (!input.closest('.search-box').contains(e.target)) {
+          suggestionsBox.hidden = true;
+        }
+      });
+
       window.addEventListener('keydown', e => {
         if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
           e.preventDefault();
-          input?.focus();
+          input.focus();
         }
       });
     })();
