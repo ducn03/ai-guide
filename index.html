@@ -10,7 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="shared/styles.css">
 </head>
-<body>
+<body class="wiki-standalone">
 
   <!-- READING PROGRESS BAR -->
   <div id="reading-progress"></div>
@@ -50,7 +50,7 @@
         <div class="search-suggestions" hidden></div>
       </div>
 
-      <div class="header-actions" style="display:flex;align-items:center;gap:10px;">
+      <div class="wiki-header-pills">
         <a href="#ch5-2" class="tag-pill pill-orange" style="font-size:12px;text-decoration:none;">Báo cáo HTML</a>
         <a href="#ch8-1" class="tag-pill pill-green" style="font-size:12px;text-decoration:none;">18 Mẫu Việc</a>
         <a href="#quiz-section" class="tag-pill pill-blue" style="font-size:12px;text-decoration:none;">Tự kiểm tra</a>
@@ -66,6 +66,11 @@
 
     <!-- 1. LEFT VERTICAL NAVIGATION SIDEBAR -->
     <aside class="wiki-sidebar" id="wiki-sidebar">
+
+      <div class="mobile-drawer-head">
+        <b>Mục lục Cẩm nang</b>
+        <button class="mobile-drawer-close" id="mobile-sidebar-close" aria-label="Đóng mục lục">Đóng</button>
+      </div>
 
       <div class="wiki-nav-group">
         <div class="wiki-group-title">1. Hiểu đúng bản chất nền</div>
@@ -129,6 +134,7 @@
         <div class="wiki-group-title">9. Thực hành &amp; Tự kiểm tra</div>
         <a href="#tool-builder" class="wiki-nav-item"><span>9.1 Công cụ ghép câu lệnh nhanh</span></a>
         <a href="#quiz-section" class="wiki-nav-item"><span>9.2 Trắc nghiệm 7 tình huống thực tế</span></a>
+        <a href="#action-checklist" class="wiki-nav-item"><span>9.3 Bài tập thực hành 5 bước</span></a>
       </div>
 
     </aside>
@@ -195,7 +201,7 @@
           </p>
           <ol>
             <li>
-              <b>Không đưa ngữ cảnh là nó chịu chết.</b> Thử tưởng tượng bạn đi ngang bàn một nhân viên mới, buông mỗi câu <i>"viết giùm cái mail xin hoãn"</i> rồi vào phòng họp. Người thật còn chẳng biết hoãn việc gì, gửi cho ai, lý do sao, huống chi AI. Bạn kể đầu đuôi càng rõ, nó làm càng trúng ý.
+              <b>Nó không tự đoán được chuyện trong đầu bạn.</b> Thử tưởng tượng bạn đi ngang bàn nhân viên mới, buông mỗi câu <i>"viết giùm cái mail xin hoãn"</i> rồi vào phòng họp. Người thật còn chẳng biết hoãn việc gì, gửi ai, lý do sao, huống chi AI — đó chính là lý do phải hiểu rõ <b>Context (Ngữ cảnh)</b> ở mục 1.2 ngay bên dưới.
             </li>
             <li>
               <b>Không biết nhưng rất hay đoán bừa.</b> Hỏi tới chuyện nội bộ công ty hay một quy định mới toanh mà bạn quên gửi kèm tài liệu, AI hiếm khi chịu nói <i>"tôi không biết"</i>. Thay vào đó, nó tự ghép mấy thông tin chung chung lại thành một câu nghe rất có lý — thậm chí tự bịa cả số liệu lẫn tên điều luật. Tin ngay mà không kiểm tra lại là rất dễ ăn lỗi.
@@ -225,6 +231,19 @@
             <img src="assets/images/context-desk.jpg" alt="Minh họa sự khác biệt giữa bàn làm việc trống thiếu ngữ cảnh và bàn làm việc đủ hồ sơ ngữ cảnh">
             <figcaption><b>Trái:</b> Bàn trống không có hồ sơ (thiếu Context) — thực tập sinh ngồi chịu trận vì không biết làm kiểu gì. <b>Phải:</b> Đặt đủ hồ sơ sản phẩm, chân dung người đọc và bài mẫu lên bàn (đủ Context) — làm phát trúng ý ngay.</figcaption>
           </figure>
+
+          <div class="mini-compare">
+            <div class="mc-card is-bad">
+              <span class="mc-badge">Khi thiếu Context</span>
+              <p><b>Bạn nhắn:</b> "Viết tin nhắn nhắc khách gia hạn gói dịch vụ."</p>
+              <p><b>Kết quả nhận lại:</b> Một bức thư sáo rỗng kiểu <i>"Kính gửi Quý khách hàng, gói dịch vụ của Quý khách sắp hết hạn..."</i> — đọc lên nghe như tin nhắn rác tự động.</p>
+            </div>
+            <div class="mc-card is-good">
+              <span class="mc-badge">Khi đưa đủ Context</span>
+              <p><b>Bạn nhắn thêm:</b> "Khách là chị Mai (chủ tiệm bánh, dùng gói giao hàng của bên mình 1 năm rồi, hay ngại thủ tục rườm rà). Nhắn Zalo nhắc gói sắp hết ngày 30/10, báo gia hạn tuần này được tặng thêm 15 ngày miễn phí."</p>
+              <p><b>Kết quả nhận lại:</b> Tin nhắn ấm áp, gọi đúng tình huống của khách, gửi thẳng không cần sửa nhiều.</p>
+            </div>
+          </div>
 
           <p>Một bộ Context đầy đủ ngoài văn phòng chỉ xoay quanh đúng <b>4 mảnh ghép</b>:</p>
           <div class="context-pillars">
@@ -390,32 +409,32 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><b>ChatGPT</b><br><small>chatgpt.com</small></td>
+                    <td><b>ChatGPT</b><br><a class="tool-ext-link" href="https://chatgpt.com" target="_blank" rel="noopener">chatgpt.com</a></td>
                     <td>Đa năng, dễ xài nhất. Làm công thức Excel ngon, vẽ ảnh nhanh, nói chuyện bằng giọng nói để tập tiếng Anh rất mượt.</td>
                     <td>Hỏi đáp hàng ngày, làm hàm Excel, lên ý tưởng nhanh, vẽ ảnh minh họa.</td>
                   </tr>
                   <tr>
-                    <td><b>Claude</b><br><small>claude.ai</small></td>
+                    <td><b>Claude</b><br><a class="tool-ext-link" href="https://claude.ai" target="_blank" rel="noopener">claude.ai</a></td>
                     <td>Viết tiếng Việt mượt và giống người thật nhất hiện nay. Có khung <b>Artifacts</b> xem trực tiếp báo cáo HTML cực đẹp ngay bên cạnh.</td>
                     <td>Viết bài quảng cáo, soạn email khó, tạo Báo cáo HTML đẹp mắt, đọc tài liệu dài.</td>
                   </tr>
                   <tr>
-                    <td><b>Google Gemini</b><br><small>gemini.google.com</small></td>
+                    <td><b>Google Gemini</b><br><a class="tool-ext-link" href="https://gemini.google.com" target="_blank" rel="noopener">gemini.google.com</a></td>
                     <td>Nối thẳng với Google nên tra tin tức mới hôm nay cực nhạy. Dán cái link YouTube dài cả tiếng vào nó tóm gọn trong vài giây.</td>
                     <td>Cần đọc tin mới xảy ra, tóm tắt video YouTube lười xem hết, hoặc đẩy nội dung thẳng qua Google Docs, Gmail.</td>
                   </tr>
                   <tr>
-                    <td><b>NotebookLM</b><br><small>notebooklm.google.com</small></td>
+                    <td><b>NotebookLM</b><br><a class="tool-ext-link" href="https://notebooklm.google.com" target="_blank" rel="noopener">notebooklm.google.com</a></td>
                     <td>Miễn phí 100%, không bịa chuyện. Quăng 5–10 file PDF lên, hỏi gì nó chỉ trả lời đúng trong đống file đó và chỉ rõ nằm ở trang mấy.</td>
                     <td>Đọc tài liệu đào tạo dày cộp, tra quy chế công ty, soi điều khoản hợp đồng dài.</td>
                   </tr>
                   <tr>
-                    <td><b>Perplexity</b><br><small>perplexity.ai</small></td>
+                    <td><b>Perplexity</b><br><a class="tool-ext-link" href="https://www.perplexity.ai" target="_blank" rel="noopener">perplexity.ai</a></td>
                     <td>Dùng thay Google khi cần tra cứu sâu. Thay vì ném ra 10 link quảng cáo, nó tự đọc nhiều báo rồi viết gọn lại kèm link nguồn.</td>
                     <td>Nghiên cứu thị trường, tìm số liệu đối thủ, kiểm tra thông tin cần có nguồn báo chí rõ ràng.</td>
                   </tr>
                   <tr>
-                    <td><b>DeepSeek</b><br><small>chat.deepseek.com</small></td>
+                    <td><b>DeepSeek</b><br><a class="tool-ext-link" href="https://chat.deepseek.com" target="_blank" rel="noopener">chat.deepseek.com</a></td>
                     <td>Miễn phí hoàn toàn. Bật nút <b>DeepThink</b> lên nó suy nghĩ từng bước rất kỹ, xử lý bài toán logic và kế hoạch phức tạp cực tốt.</td>
                     <td>Khi cần rà lỗi công thức khó, tính toán phương án hoặc dùng thoải mái không lo giới hạn lượt.</td>
                   </tr>
@@ -439,7 +458,7 @@
               <b>Cài sẵn "Hướng dẫn cá nhân" (Custom Instructions) để AI nhớ phong cách của bạn:</b> Trên ChatGPT, bấm ảnh đại diện &rarr; chọn <b>Customize ChatGPT</b>. Ở ô hỏi muốn AI trả lời thế nào, bạn copy mẫu dưới đây dán vào rồi bấm Lưu. Từ hôm đó trở đi, mở khung chat mới nào nó cũng tự viết gọn và bớt sáo rỗng!
             </li>
             <li>
-              <b>Gom việc lặp lại vào một thư mục riêng (Projects trên Claude / Gems trên Gemini):</b> Nếu tuần nào bạn cũng viết bài cho đúng một sản phẩm, hãy tạo một thư mục riêng rồi tải sẵn tờ <b>Context Pack</b> và vài bài viết mẫu vào đó. Về sau mở ra chỉ cần nói ý chính là AI tự nhớ hết bối cảnh.
+              <b>Gom việc lặp lại vào một thư mục riêng (Projects trên Claude / Gems trên Gemini):</b> Nếu tuần nào bạn cũng viết bài cho đúng một sản phẩm, hãy tạo một thư mục riêng rồi tải sẵn tờ <b>Context Pack</b> và vài bài viết mẫu vào đó. Về sau mở ra chỉ cần nói ý chính là AI tự nhớ hết bối cảnh <i>(cách đóng gói bài bản thành một bộ Skill sẽ có ở Chương 4 sau khi bạn quen tay viết Prompt)</i>.
             </li>
           </ol>
 
@@ -535,12 +554,16 @@
                 <p>Ý số 4 rất ổn, cho tôi áp dụng giữ giá cũ tới hết Chủ nhật tuần này. Giờ viết thành tin nhắn Zalo hoàn chỉnh dựa trên 4 ý đó nhé. Giọng chân thành, gần gũi như chủ tiệm nói với khách quen, dưới 140 chữ, đừng viết kiểu thông báo công văn.</p>
               </div>
               <div class="chat-turn is-ai">
-                <span class="chat-role">AI viết bản nháp hoàn chỉnh</span>
-                <p>(AI trả ra tin nhắn gọn gàng, ấm áp, đúng 130 chữ kèm đủ ngày chốt ưu đãi.)</p>
+                <span class="chat-role">AI viết bản nháp đầu tiên (còn hơi cứng câu mở đầu)</span>
+                <p>"Trân trọng tri ân quý khách hàng đã đồng hành cùng tiệm thời gian qua! Từ ngày 01/11, do giá hạt nhập khẩu tăng mạnh nên tiệm xin phép điều chỉnh nhẹ thêm 10.000đ/hũ để giữ nguyên chất lượng hạt loại 1, tuyệt đối không giảm trọng lượng. Riêng khách quen đặt trước hết Chủ nhật tuần này, tiệm vẫn giữ nguyên giá cũ nhé ạ!"</p>
               </div>
               <div class="chat-turn is-user">
                 <span class="chat-role">Vòng 3 — Bạn tinh chỉnh chi tiết cuối</span>
-                <p>Khá ưng rồi, chỉ có câu mở đầu nghe hơi giống văn mẫu một chút. Sửa lại câu đầu cho tự nhiên hơn, bỏ chữ "trân trọng tri ân" đi là xong.</p>
+                <p>Ý thì đúng hết rồi, chỉ có câu mở đầu "Trân trọng tri ân quý khách hàng" nghe hơi giống văn mẫu. Sửa lại câu đầu cho thân mật, tự nhiên như người thật nhắn Zalo nhé.</p>
+              </div>
+              <div class="chat-turn is-ai">
+                <span class="chat-role">Bản chốt cuối — Gửi được ngay</span>
+                <p>"Chào chị, cảm ơn chị thời gian qua đã luôn tin chọn hạt dinh dưỡng bên tiệm nhé! Tiệm nhắn báo trước một chút: từ 01/11, do giá hạt nhập khẩu tăng mạnh nên tiệm buộc phải nhích nhẹ thêm 10.000đ/hũ để giữ nguyên chất lượng hạt loại 1, không bớt trọng lượng. Riêng khách quen nhà mình, nếu chị cần lấy thêm thì nhắn trước Chủ nhật tuần này tiệm vẫn giữ nguyên giá cũ nha!"</p>
               </div>
             </div>
           </div>
@@ -740,6 +763,31 @@ Viết tin nhắn Zalo xin lỗi chị Lan: nhận trách nhiệm thẳng về p
             <li><b>Skill "Viết bài đúng giọng thương hiệu":</b> Lưu sẵn mô tả sản phẩm, chân dung khách hàng, 5 bài đăng cũ có tương tác cao nhất và danh sách từ cấm dùng. Marketing chỉ cần gõ 1 dòng chủ đề là ra bài sát 90% phong cách công ty.</li>
             <li><b>Skill "Soi lỗi hợp đồng &amp; báo giá":</b> Lưu sẵn 10 điều khoản công ty hay bị đối tác cài bẫy (phạt chậm tiến độ, điều kiện bảo hành, công nợ). Mỗi khi nhận hợp đồng mới, ném PDF vào là nó tự gạch đỏ từng điều khoản bất lợi.</li>
           </ul>
+
+          <h4>Cách tự tạo bộ Skill đầu tiên trong 3 bước (không cần biết code):</h4>
+          <ol>
+            <li><b>Bước 1 — Mở mục tạo trợ lý riêng:</b> Trên <b>Claude</b> chọn <i>Projects &rarr; New Project</i>; trên <b>Gemini</b> chọn <i>Gem manager &rarr; New Gem</i> (miễn phí cũng tạo được!); trên <b>ChatGPT</b> chọn <i>Explore GPTs &rarr; Create</i>.</li>
+            <li><b>Bước 2 — Dán bản quy tắc chuẩn vào ô Instructions (Hướng dẫn):</b> Lấy đúng mẫu khung bên dưới sửa theo đầu việc của bạn rồi dán vào.</li>
+            <li><b>Bước 3 — Tải sẵn 2–3 file gốc vào mục Knowledge (Tài liệu):</b> Đính tờ <b>Context Pack</b> + 2 bài mẫu chuẩn của công ty rồi bấm Lưu. Xong! Từ hôm đó mở Skill ra chỉ cần đưa đề bài ngắn là nó chạy đúng quy trình.</li>
+          </ol>
+
+          <div class="playbook-box">
+            <h4>Mẫu khung hướng dẫn để dán khi tạo Skill (Copy &amp; điền phần ngoặc vuông)</h4>
+            <div class="playbook-prompt">
+              <pre id="pb-skill-setup"># Vai trò &amp; Nhiệm vụ của Skill
+Bạn là trợ lý chuyên xử lý đúng 1 việc: [VD: Lọc hồ sơ ứng viên / Viết bài Facebook cho thương hiệu X].
+
+# Quy trình bắt buộc làm theo từng bước
+1. Luôn đọc kỹ tài liệu gốc tôi đã tải sẵn trong thư mục (bảng giá, tiêu chí, bài mẫu) trước khi trả lời.
+2. Nếu dữ liệu tôi gửi lên bị thiếu thông tin quan trọng, hỏi lại tôi tối đa 2 câu ngắn rồi mới làm.
+3. Xuất kết quả theo đúng cấu trúc: [VD: Bảng 4 cột / Bài ngắn dưới 150 chữ gồm 3 đoạn].
+
+# Quy tắc cấm làm
+- Không dùng lời lẽ sáo rỗng kiểu dịch máy.
+- Không tự đoán số liệu không có trong tài liệu gốc.</pre>
+              <button class="btn-copy-card" style="align-self:flex-start;" onclick="copyText(document.getElementById('pb-skill-setup').textContent, 'Đã sao chép mẫu khung tạo Skill!')">Sao chép mẫu khung Skill</button>
+            </div>
+          </div>
         </section>
 
         <!-- 4.2 AI AGENT -->
@@ -758,28 +806,23 @@ Viết tin nhắn Zalo xin lỗi chị Lan: nhận trách nhiệm thẳng về p
           <div class="agent-loop">
             <div class="al-step">
               <span class="al-num">Bước 1</span>
-              <b>Nhận đích đến</b>
-              <span>Bạn giao mục tiêu cuối, ví dụ: "Khảo sát giá 3 đối thủ lớn tuần này".</span>
+              <div class="al-content"><b>Nhận đích đến cuối cùng:</b> <span>Bạn giao mục tiêu rõ ràng, ví dụ: "Khảo sát giá bán lẻ của 3 đối thủ lớn nhất tuần này".</span></div>
             </div>
             <div class="al-step">
               <span class="al-num">Bước 2</span>
-              <b>Tự chia việc</b>
-              <span>Nó tự liệt kê từng đầu việc nhỏ cần làm mà không cần bạn nhắc từng bước.</span>
+              <div class="al-content"><b>Tự chia nhỏ đầu việc:</b> <span>Agent tự lên danh sách các bước cần làm mà không đợi bạn phải ngồi nhắc từng câu.</span></div>
             </div>
             <div class="al-step">
               <span class="al-num">Bước 3</span>
-              <b>Tự mở đồ nghề</b>
-              <span>Tự lên mạng mở web đối thủ, đọc bảng giá, mở bảng tính gom số liệu.</span>
+              <div class="al-content"><b>Tự mở đồ nghề xử lý:</b> <span>Tự lên mạng mở từng trang web, đọc bảng giá, mở bảng tính gom lại số liệu.</span></div>
             </div>
             <div class="al-step">
               <span class="al-num">Bước 4</span>
-              <b>Gặp lỗi tự né</b>
-              <span>Thấy web đối thủ A bị lỗi, nó tự chuyển qua Fanpage hay sàn TMĐT tìm cho đủ.</span>
+              <div class="al-content"><b>Gặp lỗi tự tìm đường vòng:</b> <span>Thấy trang web đối thủ A bị lỗi không vào được, nó tự chuyển qua Fanpage hay sàn TMĐT lấy cho đủ thông tin.</span></div>
             </div>
             <div class="al-step">
               <span class="al-num">Bước 5</span>
-              <b>Tự rà &amp; nộp bài</b>
-              <span>Tự đối chiếu lại xem đã đủ 3 bên chưa rồi kẻ bảng so sánh hoàn chỉnh nộp bạn.</span>
+              <div class="al-content"><b>Tự rà lại &amp; nộp báo cáo:</b> <span>Tự kiểm tra xem đã đủ 3 bên và kèm đường link nguồn chưa rồi mới nộp bảng so sánh hoàn chỉnh cho bạn.</span></div>
             </div>
           </div>
 
@@ -829,6 +872,20 @@ Viết tin nhắn Zalo xin lỗi chị Lan: nhận trách nhiệm thẳng về p
             <div class="gr-card">
               <b>3. Yêu cầu nộp kèm nguồn kiểm chứng</b>
               <p>Luôn dặn Agent ghi rõ từng con số lấy từ đường link nào hoặc trang mấy trong file gốc để bạn soát lại trong 1 phút trước khi sử dụng.</p>
+            </div>
+          </div>
+
+          <div class="playbook-box">
+            <h4>Thử trải nghiệm AI Agent ngay hôm nay (bật nút Deep Research trên Gemini / ChatGPT / Perplexity)</h4>
+            <p style="margin-bottom:8px;">Mở Gemini hoặc ChatGPT, bấm bật chế độ <b>Deep Research</b> (Nghiên cứu sâu) rồi dán đề bài dưới đây — bạn sẽ thấy Agent tự đi đọc hàng chục nguồn web trong vài phút và trả về bản phân tích kèm đầy đủ link dẫn chứng:</p>
+            <div class="playbook-prompt">
+              <pre id="pb-agent-research">Hãy khảo sát giúp tôi thị trường [Tên sản phẩm, VD: hộp quà hạt dinh dưỡng Tết] tại Việt Nam trong năm nay.
+Phạm vi cần làm rõ:
+1. Liệt kê 3–4 thương hiệu đang bán chạy nhất kèm khoảng giá bán lẻ và điểm mạnh bao bì của từng bên.
+2. Tổng hợp các phản hồi khen / chê phổ biến nhất của khách mua hàng trên sàn thương mại điện tử.
+3. Kẻ bảng so sánh ngắn gọn và gợi ý 3 khoảng trống thị trường công ty tôi có thể khai thác.
+Lưu ý: Mọi mức giá và thông tin đều phải gắn kèm đường link nguồn gốc để tôi kiểm tra lại.</pre>
+              <button class="btn-copy-card" style="align-self:flex-start;" onclick="copyText(document.getElementById('pb-agent-research').textContent, 'Đã sao chép mẫu giao việc cho AI Agent (Deep Research)!')">Sao chép mẫu giao việc Agent</button>
             </div>
           </div>
         </section>
@@ -955,8 +1012,18 @@ Viết tin nhắn Zalo xin lỗi chị Lan: nhận trách nhiệm thẳng về p
             <figcaption>Từ đống ghi chú thô và bảng số liệu nhàm chán bên trái, chỉ với 1 câu lệnh, AI dựng ngay thành trang báo cáo trực quan có thẻ KPI, biểu đồ màu và xuất file PDF gọn gàng.</figcaption>
           </figure>
 
-          <h4>Xem ngay Ví dụ thật: Đây là thứ AI tự dựng ra từ 5 dòng số liệu thô</h4>
-          <p>Bạn có thể nhìn trực tiếp bản mẫu bên dưới, hoặc bấm hai nút trên thanh xanh để <b>mở xem bản báo cáo đầy đủ trong tab mới</b> hay <b>tải file <code>.html</code> về máy bấm thử</b>:</p>
+          <h4>Xem ngay Ví dụ thật: Từ 5 dòng số liệu thô biến thành trang báo cáo hoàn chỉnh</h4>
+          <p>Bạn chỉ cần đưa đúng 5 dòng ghi chú thô dưới đây kèm câu lệnh mẫu:</p>
+
+          <div class="raw-input-box">
+            <span class="raw-input-label">Đầu vào bạn dán cho AI (chỉ 5 dòng thô)</span>
+            <pre>- Tháng 10 đạt 112% mục tiêu: Doanh thu 1,42 tỷ (+18% vs tháng 9), 1.280 đơn (+12%), khách cũ mua lại 34% (+5% nhờ Zalo).
+- Tỷ trọng kênh: Shopee Mall 48%, Zalo/Khách quen 27%, Facebook Fanpage 16%, Đại lý/Quà tặng 9%.
+- Điểm sáng: Combo quà tặng cuối tháng nâng giá trị đơn từ 920k lên 1,11 triệu; tỷ lệ hoàn đơn dưới 1,8%.
+- Việc cần xử lý tuần tới: 1) Điều chuyển gấp 2 mã bán chạy về kho miền Trung; 2) Nhắn chăm sóc khách cũ dịp lễ giữa tháng 11.</pre>
+          </div>
+
+          <p>Và đây là kết quả AI tự dựng ra — bạn có thể bấm 2 nút trên thanh xanh để <b>mở xem bản đầy đủ</b> hoặc <b>tải file <code>.html</code> về máy mở thử bằng Chrome</b>:</p>
 
           <div class="report-demo">
             <div class="report-demo-bar">
@@ -1143,6 +1210,20 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
             <li><b>Nhập liệu từ hóa đơn / bảng biểu giấy:</b> Chụp ảnh bằng điện thoại gửi lên rồi dặn: <i>"Chép lại toàn bộ chữ và số trong ảnh này thành bảng chuẩn để tôi copy sang Excel."</i></li>
             <li><b>Lên bố cục Slide PowerPoint / Canva:</b> Đừng ngồi nhìn trang slide trắng cả buổi không biết sắp xếp sao. Đưa nội dung báo cáo của bạn vào rồi bảo AI chia thành 8–10 trang slide, ghi rõ mỗi trang để tiêu đề gì, 3 gạch đầu dòng ngắn gọn và gợi ý hình minh họa bên cạnh — bạn chỉ việc ráp vào mẫu Canva là có bài thuyết trình đẹp ngay.</li>
           </ul>
+          <div class="playbook-box">
+            <h4>Câu lệnh lên khung Slide PowerPoint / Canva từng trang</h4>
+            <div class="playbook-prompt">
+              <pre id="pb-slide">Tôi cần chuẩn bị bài thuyết trình gồm [8–10] trang slide về chủ đề: [VD: Kế hoạch bán hàng Quý 4 gửi Ban Giám đốc].
+Dưới đây là các ý chính tôi có: [Dán ý thô hoặc tóm tắt báo cáo].
+
+Hãy chia chi tiết từng trang slide giúp tôi:
+- Tiêu đề trang (ngắn dưới 10 chữ, nhìn là nắm ý chính)
+- Tối đa 3 gạch đầu dòng hiển thị trên slide (ít chữ, không viết thành đoạn văn dài)
+- Gợi ý hình ảnh hoặc biểu đồ đặt bên cạnh cho đẹp mắt
+- 2 câu lời dẫn tự nhiên để tôi nói khi chiếu trang này.</pre>
+              <button class="btn-copy-card" style="align-self:flex-start;" onclick="copyText(document.getElementById('pb-slide').textContent, 'Đã sao chép mẫu lên khung Slide!')">Sao chép câu lệnh làm Slide</button>
+            </div>
+          </div>
         </section>
 
         <!-- 6.5 -->
@@ -1154,6 +1235,20 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
           <p>
             Cách làm rất vui: bạn dặn AI đóng vai một khách hàng rất khó tính (hoặc giám đốc tài chính cực kỳ soi mói), đặt cho bạn từng câu hỏi vặn vẹo một và <b>dừng lại đợi bạn trả lời xong rồi mới góp ý</b> xem câu trả lời của bạn đã thuyết phục chưa, thiếu ý nào, sau đó mới hỏi câu tiếp theo. Tập dượt qua 10 phút với AI trước buổi họp, lúc vào họp thật bạn sẽ tự tin hơn hẳn!
           </p>
+          <div class="playbook-box">
+            <h4>Câu lệnh nhờ AI làm "quân xanh" tập dượt phản biện 1–1</h4>
+            <div class="playbook-prompt">
+              <pre id="pb-roleplay">Hãy đóng vai [một khách hàng rất khó tính / sếp tài chính cực kỳ kỹ lưỡng].
+Tôi chuẩn bị trình bày đề xuất sau: [Tóm tắt ngắn 3–4 dòng về đề xuất của bạn].
+
+Quy tắc tập dượt:
+1. Đặt cho tôi từng câu hỏi vặn vẹo hóc búa một (tổng cộng 5 câu).
+2. Hỏi xong câu 1 thì DỪNG LẠI đợi tôi trả lời.
+3. Sau khi tôi trả lời, hãy góp ý thật thẳng chỗ nào chưa thuyết phục, gợi ý cách nói hay hơn, rồi mới hỏi tiếp câu 2.
+Bắt đầu ngay câu hỏi số 1!</pre>
+              <button class="btn-copy-card" style="align-self:flex-start;" onclick="copyText(document.getElementById('pb-roleplay').textContent, 'Đã sao chép mẫu tập dượt 1-1!')">Sao chép câu lệnh tập dượt</button>
+            </div>
+          </div>
         </section>
       </article>
 
@@ -1172,7 +1267,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
         <section class="doc-section">
           <h3>7.1 Soi lại bài trong 1 phút &amp; Dấu hiệu nhận biết AI đang bịa chuyện</h3>
           <div class="workflow-sample-card">
-            <div class="wf-flow">
+            <div class="wf-flow cols-3">
               <div class="wf-node">
                 <span class="wf-badge">Việc 1</span>
                 <b>Soi kỹ mọi con số</b>
@@ -1305,11 +1400,16 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
 
         <div class="dept-tabs" id="dept-tabs">
           <button class="dept-tab is-active" data-dept="all">Tất cả (18)</button>
-          <button class="dept-tab" data-dept="hr">Hành chính - Nhân sự</button>
-          <button class="dept-tab" data-dept="marketing">Marketing &amp; Nội dung</button>
-          <button class="dept-tab" data-dept="sales">Kinh doanh &amp; CSKH</button>
-          <button class="dept-tab" data-dept="finance">Kế toán &amp; Excel</button>
-          <button class="dept-tab" data-dept="office">Họp hành, Context &amp; Báo cáo</button>
+          <button class="dept-tab" data-dept="hr">Nhân sự (3)</button>
+          <button class="dept-tab" data-dept="marketing">Marketing (3)</button>
+          <button class="dept-tab" data-dept="sales">Kinh doanh &amp; CSKH (3)</button>
+          <button class="dept-tab" data-dept="finance">Kế toán &amp; Excel (3)</button>
+          <button class="dept-tab" data-dept="office">Văn phòng &amp; Báo cáo (6)</button>
+        </div>
+
+        <div class="sop-toolbar">
+          <input type="text" id="sop-search" class="sop-search-input" placeholder="Lọc nhanh trong 18 mẫu: CV, Zalo, hợp đồng, Excel, báo cáo HTML, slide..." aria-label="Tìm mẫu việc">
+          <button type="button" id="sop-toggle-all" class="sop-toggle-all-btn">Mở xem tất cả</button>
         </div>
 
         <div id="sop-library-list">
@@ -1404,7 +1504,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
         <!-- 9.2 Interactive Quiz -->
         <section class="doc-section" id="quiz-section" style="margin-top:44px;">
           <h3>9.2 Tự kiểm tra nhanh: 7 tình huống thực tế ở văn phòng</h3>
-          <p>Chọn đáp án bạn thấy hợp lý nhất để xem mình đã nắm chắc cách dùng AI chưa:</p>
+          <p>Chọn đáp án bạn thấy hợp lý nhất — hệ thống sẽ chấm điểm và giải thích rõ ngay từng câu:</p>
 
           <div class="quiz-box" id="quiz-root">
             <!-- Q1 -->
@@ -1415,7 +1515,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                 <button class="quiz-opt" data-idx="1">B. Do bạn chưa đưa đủ Context (hồ sơ sản phẩm, chân dung người đọc và bài viết mẫu).</button>
                 <button class="quiz-opt" data-idx="2">C. Do mạng Internet công ty hơi chậm.</button>
               </div>
-              <div class="quiz-explain">Chính xác! AI không ngồi họp chung với bạn nên nó không biết chuyện nội bộ. Đưa đủ 4 mảnh Context (hoặc quăng tờ Context Pack lên đầu buổi) là bài viết khác ngay!</div>
+              <div class="quiz-explain" data-reason="AI không ngồi họp chung với bạn nên nó không biết chuyện nội bộ. Chỉ cần đưa đủ 4 mảnh Context (hoặc gửi tờ Context Pack đầu buổi) là bài viết khác hẳn ngay."></div>
             </div>
 
             <!-- Q2 -->
@@ -1426,7 +1526,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                 <button class="quiz-opt" data-idx="1">B. Bấm nút New Chat mở cuộc trò chuyện mới để khỏi loãng ngữ cảnh và đỡ tốn lượt.</button>
                 <button class="quiz-opt" data-idx="2">C. Tắt trình duyệt rồi đăng nhập lại từ đầu.</button>
               </div>
-              <div class="quiz-explain">Chuẩn luôn! Xong việc nào nên bấm New Chat ngay để làm sạch "chiếc bàn làm việc", giúp AI tập trung đúng chủ đề mới.</div>
+              <div class="quiz-explain" data-reason="Xong việc nào nên bấm New Chat ngay để làm sạch chiếc bàn làm việc, giúp AI tập trung đúng chủ đề mới và không phải đọc lại cả lịch sử cũ."></div>
             </div>
 
             <!-- Q3 -->
@@ -1437,7 +1537,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                 <button class="quiz-opt" data-idx="1">B. Chụp ảnh màn hình danh sách số điện thoại gửi lên cho AI đọc hộ.</button>
                 <button class="quiz-opt" data-idx="2">C. Xóa sạch cột Họ tên thật &amp; Số điện thoại (chỉ giữ mã khách hàng ẩn danh), bật Temporary Chat rồi mới đưa lên phân tích.</button>
               </div>
-              <div class="quiz-explain">Tuyệt vời! Thông tin cá nhân của khách hàng thuộc nhóm Đèn Đỏ tuyệt đối không đưa lên AI công cộng. Luôn ẩn danh trước khi gửi.</div>
+              <div class="quiz-explain" data-reason="Thông tin cá nhân khách hàng thuộc nhóm Đèn Đỏ tuyệt đối không đưa lên AI công cộng. Luôn xóa hoặc thay thế bằng mã ẩn danh trước khi gửi."></div>
             </div>
 
             <!-- Q4 -->
@@ -1448,7 +1548,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                 <button class="quiz-opt" data-idx="1">B. Gõ thêm 4–5 tin nhắn bên dưới để tranh luận và giải thích lại từng chút.</button>
                 <button class="quiz-opt" data-idx="2">C. Bỏ cuộc không dùng AI nữa, quay lại tự làm bằng tay.</button>
               </div>
-              <div class="quiz-explain">Đúng rồi! Bấm Cây bút sửa câu gốc giúp dọn sạch câu trả lời sai cũ, AI không bị dính dấu vết hiểu nhầm khi làm lại.</div>
+              <div class="quiz-explain" data-reason="Bấm Cây bút sửa câu gốc giúp dọn sạch câu trả lời sai cũ, AI không bị dính dấu vết hiểu nhầm khi làm lại."></div>
             </div>
 
             <!-- Q5 -->
@@ -1459,7 +1559,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                 <button class="quiz-opt" data-idx="1">B. Đóng gói sẵn thành một bộ Skill (Project trên Claude / Custom GPT / Gem) gồm quy tắc chấm điểm và biểu mẫu chuẩn.</button>
                 <button class="quiz-opt" data-idx="2">C. Để AI tự đoán tiêu chí tuyển dụng của công ty.</button>
               </div>
-              <div class="quiz-explain">Quá chuẩn! Skill chính là cuốn sổ tay nghề nghiệp cho những đầu việc lặp lại theo quy chuẩn cố định.</div>
+              <div class="quiz-explain" data-reason="Skill chính là cuốn sổ tay nghề nghiệp cho những đầu việc lặp đi lặp lại theo một quy chuẩn cố định — làm 1 lần, dùng nhàn cả năm."></div>
             </div>
 
             <!-- Q6 -->
@@ -1470,7 +1570,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                 <button class="quiz-opt" data-idx="1">B. Ngồi tự vẽ từng thanh biểu đồ bằng tay trên PowerPoint mất cả buổi.</button>
                 <button class="quiz-opt" data-idx="2">C. Ẩn danh dữ liệu rồi nhờ Claude/ChatGPT xuất thành file Báo cáo HTML hoàn chỉnh, mở Chrome bấm Ctrl + P (bật Background graphics) lưu ra PDF.</button>
               </div>
-              <div class="quiz-explain">Chuẩn luôn! Xuất Báo cáo HTML mất chưa tới 1 phút mà nhìn gọn đẹp như thuê thiết kế, in PDF A4 cực kỳ sắc nét.</div>
+              <div class="quiz-explain" data-reason="Xuất Báo cáo HTML mất chưa tới 1 phút mà nhìn gọn đẹp như thuê thiết kế, in PDF khổ A4 cực kỳ sắc nét và không cần biết dòng code nào."></div>
             </div>
 
             <!-- Q7 -->
@@ -1481,13 +1581,47 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                 <button class="quiz-opt" data-idx="1">B. Trao toàn quyền để Agent tự gửi email cho mọi khách hàng không cần kiểm tra.</button>
                 <button class="quiz-opt" data-idx="2">C. Đưa luôn mật khẩu tài khoản ngân hàng cho Agent tiện xử lý.</button>
               </div>
-              <div class="quiz-explain">Chính xác 100%! Agent rất giỏi chạy việc nhiều bước, nhưng những thao tác gửi ra ngoài hoặc đụng tiền bạc luôn phải có chốt duyệt cuối của con người.</div>
+              <div class="quiz-explain" data-reason="Agent rất giỏi chạy việc nhiều bước, nhưng mọi thao tác gửi ra ngoài cho khách hàng hoặc liên quan đến tiền bạc luôn phải có chốt duyệt cuối của con người."></div>
             </div>
 
             <div class="quiz-score-bar">
               <span id="quiz-score-text">Bạn đã trả lời 0 / 7 câu</span>
               <button class="btn btn-secondary btn-sm" id="quiz-reset-btn">Làm lại</button>
             </div>
+          </div>
+        </section>
+
+        <!-- 9.3 Action Checklist for Training -->
+        <section class="doc-section" id="action-checklist" style="margin-top:44px;">
+          <h3>9.3 Bài tập thực hành 5 bước sau buổi đào tạo</h3>
+          <p>Đọc xong mà chưa bấm thử thì vài hôm sẽ quên ngay. Hãy hoàn thành đủ 5 việc nhỏ dưới đây ngay trong tuần đầu (máy sẽ tự lưu tiến độ bạn đã tick):</p>
+
+          <div class="checklist-box" id="training-checklist">
+            <div class="checklist-head">
+              <b>Lộ trình tự thực hành cho nhân sự mới</b>
+              <span class="checklist-progress" id="checklist-progress-text">Đã xong 0 / 5 bước</span>
+            </div>
+
+            <label class="checklist-item">
+              <input type="checkbox" data-step="step1">
+              <span><b>Bước 1 (5 phút):</b> Đăng nhập ChatGPT hoặc Claude, tắt chế độ cho hệ thống lấy dữ liệu đi học và dán mẫu <i>Custom Instructions</i> ở Chương 2.2.</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" data-step="step2">
+              <span><b>Bước 2 (5 phút):</b> Tự viết xong 1 tờ <b>Hồ sơ Ngữ cảnh (Context Pack)</b> nửa trang cho đúng vị trí công việc của bạn (theo khung Chương 1.2) và lưu ra Desktop.</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" data-step="step3">
+              <span><b>Bước 3 (10 phút):</b> Chọn 1 việc thật đang làm hôm nay (email, bài đăng hoặc hàm Excel) và thử giao việc theo kiểu <b>nói chuyện 2–3 vòng</b> ở Chương 3.2.</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" data-step="step4">
+              <span><b>Bước 4 (10 phút):</b> Dùng 5 dòng số liệu (đã ẩn danh) nhờ Claude/ChatGPT tạo thử 1 file <b>Báo cáo HTML</b> và bấm <code>Ctrl + P</code> xuất thử ra PDF đẹp.</span>
+            </label>
+            <label class="checklist-item">
+              <input type="checkbox" data-step="step5">
+              <span><b>Bước 5 (5 phút):</b> Hoàn thành 7/7 câu trắc nghiệm ở mục 9.2 và lưu lại 3 mẫu việc hay dùng nhất trong Kho 18 mẫu ở Chương 8.</span>
+            </label>
           </div>
         </section>
       </section>
@@ -1526,29 +1660,45 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
         <a href="#ch8-1" class="toc-anchor">8.1 Kho 18 mẫu việc</a>
         <a href="#tool-builder" class="toc-anchor">9.1 Ghép câu lệnh</a>
         <a href="#quiz-section" class="toc-anchor">9.2 Tự kiểm tra 7 câu</a>
+        <a href="#action-checklist" class="toc-anchor">9.3 Bài tập 5 bước</a>
       </div>
     </aside>
 
   </div>
 
+  <!-- FLOATING BACK TO TOP -->
+  <button type="button" id="back-to-top" aria-label="Quay lên đầu trang">Lên đầu trang</button>
+
   <!-- SCRIPTS -->
   <script src="shared/ai-data.js"></script>
   <script src="shared/site-shell.js"></script>
   <script>
-    // 1. READING PROGRESS BAR
-    (function initReadingProgress() {
+    // 1. READING PROGRESS BAR & BACK TO TOP
+    (function initScrollChrome() {
       const bar = document.getElementById('reading-progress');
-      if (!bar) return;
+      const topBtn = document.getElementById('back-to-top');
+
       window.addEventListener('scroll', () => {
-        const docH = document.documentElement.scrollHeight - window.innerHeight;
-        const pct = docH > 0 ? Math.min(100, Math.max(0, (window.scrollY / docH) * 100)) : 0;
-        bar.style.width = pct + '%';
+        const y = window.scrollY;
+        if (bar) {
+          const docH = document.documentElement.scrollHeight - window.innerHeight;
+          const pct = docH > 0 ? Math.min(100, Math.max(0, (y / docH) * 100)) : 0;
+          bar.style.width = pct + '%';
+        }
+        if (topBtn) {
+          topBtn.classList.toggle('is-visible', y > 600);
+        }
       }, { passive: true });
+
+      topBtn?.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
     })();
 
     // 2. MOBILE SIDEBAR DRAWER TOGGLE
     (function initMobileDrawer() {
       const toggleBtn = document.getElementById('mobile-sidebar-toggle');
+      const closeBtn = document.getElementById('mobile-sidebar-close');
       const sidebar = document.getElementById('wiki-sidebar');
       const backdrop = document.getElementById('wiki-backdrop');
 
@@ -1565,7 +1715,12 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
       }
 
       toggleBtn?.addEventListener('click', openSidebar);
+      closeBtn?.addEventListener('click', closeSidebar);
       backdrop?.addEventListener('click', closeSidebar);
+
+      window.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && sidebar?.classList.contains('is-open')) closeSidebar();
+      });
 
       document.querySelectorAll('.wiki-nav-item').forEach(item => {
         item.addEventListener('click', () => {
@@ -1574,10 +1729,24 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
       });
     })();
 
-    // 3. SCROLLSPY ACTIVE INDICATOR
+    // 3. SCROLLSPY ACTIVE INDICATOR (WITH SIDEBAR AUTO-FOLLOW)
     (function initScrollspy() {
       const navLinks = document.querySelectorAll('.wiki-nav-item, .toc-anchor');
       const sections = Array.from(document.querySelectorAll('.doc-chapter[id], .doc-section[id]'));
+      const leftSidebar = document.getElementById('wiki-sidebar');
+      const rightToc = document.querySelector('.wiki-right-toc');
+      let lastId = '';
+
+      function keepVisibleInContainer(container, el) {
+        if (!container || !el) return;
+        const cRect = container.getBoundingClientRect();
+        const eRect = el.getBoundingClientRect();
+        if (eRect.top < cRect.top + 36) {
+          container.scrollTop -= (cRect.top + 36 - eRect.top);
+        } else if (eRect.bottom > cRect.bottom - 36) {
+          container.scrollTop += (eRect.bottom - cRect.bottom + 36);
+        }
+      }
 
       function updateActive() {
         let currentId = sections[0]?.id || '';
@@ -1590,12 +1759,19 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
           }
         }
 
-        if (currentId) {
+        if (currentId && currentId !== lastId) {
+          lastId = currentId;
+          let activeLeft = null;
+          let activeRight = null;
           navLinks.forEach(link => {
             const isMatch = link.getAttribute('href') === '#' + currentId;
             link.classList.toggle('active', isMatch);
             link.classList.toggle('is-active', isMatch);
+            if (isMatch && link.classList.contains('wiki-nav-item')) activeLeft = link;
+            if (isMatch && link.classList.contains('toc-anchor')) activeRight = link;
           });
+          if (window.innerWidth > 900) keepVisibleInContainer(leftSidebar, activeLeft);
+          if (window.innerWidth > 1200) keepVisibleInContainer(rightToc, activeRight);
         }
       }
 
@@ -1677,35 +1853,66 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
       });
     })();
 
-    // 5. DEPARTMENT SOP LIBRARY WITH FILTER TABS (18 TEMPLATES)
+    // 5. DEPARTMENT SOP LIBRARY WITH FILTER TABS, SEARCH & COLLAPSE (18 TEMPLATES)
     (function initSopLibrary() {
       const listRoot = document.getElementById('sop-library-list');
       const tabs = document.querySelectorAll('#dept-tabs .dept-tab');
+      const searchInput = document.getElementById('sop-search');
+      const toggleAllBtn = document.getElementById('sop-toggle-all');
       if (!listRoot) return;
 
       let allPrompts = (window.AI_DATABASE && window.AI_DATABASE.prompts) ? window.AI_DATABASE.prompts : [];
       let activeDept = 'all';
+      let searchQuery = '';
+      let expandAll = false;
+
+      function normalize(str) {
+        return (str || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+      }
 
       function escapeHtml(text) {
         return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
       }
 
+      function syncToggleLabel() {
+        if (!toggleAllBtn) return;
+        const boxes = listRoot.querySelectorAll('.sop-box');
+        const allOpen = boxes.length > 0 && Array.from(boxes).every(b => !b.classList.contains('is-collapsed'));
+        expandAll = allOpen;
+        toggleAllBtn.textContent = allOpen ? 'Thu gọn tất cả' : 'Mở xem tất cả';
+      }
+
       function renderList() {
-        const filtered = activeDept === 'all' ? allPrompts : allPrompts.filter(p => p.category === activeDept);
+        const q = normalize(searchQuery.trim());
+        const filtered = allPrompts.filter(p => {
+          const deptMatch = activeDept === 'all' || p.category === activeDept;
+          if (!deptMatch) return false;
+          if (!q) return true;
+          const hay = normalize(p.title + ' ' + p.description + ' ' + p.categoryName + ' ' + (p.tags || []).join(' '));
+          return hay.includes(q);
+        });
+
         if (!filtered.length) {
-          listRoot.innerHTML = '<p style="color:var(--ink-soft);">Chưa có mẫu nào trong nhóm này.</p>';
+          listRoot.innerHTML = '<p style="color:var(--ink-soft);padding:16px 0;">Không tìm thấy mẫu việc nào khớp với từ khóa này.</p>';
+          syncToggleLabel();
           return;
         }
 
+        // Auto-expand when filtered to a specific department or actively searching; keep compact on "Tất cả (18)"
+        const shouldExpand = expandAll || activeDept !== 'all' || q.length > 0;
+
         listRoot.innerHTML = filtered.map(item => `
-          <div class="sop-box">
+          <div class="sop-box ${shouldExpand ? '' : 'is-collapsed'}" data-sop-id="${item.id}">
             <div class="sop-meta-row">
               <span class="sop-dept-pill">${escapeHtml(item.categoryName)}</span>
               ${item.tool ? `<span class="sop-tool-pill">Gợi ý: ${escapeHtml(item.tool)}</span>` : ''}
             </div>
             <div class="sop-top">
               <span class="sop-title">${escapeHtml(item.title)}</span>
-              <button class="btn-copy-card" onclick="copySopById('${item.id}')">Sao chép mẫu</button>
+              <div class="sop-actions">
+                <button type="button" class="btn-expand-card" onclick="toggleSopCard(this)">${shouldExpand ? 'Thu gọn' : 'Xem mẫu'}</button>
+                <button type="button" class="btn-copy-card" onclick="copySopById('${item.id}')">Sao chép mẫu</button>
+              </div>
             </div>
             <p class="sop-desc">${escapeHtml(item.description)}</p>
             <div class="sop-code-wrapper">
@@ -1713,7 +1920,17 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
             </div>
           </div>
         `).join('');
+
+        syncToggleLabel();
       }
+
+      window.toggleSopCard = function(btn) {
+        const card = btn.closest('.sop-box');
+        if (!card) return;
+        const collapsed = card.classList.toggle('is-collapsed');
+        btn.textContent = collapsed ? 'Xem mẫu' : 'Thu gọn';
+        syncToggleLabel();
+      };
 
       window.copySopById = function(id) {
         const found = allPrompts.find(p => p.id === id);
@@ -1727,8 +1944,25 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
           tabs.forEach(t => t.classList.remove('is-active'));
           tab.classList.add('is-active');
           activeDept = tab.dataset.dept;
+          expandAll = (activeDept !== 'all');
           renderList();
         });
+      });
+
+      searchInput?.addEventListener('input', () => {
+        searchQuery = searchInput.value;
+        renderList();
+      });
+
+      toggleAllBtn?.addEventListener('click', () => {
+        const boxes = listRoot.querySelectorAll('.sop-box');
+        const nextOpen = !expandAll;
+        boxes.forEach(b => {
+          b.classList.toggle('is-collapsed', !nextOpen);
+          const btn = b.querySelector('.btn-expand-card');
+          if (btn) btn.textContent = nextOpen ? 'Thu gọn' : 'Xem mẫu';
+        });
+        syncToggleLabel();
       });
 
       if (allPrompts.length) {
@@ -1775,7 +2009,14 @@ ${topic}
         resultEl.textContent = generated;
       }
 
-      [roleEl, goalEl, topicEl, audienceEl, formatEl].forEach(el => {
+      goalEl?.addEventListener('change', () => {
+        if (goalEl.value.includes('HTML') && formatEl) {
+          formatEl.selectedIndex = 2;
+        }
+        updatePrompt();
+      });
+
+      [roleEl, topicEl, audienceEl, formatEl].forEach(el => {
         el?.addEventListener('input', updatePrompt);
         el?.addEventListener('change', updatePrompt);
       });
@@ -1789,7 +2030,7 @@ ${topic}
       });
     })();
 
-    // 7. INTERACTIVE SELF-CHECK QUIZ (7 QUESTIONS)
+    // 7. INTERACTIVE SELF-CHECK QUIZ (7 QUESTIONS — ACCURATE RIGHT/WRONG FEEDBACK)
     (function initQuiz() {
       const items = document.querySelectorAll('#quiz-root .quiz-item');
       const scoreEl = document.getElementById('quiz-score-text');
@@ -1802,7 +2043,8 @@ ${topic}
       function updateScore() {
         if (!scoreEl) return;
         if (answered === items.length) {
-          scoreEl.textContent = `Hoàn thành! Bạn làm đúng ${correct} / ${items.length} tình huống thực tế.`;
+          const note = correct === items.length ? 'Xuất sắc!' : (correct >= 5 ? 'Rất tốt!' : 'Nên xem lại các câu sai nhé.');
+          scoreEl.textContent = `Hoàn thành: đúng ${correct} / ${items.length} tình huống — ${note}`;
         } else {
           scoreEl.textContent = `Đã trả lời ${answered} / ${items.length} câu (Đúng: ${correct})`;
         }
@@ -1812,6 +2054,7 @@ ${topic}
         const correctIdx = Number(item.dataset.correct);
         const opts = item.querySelectorAll('.quiz-opt');
         const explain = item.querySelector('.quiz-explain');
+        const reasonText = explain?.dataset.reason || '';
 
         opts.forEach(btn => {
           btn.addEventListener('click', () => {
@@ -1820,12 +2063,22 @@ ${topic}
             answered++;
 
             const chosen = Number(btn.dataset.idx);
-            if (chosen === correctIdx) {
+            const isRight = (chosen === correctIdx);
+
+            if (isRight) {
               btn.classList.add('is-correct');
               correct++;
+              if (explain) {
+                explain.classList.remove('is-wrong-state');
+                explain.innerHTML = `<strong class="qe-ok">Đúng rồi!</strong>${reasonText}`;
+              }
             } else {
               btn.classList.add('is-wrong');
               opts[correctIdx]?.classList.add('is-correct');
+              if (explain) {
+                explain.classList.add('is-wrong-state');
+                explain.innerHTML = `<strong class="qe-no">Chưa chính xác.</strong>${reasonText}`;
+              }
             }
 
             opts.forEach(b => b.disabled = true);
@@ -1844,13 +2097,56 @@ ${topic}
             b.disabled = false;
             b.classList.remove('is-correct', 'is-wrong');
           });
-          item.querySelector('.quiz-explain')?.classList.remove('is-visible');
+          const ex = item.querySelector('.quiz-explain');
+          if (ex) {
+            ex.classList.remove('is-visible', 'is-wrong-state');
+            ex.innerHTML = '';
+          }
         });
         updateScore();
       });
     })();
 
-    // 8. LIVE WIKI SEARCH FILTER (CTRL + K)
+    // 8. INTERACTIVE 5-STEP TRAINING CHECKLIST (LOCALSTORAGE)
+    (function initTrainingChecklist() {
+      const box = document.getElementById('training-checklist');
+      const progressText = document.getElementById('checklist-progress-text');
+      if (!box) return;
+
+      const STORAGE_KEY = 'ai_wiki_training_checklist_v1';
+      const checks = Array.from(box.querySelectorAll('input[type="checkbox"]'));
+      let saved = {};
+      try {
+        saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+      } catch (e) {}
+
+      function refreshUI() {
+        let done = 0;
+        checks.forEach(cb => {
+          const item = cb.closest('.checklist-item');
+          if (cb.checked) done++;
+          item?.classList.toggle('is-checked', cb.checked);
+        });
+        if (progressText) {
+          progressText.textContent = done === checks.length
+            ? `Hoàn thành đủ ${done} / ${checks.length} bước!`
+            : `Đã xong ${done} / ${checks.length} bước`;
+        }
+      }
+
+      checks.forEach(cb => {
+        if (saved[cb.dataset.step]) cb.checked = true;
+        cb.addEventListener('change', () => {
+          saved[cb.dataset.step] = cb.checked;
+          try { localStorage.setItem(STORAGE_KEY, JSON.stringify(saved)); } catch (e) {}
+          refreshUI();
+        });
+      });
+
+      refreshUI();
+    })();
+
+    // 9. LIVE WIKI SEARCH FILTER (CTRL + K)
     (function initWikiSearch() {
       const input = document.getElementById('wiki-quick-search');
       const suggestionsBox = document.querySelector('.search-suggestions');
@@ -1866,12 +2162,12 @@ ${topic}
         { title: '2.2 3 cài đặt làm ngay trong 5 phút đầu (Custom Instructions, Projects)', tag: 'Cài đặt', href: '#ch2-2' },
         { title: '2.3 6 nút bấm trên màn hình & Mẹo dùng trên điện thoại', tag: 'Thao tác', href: '#ch2-3' },
         { title: '3.1 Công thức 3 Bước + 1 Mẫu để AI làm trúng ý', tag: 'Prompt', href: '#ch3-1' },
-        { title: '3.2 Nói chuyện nhiều vòng (Có hội thoại mẫu 3 vòng)', tag: 'Prompt', href: '#ch3-2' },
+        { title: '3.2 Nói chuyện nhiều vòng (Có hội thoại mẫu 3 vòng đầy đủ)', tag: 'Prompt', href: '#ch3-2' },
         { title: '3.3 So sánh 3 tình huống thực tế (Email, Bán hàng, CSKH)', tag: 'Ví dụ', href: '#ch3-3' },
         { title: '3.4 5 lỗi người mới hay vướng và cách sửa ngay', tag: 'Mẹo hay', href: '#ch3-4' },
         { title: '3.5 4 câu chữa cháy khi AI trả lời chưa ưng', tag: 'Mẹo hay', href: '#ch3-5' },
-        { title: '4.1 Skill (Sổ tay quy trình) & Đồ nghề (Tools) chi tiết có minh họa', tag: 'Skill', href: '#ch4-1' },
-        { title: '4.2 AI Agent khác gì Chatbot? Vòng lặp 5 bước & 3 rào chắn an toàn', tag: 'AI Agent', href: '#ch4-2' },
+        { title: '4.1 Skill (Sổ tay quy trình), Đồ nghề (Tools) & 3 bước tự tạo Skill', tag: 'Skill', href: '#ch4-1' },
+        { title: '4.2 AI Agent khác gì Chatbot? 5 bước tự chạy & thử Deep Research', tag: 'AI Agent', href: '#ch4-2' },
         { title: '5.1 Markdown là gì? 5 ký hiệu đủ xài & mẹo copy không dính dấu sao', tag: 'Markdown', href: '#ch5-1' },
         { title: '5.2 Tự tạo Báo cáo HTML đẹp mắt gửi sếp / xuất PDF (Có ví dụ sống)', tag: 'HTML Report', href: '#ch5-2' },
         { title: '6.1 Viết Email, Thông báo & Dịch cho bớt mùi máy', tag: 'Email', href: '#ch6-1' },
@@ -1884,7 +2180,8 @@ ${topic}
         { title: '7.3 Xử lý 5 sự cố hay gặp (Đứng hình, tiếng Anh, vỡ bảng...)', tag: 'Sự cố', href: '#ch7-3' },
         { title: '8.1 Kho 18 mẫu việc theo phòng ban (HR, Marketing, Sales, Excel, Báo cáo)', tag: 'Mẫu việc', href: '#ch8-1' },
         { title: '9.1 Công cụ ghép câu lệnh nhanh (chuẩn Markdown)', tag: 'Tiện ích', href: '#tool-builder' },
-        { title: '9.2 Trắc nghiệm nhanh 7 tình huống văn phòng', tag: 'Kiểm tra', href: '#quiz-section' }
+        { title: '9.2 Trắc nghiệm nhanh 7 tình huống văn phòng', tag: 'Kiểm tra', href: '#quiz-section' },
+        { title: '9.3 Bài tập thực hành 5 bước sau buổi đào tạo', tag: 'Thực hành', href: '#action-checklist' }
       ];
 
       function removeAccents(str) {

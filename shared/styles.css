@@ -5103,3 +5103,385 @@ footer {
   line-height: 1.55 !important;
   color: var(--ink) !important;
 }
+
+/* ===================================================================
+   TRAINING MANUAL QA POLISH (LAYOUT, RESPONSIVE, INTERACTIVE UX)
+   =================================================================== */
+
+/* Clean body bottom spacing without legacy bottom-nav gap */
+body.wiki-standalone {
+  padding-bottom: 36px;
+}
+
+/* Header Pills responsive cleanup */
+.wiki-header-pills {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+@media (max-width: 960px) {
+  .wiki-header-pills {
+    display: none;
+  }
+  header.site .header-row {
+    padding: 10px 14px;
+    gap: 10px;
+  }
+}
+
+/* Mobile Sidebar Drawer Header */
+.mobile-drawer-head {
+  display: none;
+}
+@media (max-width: 900px) {
+  .mobile-drawer-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 14px;
+    margin-bottom: 6px;
+    border-bottom: 1px solid var(--line-strong);
+  }
+  .mobile-drawer-head b {
+    font-size: 15px;
+    color: var(--green-dark);
+  }
+  .mobile-drawer-close {
+    padding: 5px 12px;
+    border-radius: 8px;
+    background: var(--paper);
+    border: 1px solid var(--line-strong);
+    color: var(--ink);
+    font-size: 12.5px;
+    font-weight: 700;
+  }
+}
+
+/* Right TOC custom slim scrollbar */
+.wiki-right-toc::-webkit-scrollbar {
+  width: 4px;
+}
+.wiki-right-toc::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 999px;
+}
+
+/* Fix Table wrapping & desktop readability inside Wiki */
+.wiki-doc-article .table-compare {
+  min-width: 520px;
+}
+.wiki-doc-article .table-compare th {
+  white-space: normal;
+  line-height: 1.4;
+  vertical-align: top;
+}
+.wiki-doc-article .table-compare td {
+  vertical-align: top;
+}
+.tool-ext-link {
+  color: var(--green-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  font-size: 12px;
+}
+.tool-ext-link:hover {
+  color: var(--orange-dark);
+}
+
+/* Fix 3-column Workflow Cards (no 25% blank gap) */
+.wf-flow.cols-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+@media (max-width: 760px) {
+  .wf-flow.cols-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Upgrade Agent 5-Step Loop into Clean Scannable Vertical Timeline */
+.agent-loop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 18px 0 24px;
+}
+.al-step {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--orange);
+  border-radius: 0 14px 14px 0;
+  padding: 13px 18px;
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  box-shadow: var(--shadow-sm);
+}
+@media (max-width: 600px) {
+  .al-step {
+    flex-direction: column;
+    gap: 6px;
+  }
+}
+.al-num {
+  flex-shrink: 0;
+  min-width: 66px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.al-content {
+  flex: 1;
+}
+.al-content b {
+  display: inline;
+  font-size: 14px;
+  color: var(--ink);
+  margin-right: 6px;
+}
+.al-content span {
+  display: inline;
+  font-size: 13.8px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+
+/* Mini Before/After Context Strip */
+.mini-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin: 18px 0 24px;
+}
+@media (max-width: 680px) {
+  .mini-compare { grid-template-columns: 1fr; }
+}
+.mc-card {
+  border-radius: 14px;
+  padding: 16px 18px;
+  font-size: 13.5px;
+  line-height: 1.6;
+}
+.mc-card.is-bad {
+  background: #FFF7F7;
+  border: 1px solid #FECACA;
+}
+.mc-card.is-good {
+  background: #F4F9EE;
+  border: 1px solid #C8E2AA;
+}
+.mc-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 6px;
+}
+.mc-card.is-bad .mc-badge { color: #B91C1C; }
+.mc-card.is-good .mc-badge { color: var(--green-dark); }
+.mc-card p {
+  margin: 0 0 8px !important;
+  font-size: 13.5px !important;
+  line-height: 1.55 !important;
+  color: var(--ink) !important;
+}
+.mc-card p:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Raw Input Preview Box for HTML Report */
+.raw-input-box {
+  background: #FAF6EE;
+  border: 1px dashed var(--line-strong);
+  border-radius: 14px;
+  padding: 14px 18px;
+  margin: 14px 0 16px;
+}
+.raw-input-label {
+  display: block;
+  font-size: 11.5px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--orange-dark);
+  margin-bottom: 6px;
+}
+.raw-input-box pre {
+  margin: 0;
+  font-family: inherit;
+  font-size: 13.3px;
+  line-height: 1.6;
+  color: var(--ink);
+  white-space: pre-wrap;
+}
+
+/* Chapter 8 SOP Library Search, Controls & Collapsible Cards */
+.sop-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 14px 0 16px;
+}
+.sop-search-input {
+  flex: 1;
+  min-width: 240px;
+  background: var(--paper);
+  border: 1px solid var(--line-strong);
+  border-radius: 12px;
+  padding: 10px 14px;
+  font: inherit;
+  font-size: 13.5px;
+  color: var(--ink);
+  outline: none;
+  transition: all 0.18s ease;
+}
+.sop-search-input:focus {
+  border-color: var(--orange);
+  box-shadow: 0 0 0 3px rgba(240, 130, 30, 0.14);
+}
+.sop-toggle-all-btn {
+  padding: 9px 14px;
+  border-radius: 10px;
+  background: var(--paper);
+  border: 1px solid var(--line-strong);
+  color: var(--ink-soft);
+  font-size: 12.5px;
+  font-weight: 700;
+  transition: all 0.16s ease;
+}
+.sop-toggle-all-btn:hover {
+  border-color: var(--green-dark);
+  color: var(--green-dark);
+}
+.sop-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+.btn-expand-card {
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--cream);
+  border: 1px solid var(--line-strong);
+  color: var(--ink-soft);
+  font-size: 12px;
+  font-weight: 700;
+  transition: all 0.16s ease;
+}
+.btn-expand-card:hover {
+  border-color: var(--green-dark);
+  color: var(--green-dark);
+}
+.sop-box.is-collapsed .sop-code-wrapper {
+  display: none;
+}
+.sop-box.is-collapsed {
+  padding: 16px 20px;
+  margin: 12px 0;
+}
+.sop-box.is-collapsed .sop-desc {
+  margin-bottom: 0;
+}
+
+/* Quiz feedback colors */
+.quiz-explain.is-wrong-state {
+  background: #FFF5F5;
+  border-left: 3px solid #DC2626;
+}
+.quiz-explain .qe-ok {
+  color: var(--green-dark);
+  margin-right: 4px;
+}
+.quiz-explain .qe-no {
+  color: #B91C1C;
+  margin-right: 4px;
+}
+
+/* Interactive Onboarding Action Checklist */
+.checklist-box {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  padding: 24px 26px;
+  margin-top: 20px;
+  box-shadow: var(--shadow-sm);
+}
+.checklist-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.checklist-progress {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: var(--green-dark);
+  background: var(--green-mist);
+  padding: 4px 12px;
+  border-radius: 999px;
+}
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 11px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.16s ease;
+  margin-bottom: 6px;
+}
+.checklist-item:hover {
+  background: var(--cream);
+}
+.checklist-item input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: var(--green-dark);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.checklist-item span {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--ink);
+}
+.checklist-item.is-checked span {
+  text-decoration: line-through;
+  color: var(--ink-light);
+}
+
+/* Floating Back-to-Top Button */
+#back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 90;
+  background: var(--green-dark);
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 700;
+  box-shadow: 0 8px 22px rgba(31, 78, 56, 0.25);
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: all 0.22s ease;
+}
+#back-to-top.is-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+#back-to-top:hover {
+  background: var(--orange);
+}
