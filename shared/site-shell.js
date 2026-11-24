@@ -257,7 +257,7 @@ function renderShell() {
   const bottomNavRoot = document.querySelector('#site-bottom-nav');
 
   if (headerRoot) headerRoot.innerHTML = siteHeaderMarkup;
-  if (footerRoot) footerRoot.innerHTML = siteFooterMarkup;
+  if (footerRoot) footerRoot.innerHTML = '';
   if (bottomNavRoot) bottomNavRoot.innerHTML = bottomNavMarkup;
 
   // Active page indicator
