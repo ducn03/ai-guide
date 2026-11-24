@@ -1,182 +1,132 @@
 [
   {
-    "id": "p-01",
-    "category": "office",
-    "categoryName": "Văn phòng & Công sở",
-    "title": "Soạn thảo Email xin từ chối lịch sự và chuyên nghiệp",
-    "description": "Viết email từ chối lời mời hợp tác, từ chối ứng viên hoặc từ chối deadline bất hợp lý một cách khéo léo, giữ gìn mối quan hệ tốt đẹp.",
+    "id": "hr-01",
+    "category": "hr",
+    "categoryName": "Hành chính - Nhân sự (HR)",
+    "title": "Soạn thảo Bản mô tả công việc (JD) thu hút nhân tài",
+    "description": "Tạo JD chuẩn chỉnh gồm trách nhiệm, yêu cầu năng lực, quyền lợi hấp dẫn và văn hóa doanh nghiệp mà không bị khô cứng.",
     "level": "Cơ bản",
-    "tags": ["Email", "Giao tiếp", "Văn phòng"],
-    "prompt": "Bạn là chuyên gia truyền thông doanh nghiệp với 15 năm kinh nghiệm.\nHãy giúp tôi viết một email từ chối [lời mời hợp tác / đề nghị nhận việc / yêu cầu thay đổi deadline] từ đối tác [Tên đối tác hoặc người gửi].\n\nBối cảnh cụ thể:\n- Lý do từ chối: [Ví dụ: Hiện tại công ty đang tập trung nguồn lực cho dự án quý 2 / Chưa phù hợp định hướng]\n- Thái độ: Lịch sự, tôn trọng, chân thành nhưng dứt khoát\n- Mong muốn: Giữ mối quan hệ tốt đẹp để có thể hợp tác trong tương lai\n\nYêu cầu đầu ra:\n1. Tiêu đề email chuyên nghiệp\n2. Nội dung email dưới 150 từ, rõ ràng, không vòng vo\n3. Lời kết ấm áp và chữ ký tiêu chuẩn"
+    "tags": ["HR", "Tuyển dụng", "JD", "Nhân sự"],
+    "prompt": "Bạn là Trưởng phòng Tuyển dụng (Talent Acquisition Lead) với 10 năm kinh nghiệm trong ngành [Ngành nghề của công ty].\nHãy giúp tôi viết một bản Mô tả công việc (Job Description - JD) cho vị trí: [Tên vị trí, ví dụ: Chuyên viên Content Marketing / Nhân viên Kinh doanh B2B].\n\nThông tin cơ bản:\n- Cấp bậc: [Nhân viên / Trưởng nhóm / Thực tập sinh]\n- Địa điểm làm việc: [Văn phòng / Hybrid / Remote]\n- Mức lương dự kiến: [Khoảng lương, ví dụ: 12 - 18 triệu + Thưởng KPI]\n- Yêu cầu chính: [Ví dụ: Tối thiểu 1 năm kinh nghiệm, biết quay dựng CapCut cơ bản]\n\nYêu cầu cấu trúc JD chuyên nghiệp:\n1. Giới thiệu ngắn về sứ mệnh và cơ hội phát triển ở vị trí này (Hook thu hút ứng viên trong 5 giây đầu).\n2. Trách nhiệm công việc chính (Liệt kê 5-7 gạch đầu dòng rõ ràng, tập trung vào kết quả đầu ra).\n3. Yêu cầu năng lực & kinh nghiệm (Tách rõ: Bắt buộc phải có vs Ưu tiên điểm cộng).\n4. Quyền lợi & Phúc lợi hấp dẫn (Lương thưởng, lộ trình thăng tiến, văn hóa cởi mở, chế độ bảo hiểm).\n5. Quy trình ứng tuyển và thời hạn nộp hồ sơ."
   },
   {
-    "id": "p-02",
-    "category": "office",
-    "categoryName": "Văn phòng & Công sở",
-    "title": "Tóm tắt biên bản cuộc họp thành Action Items",
-    "description": "Chuyển đổi ghi chú cuộc họp lộn xộn thành danh sách đầu việc có người phụ trách (Owner), thời hạn (Deadline) và mức độ ưu tiên.",
-    "level": "Cơ bản",
-    "tags": ["Meeting", "Năng suất", "Quản lý dự án"],
-    "prompt": "Bạn là Thư ký điều hành chuyên nghiệp.\nDưới đây là ghi chú thô của cuộc họp hôm nay:\n\"\"\"\n[Dán toàn bộ ghi chép hoặc biên bản cuộc họp vào đây]\n\"\"\"\n\nHãy phân tích và trích xuất thành báo cáo cô đọng theo cấu trúc:\n1. Tóm tắt 3 quyết định quan trọng nhất đã được thống nhất (Tối đa 3 gạch đầu dòng).\n2. Bảng Action Items gồm các cột: | STT | Nhiệm vụ cụ thể | Người phụ trách (Owner) | Thời hạn (Deadline) | Mức độ ưu tiên (Cao/Trung bình/Thấp) |\n3. Các vấn đề còn tồn đọng cần bàn thảo ở cuộc họp tiếp theo."
-  },
-  {
-    "id": "p-03",
-    "category": "office",
-    "categoryName": "Văn phòng & Công sở",
-    "title": "Lập báo cáo tuần (Weekly Report) gửi Sếp theo mô hình PPP",
-    "description": "Báo cáo tiến độ tuần theo khung Progress (Tiến độ) - Plans (Kế hoạch tuần tới) - Problems (Khó khăn & đề xuất hỗ trợ).",
-    "level": "Cơ bản",
-    "tags": ["Báo cáo", "Giao tiếp sếp", "Quản lý thời gian"],
-    "prompt": "Hãy đóng vai trò là một Trợ lý quản lý dự án cấp cao.\nHãy giúp tôi viết một bản Báo cáo tuần (Weekly Report) gửi cho Trưởng phòng/Ban Giám đốc dựa trên thông tin sau:\n- Vị trí của tôi: [Ví dụ: Content Specialist / Nhân viên kinh doanh]\n- Những việc đã hoàn thành tuần này: [Liệt kê các việc đã làm xong, số liệu đạt được]\n- Dự định tuần tới: [Các mục tiêu trọng tâm cần hoàn thành]\n- Khó khăn đang gặp phải: [Vướng mắc về ngân sách, tiến độ đối tác, thiếu nhân sự...]\n\nYêu cầu định dạng:\nÁp dụng mô hình PPP (Progress - Plans - Problems).\nViết ngắn gọn, dùng gạch đầu dòng, nêu rõ số liệu đo lường cụ thể và đề xuất giải pháp cho từng khó khăn."
-  },
-  {
-    "id": "p-04",
-    "category": "office",
-    "categoryName": "Văn phòng & Công sở",
-    "title": "Tạo công thức Excel & Google Sheets phức tạp theo yêu cầu",
-    "description": "Mô tả bằng lời bài toán tính toán trong bảng tính, AI sẽ viết công thức VLOOKUP, XLOOKUP, INDEX/MATCH hoặc hàm lồng ghép chính xác.",
+    "id": "hr-02",
+    "category": "hr",
+    "categoryName": "Hành chính - Nhân sự (HR)",
+    "title": "Phân tích, so khớp và chấm điểm CV ứng viên so với JD",
+    "description": "Đưa CV của ứng viên và JD vị trí vào, AI sẽ đóng vai giám khảo sàng lọc, chỉ rõ điểm mạnh, điểm yếu và câu hỏi phỏng vấn cần đào sâu.",
     "level": "Trung cấp",
-    "tags": ["Excel", "Google Sheets", "Dữ liệu"],
-    "prompt": "Bạn là chuyên gia phân tích dữ liệu và bậc thầy bảng tính Excel/Google Sheets.\nTôi đang có bảng dữ liệu như sau:\n- Cột A: [Tên cột, ví dụ: Mã đơn hàng]\n- Cột B: [Tên cột, ví dụ: Ngày tạo]\n- Cột C: [Tên cột, ví dụ: Doanh số]\n- Cột D: [Tên cột, ví dụ: Trạng thái (Đã giao, Đang xử lý, Hủy)]\n\nYêu cầu của tôi:\n[Mô tả chính xác điều bạn muốn tính, ví dụ: Tính tổng doanh số của các đơn hàng trong tháng 11 có trạng thái Đã giao].\n\nVui lòng cung cấp:\n1. Công thức chính xác (cho cả Excel bản mới và Google Sheets).\n2. Giải thích từng tham số trong công thức để tôi hiểu cách hoạt động.\n3. Những lưu ý để tránh lỗi #N/A hoặc #VALUE."
+    "tags": ["Lọc CV", "Phỏng vấn", "HR", "Tuyển dụng"],
+    "prompt": "Bạn là Chuyên viên Tuyển dụng cấp cao.\nDưới đây là JD vị trí và CV của ứng viên:\n\n=== BẢN MÔ TẢ CÔNG VIỆC (JD) ===\n[Dán yêu cầu JD vào đây]\n\n=== NỘI DUNG CV CỦA ỨNG VIÊN ===\n[Dán toàn bộ nội dung văn bản CV vào đây]\n\nHãy phân tích khách quan và trả lời theo cấu trúc sau:\n1. Điểm số tương thích: Chấm điểm từ 1-100% kèm giải thích lý do ngắn gọn.\n2. Bảng đối chiếu năng lực: | Tiêu chí trong JD | Thực tế trong CV | Đánh giá (Đạt / Chưa đạt / Vượt kỳ vọng) |\n3. Điểm sáng lớn nhất của ứng viên này đối với công ty.\n4. Những điểm nghi vấn hoặc lỗ hổng kinh nghiệm cần làm rõ.\n5. Đề xuất 3 câu hỏi phỏng vấn chuyên sâu có tính phản biện dành riêng cho ứng viên này."
   },
   {
-    "id": "p-05",
-    "category": "marketing",
-    "categoryName": "Marketing & Sáng tạo nội dung",
-    "title": "Lập kế hoạch nội dung Fanpage/TikTok 7 ngày theo AIDA",
-    "description": "Lên lịch 7 bài viết/kịch bản video đa dạng format (Giáo dục, Giải trí, Kể chuyện, Bán hàng) thu hút tương tác cao.",
+    "id": "hr-03",
+    "category": "hr",
+    "categoryName": "Hành chính - Nhân sự (HR)",
+    "title": "Soạn thảo Thông báo nội bộ & Chính sách công ty",
+    "description": "Viết thông báo nghỉ lễ, thay đổi giờ làm việc, phát động thi đua hoặc thông báo quy chế nội bộ với văn phong trang trọng, chuẩn mực.",
     "level": "Cơ bản",
-    "tags": ["Content", "Marketing", "Mạng xã hội", "AIDA"],
-    "prompt": "Bạn là Trưởng phòng Nội dung (Content Lead) với kinh nghiệm xây dựng các kênh truyền thông triệu view.\nTôi đang phát triển kênh cho sản phẩm/dịch vụ: [Tên sản phẩm, ví dụ: Hạt dinh dưỡng cao cấp dành cho dân văn phòng].\nĐối tượng mục tiêu: [Mô tả khách hàng, ví dụ: Phụ nữ 24-35 tuổi, quan tâm sức khỏe và vóc dáng, bận rộn].\n\nHãy lập cho tôi một Lịch nội dung 7 ngày (Content Calendar) chi tiết dạng bảng gồm:\n- Ngày (Thứ 2 đến Chủ nhật)\n- Mục tiêu (Awareness, Engagement, Education, Conversion)\n- Tiêu đề giật tít (Hook) gây chú ý trong 3 giây đầu\n- Tóm tắt ý tưởng nội dung chính\n- Định dạng đề xuất (Reels ngắn / Bài viết ảnh Carousel / Infographic / Minigame)\n- Lời kêu gọi hành động (Call To Action - CTA)"
+    "tags": ["Thông báo", "Văn hóa nội bộ", "HR"],
+    "prompt": "Bạn là Trưởng phòng Truyền thông nội bộ (Internal Communications).\nHãy giúp tôi soạn một Thông báo nội bộ gửi toàn thể Cán bộ Nhân viên công ty.\n\nThông tin cần truyền tải:\n- Chủ đề thông báo: [Ví dụ: Lịch nghỉ lễ Quốc khánh 2/9 / Quy định chấm công mới / Phát động phong trào thể thao quý 3]\n- Thời gian áp dụng: [Từ ngày ... đến ngày ...]\n- Lưu ý quan trọng: [Ví dụ: Bàn giao công việc trước kỳ nghỉ, cài đặt email phản hồi tự động...]\n\nYêu cầu định dạng:\n1. Tiêu đề thông báo chuẩn chỉnh theo thể thức văn bản doanh nghiệp.\n2. Lời mở đầu trang trọng, ấm áp.\n3. Các mốc thời gian và nhiệm vụ được trình bày bằng gạch đầu dòng rõ ràng, dễ nhớ.\n4. Lời chúc mừng và chữ ký đại diện Ban Giám đốc/Phòng Nhân sự."
   },
   {
-    "id": "p-06",
+    "id": "mkt-01",
     "category": "marketing",
-    "categoryName": "Marketing & Sáng tạo nội dung",
-    "title": "Viết kịch bản Video ngắn (TikTok/Reels) triệu view công thức Hook-Story-Offer",
-    "description": "Kịch bản video dọc 45-60 giây giữ chân người xem từ giây đầu tiên đến lời kêu gọi hành động cuối video.",
+    "categoryName": "Marketing & Truyền thông",
+    "title": "Lập Lịch nội dung Social Media 7 ngày đa kênh",
+    "description": "Lên kế hoạch 7 bài đăng Facebook/TikTok theo các trụ cột Awareness, Education, Trust và Conversion có tỷ lệ tương tác cao.",
+    "level": "Cơ bản",
+    "tags": ["Content Calendar", "Social Media", "Marketing"],
+    "prompt": "Bạn là Giám đốc Sáng tạo Nội dung (Content Lead) với kinh nghiệm xây dựng các kênh truyền thông triệu view.\nTôi đang lên kế hoạch nội dung cho: [Tên sản phẩm/dịch vụ của công ty].\nKhách hàng mục tiêu: [Độ tuổi, nghề nghiệp, vấn đề họ đang gặp phải].\n\nHãy lập bảng Lịch nội dung 7 ngày (Thứ 2 đến Chủ nhật) chi tiết gồm các cột:\n| Thứ | Mục tiêu truyền thông | Tiêu đề giật tít (Hook 3s) | Ý tưởng nội dung cốt lõi | Định dạng (Reels ngắn / Ảnh đơn / Carousel / Minigame) | Kêu gọi hành động (CTA) |\n\nYêu cầu: Xen kẽ hài hòa giữa các trụ cột: 40% Chia sẻ giá trị hữu ích, 30% Kể chuyện tạo niềm tin, 20% Bắt trend giải trí, 10% Bán hàng trực tiếp."
+  },
+  {
+    "id": "mkt-02",
+    "category": "marketing",
+    "categoryName": "Marketing & Truyền thông",
+    "title": "Viết kịch bản Video ngắn TikTok/Reels công thức Hook-Body-CTA",
+    "description": "Kịch bản video dọc 45-60 giây giữ chân người xem từ 3 giây đầu tiên đến lời kêu gọi hành động cuối video.",
     "level": "Trung cấp",
-    "tags": ["TikTok", "Video ngắn", "Kịch bản", "Reels"],
-    "prompt": "Bạn là đạo diễn sáng tạo chuyên sản xuất video viral trên TikTok và Reels.\nHãy viết một kịch bản video dọc dài 45-60 giây giới thiệu về: [Chủ đề hoặc sản phẩm của bạn].\n\nCấu trúc bắt buộc:\n1. Hook (0-3s): 3 phương án câu mở đầu gây sốc hoặc đánh trúng nỗi đau người xem, kèm chỉ dẫn hình ảnh hành động.\n2. Story/Value (4-40s): Nội dung cung cấp giá trị, nhịp điệu nhanh, hình ảnh biến đổi liên tục (chia theo từng cảnh 3-5 giây: Cột thời gian | Lời thoại | Hành động khung hình | Text overlay).\n3. Offer/CTA (40-50s): Kêu gọi hành động tự nhiên, không gượng ép.\n\nGiọng điệu: Trẻ trung, gần gũi, nhiều năng lượng."
+    "tags": ["TikTok", "Reels", "Video ngắn", "Kịch bản"],
+    "prompt": "Bạn là Đạo diễn kịch bản video ngắn viral trên TikTok và Facebook Reels.\nHãy viết kịch bản chi tiết 45-60 giây cho video giới thiệu về: [Chủ đề hoặc tính năng sản phẩm].\n\nCấu trúc kịch bản dạng bảng 4 cột: | Thời lượng | Lời thoại (Voice-over) | Hành động khung hình (Visual) | Chữ hiện trên màn hình (Text Overlay) |\n- Cảnh 1 (0-3s): 3 phương án câu mở đầu gây tò mò hoặc đánh trúng nỗi đau người xem.\n- Cảnh 2 (4-40s): Giải thích giải pháp, nhịp điệu nhanh, hình ảnh đổi cảnh liên tục mỗi 3-4 giây.\n- Cảnh 3 (40-50s): Lời kêu gọi hành động (CTA) kích thích để lại bình luận hoặc nhấp vào link bio."
   },
   {
-    "id": "p-07",
+    "id": "mkt-03",
     "category": "marketing",
-    "categoryName": "Marketing & Sáng tạo nội dung",
-    "title": "Nghiên cứu Khách hàng mục tiêu & Bản đồ thấu cảm (Empathy Map)",
-    "description": "Phân tích tâm lý học người mua: Nỗi đau (Pain points), Nỗi sợ (Fears), Khát khao (Desires) và rào cản mua hàng.",
+    "categoryName": "Marketing & Truyền thông",
+    "title": "Sáng tạo 10 Tiêu đề (Headlines) giật tít tăng tỷ lệ nhấp chuột (CTR)",
+    "description": "Tạo 10 tiêu đề bài viết blog, video hoặc email theo các công thức tâm lý kinh điển: FOMO, con số cụ thể, bật mí bí mật.",
+    "level": "Cơ bản",
+    "tags": ["Copywriting", "Tiêu đề", "CTR", "Marketing"],
+    "prompt": "Bạn là chuyên gia Copywriting hàng đầu chuyên viết tiêu đề quảng cáo chuyển đổi cao.\nNội dung chính của bài viết/video của tôi là: [Tóm tắt nội dung của bạn].\nĐối tượng độc giả: [Độc giả mục tiêu].\n\nHãy sáng tạo cho tôi 10 tiêu đề hấp dẫn phân loại theo 5 công thức tâm lý:\n1. Công thức Nỗi đau / Nỗi sợ bị bỏ lỡ (FOMO) (2 tiêu đề)\n2. Công thức Bật mí bí quyết / Sự thật ít ai biết (Curiosity Gap) (2 tiêu đề)\n3. Công thức Con số cụ thể & Giới hạn thời gian (Listicle) (2 tiêu đề)\n4. Công thức Đi ngược số đông / Phản trực giác (Counter-intuitive) (2 tiêu đề)\n5. Công thức Làm thế nào để... mà không cần... (How-to without pain) (2 tiêu đề)"
+  },
+  {
+    "id": "sales-01",
+    "category": "sales",
+    "categoryName": "Kinh doanh & CSKH",
+    "title": "Kịch bản Telesale & Gọi điện tư vấn khách hàng mới",
+    "description": "Kịch bản gọi điện mở đầu tự nhiên, không bị dập máy trong 15 giây đầu, khơi gợi nhu cầu và chốt lịch hẹn gặp.",
+    "level": "Cơ bản",
+    "tags": ["Telesale", "Sales", "Kịch bản gọi điện"],
+    "prompt": "Bạn là Giám đốc Kinh doanh hàng đầu với kỹ năng Telesale đỉnh cao.\nHãy soạn kịch bản gọi điện thoại tư vấn (Cold Call / Warm Call) cho sản phẩm: [Tên sản phẩm/dịch vụ của công ty].\nĐối tượng nhận cuộc gọi: [Khách hàng cá nhân / Chủ doanh nghiệp / Trưởng phòng mua hàng].\n\nCấu trúc kịch bản gồm:\n1. Mở đầu (0-15s): Chào hỏi ngắn gọn, nêu lý do cuộc gọi chạm ngay vào lợi ích khách hàng quan tâm (tránh nói 'Em xin 5 phút làm phiền anh/chị').\n2. Khơi gợi vấn đề: 2 câu hỏi mở để khách hàng tự chia sẻ khó khăn hiện tại.\n3. Giới thiệu giải pháp cô đọng (30s): Nêu đúng 2 giá trị vượt trội nhất giải quyết khó khăn đó.\n4. Chốt mục tiêu cuộc gọi: Đề xuất thời gian cụ thể cho một buổi hẹn tư vấn trực tiếp hoặc gửi bản demo trải nghiệm."
+  },
+  {
+    "id": "sales-02",
+    "category": "sales",
+    "categoryName": "Kinh doanh & CSKH",
+    "title": "Bộ kịch bản Xử lý Lời từ chối kinh điển của khách hàng",
+    "description": "Chiến thuật xử lý chuyên nghiệp các câu từ chối: 'Giá bên em đắt quá', 'Để anh suy nghĩ thêm', 'Bên anh đang dùng dịch vụ khác rồi'.",
+    "level": "Trung cấp",
+    "tags": ["Xử lý từ chối", "Chốt sale", "Kinh doanh"],
+    "prompt": "Bạn là Chuyên gia Đào tạo Kỹ năng Bán hàng (Sales Coach).\nHãy giúp đội ngũ kinh doanh công ty xử lý lời từ chối của khách hàng đối với sản phẩm: [Mô tả sản phẩm và mức giá].\n\nHãy cung cấp câu phản hồi mẫu cho 3 tình huống từ chối phổ biến nhất:\n1. Khách chê: 'Giá bên em cao hơn các bên khác trên thị trường.'\n2. Khách trì hoãn: 'Anh/chị thấy cũng hay đấy nhưng để anh suy nghĩ thêm đã nhé.'\n3. Khách từ chối: 'Bên anh đang hợp tác với đối tác quen rồi, không có nhu cầu đổi.'\n\nVới mỗi tình huống, hãy áp dụng nguyên tắc Đồng cảm -> Đặt câu hỏi cô lập vấn đề -> Đưa ra dẫn chứng thuyết phục và Kêu gọi bước tiếp theo."
+  },
+  {
+    "id": "sales-03",
+    "category": "sales",
+    "categoryName": "Kinh doanh & CSKH",
+    "title": "Soạn Email phản hồi khiếu nại khách hàng khéo léo (CSKH 5 Sao)",
+    "description": "Hạ nhiệt cơn giận của khách hàng khi gặp sự cố sản phẩm/dịch vụ, nhận trách nhiệm văn minh và đề xuất phương án bù đắp thỏa đáng.",
+    "level": "Cơ bản",
+    "tags": ["CSKH", "Xử lý khiếu nại", "Email"],
+    "prompt": "Bạn là Trưởng bộ phận Chăm sóc khách hàng (Customer Support Lead).\nKhách hàng [Tên khách hàng] vừa gửi phản ánh gay gắt về sự cố: [Mô tả sự cố: Giao hàng chậm 3 ngày / Sản phẩm bị lỗi đóng gói / Nhân viên tư vấn chưa nhiệt tình].\n\nHãy viết thư phản hồi gửi khách hàng đảm bảo các tiêu chí:\n1. Lời xin lỗi chân thành, nhận diện rõ cảm xúc thất vọng của khách hàng (tuyệt đối không đổ lỗi cho bên thứ ba).\n2. Giải thích ngắn gọn nguyên nhân sự cố một cách minh bạch.\n3. Phương án xử lý ngay lập tức (Đổi mới / Hoàn tiền / Đẩy nhanh giao dịch).\n4. Chính sách bù đắp thiện chí (Tặng voucher giảm giá cho đơn tiếp theo hoặc quà tri ân).\n5. Lời cam kết cải tiến quy trình để không tái diễn sự cố."
+  },
+  {
+    "id": "fin-01",
+    "category": "finance",
+    "categoryName": "Kế toán & Dữ liệu",
+    "title": "Tạo công thức Excel/Google Sheets phức tạp (XLOOKUP, SUMIFS, INDEX-MATCH)",
+    "description": "Mô tả bài toán đối soát, lọc dữ liệu trùng hoặc tính tổng có nhiều điều kiện, AI sẽ sinh công thức chính xác và giải thích cặn kẽ.",
+    "level": "Trung cấp",
+    "tags": ["Excel", "Google Sheets", "Hàm tính", "Kế toán"],
+    "prompt": "Bạn là Chuyên gia Phân tích Dữ liệu và Bậc thầy Excel/Google Sheets.\nTôi đang có một bảng dữ liệu bảng tính như sau:\n- Cột A: [Mã đơn hàng / Mã nhân viên]\n- Cột B: [Ngày phát sinh giao dịch]\n- Cột C: [Tên khách hàng / Phòng ban]\n- Cột D: [Số tiền / Doanh thu]\n- Cột E: [Trạng thái thanh toán (Đã thanh toán / Chưa thanh toán / Hủy)]\n\nBài toán tôi cần giải quyết:\n[Mô tả chính xác điều bạn cần tính, ví dụ: Tính tổng doanh thu của khách hàng X trong quý 3 có trạng thái Đã thanh toán].\n\nVui lòng cung cấp:\n1. Công thức chuẩn (cho cả Excel đời mới và Google Sheets).\n2. Giải thích ý nghĩa của từng tham số trong công thức.\n3. Những lưu ý để không bị lỗi #N/A hoặc lỗi định dạng ngày tháng."
+  },
+  {
+    "id": "fin-02",
+    "category": "finance",
+    "categoryName": "Kế toán & Dữ liệu",
+    "title": "Tóm tắt và Trích xuất Insight từ Báo cáo Tài chính / Doanh thu",
+    "description": "Dán các số liệu doanh thu thô, chi phí và lợi nhuận, AI sẽ phân tích xu hướng tăng trưởng, biên lợi nhuận và điểm cảnh báo rủi ro.",
     "level": "Nâng cao",
-    "tags": ["Persona", "Nghiên cứu thị trường", "Marketing"],
-    "prompt": "Bạn là chuyên gia nghiên cứu thị trường và tâm lý học hành vi người tiêu dùng.\nHãy phân tích chân dung khách hàng lý tưởng (Buyer Persona) cho sản phẩm: [Mô tả sản phẩm, mức giá và thị trường].\n\nHãy xây dựng bản phân tích chuyên sâu gồm 4 phần:\n1. Nhân khẩu học & Phong cách sống: Tuổi tác, nghề nghiệp, thu nhập, thói quen sinh hoạt.\n2. Bản đồ thấu cảm (Empathy Map):\n   - Họ đang NGHĨ và CẢM THẤY điều gì?\n   - Họ đang NGHE thấy gì từ bạn bè, đồng nghiệp, mạng xã hội?\n   - Họ đang THẤY điều gì trong môi trường sống hàng ngày?\n   - Họ đang NÓI và LÀM gì?\n3. Điểm đau đớn lớn nhất (Biggest Pain Points) và Mong muốn tột cùng (Deepest Desires).\n4. 5 Rào cản tâm lý khiến họ chần chừ chưa mua hàng và luận điểm thuyết phục tương ứng."
+    "tags": ["Báo cáo tài chính", "Doanh số", "Phân tích số liệu"],
+    "prompt": "Bạn là Chuyên viên Phân tích Tài chính Doanh nghiệp (Financial Analyst).\nDưới đây là bảng số liệu doanh thu và chi phí của công ty:\n\"\"\"\n[Dán số liệu bảng tính hoặc báo cáo thô vào đây]\n\"\"\"\n\nHãy phân tích và lập báo cáo tài chính điều hành cho Ban Giám đốc gồm:\n1. Bảng tóm tắt chỉ số chính: Doanh thu thuần, Chi phí vận hành, Lợi nhuận gộp, Biên lợi nhuận ròng (%)\n2. Phân tích xu hướng: Chỉ ra 3 nguồn doanh thu tăng trưởng mạnh nhất và 3 khoản chi phí tăng bất thường.\n3. Cảnh báo rủi ro về dòng tiền hoặc quản trị chi phí.\n4. 3 Khuyến nghị hành động cụ thể để tối ưu hóa lợi nhuận cho tháng tới."
   },
   {
-    "id": "p-08",
-    "category": "coding",
-    "categoryName": "Lập trình & Kỹ thuật số",
-    "title": "Phân tích, tìm lỗi (Debug) và tối ưu mã nguồn",
-    "description": "Dán đoạn mã bị lỗi hoặc chạy chậm, AI sẽ chỉ rõ nguyên nhân gốc rễ và cung cấp mã đã sửa kèm giải thích cặn kẽ.",
-    "level": "Trung cấp",
-    "tags": ["Code", "Debug", "Tối ưu", "Developer"],
-    "prompt": "Bạn là Kỹ sư phần mềm Senior (Senior Software Engineer) với tư duy thuật toán sắc bén.\nDưới đây là đoạn mã [Ngôn ngữ: JavaScript / Python / PHP / CSS] đang gặp vấn đề:\n\"\"\"\n[Dán mã nguồn của bạn vào đây]\n\"\"\"\n\nHiện tượng lỗi hoặc mong muốn:\n- Mô tả lỗi: [Ví dụ: Báo lỗi Uncaught TypeError / Chạy bị đơ khi dữ liệu lớn / Không hiển thị đúng trên mobile]\n\nVui lòng phản hồi theo cấu trúc:\n1. Nguyên nhân gốc rễ (Root Cause): Giải thích bằng ngôn ngữ dễ hiểu vì sao lỗi này xuất hiện.\n2. Đoạn mã đã sửa hoàn chỉnh (Full refactored code) kèm comment chú thích rõ ràng.\n3. Các điểm tối ưu thêm về hiệu năng (Performance) hoặc khả năng bảo trì (Clean Code)."
-  },
-  {
-    "id": "p-09",
-    "category": "coding",
-    "categoryName": "Lập trình & Kỹ thuật số",
-    "title": "Chuyển đổi ý tưởng giao diện thành mã HTML/CSS hiện đại",
-    "description": "Mô tả một khối giao diện (Hero, Pricing Card, Testimonial, Navbar), AI sẽ sinh mã sạch, responsive, không cần thư viện nặng.",
-    "level": "Trung cấp",
-    "tags": ["HTML", "CSS", "Frontend", "UI"],
-    "prompt": "Bạn là Chuyên gia Lập trình Giao diện Frontend (UI Engineer).\nHãy viết mã HTML5 và CSS3 hiện đại (thuần, không dùng Bootstrap/Tailwind) cho thành phần sau:\n- Thành phần: [Ví dụ: Thẻ bảng giá dạng Card với 3 gói dịch vụ, gói ở giữa được highlight]\n- Phong cách: Tối giản, thanh lịch, bo góc mềm mại, đổ bóng nhẹ nhàng theo bảng màu: Nền kem #FFFBF4, điểm nhấn xanh lá #1F4E38 và cam #F0821E.\n- Yêu cầu bắt buộc:\n  + Responsive mượt mà từ mobile (375px) đến desktop (1200px)\n  + Có hiệu ứng hover chuyển động nhẹ (transition)\n  + Mã CSS sử dụng CSS Variables và Flexbox/CSS Grid sạch sẽ\n  + Trả về toàn bộ mã trong một khối code duy nhất có thể chạy ngay."
-  },
-  {
-    "id": "p-10",
-    "category": "coding",
-    "categoryName": "Lập trình & Kỹ thuật số",
-    "title": "Giải thích khái niệm công nghệ cho người mới (Feynman Technique)",
-    "description": "Áp dụng kỹ thuật Feynman: Giải thích các thuật ngữ khó hiểu như API, Docker, Cloud, Git... như thể đang nói với một đứa trẻ 10 tuổi.",
+    "id": "ops-01",
+    "category": "office",
+    "categoryName": "Văn phòng & Vận hành",
+    "title": "Tóm tắt Biên bản cuộc họp thành Danh sách Action Items có Deadline",
+    "description": "Chuyển đổi ghi chú cuộc họp lộn xộn thành biên bản súc tích, phân công rõ người phụ trách (Owner) và thời hạn hoàn thành.",
     "level": "Cơ bản",
-    "tags": ["Học tập", "Công nghệ", "Feynman", "Giải thích"],
-    "prompt": "Hãy đóng vai trò là một người thầy dạy công nghệ đại tài, người luôn áp dụng Kỹ thuật Feynman (Feynman Technique).\nHãy giải thích cho tôi khái niệm: [Khái niệm công nghệ bạn muốn hiểu, ví dụ: API là gì? / Git và GitHub khác nhau thế nào? / Điện toán đám mây là gì?].\n\nQuy tắc trả lời:\n1. Tuyệt đối không dùng thuật ngữ kỹ thuật phức tạp nếu chưa được định nghĩa trước.\n2. Sử dụng một phép so sánh ẩn dụ thực tế và gần gũi trong đời sống hàng ngày (Ví dụ: Nhà hàng, người đưa thư, thư viện...).\n3. Nêu một ví dụ thực tế tôi vẫn dùng nó mỗi ngày trên điện thoại mà không hề hay biết.\n4. Đúc kết lại trong đúng 1 câu ngắn gọn dễ nhớ."
+    "tags": ["Cuộc họp", "Action Items", "Vận hành", "Quản lý công việc"],
+    "prompt": "Bạn là Thư ký điều hành chuyên nghiệp của Ban Giám đốc.\nDưới đây là ghi chú thô của cuộc họp hôm nay:\n\"\"\"\n[Dán ghi chép cuộc họp vào đây]\n\"\"\"\n\nHãy trích xuất thành biên bản cuộc họp cô đọng theo cấu trúc:\n1. 3 Quyết định quan trọng nhất đã được thống nhất tại cuộc họp.\n2. Bảng Action Items phân công nhiệm vụ: | STT | Nhiệm vụ cụ thể | Người phụ trách (Owner) | Thời hạn (Deadline) | Mức độ ưu tiên (Cao/Trung bình/Thấp) |\n3. Các vấn đề chưa thống nhất cần xin ý kiến thêm ở cuộc họp tiếp theo."
   },
   {
-    "id": "p-11",
-    "category": "learning",
-    "categoryName": "Học tập & Nghiên cứu",
-    "title": "Tóm tắt sách theo phương pháp 80/20 (Nguyên lý Pareto)",
-    "description": "Trích xuất 20% ý tưởng cốt lõi tạo ra 80% giá trị của bất kỳ cuốn sách nào, kèm ví dụ hành động ứng dụng vào đời sống.",
+    "id": "ops-02",
+    "category": "office",
+    "categoryName": "Văn phòng & Vận hành",
+    "title": "Lập Báo cáo tiến độ tuần (Weekly Report) gửi Lãnh đạo mô hình PPP",
+    "description": "Báo cáo tiến độ chuẩn chỉnh theo mô hình Progress (Việc đã làm) - Plans (Kế hoạch tuần tới) - Problems (Vướng mắc & Đề xuất giải pháp).",
     "level": "Cơ bản",
-    "tags": ["Đọc sách", "Tóm tắt", "Pareto", "Tư duy"],
-    "prompt": "Bạn là chuyên gia chắt lọc tri thức và phương pháp luận đọc sách nhanh.\nHãy tóm tắt cuốn sách: [Tên cuốn sách và Tác giả, ví dụ: Atomic Habits - James Clear].\n\nÁp dụng Nguyên lý Pareto (80/20), hãy trình bày theo 4 phần:\n1. Luận điểm trung tâm (Core Thesis): Ý niệm quan trọng nhất mà cuốn sách muốn truyền tải (Dưới 3 câu).\n2. 5 Bài học đắt giá nhất: Mỗi bài học kèm theo một lời giải thích ngắn gọn và một ví dụ minh hoạ thực tế.\n3. Những quan niệm sai lầm phổ biến mà cuốn sách này đập tan.\n4. Kế hoạch hành động 3 bước ngay ngày mai: Độc giả có thể áp dụng ngay điều gì vào cuộc sống trong vòng 24 giờ tới?"
-  },
-  {
-    "id": "p-12",
-    "category": "learning",
-    "categoryName": "Học tập & Nghiên cứu",
-    "title": "Gia sư Tiếng Anh phản biện & luyện viết theo ngữ cảnh thực tế",
-    "description": "Đóng vai trò người bản xứ sửa bài viết tiếng Anh, chỉ ra lỗi ngữ pháp, gợi ý từ vựng tự nhiên hơn (Collocations) và viết lại bài mẫu.",
-    "level": "Cơ bản",
-    "tags": ["Tiếng Anh", "Học tập", "IELTS", "Gia sư"],
-    "prompt": "Bạn là một Giảng viên ngôn ngữ Anh bản xứ (Native English Coach) thân thiện và tỉ mỉ.\nDưới đây là đoạn văn tiếng Anh do tôi viết:\n\"\"\"\n[Dán đoạn văn tiếng Anh của bạn vào đây]\n\"\"\"\n\nHãy giúp tôi sửa bài theo các bước sau:\n1. Nhận xét chung: Đánh giá độ trôi chảy (Fluency) và mức độ truyền tải thông điệp.\n2. Bảng soi lỗi chi tiết: | Chỗ tôi viết sai/chưa tự nhiên | Bản sửa chuẩn | Giải thích lý do ngữ pháp/văn phong |\n3. Nâng cấp từ vựng: Gợi ý 3-5 Collocations hoặc Phrasal Verbs cao cấp hơn phù hợp với ngữ cảnh này.\n4. Bản viết lại hoàn hảo: Viết lại đoạn văn theo 2 cấp độ: Cấp độ Tự nhiên hàng ngày (Natural) và Cấp độ Chuyên nghiệp/Học thuật (Professional/IELTS 7.5+)."
-  },
-  {
-    "id": "p-13",
-    "category": "learning",
-    "categoryName": "Học tập & Nghiên cứu",
-    "title": "Thiết kế Lộ trình tự học bất kỳ kỹ năng mới trong 30 ngày",
-    "description": "Phân rã kỹ năng lớn thành các vi kỹ năng (Micro-skills) luyện tập mỗi ngày 30-45 phút có mốc kiểm tra đo lường.",
-    "level": "Trung cấp",
-    "tags": ["Lộ trình", "Tự học", "Kỹ năng mới", "Năng suất"],
-    "prompt": "Bạn là Chuyên gia thiết kế chương trình học tập gia tốc (Accelerated Learning Coach).\nTôi muốn tự học kỹ năng: [Ví dụ: Kỹ năng thuyết trình trước đám đông / Phân tích dữ liệu bằng SQL / Nhiếp ảnh điện thoại].\nThời gian tôi có thể dành ra: [30 - 45 phút mỗi ngày].\nTrình độ hiện tại: [Người mới bắt đầu hoàn toàn].\n\nHãy thiết kế cho tôi một Lộ trình 30 ngày (30-Day Blueprint) được chia thành 4 tuần:\n- Tuần 1: Nền tảng và các khái niệm cốt lõi (20% mang lại 80% hiệu quả)\n- Tuần 2: Thực hành cơ bản và sửa sai\n- Tuần 3: Dự án thực tế nhỏ (Mini Project) ứng dụng kỹ năng\n- Tuần 4: Hoàn thiện, nâng cao và kiểm tra đánh giá năng lực\n\nMỗi ngày nêu rõ: Tên nhiệm vụ cụ thể + Tài liệu/Từ khoá tìm kiếm + Bài tập thực hành đo lường được."
-  },
-  {
-    "id": "p-14",
-    "category": "writing",
-    "categoryName": "Viết lách & Sáng tạo",
-    "title": "Chấm điểm và biên tập lại bài viết theo phong cách chuyên nghiệp",
-    "description": "Biên tập viên cao cấp đọc duyệt, chấm điểm theo thang 10 tiêu chí và viết lại mượt mà, gọt giũa từ ngữ rườm rà.",
-    "level": "Cơ bản",
-    "tags": ["Viết lách", "Biên tập", "Nâng cấp bài", "Copywriting"],
-    "prompt": "Bạn là Tổng biên tập của một tạp chí phong cách sống và kinh doanh uy tín.\nDưới đây là bản thảo bài viết của tôi:\n\"\"\"\n[Dán bài viết cần biên tập vào đây]\n\"\"\"\n\nHãy đóng vai trò biên tập viên và thực hiện các nhiệm vụ:\n1. Đánh giá nhanh: Chấm điểm bài viết trên thang điểm 10 theo các tiêu chí: Tính mạch lạc, Độ lôi cuốn, Ngữ pháp, Sự cô đọng.\n2. 3 Điểm cần cắt bỏ: Chỉ ra những từ ngữ thừa thãi, sáo rỗng hoặc câu văn lặp ý.\n3. Viết lại bài hoàn chỉnh: Gọt giũa câu từ để bài viết nghe sắc sảo, tự nhiên, nhịp nhàng và giàu sức thuyết phục hơn, giữ nguyên quan điểm của tôi."
-  },
-  {
-    "id": "p-15",
-    "category": "writing",
-    "categoryName": "Viết lách & Sáng tạo",
-    "title": "Sáng tạo 10 Tiêu đề (Headlines) giật tít không thể cưỡng lại",
-    "description": "Sinh 10 tiêu đề bài viết/video theo các công thức tâm lý kinh điển: Tò mò, Con số, Nỗi sợ, Lợi ích tức thì, Phản trực giác.",
-    "level": "Cơ bản",
-    "tags": ["Tiêu đề", "Copywriting", "Giật tít", "Content"],
-    "prompt": "Bạn là chuyên gia Copywriting hàng đầu chuyên viết các tiêu đề có tỷ lệ click (CTR) cao nhất.\nNội dung chính của bài viết/video của tôi là: [Mô tả tóm tắt nội dung của bạn].\nĐối tượng độc giả: [Độc giả mục tiêu].\n\nHãy sáng tạo cho tôi 10 tiêu đề hấp dẫn được phân loại theo các công thức tâm lý kinh điển:\n1. Công thức Đánh trúng nỗi sợ (Fear of Missing Out - FOMO) (2 tiêu đề)\n2. Công thức Bật mí bí mật / Tò mò (Curiosity Gap) (2 tiêu đề)\n3. Công thức Con số cụ thể & Lời hứa thời gian (Listicle & Specific) (2 tiêu đề)\n4. Công thức Phản trực giác / Đi ngược số đông (Counter-intuitive) (2 tiêu đề)\n5. Công thức Làm sao để... ngay cả khi... (How-to without pain) (2 tiêu đề)"
-  },
-  {
-    "id": "p-16",
-    "category": "life",
-    "categoryName": "Đời sống & Phát triển bản thân",
-    "title": "Ma trận Eisenhower & Sắp xếp thứ tự ưu tiên ngày làm việc",
-    "description": "Liệt kê danh sách các việc lộn xộn trong đầu, AI sẽ phân bổ vào 4 ô ma trận Eisenhower để bạn làm việc tập trung, không kiệt sức.",
-    "level": "Cơ bản",
-    "tags": ["Quản lý thời gian", "Eisenhower", "Năng suất", "Tập trung"],
-    "prompt": "Bạn là một Huấn luyện viên Năng suất cá nhân (Personal Productivity Coach).\nHôm nay tôi có quá nhiều việc phải làm và đang cảm thấy bị quá tải (overwhelmed). Dưới đây là danh sách những việc đang rối bời trong đầu tôi:\n\"\"\"\n[Liệt kê tự do tất cả các việc bạn cần làm, to nhỏ đều ghi ra]\n\"\"\"\n\nHãy phân loại giúp tôi vào Ma trận Eisenhower 4 góc phần tư:\n1. Khẩn cấp & Quan trọng (Làm ngay lập tức - Tối đa 3 việc)\n2. Quan trọng nhưng Không khẩn cấp (Lên lịch làm tập trung - Đây là chìa khoá thành công lâu dài)\n3. Khẩn cấp nhưng Không quan trọng (Ủy quyền, tự động hoá hoặc nhờ người khác làm)\n4. Không khẩn cấp & Không quan trọng (Cắt bỏ hoặc dời lại sau)\n\nSau đó, hãy đề xuất cho tôi Thứ tự làm việc cụ thể từ sáng đến chiều hôm nay kèm phương pháp Pomodoro."
-  },
-  {
-    "id": "p-17",
-    "category": "life",
-    "categoryName": "Đời sống & Phát triển bản thân",
-    "title": "Mô phỏng Phỏng vấn thử & Phản biện tình huống khó",
-    "description": "AI đóng vai nhà tuyển dụng khó tính phỏng vấn bạn từng câu một theo phương pháp STAR, đưa ra phản hồi cải thiện câu trả lời.",
-    "level": "Trung cấp",
-    "tags": ["Phỏng vấn", "Xin việc", "STAR", "Sự nghiệp"],
-    "prompt": "Bạn hãy đóng vai là một Giám đốc tuyển dụng khó tính nhưng công tâm tại một công ty công nghệ lớn.\nTôi chuẩn bị phỏng vấn cho vị trí: [Tên vị trí, ví dụ: Chuyên viên Phân tích Nghiệp vụ - Business Analyst].\n\nQuy tắc cuộc phỏng vấn thử:\n1. Hãy chào tôi và đặt câu hỏi phỏng vấn đầu tiên (một câu hỏi hành vi - Behavioral Question).\n2. DỪNG LẠI và chờ câu trả lời của tôi. Không được tự viết câu trả lời của tôi.\n3. Sau khi tôi trả lời, hãy nhận xét ngắn gọn: Điểm tốt, Điểm yếu (có áp dụng cấu trúc STAR: Situation - Task - Action - Result chưa?), sau đó mới đặt câu hỏi tiếp theo.\n4. Thực hiện lần lượt 5 câu hỏi từ dễ đến tình huống hóc búa.\n\nNếu bạn đã sẵn sàng, hãy chào tôi và bắt đầu câu hỏi số 1!"
-  },
-  {
-    "id": "p-18",
-    "category": "life",
-    "categoryName": "Đời sống & Phát triển bản thân",
-    "title": "Lập thực đơn ăn uống lành mạnh cả tuần dựa trên nguyên liệu sẵn có",
-    "description": "Nhập các món có trong tủ lạnh và mục tiêu calo, AI sẽ lên thực đơn dinh dưỡng ngon miệng, dễ nấu, không lãng phí thức ăn.",
-    "level": "Cơ bản",
-    "tags": ["Sức khỏe", "Thực đơn", "Nấu ăn", "Dinh dưỡng"],
-    "prompt": "Bạn là Chuyên gia dinh dưỡng và Đầu bếp gia đình lành mạnh.\nTôi muốn thiết kế thực đơn ăn uống cho [số người, ví dụ: 2 người] trong 5 ngày tới.\nMục tiêu sức khỏe: [Ví dụ: Giảm mỡ bụng nhẹ, tăng cơ, ăn thanh đạm, ít dầu mỡ].\nCác nguyên liệu tôi đang có sẵn trong tủ lạnh: [Liệt kê các món: ức gà, trứng, rau cải, hạt chia, đậu phụ...]\n\nHãy lập bảng thực đơn gồm Bữa sáng, Bữa trưa, Bữa tối và Bữa phụ nhẹ:\n- Đảm bảo đủ nhóm chất (Protein, Tinh bột tốt, Chất béo tốt, Chất xơ)\n- Thời gian chuẩn bị mỗi bữa dưới 25 phút\n- Cung cấp danh sách các nguyên liệu cần mua bổ sung nếu thiếu (Kèm ước lượng chi phí hợp lý)."
+    "tags": ["Báo cáo tuần", "Weekly Report", "PPP", "Báo cáo sếp"],
+    "prompt": "Bạn là Trợ lý Quản lý Dự án cấp cao.\nHãy giúp tôi viết một bản Báo cáo tuần (Weekly Report) gửi cho Ban Giám đốc theo mô hình PPP (Progress - Plans - Problems).\n\nThông tin đầu vào của tôi:\n- Vị trí của tôi: [Vị trí công việc]\n- Những việc đã hoàn thành trong tuần: [Liệt kê các việc đã làm xong kèm số liệu nếu có]\n- Kế hoạch tuần tới: [Các mục tiêu trọng tâm]\n- Khó khăn đang gặp phải: [Vướng mắc về tiến độ đối tác, ngân sách, nhân sự...]\n\nYêu cầu: Viết súc tích, đi thẳng vào số liệu, mỗi khó khăn phải có đề xuất hướng giải quyết đi kèm."
   }
 ]

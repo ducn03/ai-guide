@@ -37,12 +37,12 @@
       <div class="breadcrumbs" style="justify-content:center;">
         <a href="../index.html">Trang chủ</a>
         <span>/</span>
-        <span class="curr">Thư viện Prompt</span>
+        <span class="curr">SOP Phòng ban</span>
       </div>
-      <span class="badge-tag">Kho mẫu tuyển tập</span>
-      <h1 class="page-title">Thư viện Prompt Thực Chiến 2026</h1>
+      <span class="badge-tag">Quy chuẩn nội bộ</span>
+      <h1 class="page-title">Thư viện SOP &amp; Prompt Mẫu Phòng Ban</h1>
       <p class="page-lead">
-        Tuyển tập các câu lệnh mẫu chất lượng cao đã qua thử nghiệm thực tế. Chọn danh mục, sao chép bằng 1 chạm và thay thế các thông tin trong ngoặc vuông <code>[...]</code> để nhận ngay kết quả ưng ý.
+        Kho quy chuẩn câu lệnh thực chiến đã kiểm duyệt dành cho nhân sự: Marketing, Sales/CSKH, Hành chính - Nhân sự, Kế toán và Vận hành. Sao chép bằng 1 chạm, thay đổi các thông tin trong ngoặc vuông <code>[...]</code> và ứng dụng vào công việc hàng ngày.
       </p>
     </header>
 
@@ -57,13 +57,12 @@
 
       <!-- Category Filter Chips -->
       <div class="category-chips-wrap">
-        <button class="chip-item active" data-cat="all">✨ Tất cả</button>
-        <button class="chip-item" data-cat="office">💼 Văn phòng & Báo cáo</button>
-        <button class="chip-item" data-cat="marketing">📢 Marketing & Content</button>
-        <button class="chip-item" data-cat="coding">💻 Lập trình & Tech</button>
-        <button class="chip-item" data-cat="learning">📚 Học tập & Ngoại ngữ</button>
-        <button class="chip-item" data-cat="writing">✍️ Viết lách & Sáng tạo</button>
-        <button class="chip-item" data-cat="life">🌿 Đời sống & Kỹ năng</button>
+        <button class="chip-item active" data-cat="all">✨ Tất cả SOP</button>
+        <button class="chip-item" data-cat="marketing">📢 Marketing &amp; Content</button>
+        <button class="chip-item" data-cat="sales">🤝 Kinh doanh &amp; CSKH</button>
+        <button class="chip-item" data-cat="hr">👥 Hành chính - Nhân sự (HR)</button>
+        <button class="chip-item" data-cat="finance">📊 Kế toán &amp; Excel</button>
+        <button class="chip-item" data-cat="office">💼 Văn phòng &amp; Vận hành</button>
         <button class="chip-item" data-cat="fav">⭐ Đã lưu (<span id="fav-count">0</span>)</button>
       </div>
     </div>
@@ -125,6 +124,7 @@
   <div id="site-bottom-nav"></div>
 
   <!-- SCRIPTS -->
+  <script src="../shared/ai-data.js"></script>
   <script src="../shared/site-shell.js"></script>
   <script>
     (function initLibrary() {
@@ -328,18 +328,24 @@
         chips.forEach(c => c.classList.toggle('active', c.dataset.cat === initialCat));
       }
 
-      // Fetch data
-      fetch('../data/prompts.json')
-        .then(res => res.json())
-        .then(data => {
-          prompts = data;
-          updateFavCount();
-          render();
-        })
-        .catch(err => {
-          console.error(err);
-          gridRoot.innerHTML = `<p style="padding:40px;text-align:center;color:var(--ink-soft);">Không thể tải dữ liệu prompt. Vui lòng thử tải lại trang.</p>`;
-        });
+      // Load data from window.AI_DATABASE or fetch fallback
+      if (window.AI_DATABASE && window.AI_DATABASE.prompts) {
+        prompts = window.AI_DATABASE.prompts;
+        updateFavCount();
+        render();
+      } else {
+        fetch('../data/prompts.json')
+          .then(res => res.json())
+          .then(data => {
+            prompts = data;
+            updateFavCount();
+            render();
+          })
+          .catch(err => {
+            console.error(err);
+            gridRoot.innerHTML = `<p style="padding:40px;text-align:center;color:var(--ink-soft);">Không thể tải dữ liệu prompt. Vui lòng thử tải lại trang.</p>`;
+          });
+      }
     })();
   </script>
 </body>

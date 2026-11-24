@@ -128,6 +128,7 @@
   <div id="site-bottom-nav"></div>
 
   <!-- SCRIPTS -->
+  <script src="../shared/ai-data.js"></script>
   <script src="../shared/site-shell.js"></script>
   <script>
     (function initTools() {
@@ -201,16 +202,21 @@
         });
       });
 
-      fetch('../data/tools.json')
-        .then(res => res.json())
-        .then(data => {
-          tools = data;
-          render();
-        })
-        .catch(err => {
-          console.error(err);
-          gridRoot.innerHTML = '<p style="padding:40px;text-align:center;color:var(--ink-soft);">Không thể tải danh sách công cụ. Vui lòng thử lại.</p>';
-        });
+      if (window.AI_DATABASE && window.AI_DATABASE.tools) {
+        tools = window.AI_DATABASE.tools;
+        render();
+      } else {
+        fetch('../data/tools.json')
+          .then(res => res.json())
+          .then(data => {
+            tools = data;
+            render();
+          })
+          .catch(err => {
+            console.error(err);
+            gridRoot.innerHTML = '<p style="padding:40px;text-align:center;color:var(--ink-soft);">Không thể tải danh sách công cụ. Vui lòng thử lại.</p>';
+          });
+      }
     })();
   </script>
 </body>
