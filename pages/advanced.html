@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Làm chủ AI Nâng Cao & AI Agents - AI Guide</title>
+  <meta name="description" content="Hướng dẫn chuyên sâu về AI: Cài đặt Custom Instructions, phân tích file PDF & Excel, quy trình tự động hóa không cần code và làm chủ AI Agents tự hành.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+
+  <!-- FULL-PAGE SPLASH LOADER -->
+  <div id="page-loader">
+    <div class="loader-box">
+      <div class="loader-logo-wrap">
+        <div class="brand-icon" style="width:68px;height:68px;font-size:32px;margin:0 auto;box-shadow:0 8px 24px rgba(240,130,30,0.25);">✦</div>
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loader-bar-fill"></div>
+      </div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+      <div class="loader-text">Đang tải Kiến thức Nâng cao...</div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER MOUNT -->
+  <div id="site-header"></div>
+
+  <!-- MAIN CONTENT -->
+  <main class="wrap">
+
+    <!-- PAGE HERO HEADER -->
+    <header class="page-header">
+      <div class="breadcrumbs">
+        <a href="../index.html">Trang chủ</a>
+        <span>/</span>
+        <span class="curr">Làm chủ Agent</span>
+      </div>
+      <span class="badge-tag">Bước 4 • Đỉnh cao làm chủ</span>
+      <h1 class="page-title">AI Nâng Cao & Kỷ Nguyên AI Agents</h1>
+      <p class="page-lead">
+        Vượt qua giới hạn của những câu chat hỏi đáp thông thường. Khám phá cách cài đặt trí nhớ vĩnh viễn cho AI, phân tích dữ liệu đa phương thức và xây dựng hệ thống tác nhân tự hành (AI Agents) giải quyết công việc cho bạn 24/7.
+      </p>
+    </header>
+
+    <!-- CONTENT GRID -->
+    <div class="content-grid">
+
+      <!-- MAIN ARTICLE -->
+      <article class="article-body">
+
+        <!-- SECTION 1: CUSTOM INSTRUCTIONS -->
+        <section id="custom-instructions" class="art-sec">
+          <h2>1. Custom Instructions: Cài đặt "Trí nhớ Vĩnh viễn" cho AI</h2>
+          <p>
+            Bạn có mệt mỏi khi cứ mỗi lần mở cuộc trò chuyện mới, bạn lại phải gõ lại: <i>"Tôi là nhân viên marketing, tôi thích viết ngắn gọn, đừng chào hỏi rườm rà..."</i>?
+          </p>
+          <p>
+            Tính năng <b>Custom Instructions (Hướng dẫn Tùy chỉnh)</b> trong ChatGPT hoặc Project Knowledge trong Claude chính là chiếc chìa khóa giải quyết điều này. Một khi đã cài đặt, AI sẽ nhớ mãi phong cách của bạn trong mọi phiên trò chuyện tương lai!
+          </p>
+
+          <div class="ci-guide-box">
+            <div class="ci-card">
+              <div class="ci-head">
+                <span class="ci-num">Ô 1</span>
+                <b>Bạn muốn AI biết điều gì về bạn?</b>
+              </div>
+              <p>Mẫu điền gợi ý:</p>
+              <div class="prompt-snippet-box">
+                <code>- Nghề nghiệp: Quản lý Marketing tại công ty bán lẻ thời trang & phong cách sống.
+- Đối tượng khách hàng chính của tôi: Giới trẻ 18-28 tuổi tại Việt Nam.
+- Công cụ tôi hay dùng: Excel, Canva, Notion, TikTok.
+- Mục tiêu lớn hiện tại: Tăng gấp đôi doanh số bán hàng online và xây dựng thương hiệu cá nhân uy tín.</code>
+                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
+              </div>
+            </div>
+
+            <div class="ci-card">
+              <div class="ci-head">
+                <span class="ci-num">Ô 2</span>
+                <b>Bạn muốn AI phản hồi theo phong cách nào?</b>
+              </div>
+              <p>Mẫu điền gợi ý (Cực kỳ hiệu quả):</p>
+              <div class="prompt-snippet-box">
+                <code>- Luôn đi thẳng vào câu trả lời, không cần mở đầu bằng "Chào bạn" hay "Rất vui được giúp bạn".
+- Tránh các từ ngữ sáo rỗng hoặc ngôn từ dịch máy móc. Dùng tiếng Việt tự nhiên, sắc sảo.
+- Nếu câu trả lời phức tạp, hãy dùng bảng biểu hoặc gạch đầu dòng có phân cấp rõ ràng.
+- Luôn đóng vai người phản biện sắc sảo, chỉ ra các lỗ hổng tiềm ẩn trong ý tưởng của tôi.
+- Nếu không chắc chắn về thông tin, hãy thẳng thắn nói "Tôi không biết", tuyệt đối không tự bịa ra số liệu.</code>
+                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: MULTIMODAL AI -->
+        <section id="multimodal" class="art-sec">
+          <h2>2. Khai thác AI Đa Phương Thức (Multimodal): PDF, Excel & Hình ảnh</h2>
+          <p>
+            AI hiện đại không chỉ đọc chữ. Nó có "mắt" để nhìn hình ảnh và có "bộ não" phân tích các bảng tính Excel khổng lồ trong chớp mắt.
+          </p>
+
+          <div class="multi-grid">
+            <div class="multi-card">
+              <div class="mc-icon">📊</div>
+              <h4>Phân tích Bảng tính Excel / CSV</h4>
+              <p>Tải tệp Excel doanh số của bạn lên ChatGPT Plus hoặc Claude. Nhập lệnh:</p>
+              <div class="mc-code">
+                "Hãy phân tích file dữ liệu này: (1) Tìm 3 mặt hàng mang lại 80% lợi nhuận, (2) Chỉ ra nhóm khách hàng có tỷ lệ mua lại thấp nhất, và (3) Vẽ biểu đồ xu hướng doanh thu theo tháng."
+              </div>
+            </div>
+
+            <div class="multi-card">
+              <div class="mc-icon">📑</div>
+              <h4>Đọc hiểu Hợp đồng & Hồ sơ PDF dày cộp</h4>
+              <p>Tải file hợp đồng dịch vụ 30 trang lên Google NotebookLM hoặc Claude. Nhập lệnh:</p>
+              <div class="mc-code">
+                "Hãy rà soát hợp đồng này và lập bảng liệt kê: Các điều khoản phạt vi phạm nghĩa vụ, trách nhiệm bảo mật và thời hạn thanh toán. Cảnh báo những điều khoản bất lợi cho bên tôi."
+              </div>
+            </div>
+
+            <div class="multi-card">
+              <div class="mc-icon">🖼️</div>
+              <h4>Chụp ảnh Màn hình Báo lỗi / Thiết kế</h4>
+              <p>Chụp ảnh màn hình một đoạn lỗi phần mềm hoặc giao diện một trang web bạn thích. Nhập lệnh:</p>
+              <div class="mc-code">
+                "Hãy nhìn ảnh này: Giải thích nguyên nhân xuất hiện thông báo lỗi trên màn hình và từng bước khắc phục bằng tiếng Việt."
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: AI AGENTS -->
+        <section id="ai-agents" class="art-sec">
+          <h2>3. Kỷ nguyên AI Agents: Từ Chatbot đến Tác nhân Tự hành</h2>
+          <p>
+            Làn sóng công nghệ lớn nhất hiện nay chính là <b>AI Agents (Tác nhân AI)</b>. Điểm khác biệt lớn nhất giữa một Chatbot thông thường và một AI Agent là gì?
+          </p>
+
+          <div class="agent-compare-table">
+            <div class="act-col chat">
+              <h4>💬 Chatbot Thông Thường</h4>
+              <ul>
+                <li>Chỉ biết phản hồi chữ khi người dùng hỏi</li>
+                <li>Không thể tự mở trình duyệt hay tải file</li>
+                <li>Dừng lại sau một câu trả lời</li>
+                <li>Người dùng phải tự copy kết quả đi dán nơi khác</li>
+              </ul>
+            </div>
+            <div class="act-col agent">
+              <h4>⚡ AI Agent Tự Hành</h4>
+              <ul>
+                <li>Tự phân rã một mục tiêu lớn thành 10 bước nhỏ</li>
+                <li>Biết gọi công cụ (Tools): Duyệt web, chạy code, gửi email</li>
+                <li>Tự kiểm tra kết quả, thấy sai thì tự sửa lại</li>
+                <li>Làm việc liên tục cho đến khi đạt được mục tiêu</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="agent-loop-diagram">
+            <div class="ald-step">1. Nhận Mục tiêu</div>
+            <div class="ald-arrow">→</div>
+            <div class="ald-step">2. Suy luận (Think)</div>
+            <div class="ald-arrow">→</div>
+            <div class="ald-step">3. Hành động (Act)</div>
+            <div class="ald-arrow">→</div>
+            <div class="ald-step">4. Đánh giá (Observe)</div>
+            <div class="ald-arrow">↺</div>
+          </div>
+        </section>
+
+        <!-- SECTION 4: NO-CODE AI WORKFLOWS -->
+        <section id="no-code" class="art-sec">
+          <h2>4. Xây dựng Quy trình Tự động hóa Không cần Code</h2>
+          <p>
+            Bạn không cần là lập trình viên để xây dựng hệ thống tự động hóa cho doanh nghiệp của mình. Bằng cách kết nối AI với các nền tảng No-code như <b>Make.com</b> hoặc <b>Zapier</b>, bạn có thể tạo ra các cỗ máy kiếm tiền và tiết kiệm thời gian:
+          </p>
+
+          <div class="workflow-sample-card">
+            <h4>Ví dụ: Hệ thống Trả lời Email Khách hàng Tự động</h4>
+            <div class="wf-flow">
+              <div class="wf-node">
+                <span class="wf-badge">Bước 1</span>
+                <b>Khách gửi Email</b>
+                <p>Khách hàng gửi yêu cầu tư vấn giá vào hòm thư.</p>
+              </div>
+              <div class="wf-node">
+                <span class="wf-badge">Bước 2</span>
+                <b>AI Phân tích</b>
+                <p>ChatGPT đọc email, hiểu nhu cầu và tìm bảng giá phù hợp.</p>
+              </div>
+              <div class="wf-node">
+                <span class="wf-badge">Bước 3</span>
+                <b>Soạn bản nháp</b>
+                <p>AI viết sẵn thư trả lời chuyên nghiệp, lưu vào Draft.</p>
+              </div>
+              <div class="wf-node">
+                <span class="wf-badge">Bước 4</span>
+                <b>Báo về Telegram</b>
+                <p>Gửi tin nhắn về điện thoại của bạn: Chỉ cần bấm Duyệt là gửi đi!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 5: THƯƠNG HIỆU CÁ NHÂN & TƯ DUY KỶ NGUYÊN AI -->
+        <section id="tu-duy" class="art-sec">
+          <h2>5. Tư duy Sống còn: Để AI Nâng tầm Thay vì Đào thải Bạn</h2>
+          <div class="callout success">
+            <div class="callout-icon">💡</div>
+            <div class="callout-content">
+              <b>Câu nói định hình thập kỷ:</b>
+              <p>"AI sẽ không thay thế con người. Nhưng người biết sử dụng AI thành thạo sẽ chắc chắn thay thế người không biết dùng AI."</p>
+            </div>
+          </div>
+
+          <h3 style="margin-top:24px;">3 Kỹ năng cốt lõi AI không bao giờ thay thế được con người:</h3>
+          <div class="skills-future-grid">
+            <div class="sf-card">
+              <span class="sf-num">1</span>
+              <h4>Thẩm định và Gu Đánh giá (Taste & Judgment)</h4>
+              <p>AI có thể tạo ra 100 bức ảnh hoặc 50 bài viết trong 10 giây. Nhưng chọn ra bài viết nào chạm tới trái tim khách hàng, bức ảnh nào tinh tế và hợp thời, đó là con mắt thẩm mỹ của con người.</p>
+            </div>
+
+            <div class="sf-card">
+              <span class="sf-num">2</span>
+              <h4>Khả năng Đặt đầu bài đúng (Problem Formulation)</h4>
+              <p>AI là người giải toán siêu tốc độ, nhưng chỉ con người mới biết thế giới đang gặp vấn đề gì cần giải quyết. Kỹ năng đặt đúng câu hỏi luôn có giá trị gấp trăm lần câu trả lời.</p>
+            </div>
+
+            <div class="sf-card">
+              <span class="sf-num">3</span>
+              <h4>Sự Thấu cảm & Kết nối Con người (Empathy)</h4>
+              <p>Khách hàng mua hàng từ bạn vì sự tin tưởng, câu chuyện thương hiệu và sự ấm áp giữa người với người. AI là công cụ hỗ trợ phía sau, còn sự tử tế và uy tín là của chính bạn.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- COMPLETION CONGRATS CARD -->
+        <div class="congrats-card">
+          <div class="cc-icon">🎉</div>
+          <h3>Chúc mừng bạn đã hoàn thành Lộ trình AI Toàn diện!</h3>
+          <p>Bây giờ bạn đã nắm giữ đầy đủ kiến thức từ cơ bản đến nâng cao. Hãy bắt đầu ngay hôm nay bằng cách thử nghiệm 1 prompt trong công việc thực tế của mình.</p>
+          <div class="cc-actions">
+            <a href="prompt-library.html" class="btn btn-primary">Khám phá Thư viện Prompt</a>
+            <a href="../index.html" class="btn btn-secondary">Về Trang chủ</a>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- SIDEBAR TOC -->
+      <aside class="sidebar-toc">
+        <div class="toc-sticky">
+          <h4 class="toc-title">Mục lục chuyên sâu</h4>
+          <nav class="toc-links">
+            <a href="#custom-instructions" class="toc-link">1. Custom Instructions</a>
+            <a href="#multimodal" class="toc-link">2. AI Đa phương thức</a>
+            <a href="#ai-agents" class="toc-link">3. AI Agents tự hành</a>
+            <a href="#no-code" class="toc-link">4. Tự động hóa No-code</a>
+            <a href="#tu-duy" class="toc-link">5. Tư duy sống còn</a>
+          </nav>
+
+          <div class="sidebar-help-card">
+            <div class="sh-icon">🏆</div>
+            <b>Làm chủ AI hôm nay</b>
+            <p>Trải nghiệm ngay các công cụ tốt nhất trên Bản đồ Công cụ 2026.</p>
+            <a href="tools.html" class="sh-btn">Xem Công cụ →</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- SITE FOOTER MOUNT -->
+  <div id="site-footer"></div>
+
+  <!-- MOBILE BOTTOM NAV MOUNT -->
+  <div id="site-bottom-nav"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../shared/site-shell.js"></script>
+  <script>
+    function copySnippet(btn) {
+      const code = btn.previousElementSibling?.textContent;
+      if (code) {
+        copyText(code.trim(), 'Đã sao chép cấu hình vào bộ nhớ tạm!');
+      }
+    }
+  </script>
+</body>
+</html>

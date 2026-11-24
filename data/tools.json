@@ -1,0 +1,278 @@
+[
+  {
+    "id": "chatgpt",
+    "name": "ChatGPT (OpenAI)",
+    "category": "chatbot",
+    "categoryLabel": "Trò chuyện & Trợ lý Đa năng",
+    "badge": "Phổ biến nhất",
+    "badgeColor": "var(--green)",
+    "tagline": "Trợ lý AI toàn năng, dễ tiếp cận nhất cho mọi người dùng trên toàn thế giới.",
+    "pricing": "Freemium",
+    "freeTier": "Bản miễn phí dùng GPT-4o mini không giới hạn và GPT-4o giới hạn lượt",
+    "strengths": [
+      "Hệ sinh thái phong phú: Hỗ trợ tạo ảnh DALL-E, duyệt web, phân tích file dữ liệu",
+      "Khả năng đàm thoại bằng giọng nói (Advanced Voice Mode) cực kỳ tự nhiên",
+      "Hỗ trợ kho GPTs tùy biến khổng lồ từ cộng đồng"
+    ],
+    "weaknesses": [
+      "Giới hạn lượt dùng GPT-4o ở tài khoản miễn phí vào giờ cao điểm",
+      "Văn phong tiếng Việt đôi khi có chất dịch hơi cứng nhắc nếu không tinh chỉnh prompt"
+    ],
+    "bestFor": "Người mới bắt đầu, viết lách đa dụng, giải bài tập, làm việc văn phòng hàng ngày",
+    "url": "https://chatgpt.com",
+    "rating": "4.9 / 5.0"
+  },
+  {
+    "id": "claude",
+    "name": "Claude (Anthropic)",
+    "category": "chatbot",
+    "categoryLabel": "Trợ lý Tư duy & Viết lách",
+    "badge": "Văn phong đỉnh cao",
+    "badgeColor": "var(--orange)",
+    "tagline": "AI có khả năng viết lách tiếng Việt mượt mà nhất và tư duy logic, lập trình siêu việt.",
+    "pricing": "Freemium",
+    "freeTier": "Miễn phí dùng Claude 3.5 Sonnet với số lượng tin nhắn giới hạn mỗi ngày",
+    "strengths": [
+      "Văn phong tiếng Việt tự nhiên, ấm áp, sâu sắc như người thật viết",
+      "Khả năng đọc và hiểu tài liệu dài lên đến 200.000 tokens (cả cuốn sách dày)",
+      "Tính năng Artifacts hiển thị tài liệu, bảng biểu và chạy code HTML/JS trực tiếp"
+    ],
+    "weaknesses": [
+      "Số lượng tin nhắn miễn phí trong ngày tương đối ít",
+      "Chưa tích hợp sẵn công cụ sinh ảnh"
+    ],
+    "bestFor": "Người làm nội dung, biên kịch, dịch thuật, lập trình viên và phân tích văn bản phức tạp",
+    "url": "https://claude.ai",
+    "rating": "4.9 / 5.0"
+  },
+  {
+    "id": "gemini",
+    "name": "Google Gemini",
+    "category": "chatbot",
+    "categoryLabel": "Hệ sinh thái Google & Dữ liệu thực",
+    "badge": "Cập nhật realtime",
+    "badgeColor": "var(--blue-dark)",
+    "tagline": "AI tích hợp sâu với Google Search, YouTube, Google Docs, Drive và Gmail.",
+    "pricing": "Freemium",
+    "freeTier": "Miễn phí mô hình Gemini 1.5 Flash & Pro với giới hạn hào phóng",
+    "strengths": [
+      "Cửa sổ ngữ cảnh khổng lồ 1-2 triệu tokens: Đọc được cả video YouTube dài 1 tiếng",
+      "Tích hợp tìm kiếm thông tin thời gian thực với độ chính xác cao",
+      "Kết nối trực tiếp vào Google Workspace (Docs, Sheets, Gmail)"
+    ],
+    "weaknesses": [
+      "Đôi khi kiểm duyệt câu trả lời hơi khắt khe",
+      "Khả năng sáng tạo văn học đôi khi còn theo khuôn mẫu"
+    ],
+    "bestFor": "Học sinh, sinh viên, người nghiên cứu cần tra cứu tài liệu mới nhất và tích hợp Google Docs",
+    "url": "https://gemini.google.com",
+    "rating": "4.8 / 5.0"
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "category": "chatbot",
+    "categoryLabel": "Mã nguồn mở & Suy luận sâu",
+    "badge": "Tư duy toán & code",
+    "badgeColor": "var(--purple-dark)",
+    "tagline": "Cơn sốt AI mã nguồn mở với mô hình DeepSeek-R1 có tư duy suy luận logic ngang ngửa mô hình hàng đầu.",
+    "pricing": "Miễn phí",
+    "freeTier": "Hoàn toàn miễn phí sử dụng trên web và app",
+    "strengths": [
+      "Chế độ 'DeepThink' suy nghĩ từng bước minh bạch trước khi đưa ra kết luận",
+      "Rất mạnh về giải toán khó, logic phức tạp và sửa lỗi lập trình",
+      "Hoàn toàn miễn phí và không bị bóp băng thông"
+    ],
+    "weaknesses": [
+      "Đôi khi server bị quá tải do lượng người dùng tăng đột biến",
+      "Tính năng đính kèm file và đa phương tiện còn đơn giản"
+    ],
+    "bestFor": "Sinh viên ngành tự nhiên, lập trình viên, người thích suy luận logic sâu và chi phí 0đ",
+    "url": "https://chat.deepseek.com",
+    "rating": "4.8 / 5.0"
+  },
+  {
+    "id": "perplexity",
+    "name": "Perplexity AI",
+    "category": "research",
+    "categoryLabel": "Công cụ Tìm kiếm Thế hệ mới",
+    "badge": "Thay thế Google",
+    "badgeColor": "var(--green-dark)",
+    "tagline": "Thay vì trả về 10 đường link xanh, Perplexity đọc hiểu và tổng hợp câu trả lời kèm nguồn trích dẫn.",
+    "pricing": "Freemium",
+    "freeTier": "Tìm kiếm cơ bản không giới hạn + 5 lượt Pro Search mỗi 4 tiếng",
+    "strengths": [
+      "Mọi thông tin đều có kèm số trích dẫn nguồn uy tín (Academic, News, Reddit)",
+      "Tính năng Pro Search tự phân rã câu hỏi lớn thành nhiều câu hỏi nhỏ để tìm sâu",
+      "Tạo được bộ sưu tập bài viết (Collections/Pages) rất gọn gàng"
+    ],
+    "weaknesses": [
+      "Không tối ưu cho việc sáng tạo truyện hư cấu",
+      "Bản trả phí Pro giá tương đối cao ($20/tháng)"
+    ],
+    "bestFor": "Người làm nghiên cứu, nhà báo, sinh viên làm luận văn cần tìm tài liệu chuẩn xác kèm nguồn",
+    "url": "https://www.perplexity.ai",
+    "rating": "4.9 / 5.0"
+  },
+  {
+    "id": "notebooklm",
+    "name": "Google NotebookLM",
+    "category": "research",
+    "categoryLabel": "Trợ lý Nghiên cứu Cá nhân",
+    "badge": "Đột phá tóm tắt",
+    "badgeColor": "var(--orange-dark)",
+    "tagline": "Biến mọi tài liệu PDF, ghi chú thành trợ lý ảo riêng và tạo Podcast trò chuyện 2 người siêu chân thực.",
+    "pricing": "Miễn phí 100%",
+    "freeTier": "Hoàn toàn miễn phí với tài khoản Google cá nhân",
+    "strengths": [
+      "Không bị ảo giác: AI chỉ trả lời dựa trên đúng tài liệu mà bạn tải lên",
+      "Tính năng 'Audio Overview': Biến hàng trăm trang tài liệu thành buổi trò chuyện Podcast 2 người cực hấp dẫn",
+      "Trích dẫn số trang chính xác của đoạn trích"
+    ],
+    "weaknesses": [
+      "Tính năng Podcast hiện tại nói bằng tiếng Anh (nhưng có thể đọc tài liệu tiếng Việt)",
+      "Không dùng để trò chuyện phiếm bên ngoài tài liệu được"
+    ],
+    "bestFor": "Đọc giáo trình, ôn thi đại học, nghiên cứu luật, phân tích báo cáo tài chính doanh nghiệp",
+    "url": "https://notebooklm.google.com",
+    "rating": "4.9 / 5.0"
+  },
+  {
+    "id": "cursor",
+    "name": "Cursor Editor",
+    "category": "coding",
+    "categoryLabel": "Trình soạn thảo Code AI",
+    "badge": "Số 1 cho Lập trình",
+    "badgeColor": "var(--blue-dark)",
+    "tagline": "IDE được fork từ VS Code với trí tuệ nhân tạo tích hợp sâu, tự động viết và sửa lỗi toàn bộ dự án.",
+    "pricing": "Freemium",
+    "freeTier": "14 ngày dùng thử Pro và 2000 lượt gợi ý code miễn phí mỗi tháng",
+    "strengths": [
+      "Composer cho phép tạo toàn bộ trang web chỉ bằng 1 câu lệnh",
+      "Đọc hiểu toàn bộ codebase của dự án (Codebase Indexing)",
+      "Giao diện quen thuộc y hệt Visual Studio Code, cài extension dễ dàng"
+    ],
+    "weaknesses": [
+      "Yêu cầu người dùng có hiểu biết căn bản về cấu trúc dự án",
+      "Bản Pro có phí $20/tháng"
+    ],
+    "bestFor": "Lập trình viên từ mới học đến chuyên nghiệp muốn tăng tốc độ viết code gấp 5 lần",
+    "url": "https://cursor.com",
+    "rating": "5.0 / 5.0"
+  },
+  {
+    "id": "v0",
+    "name": "v0 by Vercel",
+    "category": "coding",
+    "categoryLabel": "Tạo Giao diện Web bằng AI",
+    "badge": "Frontend thần tốc",
+    "badgeColor": "var(--ink)",
+    "tagline": "Chỉ cần mô tả bằng lời, v0 sẽ vẽ giao diện người dùng (UI) tuyệt đẹp với React và Tailwind CSS.",
+    "pricing": "Freemium",
+    "freeTier": "Cấp tín dụng miễn phí hàng tháng để tạo giao diện",
+    "strengths": [
+      "Tạo ra các component chuẩn chỉnh chuẩn Figma và React",
+      "Có thể xem trước ngay trên trình duyệt và copy mã nguồn ngay lập tức",
+      "Hỗ trợ chỉnh sửa từng chi tiết nhỏ bằng cách chỉ vào phần tử"
+    ],
+    "weaknesses": [
+      "Tập trung chuyên sâu cho Frontend (React/Next.js/Tailwind), chưa hỗ trợ backend",
+      "Hết lượt miễn phí phải chờ sang tháng sau"
+    ],
+    "bestFor": "Designer, Product Manager, Web Developer muốn dựng bản mẫu (Prototype) trong vài phút",
+    "url": "https://v0.dev",
+    "rating": "4.7 / 5.0"
+  },
+  {
+    "id": "midjourney",
+    "name": "Midjourney",
+    "category": "media",
+    "categoryLabel": "Sáng tạo Hình ảnh Nghệ thuật",
+    "badge": "Chất lượng đỉnh cao",
+    "badgeColor": "var(--purple-dark)",
+    "tagline": "Công cụ sinh ảnh AI có chất lượng nghệ thuật, thẩm mỹ thị giác và độ chi tiết cao nhất hiện nay.",
+    "pricing": "Trả phí",
+    "freeTier": "Không có bản miễn phí (Gói cơ bản từ $10/tháng)",
+    "strengths": [
+      "Gu thẩm mỹ tuyệt đỉnh: Ánh sáng, kết cấu da, màu sắc như ảnh chụp máy ảnh chuyên nghiệp",
+      "Có giao diện web trực quan, không bắt buộc dùng Discord như trước",
+      "Hỗ trợ giữ nguyên nhân vật (Character Consistency) qua nhiều bức ảnh"
+    ],
+    "weaknesses": [
+      "Không có gói miễn phí vĩnh viễn",
+      "Đòi hỏi kỹ năng mô tả prompt bằng tiếng Anh chi tiết để ra đúng ý"
+    ],
+    "bestFor": "Designer, họa sĩ ý tưởng, chuyên viên quảng cáo, người làm thương hiệu và thời trang",
+    "url": "https://midjourney.com",
+    "rating": "4.9 / 5.0"
+  },
+  {
+    "id": "recraft",
+    "name": "Recraft AI",
+    "category": "media",
+    "categoryLabel": "Thiết kế Đồ họa & Vector SVG",
+    "badge": "Miễn phí cho Designer",
+    "badgeColor": "var(--orange)",
+    "tagline": "Tạo hình minh họa vector, icon, mockup 3D và đồ họa quảng cáo xuất file SVG vô hạn sắc nét.",
+    "pricing": "Freemium",
+    "freeTier": "Tặng tín dụng miễn phí mỗi ngày đủ cho nhu cầu cơ bản",
+    "strengths": [
+      "Tạo được file Vector (.SVG) phóng to không bao giờ vỡ hạt",
+      "Kiểm soát bảng màu thương hiệu cực kỳ chuẩn xác",
+      "Có công cụ xóa nền, mở rộng khung hình (Outpainting) ngay trên canvas"
+    ],
+    "weaknesses": [
+      "Chất lượng ảnh chụp người thật không chân thực bằng Midjourney",
+      "Tài khoản miễn phí ảnh sẽ hiển thị công khai trong thư viện"
+    ],
+    "bestFor": "UI/UX Designer, Marketing làm banner, người cần tạo icon, hình minh họa slide thuyết trình",
+    "url": "https://www.recraft.ai",
+    "rating": "4.8 / 5.0"
+  },
+  {
+    "id": "kling",
+    "name": "Kling AI",
+    "category": "media",
+    "categoryLabel": "Sản xuất Video AI Đột phá",
+    "badge": "Video chân thực",
+    "badgeColor": "var(--green-dark)",
+    "tagline": "Biến hình ảnh hoặc câu chữ thành đoạn video chuyển động mượt mà với hiệu ứng vật lý chân thực.",
+    "pricing": "Freemium",
+    "freeTier": "Tặng 66 credits miễn phí mỗi ngày để tạo video ngắn",
+    "strengths": [
+      "Mô phỏng chuyển động vật lý, biểu cảm khuôn mặt và cử chỉ rất mượt mà",
+      "Hỗ trợ tính năng Start Frame & End Frame để kiểm soát diễn biến video",
+      "Thời lượng video có thể kéo dài đến 10 giây mỗi đoạn"
+    ],
+    "weaknesses": [
+      "Thời gian chờ xuất video ở gói miễn phí có thể lâu vào giờ cao điểm",
+      "Đôi khi các chuyển động quá nhanh có hiện tượng méo chi tiết"
+    ],
+    "bestFor": "Nhà sáng tạo nội dung TikTok/YouTube Shorts, nhà làm phim độc lập và quảng cáo sản phẩm",
+    "url": "https://klingai.com",
+    "rating": "4.7 / 5.0"
+  },
+  {
+    "id": "elevenlabs",
+    "name": "ElevenLabs",
+    "category": "media",
+    "categoryLabel": "Giọng đọc AI & Nhân bản Giọng",
+    "badge": "Giọng nói số 1",
+    "badgeColor": "var(--blue-dark)",
+    "tagline": "Công nghệ chuyển văn bản thành giọng nói (Text-to-Speech) truyền cảm, tự nhiên như con người.",
+    "pricing": "Freemium",
+    "freeTier": "10.000 ký tự miễn phí mỗi tháng",
+    "strengths": [
+      "Giọng đọc tiếng Việt tự nhiên đến kinh ngạc, có nhấn nhá, thở, ngắt nghỉ đúng chỗ",
+      "Khả năng nhân bản giọng nói (Voice Cloning) chỉ từ một đoạn ghi âm ngắn",
+      "Hỗ trợ lồng tiếng tự động cho video sang nhiều thứ tiếng khác nhau"
+    ],
+    "weaknesses": [
+      "10.000 ký tự miễn phí khá nhanh hết đối với video dài",
+      "Cần chú ý vấn đề bản quyền khi nhân bản giọng nói của người khác"
+    ],
+    "bestFor": "Làm video review, podcast, sách nói, lồng tiếng video quảng cáo và thuyết minh",
+    "url": "https://elevenlabs.io",
+    "rating": "4.9 / 5.0"
+  }
+]

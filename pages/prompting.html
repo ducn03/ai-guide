@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Nghệ thuật Viết Prompt Đỉnh Cao - AI Guide</title>
+  <meta name="description" content="Hướng dẫn toàn diện về Prompt Engineering: Framework CREATE độc quyền, kỹ thuật Few-Shot, Chain-of-Thought và bí quyết giao việc cho AI như chuyên gia.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+
+  <!-- FULL-PAGE SPLASH LOADER -->
+  <div id="page-loader">
+    <div class="loader-box">
+      <div class="loader-logo-wrap">
+        <div class="brand-icon" style="width:68px;height:68px;font-size:32px;margin:0 auto;box-shadow:0 8px 24px rgba(240,130,30,0.25);">✦</div>
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loader-bar-fill"></div>
+      </div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+      <div class="loader-text">Đang tải AI Guide...</div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER MOUNT -->
+  <div id="site-header"></div>
+
+  <!-- MAIN CONTENT -->
+  <main class="wrap">
+
+    <!-- PAGE HERO HEADER -->
+    <header class="page-header">
+      <div class="breadcrumbs">
+        <a href="../index.html">Trang chủ</a>
+        <span>/</span>
+        <span class="curr">Nghệ thuật Prompt</span>
+      </div>
+      <span class="badge-tag">Bước 2 • Kỹ năng cốt lõi</span>
+      <h1 class="page-title">Nghệ thuật Viết Prompt Đỉnh Cao</h1>
+      <p class="page-lead">
+        Trong thế giới AI, <b>chất lượng đầu ra phụ thuộc 100% vào chất lượng câu lệnh đầu vào</b>. Khám phá Framework C-R-E-A-T-E và các kỹ thuật tư duy suy luận giúp bạn biến AI thành cánh tay phải đắc lực nhất.
+      </p>
+    </header>
+
+    <!-- CONTENT GRID -->
+    <div class="content-grid">
+
+      <!-- MAIN ARTICLE -->
+      <article class="article-body">
+
+        <!-- SECTION 1: PROMPT ENGINEERING LÀ GÌ? -->
+        <section id="tong-quan" class="art-sec">
+          <h2>1. Prompt là gì và vì sao nó quyết định tất cả?</h2>
+          <p>
+            <b>Prompt (Câu lệnh / Lời nhắc)</b> là toàn bộ nội dung văn bản, hình ảnh hoặc chỉ thị mà bạn gửi cho mô hình AI. Kỹ thuật thiết kế prompt (<b>Prompt Engineering</b>) là nghệ thuật cấu trúc câu từ sao cho AI hiểu chính xác mong muốn của bạn và phản hồi ở mức chất lượng cao nhất.
+          </p>
+
+          <div class="compare-quote-grid">
+            <div class="cq-box bad">
+              <span class="cq-tag">90% Người dùng thông thường:</span>
+              <p>"AI này chán quá, trả lời chung chung như Google vậy!"</p>
+              <small>👉 Nguyên nhân: Đặt câu hỏi cụt ngủn 5 chữ, không bối cảnh, không mục tiêu.</small>
+            </div>
+            <div class="cq-box good">
+              <span class="cq-tag">10% Người dùng chuyên nghiệp:</span>
+              <p>"AI làm thay tôi 70% công việc soạn thảo và phân tích mỗi tuần!"</p>
+              <small>🎯 Bí mật: Sử dụng cấu trúc Prompt có phân vai, bối cảnh và định dạng rõ ràng.</small>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: FRAMEWORK C-R-E-A-T-E -->
+        <section id="create-framework" class="art-sec">
+          <h2>2. Framework C-R-E-A-T-E: Công thức vạn năng cho mọi Prompt</h2>
+          <p>
+            Để không bao giờ phải bối rối khi mở khung chat, hãy ghi nhớ 6 chữ cái thần thánh <b>C-R-E-A-T-E</b>:
+          </p>
+
+          <div class="create-card-grid">
+            <div class="c-item">
+              <div class="c-letter">C</div>
+              <div class="c-info">
+                <h4>Context (Bối cảnh thực tế)</h4>
+                <p>Nêu rõ bạn là ai, dự án là gì, tình huống cụ thể đang diễn ra. Bối cảnh càng rõ, câu trả lời càng bám sát thực tế.</p>
+                <div class="c-snippet"><i>"Tôi đang chuẩn bị ra mắt sản phẩm granola dinh dưỡng dành riêng cho dân văn phòng bận rộn..."</i></div>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <div class="c-letter">R</div>
+              <div class="c-info">
+                <h4>Role (Vai trò chuyên môn)</h4>
+                <p>Gán danh xưng chuyên gia cho AI để kích hoạt vùng kiến thức và phong thái trả lời thích hợp nhất.</p>
+                <div class="c-snippet"><i>"Hãy đóng vai trò là một Chuyên gia Chiến lược Thương hiệu với 12 năm kinh nghiệm trong ngành F&B..."</i></div>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <div class="c-letter">E</div>
+              <div class="c-info">
+                <h4>Explicit Instructions (Chỉ thị rõ ràng)</h4>
+                <p>Giao nhiệm vụ cụ thể từng bước, không nói chung chung. Nói rõ những việc AI NÊN LÀM và KHÔNG NÊN LÀM.</p>
+                <div class="c-snippet"><i>"Hãy lập kế hoạch 5 bước triển khai tuần đầu tiên. Tuyệt đối không đề xuất chạy quảng cáo tốn kém..."</i></div>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <div class="c-letter">A</div>
+              <div class="c-info">
+                <h4>Audience (Đối tượng tiếp nhận)</h4>
+                <p>Chỉ rõ người sẽ đọc kết quả này là ai: Giám đốc điều hành, phụ huynh học sinh, khách hàng trẻ tuổi hay người không rành kỹ thuật.</p>
+                <div class="c-snippet"><i>"Bản kế hoạch này sẽ được trình bày trực tiếp cho Ban Giám đốc công ty xem xét..."</i></div>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <div class="c-letter">T</div>
+              <div class="c-info">
+                <h4>Tone & Style (Văn phong & Giọng điệu)</h4>
+                <p>Chỉ định sắc thái cảm xúc: Chuyên nghiệp, ấm áp, hóm hỉnh, trang trọng, hoặc cô đọng xúc tích.</p>
+                <div class="c-snippet"><i>"Giọng văn chuyên nghiệp, lập luận sắc bén, dùng số liệu thuyết phục, tránh các từ ngữ sáo rỗng..."</i></div>
+              </div>
+            </div>
+
+            <div class="c-item">
+              <div class="c-letter">E</div>
+              <div class="c-info">
+                <h4>Examples (Ví dụ mẫu - Few-shot)</h4>
+                <p>Cung cấp 1-2 mẫu bài viết hoặc định dạng mẫu mà bạn yêu thích để AI bắt chước chuẩn xác 100%.</p>
+                <div class="c-snippet"><i>"Dưới đây là một bài viết mẫu có giọng văn mà tôi rất ưng ý: [Dán bài mẫu vào]..."</i></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 3: BEFORE & AFTER CASE STUDIES -->
+        <section id="so-sanh" class="art-sec">
+          <h2>3. So sánh thực tế: Prompt Nghiệp dư vs Prompt Chuẩn</h2>
+          <p>Hãy xem sự khác biệt một trời một vực giữa 2 cách ra lệnh trong các tình huống thực tế:</p>
+
+          <!-- CASE 1 -->
+          <div class="case-study-box">
+            <div class="cs-head">
+              <span class="cs-tag">Tình huống 1</span>
+              <h3>Soạn Email xin hoãn Deadline dự án</h3>
+            </div>
+            <div class="cs-compare">
+              <div class="cs-col bad">
+                <div class="cs-label">❌ Prompt thông thường</div>
+                <div class="cs-code">"Viết email xin dời deadline dự án cho sếp."</div>
+                <p class="cs-result">Kết quả: Email cụt lủn, nghe như trốn tránh trách nhiệm, sếp đọc vào rất dễ bực mình.</p>
+              </div>
+              <div class="cs-col good">
+                <div class="cs-label">✨ Prompt chuẩn C-R-E-A-T-E</div>
+                <div class="cs-code">"Bạn là một trợ lý truyền thông văn phòng khéo léo. Hãy giúp tôi viết một email gửi Trưởng phòng [Tên Sếp] xin lùi hạn chót nộp báo cáo quý 2 thêm 2 ngày (từ thứ 4 sang thứ 6).
+Lý do: Đội ngũ vừa phát hiện một sai lệch nhỏ trong số liệu khảo sát khách hàng và muốn kiểm tra lại để đảm bảo tính chuẩn xác tuyệt đối.
+Thái độ: Chân thành, có trách nhiệm, chủ động đề xuất giải pháp tạm thời (gửi trước bản nháp phần 1). Độ dài dưới 130 từ."</div>
+                <p class="cs-result">Kết quả: Thể hiện tính chuyên nghiệp cao, Sếp đánh giá cao tinh thần trách nhiệm và sẵn sàng đồng ý!</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CASE 2 -->
+          <div class="case-study-box">
+            <div class="cs-head">
+              <span class="cs-tag">Tình huống 2</span>
+              <h3>Lập dàn ý bài viết Content Marketing</h3>
+            </div>
+            <div class="cs-compare">
+              <div class="cs-col bad">
+                <div class="cs-label">❌ Prompt thông thường</div>
+                <div class="cs-code">"Lên dàn ý bài viết về cách giảm cân cho phụ nữ."</div>
+                <p class="cs-result">Kết quả: Trả về các mục nhạt nhẽo như 'Ăn rau, uống nước, tập thể dục', hàng nghìn website đã viết y như vậy.</p>
+              </div>
+              <div class="cs-col good">
+                <div class="cs-label">✨ Prompt chuẩn C-R-E-A-T-E</div>
+                <div class="cs-code">"Bạn là Trưởng phòng Biên tập một tạp chí sức khỏe hiện đại. Hãy lên dàn ý chi tiết cho bài viết dài 1.500 từ với chủ đề: 'Bí quyết giữ dáng bền vững cho phụ nữ văn phòng ngồi máy lạnh 8 tiếng/ngày mà không cần nhịn ăn khắc nghiệt'.
+Đối tượng: Nữ 25-35 tuổi, bận rộn, hay thèm trà sữa lúc 3h chiều.
+Cấu trúc: Áp dụng công thức PAS (Problem - Agitate - Solution), gồm 4 phần chính, mỗi phần có 3 ý nhỏ kèm 1 mẹo thực tế làm được ngay tại bàn làm việc."</div>
+                <p class="cs-result">Kết quả: Dàn ý chạm đúng tim đen, góc nhìn độc đáo, độc giả đọc là muốn lưu bài ngay!</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 4: NÂNG CAO - CÁC KỸ THUẬT SIÊU ĐẲNG -->
+        <section id="techniques" class="art-sec">
+          <h2>4. Năm Kỹ Thuật Nâng Cao Dành Cho Chuyên Gia</h2>
+          <p>Khi bạn đã quen với cấu trúc cơ bản, 5 kỹ thuật dưới đây sẽ đưa năng lực điều khiển AI của bạn lên một tầm cao mới:</p>
+
+          <div class="technique-list">
+
+            <!-- TECH 1 -->
+            <div class="tech-card">
+              <div class="tc-top">
+                <span class="tc-badge">Kỹ thuật 1</span>
+                <h3>Chain-of-Thought (Suy nghĩ từng bước)</h3>
+              </div>
+              <p>Mô hình AI thường mắc sai lầm khi bị ép đưa ra kết luận ngay lập tức cho các câu hỏi logic hay toán học. Bằng cách thêm câu lệnh thần chú này, AI sẽ tự động phân rã bài toán và giảm tỷ lệ lỗi đến 60%:</p>
+              <div class="prompt-snippet-box">
+                <code>"Trước khi đưa ra câu trả lời cuối cùng, hãy suy nghĩ và phân tích từng bước một (Step-by-step thinking). Hãy trình bày rõ suy luận của từng bước trước khi chốt kết quả."</code>
+                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
+              </div>
+            </div>
+
+            <!-- TECH 2 -->
+            <div class="tech-card">
+              <div class="tc-top">
+                <span class="tc-badge">Kỹ thuật 2</span>
+                <h3>Reverse Prompting (Kỹ thuật Đặt câu hỏi ngược)</h3>
+              </div>
+              <p>Đôi khi bạn có một mục tiêu lớn nhưng không biết phải cung cấp thêm thông tin gì. Hãy để AI phỏng vấn ngược lại bạn:</p>
+              <div class="prompt-snippet-box">
+                <code>"Tôi muốn xây dựng kế hoạch [Mục tiêu của bạn]. Đừng trả lời vội! Hãy đóng vai một chuyên gia tư vấn chiến lược và đặt cho tôi 4 câu hỏi quan trọng nhất để làm rõ bối cảnh, nguồn lực và rào cản. Sau khi tôi trả lời, hãy tiến hành lên kế hoạch."</code>
+                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
+              </div>
+            </div>
+
+            <!-- TECH 3 -->
+            <div class="tech-card">
+              <div class="tc-top">
+                <span class="tc-badge">Kỹ thuật 3</span>
+                <h3>Few-Shot Prompting (Dạy AI bằng 2-3 Ví dụ mẫu)</h3>
+              </div>
+              <p>Mô hình ngôn ngữ là bậc thầy sao chép khuôn mẫu. Chỉ cần bạn đưa 2 ví dụ mẫu (input -> output mong muốn), AI sẽ tự hiểu quy luật ngầm và trả về kết quả chuẩn xác 100% theo đúng format bạn cần.</p>
+              <div class="prompt-snippet-box">
+                <code>"Dưới đây là 2 ví dụ về cách tôi phân loại email:
+Ví dụ 1: 'Họp khẩn cấp lúc 15h' -> Nhãn: [Khẩn cấp]
+Ví dụ 2: 'Báo giá văn phòng phẩm tháng tới' -> Nhãn: [Hành chính]
+Bây giờ hãy phân loại tiếp email sau: '[Nội dung email của bạn]'"</code>
+                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
+              </div>
+            </div>
+
+            <!-- TECH 4 -->
+            <div class="tech-card">
+              <div class="tc-top">
+                <span class="tc-badge">Kỹ thuật 4</span>
+                <h3>Devil's Advocate (Đóng vai Kẻ phản biện khó tính)</h3>
+              </div>
+              <p>AI thường có xu hướng "nịnh" người dùng (Yes-man). Khi bạn có một ý tưởng kinh doanh hoặc kế hoạch mới, hãy yêu cầu AI đóng vai người phản biện gay gắt nhất để tìm ra lỗ hổng trước khi triển khai:</p>
+              <div class="prompt-snippet-box">
+                <code>"Dưới đây là kế hoạch kinh doanh của tôi: [...]. Đừng khen ngợi hay đồng tình! Hãy đóng vai một nhà đầu tư mạo hiểm cực kỳ khó tính và hoài nghi. Hãy chỉ ra 5 lý do lớn nhất khiến dự án này có thể thất bại thảm hại và đề xuất phương án phòng vệ cho từng rủi ro."</code>
+                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
+              </div>
+            </div>
+
+            <!-- TECH 5 -->
+            <div class="tech-card">
+              <div class="tc-top">
+                <span class="tc-badge">Kỹ thuật 5</span>
+                <h3>Khóa Định Dạng Đầu Ra (Strict Output Format)</h3>
+              </div>
+              <p>Nếu bạn muốn lấy dữ liệu để dán vào Excel hoặc truyền vào hệ thống khác, hãy ra lệnh nghiêm ngặt để AI không giải thích luyên thuyên:</p>
+              <div class="prompt-snippet-box">
+                <code>"Chỉ trả về kết quả dưới dạng Bảng Markdown gồm các cột: | Tên công việc | Người thực hiện | Thời hạn |. Không thêm bất kỳ lời chào đầu hay kết luận nào ngoài bảng dữ liệu."</code>
+                <button class="btn-sm-copy" onclick="copySnippet(this)">Sao chép</button>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- NEXT STEP CARD -->
+        <div class="next-step-box">
+          <div class="ns-content">
+            <span class="ns-step">Bước tiếp theo</span>
+            <h3>Muốn xem kho Prompt thực tế đã được tinh chỉnh sẵn?</h3>
+            <p>Khám phá Thư viện hơn 100+ câu lệnh mẫu chọn lọc cho công việc văn phòng, marketing, lập trình và đời sống.</p>
+          </div>
+          <a href="prompt-library.html" class="btn btn-primary">
+            Khám phá Thư viện Prompt →
+          </a>
+        </div>
+
+      </article>
+
+      <!-- SIDEBAR TOC -->
+      <aside class="sidebar-toc">
+        <div class="toc-sticky">
+          <h4 class="toc-title">Mục lục hướng dẫn</h4>
+          <nav class="toc-links">
+            <a href="#tong-quan" class="toc-link">1. Prompt là gì?</a>
+            <a href="#create-framework" class="toc-link">2. Framework CREATE</a>
+            <a href="#so-sanh" class="toc-link">3. Before & After thực tế</a>
+            <a href="#techniques" class="toc-link">4. 5 Kỹ thuật nâng cao</a>
+          </nav>
+
+          <div class="sidebar-help-card">
+            <div class="sh-icon">⚡</div>
+            <b>Dùng thử Trình tạo Prompt</b>
+            <p>Trở lại Trang chủ để sử dụng công cụ ghép prompt thông minh tự động!</p>
+            <a href="../index.html#prompt-builder" class="sh-btn">Thử công cụ →</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- SITE FOOTER MOUNT -->
+  <div id="site-footer"></div>
+
+  <!-- MOBILE BOTTOM NAV MOUNT -->
+  <div id="site-bottom-nav"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../shared/site-shell.js"></script>
+  <script>
+    function copySnippet(btn) {
+      const code = btn.previousElementSibling?.textContent;
+      if (code) {
+        copyText(code.trim(), 'Đã sao chép kỹ thuật Prompt vào bộ nhớ tạm!');
+      }
+    }
+  </script>
+</body>
+</html>

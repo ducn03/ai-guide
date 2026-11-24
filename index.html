@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>AI Guide - Cẩm nang làm chủ Trí tuệ Nhân tạo từ con số 0</title>
+  <meta name="description"
+    content="Hướng dẫn toàn diện sử dụng Trí tuệ Nhân tạo (AI) cho người mới bắt đầu. Từ cách nói chuyện với ChatGPT, Claude, Gemini đến kỹ thuật viết prompt đỉnh cao và tự động hóa công việc.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="shared/styles.css">
+</head>
+
+<body>
+
+  <!-- 1. FULL-PAGE SPLASH LOADER (Inspired by premiernuts.vn) -->
+  <div id="page-loader">
+    <div class="loader-box">
+      <div class="loader-logo-wrap">
+        <div class="brand-icon"
+          style="width:68px;height:68px;font-size:32px;margin:0 auto;box-shadow:0 8px 24px rgba(240,130,30,0.25);">✦
+        </div>
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loader-bar-fill"></div>
+      </div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+      <div class="loader-text">Đang tải AI Guide...</div>
+    </div>
+  </div>
+
+  <!-- 2. SITE HEADER MOUNT -->
+  <div id="site-header"></div>
+
+  <!-- 3. MAIN CONTENT CONTAINER -->
+  <main class="wrap">
+
+    <!-- DESKTOP HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-card">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Cẩm nang Trí tuệ Nhân tạo 2026
+          </div>
+          <h1 class="hero-title">Làm chủ AI từ con số 0 — Dành cho mọi người</h1>
+          <p class="hero-subtitle">
+            Không cần rành công nghệ hay biết viết code. Khám phá bí quyết giao tiếp thông minh với <b>ChatGPT, Claude,
+              Gemini</b>, sở hữu kho 100+ prompt mẫu chuẩn chỉnh và tối ưu hóa 50% thời gian làm việc mỗi ngày.
+          </p>
+          <div class="hero-actions">
+            <a href="pages/basics.html" class="btn btn-primary">
+              Bắt đầu học ngay
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </a>
+            <a href="pages/prompt-library.html" class="btn btn-secondary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+                <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2" />
+                <rect x="14" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2" />
+                <rect x="3" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="2" />
+              </svg>
+              Thư viện Prompt mẫu
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <b>100+</b>
+              <span>Prompt chuẩn</span>
+            </div>
+            <div class="stat-item">
+              <b>12+</b>
+              <span>Công cụ AI top</span>
+            </div>
+            <div class="stat-item">
+              <b>100%</b>
+              <span>Tiếng Việt thực tế</span>
+            </div>
+            <div class="stat-item">
+              <b>0đ</b>
+              <span>Hoàn toàn miễn phí</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- HERO INTERACTIVE SHOWCASE (BEFORE VS AFTER) -->
+        <div class="hero-visual">
+          <div class="showcase-card">
+            <div class="sc-header">
+              <div class="sc-tab sc-bad">❌ Prompt thông thường (Rác vào = Rác ra)</div>
+              <div class="sc-tab sc-good">✨ Prompt chuẩn C-R-E-A-T-E</div>
+            </div>
+            <div class="sc-body">
+              <div class="sc-code-box bad">
+                <span class="label">Câu lệnh người mới hay hỏi:</span>
+                <code>"Hãy viết cho tôi một bài quảng cáo bán son môi trên Facebook."</code>
+                <span class="critique">👉 Kết quả AI: Chung chung, sáo rỗng, đọc là biết văn máy viết, không ai
+                  mua.</span>
+              </div>
+              <div class="sc-code-box good">
+                <span class="label">Câu lệnh chuẩn chuyên gia:</span>
+                <code>"Bạn là Copywriter 10 năm kinh nghiệm trong ngành mỹ phẩm cao cấp. Hãy viết 1 bài Facebook post 150 từ cho dòng son dưỡng thuần chay [Tên thương hiệu]. Khách hàng mục tiêu: Nữ văn phòng 22-30 tuổi có môi khô vì ngồi máy lạnh. Cấu trúc AIDA, giọng điệu ấm áp, tự nhiên, gạch đầu dòng 3 thành phần chính và kèm CTA nhận ưu đãi 20% hôm nay."</code>
+                <span class="success">🎯 Kết quả AI: Chạm trúng tâm lý, giàu cảm xúc, chuyển đổi đơn hàng vượt
+                  trội!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE HERO BANNER (Direct Premier Nuts Style) -->
+    <div class="mobile-hero-banner">
+      <div class="m-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" stroke="currentColor" stroke-width="2.5"
+            stroke-linecap="round" />
+          <path d="M22 4L12 14.01l-3-3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+        </svg>
+        Học AI theo cách của bạn
+      </div>
+      <h2>Làm chủ AI cho người hiện đại</h2>
+      <a href="pages/basics.html" class="m-btn">
+        Xem lộ trình học →
+      </a>
+      <div class="m-deco">🤖</div>
+    </div>
+
+    <!-- MOBILE QUICK LAUNCHER (5 Mini-App Style Icons matching screenshot) -->
+    <div class="mobile-app-launcher">
+      <div class="app-icon-grid">
+        <a href="index.html" class="app-icon-item active">
+          <div class="icon-circle icon-all">✨</div>
+          <span class="icon-label">Tất cả</span>
+        </a>
+        <a href="pages/basics.html" class="app-icon-item">
+          <div class="icon-circle icon-basics">🌱</div>
+          <span class="icon-label">Nhập môn</span>
+        </a>
+        <a href="pages/prompting.html" class="app-icon-item">
+          <div class="icon-circle icon-prompt">✍️</div>
+          <span class="icon-label">Kỹ thuật</span>
+        </a>
+        <a href="pages/prompt-library.html" class="app-icon-item">
+          <div class="icon-circle icon-lib">📚</div>
+          <span class="icon-label">Thư viện</span>
+        </a>
+        <a href="pages/tools.html" class="app-icon-item">
+          <div class="icon-circle icon-tools">⚡</div>
+          <span class="icon-label">Công cụ</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- SECTION: INTERACTIVE PROMPT BUILDER -->
+    <section class="section" id="prompt-builder">
+      <div class="sec-head">
+        <div>
+          <span class="badge-tag">Công cụ tương tác</span>
+          <h2 class="sec-title">Trình tạo Prompt Thông minh</h2>
+          <p class="sec-subtitle">Chọn nhanh vai trò, mục tiêu và văn phong bạn muốn — Hệ thống sẽ tự động ghép thành
+            câu lệnh tối ưu nhất để bạn copy và dùng ngay.</p>
+        </div>
+      </div>
+
+      <div class="builder-card">
+        <div class="builder-grid">
+          <!-- Control Panel -->
+          <div class="builder-controls">
+            <div class="control-group">
+              <label for="b-role">1. Vai trò của AI (Role):</label>
+              <select id="b-role" class="input-select">
+                <option value="Chuyên gia Truyền thông & Copywriting 10 năm kinh nghiệm">Chuyên gia Marketing &
+                  Copywriter</option>
+                <option value="Kỹ sư Phần mềm Cấp cao (Senior Software Engineer)">Kỹ sư Lập trình Senior</option>
+                <option value="Trợ lý Điều hành & Quản lý Dự án Chuyên nghiệp">Trợ lý Dự án / Thư ký Văn phòng</option>
+                <option value="Giảng viên Ngôn ngữ Anh Bản xứ Thân thiện">Gia sư Tiếng Anh Bản xứ</option>
+                <option value="Chuyên gia Nghiên cứu & Phân tích Thị trường">Chuyên gia Phân tích Dữ liệu</option>
+                <option value="Huấn luyện viên Năng suất & Phát triển Bản thân">Huấn luyện viên Năng suất Cá nhân
+                </option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="b-goal">2. Mục tiêu công việc (Goal):</label>
+              <select id="b-goal" class="input-select">
+                <option value="viết một bản kế hoạch nội dung chi tiết theo từng ngày kèm số liệu đo lường">Lập kế hoạch
+                  nội dung tuần / tháng</option>
+                <option value="soạn thảo một email giải quyết tình huống khó một cách lịch sự, thấu cảm và rõ ràng">Viết
+                  email công việc quan trọng</option>
+                <option value="tóm tắt tài liệu phức tạp theo nguyên lý 80/20, trích xuất 5 hành động cụ thể">Tóm tắt
+                  tài liệu / Sách nhanh</option>
+                <option value="phân tích lỗi, tìm nguyên nhân gốc rễ và đưa ra giải pháp sửa triệt để">Tìm lỗi & Tối ưu
+                  giải pháp</option>
+                <option value="giải thích khái niệm khó theo phương pháp Feynman dễ hiểu cho người mới">Giải thích kiến
+                  thức khó hiểu</option>
+              </select>
+            </div>
+
+            <div class="control-group">
+              <label for="b-topic">3. Chủ đề / Sản phẩm của bạn:</label>
+              <input type="text" id="b-topic" class="input-text"
+                value="Dịch vụ Hạt dinh dưỡng cao cấp dành cho dân văn phòng"
+                placeholder="Nhập chủ đề hoặc bài toán cụ thể...">
+            </div>
+
+            <div class="control-row-2">
+              <div class="control-group">
+                <label for="b-tone">4. Giọng điệu (Tone):</label>
+                <select id="b-tone" class="input-select">
+                  <option value="Chuyên nghiệp, sắc sảo, tự nhiên, không sáo rỗng">Chuyên nghiệp & Tự nhiên</option>
+                  <option value="Gần gũi, ấm áp, truyền cảm hứng">Gần gũi & Thân thiện</option>
+                  <option value="Hài hước, dí dỏm, thu hút người trẻ">Hài hước & Viral</option>
+                  <option value="Ngắn gọn, súc tích, đi thẳng vào số liệu">Ngắn gọn & Trọng tâm</option>
+                </select>
+              </div>
+
+              <div class="control-group">
+                <label for="b-format">5. Định dạng (Format):</label>
+                <select id="b-format" class="input-select">
+                  <option value="Bảng tổng hợp chi tiết kèm các gạch đầu dòng rõ ràng">Dạng Bảng biểu + Gạch đầu dòng
+                  </option>
+                  <option value="Báo cáo hoàn chỉnh có tiêu đề, mở bài, thân bài và kết luận">Văn bản Báo cáo hoàn chỉnh
+                  </option>
+                  <option value="Quy trình từng bước (Step-by-step) đánh số từ 1 đến N">Quy trình từng bước Step-by-step
+                  </option>
+                  <option value="Khối mã lệnh (Code block) kèm comment chú thích cặn kẽ">Khối Code chuẩn Clean Code
+                  </option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Preview & Action Panel -->
+          <div class="builder-output-box">
+            <div class="output-top">
+              <span class="output-title">Prompt được sinh tự động:</span>
+              <button class="btn-copy" id="btn-copy-builder" aria-label="Sao chép prompt">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
+                  <rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2" />
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor"
+                    stroke-width="2" />
+                </svg>
+                Sao chép
+              </button>
+            </div>
+            <pre class="output-pre" id="builder-result"></pre>
+            <div class="output-tips">
+              💡 <b>Mẹo:</b> Sau khi copy, bạn có thể dán trực tiếp vào ChatGPT, Claude hoặc Gemini để nhận kết quả ngay
+              tức thì!
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: 4-STEP AI MASTERY ROADMAP -->
+    <section class="section">
+      <div class="sec-head">
+        <div>
+          <span class="badge-tag">Lộ trình học tập</span>
+          <h2 class="sec-title">4 Bước Làm chủ AI từ số 0</h2>
+          <p class="sec-subtitle">Con đường bài bản và ngắn nhất để đưa AI trở thành trợ thủ đắc lực trong sự nghiệp của
+            bạn.</p>
+        </div>
+      </div>
+
+      <div class="roadmap-grid">
+        <a href="pages/basics.html" class="road-card">
+          <div class="road-step">01</div>
+          <div class="road-icon">🌱</div>
+          <h3>Nhập môn & Phá vỡ rào cản</h3>
+          <p>Hiểu bản chất cách AI tư duy, tạo tài khoản miễn phí và nắm 4 nguyên tắc vàng để AI không bao giờ trả lời
+            xạo.</p>
+          <span class="road-link">Khám phá bài học →</span>
+        </a>
+
+        <a href="pages/prompting.html" class="road-card">
+          <div class="road-step">02</div>
+          <div class="road-icon">✍️</div>
+          <h3>Kỹ thuật Viết Prompt Chuẩn</h3>
+          <p>Làm chủ Framework C-R-E-A-T-E, tư duy Chain-of-Thought và kỹ thuật đóng vai để ra lệnh cho AI như một giám
+            đốc thực thụ.</p>
+          <span class="road-link">Học kỹ thuật prompt →</span>
+        </a>
+
+        <a href="pages/tools.html" class="road-card">
+          <div class="road-step">03</div>
+          <div class="road-icon">⚡</div>
+          <h3>Chọn Đúng Công Cụ</h3>
+          <p>Biết chính xác khi nào nên dùng ChatGPT, Claude, Gemini, DeepSeek hay Cursor để giải quyết công việc tối ưu
+            nhất.</p>
+          <span class="road-link">Xem bản đồ công cụ →</span>
+        </a>
+
+        <a href="pages/advanced.html" class="road-card">
+          <div class="road-step">04</div>
+          <div class="road-icon">🚀</div>
+          <h3>Tự Động Hóa & AI Agents</h3>
+          <p>Cài đặt Custom Instructions, xử lý tài liệu đa phương thức và thiết lập các Agent tự hành làm việc thay
+            bạn.</p>
+          <span class="road-link">Nâng cấp kỹ năng cao cấp →</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION: AI BATTLE MATRIX -->
+    <section class="section">
+      <div class="sec-head">
+        <div>
+          <span class="badge-tag">So sánh đối đầu</span>
+          <h2 class="sec-title">Bảng so sánh 4 Ông Lớn AI 2026</h2>
+          <p class="sec-subtitle">Mỗi mô hình đều có một "siêu năng lực" riêng. Chọn đúng vũ khí sẽ giúp bạn tăng gấp 3
+            năng suất.</p>
+        </div>
+      </div>
+
+      <div class="matrix-card">
+        <div class="matrix-scroll">
+          <table class="table-compare">
+            <thead>
+              <tr>
+                <th>Mô hình AI</th>
+                <th>Thế mạnh số 1</th>
+                <th>Văn phong Tiếng Việt</th>
+                <th>Xử lý Tài liệu & File</th>
+                <th>Bản Miễn phí</th>
+                <th>Nên dùng khi nào?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="ai-name-col">
+                    <span class="ai-badge-icon" style="background:#EBF5DF;color:#1F4E38;">✦</span>
+                    <div>
+                      <b>ChatGPT</b>
+                      <small>OpenAI</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="tag-pill pill-green">Đa năng & Hệ sinh thái</span></td>
+                <td>Rất tốt, lưu loát</td>
+                <td>Tốt (Hỗ trợ phân tích dữ liệu, vẽ biểu đồ)</td>
+                <td>GPT-4o mini không giới hạn, GPT-4o theo đợt</td>
+                <td>Làm việc hàng ngày, học ngoại ngữ, đàm thoại giọng nói</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ai-name-col">
+                    <span class="ai-badge-icon" style="background:#FFF3E0;color:#F0821E;">✻</span>
+                    <div>
+                      <b>Claude</b>
+                      <small>Anthropic</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="tag-pill pill-orange">Viết văn & Lập trình đỉnh</span></td>
+                <td>Tuyệt vời, tinh tế như người thật</td>
+                <td>Rất mạnh (Đọc hiểu 200k tokens tài liệu dài)</td>
+                <td>Claude 3.5 Sonnet (Giới hạn lượt/ngày)</td>
+                <td>Viết lách sáng tạo, dịch thuật, lập trình web (Artifacts)</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ai-name-col">
+                    <span class="ai-badge-icon" style="background:#E8F4FD;color:#0369A1;">★</span>
+                    <div>
+                      <b>Google Gemini</b>
+                      <small>Google</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="tag-pill pill-blue">Dữ liệu thời gian thực & Workspace</span></td>
+                <td>Tự nhiên, chuẩn ngữ pháp</td>
+                <td>Đỉnh nhất (Context 1-2 triệu tokens, đọc cả video)</td>
+                <td>Gemini 1.5 Flash/Pro hào phóng</td>
+                <td>Nghiên cứu tài liệu mới, đọc video YouTube, kết nối Google Docs</td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="ai-name-col">
+                    <span class="ai-badge-icon" style="background:#F4EDFD;color:#6D28D9;">⚡</span>
+                    <div>
+                      <b>DeepSeek</b>
+                      <small>DeepSeek AI</small>
+                    </div>
+                  </div>
+                </td>
+                <td><span class="tag-pill pill-purple">Suy luận Logic & Giải toán</span></td>
+                <td>Khá tốt, mạch lạc</td>
+                <td>Cơ bản (Văn bản & Code)</td>
+                <td>100% Miễn phí không giới hạn</td>
+                <td>Giải toán khó, tư duy phản biện (DeepThink), viết code giá 0đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: FEATURED PROMPTS -->
+    <section class="section">
+      <div class="sec-head">
+        <div>
+          <span class="badge-tag">Gợi ý nổi bật</span>
+          <h2 class="sec-title">Prompt Mẫu Thịnh Hành</h2>
+          <p class="sec-subtitle">Chạm vào nút để sao chép ngay lập tức và áp dụng vào công việc của bạn.</p>
+        </div>
+        <a href="pages/prompt-library.html" class="sec-link">Xem tất cả 100+ Prompt →</a>
+      </div>
+
+      <div class="prompt-grid" id="featured-prompts-root">
+        <!-- Rendered by JS from data/prompts.json with skeleton shimmer -->
+        <div class="p-card-skeleton"></div>
+        <div class="p-card-skeleton"></div>
+        <div class="p-card-skeleton"></div>
+      </div>
+    </section>
+
+    <!-- SECTION: BEGINNER FAQ -->
+    <section class="section">
+      <div class="sec-head">
+        <div>
+          <span class="badge-tag">Giải đáp thắc mắc</span>
+          <h2 class="sec-title">Câu hỏi thường gặp của người mới</h2>
+          <p class="sec-subtitle">Những lo lắng phổ biến nhất khi lần đầu tiên làm quen với thế giới Trí tuệ Nhân tạo.
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item" open>
+          <summary class="faq-question">
+            <span>1. Tôi không biết lập trình và dốt công nghệ, liệu có dùng AI được không?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p><b>Hoàn toàn được!</b> Thực tế, ngôn ngữ lập trình mạnh mẽ nhất hiện nay để điều khiển AI chính là
+              <i>Tiếng Việt</i> hoặc ngôn ngữ tự nhiên hàng ngày. Bạn chỉ cần biết cách diễn đạt ý muốn của mình một
+              cách rõ ràng giống như đang giao việc cho một bạn trợ lý mới vào công ty. Website này sinh ra để chỉ cho
+              bạn cách nói chuyện chuẩn xác đó.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>2. Sử dụng ChatGPT, Claude hay Gemini có tốn tiền không?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Hầu hết các công cụ hàng đầu hiện nay đều có <b>phiên bản Miễn phí 100%</b> (như ChatGPT bản 4o-mini,
+              Claude bản miễn phí, Google Gemini và DeepSeek). Với nhu cầu học tập, viết email, tóm tắt tài liệu văn
+              phòng, bản miễn phí đã đáp ứng tốt đến 85% nhu cầu. Bạn chỉ cần nâng cấp bản trả phí khi muốn xử lý khối
+              lượng công việc cực lớn hoặc dùng các tính năng chuyên sâu.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>3. Làm sao để biết AI đang nói thật hay nói dối (bịa chuyện)?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p>Hiện tượng AI tự bịa thông tin được gọi là <b>"Ảo giác" (Hallucination)</b>. Để phòng tránh: (1) Luôn yêu
+              cầu AI trích dẫn nguồn, (2) Cung cấp tài liệu trực tiếp và ra lệnh: <i>"Chỉ trả lời dựa trên tài liệu tôi
+                cung cấp, nếu không có hãy nói là không biết"</i>, và (3) Sử dụng công cụ có tìm kiếm dẫn nguồn thời
+              gian thực như Perplexity AI hoặc Google Gemini.</p>
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary class="faq-question">
+            <span>4. Đưa dữ liệu cá nhân hay tài liệu công ty lên AI có an toàn không?</span>
+            <svg class="faq-chevron" width="20" height="20" viewBox="0 0 24 24" fill="none">
+              <path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </summary>
+          <div class="faq-answer">
+            <p><b>Quy tắc vàng:</b> Tuyệt đối không dán mật khẩu, số căn cước, thẻ tín dụng hoặc các tài liệu bảo mật
+              tuyệt mật của công ty lên tài khoản AI công cộng miễn phí. Bạn có thể thay thế các tên riêng, số tiền nhạy
+              cảm bằng ký hiệu như <code>[Tên Công Ty X]</code>, <code>[Số tiền Y]</code> trước khi nhờ AI xử lý.</p>
+          </div>
+        </details>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 4. SITE FOOTER MOUNT -->
+  <div id="site-footer"></div>
+
+  <!-- 5. MOBILE BOTTOM NAV MOUNT -->
+  <div id="site-bottom-nav"></div>
+
+  <!-- SCRIPTS -->
+  <script src="shared/site-shell.js"></script>
+  <script>
+    // INTERACTIVE PROMPT BUILDER LOGIC
+    (function initPromptBuilder() {
+      const roleEl = document.getElementById('b-role');
+      const goalEl = document.getElementById('b-goal');
+      const topicEl = document.getElementById('b-topic');
+      const toneEl = document.getElementById('b-tone');
+      const formatEl = document.getElementById('b-format');
+      const resultEl = document.getElementById('builder-result');
+      const btnCopy = document.getElementById('btn-copy-builder');
+
+      function updatePrompt() {
+        if (!resultEl) return;
+        const role = roleEl.value;
+        const goal = goalEl.value;
+        const topic = topicEl.value.trim() || '[Chủ đề/Sản phẩm của bạn]';
+        const tone = toneEl.value;
+        const format = formatEl.value;
+
+        const generated = `Bạn là ${role}.
+Nhiệm vụ của bạn là giúp tôi ${goal} liên quan đến: "${topic}".
+
+Yêu cầu thực hiện chi tiết:
+1. Giọng điệu (Tone): ${tone}.
+2. Định dạng đầu ra: ${format}.
+3. Tính xác thực: Chỉ đưa ra thông tin thực tế, hữu ích, có thể triển khai ngay; tránh các lý thuyết sáo rỗng hoặc từ ngữ khuôn mẫu.
+4. Tương tác: Nếu bạn cần thêm thông tin hoặc bối cảnh nào để bài viết xuất sắc hơn, hãy đặt cho tôi 2 câu hỏi trước khi trả lời.`;
+
+        resultEl.textContent = generated;
+      }
+
+      [roleEl, goalEl, topicEl, toneEl, formatEl].forEach(el => {
+        el?.addEventListener('input', updatePrompt);
+        el?.addEventListener('change', updatePrompt);
+      });
+
+      updatePrompt();
+
+      btnCopy?.addEventListener('click', () => {
+        if (resultEl) {
+          copyText(resultEl.textContent, 'Đã sao chép Prompt vào bộ nhớ tạm! Dán ngay vào ChatGPT / Claude nhé.');
+        }
+      });
+    })();
+
+    // LOAD FEATURED PROMPTS FROM DATA/PROMPTS.JSON
+    (function loadFeaturedPrompts() {
+      const root = document.getElementById('featured-prompts-root');
+      if (!root) return;
+
+      fetch('data/prompts.json')
+        .then(res => res.json())
+        .then(data => {
+          const featured = data.slice(0, 3);
+          root.innerHTML = featured.map(p => `
+            <div class="prompt-card">
+              <div class="p-card-top">
+                <span class="p-tag">${p.categoryName}</span>
+                <span class="p-level">${p.level}</span>
+              </div>
+              <h3 class="p-title">${p.title}</h3>
+              <p class="p-desc">${p.description}</p>
+              <div class="p-box">
+                <code>${escapeHtml(p.prompt.substring(0, 160))}...</code>
+              </div>
+              <div class="p-footer">
+                <div class="p-tags-row">
+                  ${p.tags.map(t => `<span class="p-subtag">#${t}</span>`).join('')}
+                </div>
+                <button class="btn-copy-card" onclick="copyCardPrompt('${p.id}')">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+                  Sao chép
+                </button>
+              </div>
+            </div>
+          `).join('');
+
+          window._cachedPrompts = data;
+        })
+        .catch(err => {
+          console.error(err);
+          root.innerHTML = '<p style="color:var(--ink-soft);padding:20px;">Đang tải danh sách prompt...</p>';
+        });
+
+      function escapeHtml(text) {
+        return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+
+      window.copyCardPrompt = function (id) {
+        if (!window._cachedPrompts) return;
+        const item = window._cachedPrompts.find(x => x.id === id);
+        if (item) {
+          copyText(item.prompt, `Đã sao chép prompt "${item.title}"!`);
+        }
+      };
+    })();
+  </script>
+</body>
+
+</html>

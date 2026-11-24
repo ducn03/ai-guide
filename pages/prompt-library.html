@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Thư viện Prompt Thực Chiến - AI Guide</title>
+  <meta name="description" content="Kho tuyển tập hơn 100+ Prompt mẫu thực chiến cho văn phòng, marketing, lập trình, học tập và đời sống. Sao chép 1 chạm và sử dụng ngay.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+
+  <!-- FULL-PAGE SPLASH LOADER -->
+  <div id="page-loader">
+    <div class="loader-box">
+      <div class="loader-logo-wrap">
+        <div class="brand-icon" style="width:68px;height:68px;font-size:32px;margin:0 auto;box-shadow:0 8px 24px rgba(240,130,30,0.25);">✦</div>
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loader-bar-fill"></div>
+      </div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+      <div class="loader-text">Đang tải Thư viện Prompt...</div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER MOUNT -->
+  <div id="site-header"></div>
+
+  <!-- MAIN CONTENT -->
+  <main class="wrap">
+
+    <!-- PAGE HERO HEADER -->
+    <header class="page-header" style="text-align:center;max-width:800px;margin:0 auto 32px;">
+      <div class="breadcrumbs" style="justify-content:center;">
+        <a href="../index.html">Trang chủ</a>
+        <span>/</span>
+        <span class="curr">Thư viện Prompt</span>
+      </div>
+      <span class="badge-tag">Kho mẫu tuyển tập</span>
+      <h1 class="page-title">Thư viện Prompt Thực Chiến 2026</h1>
+      <p class="page-lead">
+        Tuyển tập các câu lệnh mẫu chất lượng cao đã qua thử nghiệm thực tế. Chọn danh mục, sao chép bằng 1 chạm và thay thế các thông tin trong ngoặc vuông <code>[...]</code> để nhận ngay kết quả ưng ý.
+      </p>
+    </header>
+
+    <!-- SEARCH & CATEGORY FILTER BAR -->
+    <div class="lib-toolbar">
+      <!-- Search Input -->
+      <div class="lib-search-box">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <input type="text" id="lib-search-input" placeholder="Tìm theo tên prompt, từ khoá, tác vụ (ví dụ: email, tiktok, excel, học tiếng anh)...">
+        <button id="lib-search-clear" class="btn-clear" hidden aria-label="Xoá tìm kiếm">✕</button>
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="category-chips-wrap">
+        <button class="chip-item active" data-cat="all">✨ Tất cả</button>
+        <button class="chip-item" data-cat="office">💼 Văn phòng & Báo cáo</button>
+        <button class="chip-item" data-cat="marketing">📢 Marketing & Content</button>
+        <button class="chip-item" data-cat="coding">💻 Lập trình & Tech</button>
+        <button class="chip-item" data-cat="learning">📚 Học tập & Ngoại ngữ</button>
+        <button class="chip-item" data-cat="writing">✍️ Viết lách & Sáng tạo</button>
+        <button class="chip-item" data-cat="life">🌿 Đời sống & Kỹ năng</button>
+        <button class="chip-item" data-cat="fav">⭐ Đã lưu (<span id="fav-count">0</span>)</button>
+      </div>
+    </div>
+
+    <!-- PROMPT GRID CONTAINER -->
+    <div class="lib-status-row">
+      <span id="prompt-count-text">Đang tải danh sách prompt...</span>
+      <div class="lib-view-toggle">
+        <span class="view-hint">💡 Chạm "Sao chép" để lấy ngay prompt</span>
+      </div>
+    </div>
+
+    <div class="prompt-grid" id="library-grid-root">
+      <!-- Skeleton shimmer loaders -->
+      <div class="p-card-skeleton"></div>
+      <div class="p-card-skeleton"></div>
+      <div class="p-card-skeleton"></div>
+      <div class="p-card-skeleton"></div>
+      <div class="p-card-skeleton"></div>
+      <div class="p-card-skeleton"></div>
+    </div>
+
+  </main>
+
+  <!-- PROMPT DETAIL MODAL POPUP -->
+  <div class="modal-backdrop" id="prompt-modal" hidden>
+    <div class="modal-box">
+      <div class="modal-header">
+        <div>
+          <span class="p-tag" id="modal-category">Văn phòng</span>
+          <h3 class="modal-title" id="modal-title">Tiêu đề Prompt</h3>
+        </div>
+        <button class="modal-close" id="modal-close-btn" aria-label="Đóng popup">✕</button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-desc" id="modal-desc"></p>
+        <div class="modal-prompt-wrap">
+          <div class="mp-head">
+            <span>Toàn văn Prompt:</span>
+            <button class="btn-copy-card" id="modal-copy-btn">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+              Sao chép toàn bộ
+            </button>
+          </div>
+          <pre class="modal-pre" id="modal-prompt-text"></pre>
+        </div>
+        <div class="modal-guide">
+          <b>📌 Hướng dẫn sử dụng:</b>
+          <p>Dán câu lệnh này vào ChatGPT hoặc Claude. Hãy thay thế các phần thông tin đặt trong dấu ngoặc vuông <code>[...]</code> bằng dữ liệu thực tế của bạn trước khi bấm Gửi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SITE FOOTER MOUNT -->
+  <div id="site-footer"></div>
+
+  <!-- MOBILE BOTTOM NAV MOUNT -->
+  <div id="site-bottom-nav"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../shared/site-shell.js"></script>
+  <script>
+    (function initLibrary() {
+      let prompts = [];
+      let activeCategory = 'all';
+      let searchQuery = '';
+      const gridRoot = document.getElementById('library-grid-root');
+      const searchInput = document.getElementById('lib-search-input');
+      const searchClear = document.getElementById('lib-search-clear');
+      const countEl = document.getElementById('prompt-count-text');
+      const chips = document.querySelectorAll('.chip-item');
+      const favCountEl = document.getElementById('fav-count');
+
+      // Modal elements
+      const modal = document.getElementById('prompt-modal');
+      const modalClose = document.getElementById('modal-close-btn');
+      const modalCat = document.getElementById('modal-category');
+      const modalTitle = document.getElementById('modal-title');
+      const modalDesc = document.getElementById('modal-desc');
+      const modalPrompt = document.getElementById('modal-prompt-text');
+      const modalCopy = document.getElementById('modal-copy-btn');
+      let currentModalPrompt = '';
+
+      // Favorites storage
+      function getFavorites() {
+        try {
+          return JSON.parse(localStorage.getItem('ai_fav_prompts') || '[]');
+        } catch {
+          return [];
+        }
+      }
+
+      function toggleFavorite(id, e) {
+        if (e) e.stopPropagation();
+        let favs = getFavorites();
+        if (favs.includes(id)) {
+          favs = favs.filter(x => x !== id);
+          showToast('Đã xóa khỏi danh sách đã lưu!');
+        } else {
+          favs.push(id);
+          showToast('Đã lưu vào danh sách yêu thích! ⭐');
+        }
+        localStorage.setItem('ai_fav_prompts', JSON.stringify(favs));
+        updateFavCount();
+        render();
+      }
+      window.toggleFavorite = toggleFavorite;
+
+      function updateFavCount() {
+        const count = getFavorites().length;
+        if (favCountEl) favCountEl.textContent = count;
+      }
+
+      function removeAccents(str) {
+        return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd').replace(/Đ/g, 'D').toLowerCase();
+      }
+
+      function escapeHtml(text) {
+        return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+      }
+
+      function render() {
+        const favs = getFavorites();
+        const q = removeAccents(searchQuery.trim());
+
+        const filtered = prompts.filter(item => {
+          // Category match
+          if (activeCategory === 'fav') {
+            if (!favs.includes(item.id)) return false;
+          } else if (activeCategory !== 'all' && item.category !== activeCategory) {
+            return false;
+          }
+
+          // Search match
+          if (!q) return true;
+          const hay = removeAccents(`${item.title} ${item.description} ${item.categoryName} ${item.tags.join(' ')} ${item.prompt}`);
+          return hay.includes(q);
+        });
+
+        countEl.textContent = `Hiển thị ${filtered.length} prompt phù hợp`;
+
+        if (!filtered.length) {
+          gridRoot.innerHTML = `
+            <div class="empty-state-box">
+              <div class="empty-icon">🔍</div>
+              <h3>Không tìm thấy Prompt nào phù hợp</h3>
+              <p>Hãy thử tìm bằng từ khoá khác hoặc chọn lại danh mục "Tất cả".</p>
+              <button class="btn btn-secondary" onclick="resetFilters()">Xem tất cả</button>
+            </div>
+          `;
+          return;
+        }
+
+        gridRoot.innerHTML = filtered.map(p => {
+          const isFav = favs.includes(p.id);
+          return `
+            <div class="prompt-card" onclick="openPromptModal('${p.id}')">
+              <div class="p-card-top">
+                <div style="display:flex;align-items:center;gap:6px;">
+                  <span class="p-tag">${p.categoryName}</span>
+                  <span class="p-level">${p.level}</span>
+                </div>
+                <button class="btn-fav ${isFav ? 'is-fav' : ''}" onclick="toggleFavorite('${p.id}', event)" title="Lưu yêu thích" aria-label="Lưu yêu thích">
+                  ${isFav ? '★' : '☆'}
+                </button>
+              </div>
+              <h3 class="p-title">${p.title}</h3>
+              <p class="p-desc">${p.description}</p>
+              <div class="p-box">
+                <code>${escapeHtml(p.prompt.substring(0, 160))}...</code>
+              </div>
+              <div class="p-footer">
+                <div class="p-tags-row">
+                  ${p.tags.map(t => `<span class="p-subtag">#${t}</span>`).join('')}
+                </div>
+                <button class="btn-copy-card" onclick="copyPromptCard('${p.id}', event)">
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="9" y="9" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" stroke="currentColor" stroke-width="2"/></svg>
+                  Sao chép
+                </button>
+              </div>
+            </div>
+          `;
+        }).join('');
+      }
+
+      window.resetFilters = function() {
+        activeCategory = 'all';
+        searchQuery = '';
+        searchInput.value = '';
+        searchClear.hidden = true;
+        chips.forEach(c => c.classList.toggle('active', c.dataset.cat === 'all'));
+        render();
+      };
+
+      window.copyPromptCard = function(id, e) {
+        if (e) e.stopPropagation();
+        const item = prompts.find(x => x.id === id);
+        if (item) {
+          copyText(item.prompt, `Đã sao chép: "${item.title}"!`);
+        }
+      };
+
+      window.openPromptModal = function(id) {
+        const item = prompts.find(x => x.id === id);
+        if (!item) return;
+        currentModalPrompt = item.prompt;
+        modalCat.textContent = item.categoryName;
+        modalTitle.textContent = item.title;
+        modalDesc.textContent = item.description;
+        modalPrompt.textContent = item.prompt;
+        modal.hidden = false;
+        document.body.style.overflow = 'hidden';
+      };
+
+      function closeModal() {
+        modal.hidden = true;
+        document.body.style.overflow = '';
+      }
+
+      modalClose?.addEventListener('click', closeModal);
+      modal?.addEventListener('click', e => {
+        if (e.target === modal) closeModal();
+      });
+
+      modalCopy?.addEventListener('click', () => {
+        if (currentModalPrompt) {
+          copyText(currentModalPrompt, 'Đã sao chép toàn bộ Prompt!');
+        }
+      });
+
+      // Filter clicks
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activeCategory = chip.dataset.cat;
+          render();
+        });
+      });
+
+      // Search typing
+      searchInput.addEventListener('input', () => {
+        searchQuery = searchInput.value;
+        searchClear.hidden = !searchQuery;
+        render();
+      });
+
+      searchClear.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        searchClear.hidden = true;
+        searchInput.focus();
+        render();
+      });
+
+      // Check URL params (e.g. ?cat=office)
+      const urlParams = new URLSearchParams(window.location.search);
+      const initialCat = urlParams.get('cat');
+      if (initialCat) {
+        activeCategory = initialCat;
+        chips.forEach(c => c.classList.toggle('active', c.dataset.cat === initialCat));
+      }
+
+      // Fetch data
+      fetch('../data/prompts.json')
+        .then(res => res.json())
+        .then(data => {
+          prompts = data;
+          updateFavCount();
+          render();
+        })
+        .catch(err => {
+          console.error(err);
+          gridRoot.innerHTML = `<p style="padding:40px;text-align:center;color:var(--ink-soft);">Không thể tải dữ liệu prompt. Vui lòng thử tải lại trang.</p>`;
+        });
+    })();
+  </script>
+</body>
+</html>

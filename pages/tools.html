@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <title>Bản đồ Công cụ AI 2026 - AI Guide</title>
+  <meta name="description" content="Khám phá và so sánh các công cụ Trí tuệ Nhân tạo hàng đầu 2026: ChatGPT, Claude, Gemini, DeepSeek, Cursor, Midjourney, NotebookLM... kèm ưu nhược điểm và giá cả.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../shared/styles.css">
+</head>
+<body>
+
+  <!-- FULL-PAGE SPLASH LOADER -->
+  <div id="page-loader">
+    <div class="loader-box">
+      <div class="loader-logo-wrap">
+        <div class="brand-icon" style="width:68px;height:68px;font-size:32px;margin:0 auto;box-shadow:0 8px 24px rgba(240,130,30,0.25);">✦</div>
+      </div>
+      <div class="loader-bar-track">
+        <div class="loader-bar-fill" id="loader-bar-fill"></div>
+      </div>
+      <div class="loader-pct" id="loader-pct">0%</div>
+      <div class="loader-text">Đang tải Bản đồ Công cụ...</div>
+    </div>
+  </div>
+
+  <!-- SITE HEADER MOUNT -->
+  <div id="site-header"></div>
+
+  <!-- MAIN CONTENT -->
+  <main class="wrap">
+
+    <!-- PAGE HERO HEADER -->
+    <header class="page-header" style="text-align:center;max-width:820px;margin:0 auto 32px;">
+      <div class="breadcrumbs" style="justify-content:center;">
+        <a href="../index.html">Trang chủ</a>
+        <span>/</span>
+        <span class="curr">Bản đồ Công cụ</span>
+      </div>
+      <span class="badge-tag">Bước 3 • Hệ sinh thái AI 2026</span>
+      <h1 class="page-title">Bản đồ Công cụ AI Toàn diện</h1>
+      <p class="page-lead">
+        Không có công cụ nào hoàn hảo cho mọi việc. Biết rõ điểm mạnh, điểm yếu và chi phí của từng công cụ sẽ giúp bạn tiết kiệm hàng triệu đồng và giải quyết công việc với hiệu suất cao nhất.
+      </p>
+    </header>
+
+    <!-- TOOLBAR & FILTERS -->
+    <div class="lib-toolbar">
+      <div class="category-chips-wrap" style="justify-content:center;">
+        <button class="chip-item active" data-filter="all">✨ Tất cả công cụ</button>
+        <button class="chip-item" data-filter="chatbot">💬 Chatbots & Trợ lý</button>
+        <button class="chip-item" data-filter="coding">💻 Lập trình & Code</button>
+        <button class="chip-item" data-filter="media">🎨 Ảnh, Video & Giọng nói</button>
+        <button class="chip-item" data-filter="research">🔍 Tìm kiếm & Nghiên cứu</button>
+      </div>
+    </div>
+
+    <!-- STATUS TEXT -->
+    <div class="lib-status-row">
+      <span id="tool-count-text">Đang tải danh sách công cụ...</span>
+      <span class="view-hint">⚡ Đã thẩm định & cập nhật năm 2026</span>
+    </div>
+
+    <!-- TOOL CARDS GRID -->
+    <div class="tool-cards-grid" id="tools-grid-root">
+      <div class="p-card-skeleton"></div>
+      <div class="p-card-skeleton"></div>
+      <div class="p-card-skeleton"></div>
+    </div>
+
+    <!-- SECTION: DECISION MATRIX ADVICE -->
+    <section class="section" style="margin-top:56px;">
+      <div class="sec-head">
+        <div>
+          <span class="badge-tag">Cẩm nang lựa chọn</span>
+          <h2 class="sec-title">Nên chọn công cụ nào cho nhu cầu của bạn?</h2>
+          <p class="sec-subtitle">Gợi ý ngắn gọn giúp bạn không bị lạc lối giữa rừng công cụ AI.</p>
+        </div>
+      </div>
+
+      <div class="decision-grid">
+        <div class="decision-card">
+          <div class="dc-icon">📝</div>
+          <h4>Viết lách, Content, Dịch thuật</h4>
+          <p><b>Số 1: Claude (Anthropic).</b> Văn phong tiếng Việt tự nhiên nhất, tinh tế, không gượng gạo. Số 2: ChatGPT cho ý tưởng dàn bài tổng quát.</p>
+        </div>
+
+        <div class="decision-card">
+          <div class="dc-icon">📊</div>
+          <h4>Đọc tài liệu dài & Nghiên cứu</h4>
+          <p><b>Số 1: Google NotebookLM</b> (miễn phí, không bịa chuyện, tạo podcast). Số 2: <b>Perplexity AI</b> (tìm kiếm kèm nguồn trích dẫn học thuật).</p>
+        </div>
+
+        <div class="decision-card">
+          <div class="dc-icon">💻</div>
+          <h4>Lập trình & Xây dựng Website</h4>
+          <p><b>Số 1: Cursor Editor</b> (viết code cả dự án). Số 2: <b>v0.dev</b> (vẽ giao diện web bằng prompt). Số 3: <b>DeepSeek</b> (suy luận giải thuật miễn phí).</p>
+        </div>
+
+        <div class="decision-card">
+          <div class="dc-icon">🎨</div>
+          <h4>Sáng tạo Hình ảnh & Đồ họa</h4>
+          <p><b>Số 1: Midjourney</b> (chất lượng mỹ thuật đỉnh cao). Số 2: <b>Recraft.ai</b> (miễn phí, xuất vector SVG cho designer và slide).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEXT STEP -->
+    <div class="next-step-box" style="margin-top:40px;">
+      <div class="ns-content">
+        <span class="ns-step">Bước tiếp theo</span>
+        <h3>Muốn tiến xa hơn với Tự động hóa & AI Agents?</h3>
+        <p>Tìm hiểu cách thiết lập Custom Instructions, quy trình làm việc tự động và cách biến AI thành nhân viên làm việc 24/7.</p>
+      </div>
+      <a href="advanced.html" class="btn btn-primary">
+        Làm chủ AI Nâng cao →
+      </a>
+    </div>
+
+  </main>
+
+  <!-- SITE FOOTER MOUNT -->
+  <div id="site-footer"></div>
+
+  <!-- MOBILE BOTTOM NAV MOUNT -->
+  <div id="site-bottom-nav"></div>
+
+  <!-- SCRIPTS -->
+  <script src="../shared/site-shell.js"></script>
+  <script>
+    (function initTools() {
+      let tools = [];
+      let activeFilter = 'all';
+      const gridRoot = document.getElementById('tools-grid-root');
+      const countEl = document.getElementById('tool-count-text');
+      const chips = document.querySelectorAll('.chip-item');
+
+      function render() {
+        const filtered = tools.filter(t => activeFilter === 'all' || t.category === activeFilter);
+        countEl.textContent = `Hiển thị ${filtered.length} công cụ AI hàng đầu`;
+
+        gridRoot.innerHTML = filtered.map(t => `
+          <div class="tool-card">
+            <div class="tc-header">
+              <div>
+                <span class="tc-cat">${t.categoryLabel}</span>
+                <h3 class="tc-name">${t.name}</h3>
+              </div>
+              <span class="tc-badge" style="background:${t.badgeColor}15;color:${t.badgeColor};border:1px solid ${t.badgeColor}30;">${t.badge}</span>
+            </div>
+
+            <p class="tc-tagline">${t.tagline}</p>
+
+            <div class="tc-pricing-box">
+              <div class="tcp-row">
+                <b>Gói dịch vụ:</b>
+                <span class="tcp-val">${t.pricing}</span>
+              </div>
+              <p class="tcp-info">${t.freeTier}</p>
+            </div>
+
+            <div class="tc-detail-sec">
+              <div class="tc-pros">
+                <b>Ưu điểm nổi bật:</b>
+                <ul>
+                  ${t.strengths.map(s => `<li>${s}</li>`).join('')}
+                </ul>
+              </div>
+
+              <div class="tc-cons">
+                <b>Hạn chế cần lưu ý:</b>
+                <ul>
+                  ${t.weaknesses.map(w => `<li>${w}</li>`).join('')}
+                </ul>
+              </div>
+            </div>
+
+            <div class="tc-bestfor">
+              <b>Phù hợp nhất cho:</b>
+              <p>${t.bestFor}</p>
+            </div>
+
+            <div class="tc-footer">
+              <span class="tc-rating">⭐ ${t.rating}</span>
+              <a href="${t.url}" target="_blank" rel="noopener" class="btn-sm-tool">
+                Trải nghiệm ngay ↗
+              </a>
+            </div>
+          </div>
+        `).join('');
+      }
+
+      chips.forEach(chip => {
+        chip.addEventListener('click', () => {
+          chips.forEach(c => c.classList.remove('active'));
+          chip.classList.add('active');
+          activeFilter = chip.dataset.filter;
+          render();
+        });
+      });
+
+      fetch('../data/tools.json')
+        .then(res => res.json())
+        .then(data => {
+          tools = data;
+          render();
+        })
+        .catch(err => {
+          console.error(err);
+          gridRoot.innerHTML = '<p style="padding:40px;text-align:center;color:var(--ink-soft);">Không thể tải danh sách công cụ. Vui lòng thử lại.</p>';
+        });
+    })();
+  </script>
+</body>
+</html>
