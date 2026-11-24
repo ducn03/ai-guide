@@ -153,7 +153,6 @@ const siteHeaderMarkup = `
 <header class="site">
   <div class="header-row">
     <a href="${rootPath}index.html" class="brand">
-      <div class="brand-icon">✦</div>
       <div class="brand-name">
         <b>AI Wiki</b>
         <span>TRAINING</span>
@@ -166,7 +165,7 @@ const siteHeaderMarkup = `
       <a href="${rootPath}pages/prompting.html" data-page="prompting.html">Kỹ năng Prompt</a>
       <a href="${rootPath}pages/prompt-library.html" data-page="prompt-library.html">SOP &amp; Mẫu Phòng Ban</a>
       <a href="${rootPath}pages/tools.html" data-page="tools.html">Công cụ Chuẩn</a>
-      <a href="${rootPath}pages/advanced.html" data-page="advanced.html" class="cta-nav">Tự động hoá ⚡</a>
+      <a href="${rootPath}pages/advanced.html" data-page="advanced.html" class="cta-nav">Tự động hoá </a>
     </nav>
 
     <div class="search-box">
@@ -189,7 +188,7 @@ const siteFooterMarkup = `
   <div class="foot-grid">
     <div>
       <div class="foot-brand">
-        <div class="brand-icon" style="width:30px;height:30px;font-size:15px;">✦</div>
+        <div class="brand-icon" style="width:30px;height:30px;font-size:15px;"></div>
         <span>AI Training Wiki &amp; SOPs</span>
       </div>
       <p class="foot-desc">Cổng thông tin và cẩm nang đào tạo nội bộ: Chuẩn hóa quy trình ứng dụng Trí tuệ Nhân tạo (AI) cho toàn thể cán bộ nhân viên công ty. Tăng tốc hiệu suất làm việc bền vững và bảo mật thông tin tối đa.</p>

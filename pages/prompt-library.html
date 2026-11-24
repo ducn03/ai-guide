@@ -22,7 +22,7 @@
     <div class="loader-box">
       <div class="loader-logo-wrap">
         <div class="brand-icon"
-          style="width:68px;height:68px;font-size:32px;margin:0 auto;box-shadow:0 8px 24px rgba(240,130,30,0.25);">✦
+          style="width:68px;height:68px;font-size:32px;margin:0 auto;box-shadow:0 8px 24px rgba(240,130,30,0.25);">
         </div>
       </div>
       <div class="loader-bar-track">
@@ -65,18 +65,18 @@
         </svg>
         <input type="text" id="lib-search-input"
           placeholder="Tìm theo tên prompt, từ khoá, tác vụ (ví dụ: email, tiktok, excel, học tiếng anh)...">
-        <button id="lib-search-clear" class="btn-clear" hidden aria-label="Xoá tìm kiếm">✕</button>
+        <button id="lib-search-clear" class="btn-clear" hidden aria-label="Xoá tìm kiếm"></button>
       </div>
 
       <!-- Category Filter Chips -->
       <div class="category-chips-wrap">
-        <button class="chip-item active" data-cat="all">✨ Tất cả SOP</button>
-        <button class="chip-item" data-cat="marketing">📢 Marketing &amp; Content</button>
-        <button class="chip-item" data-cat="sales">🤝 Kinh doanh &amp; CSKH</button>
-        <button class="chip-item" data-cat="hr">👥 Hành chính - Nhân sự (HR)</button>
-        <button class="chip-item" data-cat="finance">📊 Kế toán &amp; Excel</button>
-        <button class="chip-item" data-cat="office">💼 Văn phòng &amp; Vận hành</button>
-        <button class="chip-item" data-cat="fav">⭐ Đã lưu (<span id="fav-count">0</span>)</button>
+        <button class="chip-item active" data-cat="all"> Tất cả SOP</button>
+        <button class="chip-item" data-cat="marketing"> Marketing &amp; Content</button>
+        <button class="chip-item" data-cat="sales"> Kinh doanh &amp; CSKH</button>
+        <button class="chip-item" data-cat="hr"> Hành chính - Nhân sự (HR)</button>
+        <button class="chip-item" data-cat="finance"> Kế toán &amp; Excel</button>
+        <button class="chip-item" data-cat="office"> Văn phòng &amp; Vận hành</button>
+        <button class="chip-item" data-cat="fav"> Đã lưu (<span id="fav-count">0</span>)</button>
       </div>
     </div>
 
@@ -84,7 +84,7 @@
     <div class="lib-status-row">
       <span id="prompt-count-text">Đang tải danh sách prompt...</span>
       <div class="lib-view-toggle">
-        <span class="view-hint">💡 Chạm "Sao chép" để lấy ngay prompt</span>
+        <span class="view-hint"> Chạm "Sao chép" để lấy ngay prompt</span>
       </div>
     </div>
 
@@ -108,7 +108,7 @@
           <span class="p-tag" id="modal-category">Văn phòng</span>
           <h3 class="modal-title" id="modal-title">Tiêu đề Prompt</h3>
         </div>
-        <button class="modal-close" id="modal-close-btn" aria-label="Đóng popup">✕</button>
+        <button class="modal-close" id="modal-close-btn" aria-label="Đóng popup"></button>
       </div>
       <div class="modal-body">
         <p class="modal-desc" id="modal-desc"></p>
@@ -127,7 +127,7 @@
           <pre class="modal-pre" id="modal-prompt-text"></pre>
         </div>
         <div class="modal-guide">
-          <b>📌 Hướng dẫn sử dụng:</b>
+          <b> Hướng dẫn sử dụng:</b>
           <p>Dán câu lệnh này vào ChatGPT hoặc Claude. Hãy thay thế các phần thông tin đặt trong dấu ngoặc vuông
             <code>[...]</code> bằng dữ liệu thực tế của bạn trước khi bấm Gửi.</p>
         </div>
@@ -183,7 +183,7 @@
           showToast('Đã xóa khỏi danh sách đã lưu!');
         } else {
           favs.push(id);
-          showToast('Đã lưu vào danh sách yêu thích! ⭐');
+          showToast('Đã lưu vào danh sách yêu thích! ');
         }
         localStorage.setItem('ai_fav_prompts', JSON.stringify(favs));
         updateFavCount();
@@ -227,7 +227,7 @@
         if (!filtered.length) {
           gridRoot.innerHTML = `
             <div class="empty-state-box">
-              <div class="empty-icon">🔍</div>
+              <div class="empty-icon"></div>
               <h3>Không tìm thấy Prompt nào phù hợp</h3>
               <p>Hãy thử tìm bằng từ khoá khác hoặc chọn lại danh mục "Tất cả".</p>
               <button class="btn btn-secondary" onclick="resetFilters()">Xem tất cả</button>
@@ -246,7 +246,7 @@
                   <span class="p-level">${p.level}</span>
                 </div>
                 <button class="btn-fav ${isFav ? 'is-fav' : ''}" onclick="toggleFavorite('${p.id}', event)" title="Lưu yêu thích" aria-label="Lưu yêu thích">
-                  ${isFav ? '★' : '☆'}
+                  ${isFav ? '' : ''}
                 </button>
               </div>
               <h3 class="p-title">${p.title}</h3>
