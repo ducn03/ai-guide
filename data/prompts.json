@@ -174,5 +174,27 @@
     "level": "Trung cấp",
     "tags": ["Phản biện", "Luyện tập", "Kỹ năng"],
     "prompt": "Hãy đóng vai một [vị khách hàng rất khó tính / giám đốc tài chính cực kỳ kỹ lưỡng].\nTôi chuẩn bị trình bày đề xuất sau: [Tóm tắt ngắn đề xuất của bạn].\n\nQuy tắc tập luyện:\n1. Đặt cho tôi từng câu hỏi vặn vẹo hóc búa một (tổng cộng 5 câu).\n2. Dừng lại đợi tôi trả lời xong rồi mới góp ý ngắn xem câu trả lời của tôi đã thuyết phục chưa, thiếu ý nào, sau đó mới hỏi tiếp câu sau.\nBắt đầu ngay câu hỏi số 1!"
+  },
+  {
+    "id": "office-05",
+    "category": "office",
+    "categoryName": "Họp hành & Văn phòng",
+    "tool": "Claude / ChatGPT",
+    "title": "Tạo sẵn Bộ Hồ sơ Ngữ cảnh (Context Pack) dùng lại nhiều lần",
+    "description": "Gom thông tin công ty, sản phẩm và giọng văn vào 1 tờ hồ sơ chuẩn; từ sau cứ tải file này lên đầu cuộc trò chuyện khỏi gõ lại.",
+    "level": "Cơ bản",
+    "tags": ["Context", "Thiết lập", "Tiết kiệm thời gian"],
+    "prompt": "Hãy giúp tôi phỏng vấn nhanh để đóng gói thành 1 file \"Hồ sơ Ngữ cảnh công việc\" (dài khoảng 1 trang A4, định dạng Markdown gọn gàng) để tôi lưu lại gửi cho AI đọc mỗi khi bắt đầu việc mới.\n\nHãy hỏi tôi lần lượt từng nhóm thông tin (mỗi lần chỉ hỏi 3 câu ngắn):\n1. Công ty tôi bán gì, điểm mạnh khác biệt và tệp khách hàng chính.\n2. Vị trí công việc của tôi và 3 đầu việc tôi làm lặp lại nhiều nhất.\n3. Giọng văn mong muốn và những từ ngữ / lỗi trình bày cần tuyệt đối tránh.\n\nSau khi tôi trả lời xong, hãy tổng hợp lại thành 1 bản Hồ sơ Ngữ cảnh hoàn chỉnh để tôi lưu về máy."
+  },
+  {
+    "id": "office-06",
+    "category": "office",
+    "categoryName": "Họp hành & Văn phòng",
+    "tool": "Claude (Artifacts) / ChatGPT",
+    "title": "Biến bảng số liệu thành Báo cáo HTML đẹp mắt gửi sếp / xuất PDF",
+    "description": "Tạo trang báo cáo có thẻ số liệu nổi bật, biểu đồ thanh và hộp nhận xét gọn gàng, mở thẳng bằng Chrome hoặc bấm Ctrl+P in ra PDF.",
+    "level": "Trung cấp",
+    "tags": ["HTML Report", "Báo cáo", "Trực quan"],
+    "prompt": "Bạn là chuyên gia trình bày báo cáo quản trị. Hãy biến toàn bộ số liệu (đã ẩn danh) dưới đây thành 1 file báo cáo HTML hoàn chỉnh, tự chạy độc lập (gộp sẵn CSS bên trong, không cần mạng vẫn xem đẹp, dùng font tiếng Việt dễ đọc, tông màu trang nhã).\n\nYêu cầu bố cục trên trang báo cáo:\n1. Tiêu đề báo cáo + kỳ báo cáo + 1 nhãn trạng thái nổi bật (VD: Vượt mục tiêu / Cần chú ý).\n2. Hàng 3 thẻ số liệu to rõ (KPI chính + tỷ lệ tăng/giảm so với kỳ trước).\n3. Biểu đồ thanh ngang so sánh tỷ trọng các nhóm/kênh bằng màu sắc hài hòa.\n4. Hai khung tóm tắt song song: Điểm sáng nổi bật & 2 việc cần xử lý ngay kỳ tới.\n5. Hỗ trợ in ra giấy A4 / lưu PDF (Ctrl + P) gọn gàng không bị cắt chữ.\n\n=== DỮ LIỆU BÁO CÁO ===\n[Dán bảng số liệu hoặc các gạch đầu dòng của bạn vào đây]"
   }
 ]

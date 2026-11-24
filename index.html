@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
   <title>AI Training Wiki - Cẩm nang dùng AI thực tế cho công việc</title>
-  <meta name="description" content="Cẩm nang hướng dẫn dùng AI đầy đủ, dễ hiểu cho người đi làm: hiểu gọn bản chất AI, Token, Credit, Prompt, Skill, Agent; cài đặt ngày đầu; thực hành Email, Excel, PDF, Slide và 16 mẫu việc theo phòng ban.">
+  <meta name="description" content="Cẩm nang hướng dẫn dùng AI đầy đủ, dễ hiểu cho người đi làm: hiểu gọn bản chất AI, Context, Token, Credit, Prompt; nâng trình với Skill, AI Agent, Markdown và tạo Báo cáo HTML đẹp mắt.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
@@ -46,13 +46,13 @@
 
       <div class="search-box" style="flex:1;max-width:480px;">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.3-4.3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <input type="text" id="wiki-quick-search" placeholder="Tìm nhanh: token, credit, cài đặt, Excel, PDF, bảo mật... (Ctrl + K)" aria-label="Tìm kiếm nội bộ">
+        <input type="text" id="wiki-quick-search" placeholder="Tìm nhanh: context, token, skill, agent, markdown, báo cáo HTML... (Ctrl + K)" aria-label="Tìm kiếm nội bộ">
         <div class="search-suggestions" hidden></div>
       </div>
 
       <div class="header-actions" style="display:flex;align-items:center;gap:10px;">
-        <a href="#ch5-2" class="tag-pill pill-orange" style="font-size:12px;text-decoration:none;">Bảo mật</a>
-        <a href="#ch6-1" class="tag-pill pill-green" style="font-size:12px;text-decoration:none;">16 Mẫu Việc</a>
+        <a href="#ch5-2" class="tag-pill pill-orange" style="font-size:12px;text-decoration:none;">Báo cáo HTML</a>
+        <a href="#ch8-1" class="tag-pill pill-green" style="font-size:12px;text-decoration:none;">18 Mẫu Việc</a>
         <a href="#quiz-section" class="tag-pill pill-blue" style="font-size:12px;text-decoration:none;">Tự kiểm tra</a>
       </div>
     </div>
@@ -68,24 +68,23 @@
     <aside class="wiki-sidebar" id="wiki-sidebar">
 
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">1. Hiểu đúng bản chất</div>
+        <div class="wiki-group-title">1. Hiểu đúng bản chất nền</div>
         <a href="#ch1-1" class="wiki-nav-item active"><span>1.1 AI là gì &amp; 3 chuyện hay gặp</span></a>
-        <a href="#ch1-2" class="wiki-nav-item"><span>1.2 Token, bàn làm việc &amp; trí nhớ</span></a>
-        <a href="#ch1-3" class="wiki-nav-item"><span>1.3 Credit, lượt dùng &amp; gói trả phí</span></a>
-        <a href="#ch1-4" class="wiki-nav-item"><span>1.4 Prompt là gì?</span></a>
-        <a href="#ch1-5" class="wiki-nav-item"><span>1.5 Skill và Đồ nghề (Tools)</span></a>
-        <a href="#ch1-6" class="wiki-nav-item"><span>1.6 AI Agent &amp; Bảng tóm tắt 6 từ</span></a>
+        <a href="#ch1-2" class="wiki-nav-item"><span>1.2 Context (Ngữ cảnh) là gì?</span></a>
+        <a href="#ch1-3" class="wiki-nav-item"><span>1.3 Token, bàn làm việc &amp; trí nhớ</span></a>
+        <a href="#ch1-4" class="wiki-nav-item"><span>1.4 Credit, lượt dùng &amp; gói trả phí</span></a>
+        <a href="#ch1-5" class="wiki-nav-item"><span>1.5 Prompt &amp; Bảng nhớ 5 từ nền</span></a>
       </div>
 
       <div class="wiki-nav-group">
         <div class="wiki-group-title">2. Thiết lập ngày đầu tiên</div>
         <a href="#ch2-1" class="wiki-nav-item"><span>2.1 Việc nào mở công cụ nào?</span></a>
         <a href="#ch2-2" class="wiki-nav-item"><span>2.2 3 cài đặt làm ngay trong 5 phút</span></a>
-        <a href="#ch2-3" class="wiki-nav-item"><span>2.3 6 nút bấm &amp; cách dùng điện thoại</span></a>
+        <a href="#ch2-3" class="wiki-nav-item"><span>2.3 6 nút bấm &amp; mẹo điện thoại</span></a>
       </div>
 
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">3. Cách nói chuyện ra việc</div>
+        <div class="wiki-group-title">3. Học Prompt — Nói sao ra việc</div>
         <a href="#ch3-1" class="wiki-nav-item"><span>3.1 Công thức 3 Bước + 1 Mẫu</span></a>
         <a href="#ch3-2" class="wiki-nav-item"><span>3.2 Nói chuyện nhiều vòng (Có ví dụ)</span></a>
         <a href="#ch3-3" class="wiki-nav-item"><span>3.3 So sánh 3 tình huống thực tế</span></a>
@@ -94,30 +93,42 @@
       </div>
 
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">4. Thực hành 5 việc văn phòng</div>
-        <a href="#ch4-1" class="wiki-nav-item"><span>4.1 Email, Thông báo &amp; Dịch tự nhiên</span></a>
-        <a href="#ch4-2" class="wiki-nav-item"><span>4.2 Hợp đồng, PDF dày &amp; YouTube</span></a>
-        <a href="#ch4-3" class="wiki-nav-item"><span>4.3 Làm chủ Excel &amp; Google Sheets</span></a>
-        <a href="#ch4-4" class="wiki-nav-item"><span>4.4 Ảnh màn hình, Hóa đơn &amp; Slide</span></a>
-        <a href="#ch4-5" class="wiki-nav-item"><span>4.5 Tập dượt 1-1 trước buổi họp</span></a>
+        <div class="wiki-group-title">4. Lên trình: Skill &amp; AI Agent</div>
+        <a href="#ch4-1" class="wiki-nav-item"><span>4.1 Skill &amp; Đồ nghề (Tools) chi tiết</span></a>
+        <a href="#ch4-2" class="wiki-nav-item"><span>4.2 AI Agent &amp; 3 rào chắn an toàn</span></a>
       </div>
 
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">5. Kiểm duyệt, Sửa lỗi &amp; Bảo mật</div>
-        <a href="#ch5-1" class="wiki-nav-item"><span>5.1 Soi lại bài trong 1 phút</span></a>
-        <a href="#ch5-2" class="wiki-nav-item"><span>5.2 Đèn giao thông bảo mật 3 mức</span></a>
-        <a href="#ch5-3" class="wiki-nav-item"><span>5.3 Xử lý 5 sự cố hay gặp</span></a>
+        <div class="wiki-group-title">5. Dùng thông minh: Markdown &amp; Báo cáo HTML</div>
+        <a href="#ch5-1" class="wiki-nav-item"><span>5.1 Markdown &amp; 5 ký hiệu đủ xài</span></a>
+        <a href="#ch5-2" class="wiki-nav-item"><span>5.2 Tạo Báo cáo HTML đẹp (Có ví dụ)</span></a>
       </div>
 
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">6. Kho 16 mẫu việc theo bộ phận</div>
-        <a href="#ch6-1" class="wiki-nav-item"><span>6.1 Chọn bộ phận &amp; Copy dùng ngay</span></a>
+        <div class="wiki-group-title">6. Thực hành 5 việc văn phòng</div>
+        <a href="#ch6-1" class="wiki-nav-item"><span>6.1 Email, Thông báo &amp; Dịch tự nhiên</span></a>
+        <a href="#ch6-2" class="wiki-nav-item"><span>6.2 Hợp đồng, PDF dày &amp; YouTube</span></a>
+        <a href="#ch6-3" class="wiki-nav-item"><span>6.3 Làm chủ Excel &amp; Google Sheets</span></a>
+        <a href="#ch6-4" class="wiki-nav-item"><span>6.4 Ảnh màn hình, Hóa đơn &amp; Slide</span></a>
+        <a href="#ch6-5" class="wiki-nav-item"><span>6.5 Tập dượt 1-1 trước buổi họp</span></a>
       </div>
 
       <div class="wiki-nav-group">
-        <div class="wiki-group-title">7. Thực hành &amp; Tự kiểm tra</div>
-        <a href="#tool-builder" class="wiki-nav-item"><span>7.1 Công cụ ghép câu lệnh nhanh</span></a>
-        <a href="#quiz-section" class="wiki-nav-item"><span>7.2 Trắc nghiệm nhanh 5 tình huống</span></a>
+        <div class="wiki-group-title">7. Kiểm duyệt, Bảo mật &amp; Sự cố</div>
+        <a href="#ch7-1" class="wiki-nav-item"><span>7.1 Soi lại bài trong 1 phút</span></a>
+        <a href="#ch7-2" class="wiki-nav-item"><span>7.2 Đèn giao thông bảo mật 3 mức</span></a>
+        <a href="#ch7-3" class="wiki-nav-item"><span>7.3 Xử lý 5 sự cố hay gặp</span></a>
+      </div>
+
+      <div class="wiki-nav-group">
+        <div class="wiki-group-title">8. Kho 18 mẫu việc theo bộ phận</div>
+        <a href="#ch8-1" class="wiki-nav-item"><span>8.1 Chọn bộ phận &amp; Copy dùng ngay</span></a>
+      </div>
+
+      <div class="wiki-nav-group">
+        <div class="wiki-group-title">9. Thực hành &amp; Tự kiểm tra</div>
+        <a href="#tool-builder" class="wiki-nav-item"><span>9.1 Công cụ ghép câu lệnh nhanh</span></a>
+        <a href="#quiz-section" class="wiki-nav-item"><span>9.2 Trắc nghiệm 7 tình huống thực tế</span></a>
       </div>
 
     </aside>
@@ -127,48 +138,48 @@
 
       <!-- DOC HEADER -->
       <header class="doc-header">
-        <span class="chapter-badge">Cẩm nang AI nội bộ • Phiên bản đầy đủ</span>
+        <span class="chapter-badge">Cẩm nang AI nội bộ • Bản đầy đủ có minh họa</span>
         <h1 style="font-size:clamp(28px, 3.2vw, 40px);font-weight:800;color:var(--ink);line-height:1.2;margin:12px 0 16px;letter-spacing:-0.02em;">
           Dùng AI Sao Cho Ra Việc
         </h1>
         <p style="font-size:16px;line-height:1.8;color:var(--ink-soft);margin-bottom:12px;">
-          Mới đụng vào AI rất dễ thấy ngợp. Mở lên hỏi vài câu thì nó trả lời chung chung, nghe mọi người nói chuyện Token, Credit, Prompt, Skill, Agent lại càng rối hơn.
+          Mới đụng vào AI rất dễ thấy ngợp. Mở lên hỏi vài câu thì nó trả lời chung chung, nghe mọi người nói chuyện Context, Token, Credit, Prompt rồi Skill, Agent, Markdown, báo cáo HTML lại càng rối hơn.
         </p>
         <p style="font-size:15.5px;line-height:1.8;color:var(--ink-soft);margin-bottom:0;">
-          Cuốn wiki này gom đủ những thứ thiết thực nhất cho người đi làm văn phòng — giải thích trọn vẹn bằng chuyện đời thường, không lý thuyết kỹ thuật, đi từ cài đặt ngày đầu đến cách xử lý từng đầu việc cụ thể.
+          Cuốn wiki này gom trọn những thứ thiết thực nhất cho người đi làm văn phòng — giải thích bằng chuyện đời thường kèm ảnh minh họa, đi theo đúng trình tự: hiểu gốc, thạo cách giao việc (Prompt), rồi mới nâng trình lên Skill, AI Agent và chiêu xuất Báo cáo HTML đẹp như thiết kế.
         </p>
 
         <div class="doc-meta-row">
           <span>Đối tượng: <b>Mọi nhân sự (không cần biết IT)</b></span>
-          <span>Thời gian đọc trọn bộ: <b>Khoảng 15 phút</b></span>
-          <span>Gồm: <b>7 chương + 16 mẫu việc + 5 câu tự kiểm tra</b></span>
+          <span>Thời gian đọc trọn bộ: <b>Khoảng 18–20 phút</b></span>
+          <span>Gồm: <b>9 chương + 4 ảnh minh họa + 18 mẫu việc + 7 câu tự kiểm tra</b></span>
         </div>
 
         <div class="quick-paths">
           <a href="#ch1-1" class="qp-card">
-            <span class="qp-step">Lối đi 1 • Mới tinh</span>
-            <b>Đọc từ Chương 1</b>
-            <span class="qp-desc">Nắm gọn bản chất 6 từ hay gặp rồi cài đặt máy trong 5 phút.</span>
+            <span class="qp-step">Lối đi 1 • Học từ gốc</span>
+            <b>Đọc từ Chương 1 đến 4</b>
+            <span class="qp-desc">Nắm gọn AI, Context, Token, Prompt rồi lên trình Skill &amp; AI Agent.</span>
           </a>
-          <a href="#ch4-1" class="qp-card">
-            <span class="qp-step">Lối đi 2 • Đang có việc gấp</span>
-            <b>Nhảy thẳng Chương 4</b>
-            <span class="qp-desc">Xem cách nhờ AI xử lý Email, PDF, Excel, Slide và ảnh lỗi ngay.</span>
+          <a href="#ch5-1" class="qp-card">
+            <span class="qp-step">Lối đi 2 • Dùng thông minh</span>
+            <b>Xem Chương 5 (Markdown &amp; HTML)</b>
+            <span class="qp-desc">Biết 5 ký hiệu Markdown và tự tạo Báo cáo HTML đẹp mắt gửi sếp.</span>
           </a>
-          <a href="#ch6-1" class="qp-card">
+          <a href="#ch8-1" class="qp-card">
             <span class="qp-step">Lối đi 3 • Cần mẫu liền</span>
-            <b>Mở kho 16 mẫu Chương 6</b>
+            <b>Mở kho 18 mẫu Chương 8</b>
             <span class="qp-desc">Lọc đúng phòng ban của bạn, copy điền thông tin và dùng luôn.</span>
           </a>
         </div>
       </header>
 
       <!-- ========================================================
-           CHƯƠNG 1: HIỂU ĐÚNG BẢN CHẤT TRƯỚC KHI DÙNG
+           CHƯƠNG 1: HIỂU ĐÚNG BẢN CHẤT NỀN TẢNG
            ======================================================== -->
       <article class="doc-chapter" id="ch1-1">
         <span class="chapter-badge">Chương 1</span>
-        <h2 class="chapter-title">1. Hiểu Đúng Bản Chất Trước Khi Dùng</h2>
+        <h2 class="chapter-title">1. Hiểu Đúng Bản Chất Nền Tảng Trước Khi Dùng</h2>
         <p class="chapter-lead">
           Nhiều người ngại AI vì cứ nghĩ nó là phần mềm kỹ thuật phức tạp. Thật ra, chỉ cần nhìn nó giống như cách mình làm việc với con người ngoài văn phòng là mọi chuyện vỡ ra ngay.
         </p>
@@ -200,18 +211,72 @@
           </div>
         </section>
 
-        <!-- 1.2 -->
+        <!-- 1.2 CONTEXT (MỚI!) -->
         <section class="doc-section" id="ch1-2">
-          <h3>1.2 Token là gì? Phân biệt trí nhớ tạm và trí nhớ lâu dài</h3>
+          <h3>1.2 Context (Ngữ cảnh) là gì? Thứ quyết định 80% độ thông minh của AI</h3>
+          <p>
+            Bạn sẽ nghe mọi người nhắc câu này rất nhiều: <i>"Đưa thêm Context cho AI đi!"</i>. Nói bằng tiếng Việt bình thường, <b>Context chính là tập hồ sơ đầu việc</b> bạn đặt lên bàn cho bạn thực tập sinh đọc trước khi bắt tay làm.
+          </p>
+          <p>
+            Con người mình đi làm lâu năm có sẵn vô số thông tin ngầm trong đầu — biết sếp thích đọc ngắn gọn, biết khách này hay nhạy cảm về giá, biết tuần trước công ty mới đổi chính sách giao hàng. AI thì không ngồi họp chung với bạn nên nó <b>hoàn toàn mù tịt những thông tin ngầm đó</b>. Bạn không kể ra thì nó đành đoán mò, mà đoán mò thì chắc chắn trật lất!
+          </p>
+
+          <figure class="wiki-figure">
+            <img src="assets/images/context-desk.jpg" alt="Minh họa sự khác biệt giữa bàn làm việc trống thiếu ngữ cảnh và bàn làm việc đủ hồ sơ ngữ cảnh">
+            <figcaption><b>Trái:</b> Bàn trống không có hồ sơ (thiếu Context) — thực tập sinh ngồi chịu trận vì không biết làm kiểu gì. <b>Phải:</b> Đặt đủ hồ sơ sản phẩm, chân dung người đọc và bài mẫu lên bàn (đủ Context) — làm phát trúng ý ngay.</figcaption>
+          </figure>
+
+          <p>Một bộ Context đầy đủ ngoài văn phòng chỉ xoay quanh đúng <b>4 mảnh ghép</b>:</p>
+          <div class="context-pillars">
+            <div class="cp-item">
+              <span class="cp-num">Mảnh ghép 1</span>
+              <h4>Bạn là ai &amp; công ty bán gì?</h4>
+              <p>Làm phòng ban nào, bán sản phẩm tầm giá bao nhiêu, điểm khác biệt của bên mình so với chỗ khác là gì.</p>
+            </div>
+            <div class="cp-item">
+              <span class="cp-num">Mảnh ghép 2</span>
+              <h4>Ai sẽ là người đọc sản phẩm này?</h4>
+              <p>Sếp cần đọc nhanh trong 30 giây, khách hàng trung niên thích lễ phép, hay bạn trẻ Gen Z đọc lướt trên điện thoại?</p>
+            </div>
+            <div class="cp-item is-accent">
+              <span class="cp-num">Mảnh ghép 3</span>
+              <h4>Đầu đuôi chuyện gì đang xảy ra?</h4>
+              <p>Tại sao phải gửi email này, trước đó đã trao đổi gì rồi, mục tiêu cuối cùng bạn muốn người đọc làm gì sau khi xem xong.</p>
+            </div>
+            <div class="cp-item is-accent">
+              <span class="cp-num">Mảnh ghép 4</span>
+              <h4>Tài liệu &amp; bài mẫu đi kèm</h4>
+              <p>Đính kèm file quy định, đoạn chat cũ của khách (đã xóa tên thật/SĐT), hoặc 1–2 bài viết cũ bạn thấy ưng ý để AI bám đúng giọng.</p>
+            </div>
+          </div>
+
+          <div class="playbook-box">
+            <h4>Mẹo cực nhàn: Chuẩn bị 1 tờ "Hồ sơ Ngữ cảnh" (Context Pack) dùng cả năm</h4>
+            <p style="margin-bottom:8px;">Thay vì ngày nào mở AI lên cũng ngồi gõ lại <i>"công ty tôi bán gì, khách hàng là ai..."</i>, bạn chỉ cần viết sẵn một file Notepad/Word dài nửa trang A4 theo khung dưới đây. Mỗi khi mở khung chat mới cho việc quan trọng, quăng file này lên đầu tiên là AI hiểu sạch bối cảnh trong 3 giây:</p>
+            <div class="playbook-prompt">
+              <pre id="context-pack-sample"># HỒ SƠ NGỮ CẢNH CÔNG VIỆC CỦA TÔI
+- Công ty &amp; sản phẩm: [VD: Công ty chuyên bán hạt dinh dưỡng cao cấp cho dân văn phòng và quà biếu doanh nghiệp]
+- Khách hàng chính: [VD: Nữ 25-40 tuổi quan tâm sức khỏe, thích tư vấn chân thành, ngại quảng cáo lố]
+- Vị trí của tôi: [VD: Nhân viên Kinh doanh / Marketing / Hành chính Nhân sự]
+- Giọng văn chuẩn của bên tôi: Thân thiện, ấm áp, rõ ràng, tuyệt đối không dùng chữ "siêu phẩm", "đỉnh cao", "cam kết 100%".
+- Quy tắc trình bày: Đi thẳng vào việc, ưu tiên gạch đầu dòng hoặc bảng ngắn gọn dễ đọc trên điện thoại.</pre>
+              <button class="btn-copy-card" style="align-self:flex-start;" onclick="copyText(document.getElementById('context-pack-sample').textContent, 'Đã sao chép khung Hồ sơ Ngữ cảnh!')">Sao chép khung Context Pack</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- 1.3 TOKEN -->
+        <section class="doc-section" id="ch1-3">
+          <h3>1.3 Token là gì? Phân biệt trí nhớ tạm và trí nhớ lâu dài</h3>
           <p>
             Nghe mọi người nhắc chữ <b>Token</b>, hiểu gọn thế này thôi: con người đếm chữ, còn AI đo độ dài bằng Token. Cứ tầm 1.000 Token thì ngang khoảng một trang rưỡi Word A4; tiếng Việt mình có dấu nên tốn nhỉnh hơn tiếng Anh một chút.
           </p>
           <p>
-            Thật ra bạn chẳng cần ngồi đếm Token làm gì. Thứ duy nhất cần nhớ là cách AI giữ trí nhớ — ở đây có <b>hai loại trí nhớ</b> rất dễ bị nhầm lẫn:
+            Thật ra bạn chẳng cần ngồi đếm Token làm gì. Thứ quan trọng nhất là hiểu cách AI giữ Context (ngữ cảnh) — ở đây có <b>hai loại trí nhớ</b> rất dễ bị nhầm lẫn:
           </p>
           <ul>
             <li>
-              <b>Trí nhớ tạm trong một khung chat (cái bàn làm việc):</b> Cứ hình dung mỗi khung chat là một cái bàn có diện tích cố định. Câu bạn hỏi, file bạn gửi lên, câu nó trả lời — tất cả bày hết lên bàn đó. Mỗi lần bạn nhắn thêm một tin mới, AI phải liếc lại cả đống giấy trên bàn từ đầu buổi rồi mới viết tiếp. Nếu bạn chat miết cả tuần trong đúng một khung làm bàn đầy tràn, mấy tờ giấy đặt lên lúc đầu sẽ bị đẩy rớt mất — thế là AI quên sạch luật bạn dặn ban đầu! Chưa kể, sáng hỏi việc công ty, trưa hỏi món ăn, chiều quay lại làm Excel chung một khung thì giấy tờ trộn lẫn, AI bị rối theo. Xong việc nào, bấm mở cuộc trò chuyện mới cho sạch bàn là xong.
+              <b>Trí nhớ tạm trong một khung chat (cái bàn làm việc):</b> Cứ hình dung mỗi khung chat là một cái bàn có diện tích cố định (người ta hay gọi là <i>cửa sổ ngữ cảnh</i>). Hồ sơ bạn gửi lên, câu bạn hỏi, câu nó trả lời — tất cả bày hết lên bàn đó. Mỗi lần bạn nhắn thêm một tin mới, AI phải liếc lại cả đống giấy trên bàn từ đầu buổi rồi mới viết tiếp. Nếu bạn chat miết cả tuần trong đúng một khung làm bàn đầy tràn, mấy tờ giấy đặt lên lúc đầu sẽ bị đẩy rớt mất — thế là AI quên sạch Context bạn dặn ban đầu! Chưa kể, sáng hỏi việc công ty, trưa hỏi món ăn, chiều quay lại làm Excel chung một khung thì ngữ cảnh bị loãng, AI làm việc kém sắc hẳn. Xong việc nào, bấm mở cuộc trò chuyện mới cho sạch bàn là xong.
             </li>
             <li>
               <b>Trí nhớ lâu dài (cài sẵn một lần):</b> Là những thứ bạn lưu cố định vào phần cài đặt tài khoản (như <i>Custom Instructions</i> trên ChatGPT) hoặc tạo thành từng thư mục dự án riêng (như <i>Projects</i> trên Claude). Thông tin lưu ở đây thì dù bạn mở cuộc trò chuyện mới tinh, AI vẫn tự nhớ bạn làm bộ phận nào, sản phẩm công ty là gì và thích kiểu văn phong ra sao.
@@ -219,9 +284,9 @@
           </ul>
         </section>
 
-        <!-- 1.3 -->
-        <section class="doc-section" id="ch1-3">
-          <h3>1.3 Credit, Lượt dùng — Và khi nào cần mua gói trả phí?</h3>
+        <!-- 1.4 CREDIT -->
+        <section class="doc-section" id="ch1-4">
+          <h3>1.4 Credit, Lượt dùng — Và khi nào cần mua gói trả phí?</h3>
           <p>
             AI chạy tốn rất nhiều điện và máy chủ, nên hiếm chỗ nào cho xài thả ga không giới hạn. Dùng nhiều bạn sẽ đụng hai kiểu tính lượt khá quen ngoài đời:
           </p>
@@ -251,7 +316,7 @@
                   <tr>
                     <td><b>Dùng liên tục cả ngày</b><br><small>Đọc nhiều file nặng, làm Content/Báo cáo dày</small></td>
                     <td>Sẽ hay gặp cảnh đang cao hứng làm việc thì bị báo hết lượt phải ngồi đợi hoặc bị tụt sang bản trả lời kém sắc hơn.</td>
-                    <td>Nên đầu tư (ChatGPT Plus hoặc Claude Pro) khi bạn dùng trên 2 tiếng mỗi ngày, cần tải nhiều file Excel/PDF lớn và muốn dùng tính năng Projects để lưu tài liệu công ty.</td>
+                    <td>Nên đầu tư (ChatGPT Plus hoặc Claude Pro) khi bạn dùng trên 2 tiếng mỗi ngày, cần tải nhiều file Excel/PDF lớn và muốn đóng gói Projects/Skills dùng lại mỗi ngày.</td>
                   </tr>
                 </tbody>
               </table>
@@ -259,56 +324,20 @@
           </div>
         </section>
 
-        <!-- 1.4 -->
-        <section class="doc-section" id="ch1-4">
-          <h3>1.4 Prompt là gì?</h3>
-          <p>
-            Prompt nghe tên hơi Tây, thật ra nó chính là tờ giấy giao việc bạn đưa cho bạn thực tập sinh AI.
-          </p>
-          <p>
-            Nhiều người mới dùng hay chê AI viết nhạt, lý do lớn nhất nằm ở chỗ họ dùng AI y như dùng Google. Trên Google, bạn gõ mấy từ khóa rời rạc để tìm bài người khác đã viết sẵn. Còn với AI, bạn đang giao đề bài để nó tự ngồi viết mới từ trang giấy trắng. Giao qua loa vài chữ thì nó đành viết kiểu văn mẫu chung chung; ngược lại, bạn kể rõ hoàn cảnh, mục tiêu và dặn kỹ chỗ cần tránh thì kết quả sẽ khác hẳn.
-          </p>
-        </section>
-
-        <!-- 1.5 -->
+        <!-- 1.5 PROMPT & BẢNG TÓM TẮT 5 TỪ NỀN -->
         <section class="doc-section" id="ch1-5">
-          <h3>1.5 Skill và Đồ nghề (Tools) là gì?</h3>
+          <h3>1.5 Prompt là gì? &amp; Bảng nhớ nhanh 5 từ nền tảng</h3>
           <p>
-            Cứ tưởng tượng bạn thực tập sinh AI giỏi văn kia bị ngồi trong một căn phòng đóng kín: không có điện thoại, không có mạng Internet, cũng chẳng có máy tính bấm số. Viết lách hay dịch thuật thì cậu ta làm tốt, nhưng hỏi sáng nay giá vàng bao nhiêu hay đưa bảng Excel năm nghìn dòng nhờ cộng cho chính xác từng đồng thì chịu.
+            <b>Prompt</b> nghe tên hơi Tây, thật ra nó chính là tờ giấy giao việc bạn đưa cho bạn thực tập sinh AI.
           </p>
           <p>
-            Để giải quyết, người ta đưa thêm <b>đồ nghề (Tools)</b> vào phòng: nối mạng Internet để tự đọc tin tức hôm nay, đưa máy tính chuyên dụng để cộng trừ Excel không sai một xu, hoặc mở mắt cho nó nhìn được ảnh chụp màn hình bạn gửi lên.
+            Nhiều người mới dùng hay chê AI viết nhạt, lý do lớn nhất nằm ở chỗ họ dùng AI y như dùng Google. Trên Google, bạn gõ mấy từ khóa rời rạc để tìm bài người khác đã viết sẵn. Còn với AI, bạn đang giao đề bài để nó tự ngồi viết mới từ trang giấy trắng. Giao qua loa vài chữ thì nó đành viết kiểu văn mẫu chung chung; ngược lại, bạn kèm đủ Context, nói rõ mục tiêu và dặn kỹ chỗ cần tránh thì kết quả sẽ khác hẳn.
           </p>
-          <p>
-            Còn <b>Skill</b> thì tiện hơn nữa. Trong công ty luôn có những việc lặp đi lặp lại theo một chuẩn riêng, như soi lỗi hợp đồng hay lọc hồ sơ ứng viên. Thay vì ngày nào cũng phải gõ lại nửa trang hướng dẫn dài dòng, người ta gom sẵn các bước làm chuẩn kèm bộ đồ nghề cần thiết thành một <b>"cuốn sổ tay nghề nghiệp"</b> gọi là Skill. Lắp Skill này vào rồi, bạn chỉ cần quăng tài liệu lên là AI tự giở sổ tay ra làm chuẩn từng bước.
+          <p style="color:var(--ink-soft);">
+            <i>(Còn hai khái niệm nâng cao hơn là <b>Skill</b> và <b>AI Agent</b>, chúng ta sẽ để dành học thật kỹ ở <b>Chương 4</b> ngay sau khi bạn đã thạo cách viết Prompt nhé!)</i>
           </p>
-        </section>
 
-        <!-- 1.6 -->
-        <section class="doc-section" id="ch1-6">
-          <h3>1.6 AI Agent khác gì Chatbot? &amp; Tóm tắt 6 khái niệm</h3>
-          <p>
-            Chữ Agent dạo này nghe nhắc khắp nơi, thật ra chỉ cần so hai kiểu làm việc ngoài văn phòng là rõ ngay:
-          </p>
-          <div class="agent-compare-table">
-            <div class="act-col chat">
-              <h4>Chatbot thường = Nhân viên trực quầy</h4>
-              <ul>
-                <li>Bạn hỏi một câu, nó đáp một câu rồi ngồi yên đợi tiếp.</li>
-                <li>Việc có năm bước thì bạn tự nhắc đủ năm lần.</li>
-                <li>Đụng đường link lỗi hay thiếu thông tin là nó dừng lại, trả việc về cho bạn.</li>
-              </ul>
-            </div>
-            <div class="act-col agent">
-              <h4>AI Agent = Trợ lý riêng làm trọn gói</h4>
-              <ul>
-                <li>Bạn chỉ giao đúng đích đến cuối cùng — ví dụ tìm giá bán của ba đối thủ lớn nhất tuần này rồi kẻ bảng so sánh với bên mình.</li>
-                <li>Agent tự lên kế hoạch, tự mở mạng tìm từng bên. Hay nhất là lúc gặp sự cố: thấy trang web đối thủ A bị lỗi không vào được, nó tự xoay sang tìm Fanpage hay sàn thương mại điện tử để lấy cho đủ số liệu, tự rà lại rồi mới nộp bảng hoàn chỉnh cho bạn.</li>
-              </ul>
-            </div>
-          </div>
-
-          <h4>Bảng nhớ nhanh 6 từ khóa trong 10 giây:</h4>
+          <h4>Bảng nhớ nhanh 5 từ nền tảng trong 10 giây:</h4>
           <div class="matrix-card" style="margin:14px 0 0;">
             <div class="matrix-scroll">
               <table class="table-compare">
@@ -320,12 +349,11 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td><b>AI</b></td><td>Bạn thực tập sinh mới vào công ty</td><td>Phải nói rõ ngữ cảnh và kiểm tra lại số liệu</td></tr>
-                  <tr><td><b>Token</b></td><td>Mảnh chữ đo diện tích bàn làm việc</td><td>Xong việc là bấm New Chat để bàn khỏi tràn</td></tr>
+                  <tr><td><b>AI</b></td><td>Bạn thực tập sinh mới vào công ty</td><td>Giỏi kiến thức chung nhưng phải kiểm tra lại số liệu</td></tr>
+                  <tr><td><b>Context</b></td><td>Tập hồ sơ đầu việc đặt lên bàn</td><td>Đưa đủ 4 mảnh ghép (hoặc 1 file Context Pack) thì AI mới làm trúng</td></tr>
+                  <tr><td><b>Token</b></td><td>Mảnh chữ đo diện tích bàn làm việc</td><td>Xong việc là bấm New Chat để bàn khỏi tràn, Context khỏi loãng</td></tr>
                   <tr><td><b>Credit</b></td><td>Hũ xu chơi game siêu thị</td><td>Chỉnh câu chữ cho chuẩn rồi mới bấm tạo ảnh/video</td></tr>
                   <tr><td><b>Prompt</b></td><td>Tờ giấy giao việc</td><td>Không dùng như gõ Google; giao càng rõ làm càng hay</td></tr>
-                  <tr><td><b>Skill / Tools</b></td><td>Đồ nghề &amp; cuốn sổ tay bí kíp</td><td>Giúp AI lên mạng, tính Excel chuẩn và làm theo quy chuẩn</td></tr>
-                  <tr><td><b>AI Agent</b></td><td>Trợ lý tự chạy việc từ A đến Z</td><td>Giao đích đến cuối cùng, tự tìm cách xoay xở nếu gặp lỗi</td></tr>
                 </tbody>
               </table>
             </div>
@@ -368,8 +396,8 @@
                   </tr>
                   <tr>
                     <td><b>Claude</b><br><small>claude.ai</small></td>
-                    <td>Viết tiếng Việt mượt và giống người thật nhất hiện nay, ít bị mùi dịch máy. Đọc mấy file tài liệu dài cũng rất ổn.</td>
-                    <td>Viết bài quảng cáo, soạn email khó gửi sếp hay đối tác, viết thư xin lỗi khách, dịch bài cho hay.</td>
+                    <td>Viết tiếng Việt mượt và giống người thật nhất hiện nay. Có khung <b>Artifacts</b> xem trực tiếp báo cáo HTML cực đẹp ngay bên cạnh.</td>
+                    <td>Viết bài quảng cáo, soạn email khó, tạo Báo cáo HTML đẹp mắt, đọc tài liệu dài.</td>
                   </tr>
                   <tr>
                     <td><b>Google Gemini</b><br><small>gemini.google.com</small></td>
@@ -411,7 +439,7 @@
               <b>Cài sẵn "Hướng dẫn cá nhân" (Custom Instructions) để AI nhớ phong cách của bạn:</b> Trên ChatGPT, bấm ảnh đại diện &rarr; chọn <b>Customize ChatGPT</b>. Ở ô hỏi muốn AI trả lời thế nào, bạn copy mẫu dưới đây dán vào rồi bấm Lưu. Từ hôm đó trở đi, mở khung chat mới nào nó cũng tự viết gọn và bớt sáo rỗng!
             </li>
             <li>
-              <b>Gom việc lặp lại vào một thư mục riêng (Projects trên Claude / Custom GPT):</b> Nếu tuần nào bạn cũng viết bài cho đúng một sản phẩm, hãy tạo một Project riêng rồi tải sẵn file mô tả sản phẩm và vài bài viết mẫu vào đó. Về sau mở Project ra chỉ cần nói ý chính là AI tự nhớ hết bối cảnh.
+              <b>Gom việc lặp lại vào một thư mục riêng (Projects trên Claude / Gems trên Gemini):</b> Nếu tuần nào bạn cũng viết bài cho đúng một sản phẩm, hãy tạo một thư mục riêng rồi tải sẵn tờ <b>Context Pack</b> và vài bài viết mẫu vào đó. Về sau mở ra chỉ cần nói ý chính là AI tự nhớ hết bối cảnh.
             </li>
           </ol>
 
@@ -437,7 +465,7 @@
             <li><b>Nút Kẹp ghim hoặc dấu cộng (trong ô gõ chữ):</b> Có file Word, PDF, Excel hay ảnh chụp màn hình thì tải thẳng lên hỏi luôn, đừng gõ tay lại cho khổ.</li>
             <li><b>Nút Cây bút (rê chuột lên câu bạn vừa gửi):</b> Thấy AI hiểu sai ý ngay từ đầu thì bấm thẳng cây bút sửa câu hỏi gốc rồi gửi lại, đừng chat cãi qua cãi lại 4–5 câu làm rối khung chat.</li>
             <li><b>Nút Quả địa cầu / Search (dưới ô gõ chữ trên ChatGPT):</b> Cần hỏi tin tức hôm nay, giá cả thị trường hay quy định mới ra thì bật nút này lên để nó chạy ra ngoài mạng tìm.</li>
-            <li><b>Nút Copy hai tờ giấy (dưới câu trả lời của AI):</b> Bấm nút này để chép sạch bảng biểu, chữ in đậm; tự bôi đen bằng chuột dán sang Word hay bị dính nền xám.</li>
+            <li><b>Nút Copy hai tờ giấy (dưới câu trả lời của AI):</b> Bấm nút này để chép sạch bảng biểu, chữ in đậm; tự bôi đen bằng chuột dán sang Word hay bị dính nền xám hoặc dấu sao.</li>
             <li><b>Chế độ Temporary Chat (góc trên màn hình):</b> Lúc xử lý giấy tờ nội bộ, bật nút ẩn danh này lên — đóng tab là mất sạch, không lưu vào lịch sử.</li>
           </ol>
 
@@ -449,10 +477,10 @@
 
 
       <!-- ========================================================
-           CHƯƠNG 3: CÁCH NÓI CHUYỆN RA VIỆC
+           CHƯƠNG 3: HỌC PROMPT — CÁCH NÓI CHUYỆN RA VIỆC
            ======================================================== -->
       <article class="doc-chapter" id="ch3-1">
-        <span class="chapter-badge">Chương 3</span>
+        <span class="chapter-badge">Chương 3 • Học Prompt</span>
         <h2 class="chapter-title">3. Nói Sao Cho AI Làm Trúng Ý &amp; Cách Dẫn Dắt Nhiều Vòng</h2>
         <p class="chapter-lead">
           Bí quyết của người dùng AI giỏi không nằm ở việc thuộc lòng câu thần chú phức tạp, mà nằm ở hai thứ: đặt đề bài rõ ngay từ đầu và biết cách sửa bài theo từng vòng.
@@ -463,7 +491,7 @@
           <h3>3.1 Công thức 3 Bước + 1 Mẫu</h3>
           <div class="concept-grid">
             <div class="concept-card">
-              <h4>Bước 1: Cho AI vai trò và kể rõ hoàn cảnh</h4>
+              <h4>Bước 1: Cho AI vai trò và kể rõ Context</h4>
               <p>Nói rõ AI đóng vai ai, viết cho ai đọc và đầu đuôi sự việc thế nào. Ví dụ: đóng vai trưởng nhóm CSKH, cần nhắn tin cho chị Lan (khách quen mua nhiều lần) vì đơn hàng bị giao trễ hai ngày.</p>
             </div>
             <div class="concept-card">
@@ -629,7 +657,7 @@ Viết tin nhắn Zalo xin lỗi chị Lan: nhận trách nhiệm thẳng về p
               </div>
               <div class="mr-good">
                 <span class="mr-tag">Nên làm thế này</span>
-                <p>Luôn đọc lại 1 lần bằng mắt, xóa các cụm nghe hơi giả trân và chỉnh lại cách xưng hô cho khớp với thực tế của bạn.</p>
+                <p>Luôn đọc lại 1 lần bằng mắt, dùng nút Copy chuẩn của AI và chỉnh lại cách xưng hô cho khớp với thực tế của bạn.</p>
               </div>
             </div>
 
@@ -660,18 +688,391 @@ Viết tin nhắn Zalo xin lỗi chị Lan: nhận trách nhiệm thẳng về p
 
 
       <!-- ========================================================
-           CHƯƠNG 4: THỰC HÀNH 5 VIỆC VĂN PHÒNG PHỔ BIẾN
+           CHƯƠNG 4: LÊN TRÌNH SAU KHI THẠO PROMPT — SKILL & AI AGENT
            ======================================================== -->
       <article class="doc-chapter" id="ch4-1">
-        <span class="chapter-badge">Chương 4</span>
-        <h2 class="chapter-title">4. Thực Hành Chuyên Sâu 5 Việc Văn Phòng Hàng Ngày</h2>
+        <span class="chapter-badge">Chương 4 • Lên Trình Sau Prompt</span>
+        <h2 class="chapter-title">4. Hiểu Sâu Về Skill, Đồ Nghề (Tools) &amp; AI Agent</h2>
+        <p class="chapter-lead">
+          Khi đã quen viết Prompt giao từng việc lẻ rồi, bạn sẽ gặp câu hỏi tiếp theo: <i>"Sao tuần nào mình cũng phải copy lại nửa trang hướng dẫn y chang nhau, với lại có cách nào giao 1 câu để AI tự chạy trọn gói luôn không?"</i> — Câu trả lời nằm ở đúng hai khái niệm dưới đây.
+        </p>
+
+        <!-- 4.1 SKILL & TOOLS -->
+        <section class="doc-section">
+          <h3>4.1 Skill và Đồ nghề (Tools) — Đóng gói Prompt xịn thành "Sổ tay bấm phát chạy"</h3>
+          <p>
+            Hãy quay lại câu chuyện bạn thực tập sinh AI. Ban đầu cậu ta ngồi trong một căn phòng đóng kín: viết lách hay dịch thuật thì giỏi, nhưng không có mạng Internet để xem giá hôm nay, không có máy tính để cộng trừ bảng Excel năm nghìn dòng chính xác từng đồng.
+          </p>
+          <p>
+            Thế là người ta đưa thêm <b>Đồ nghề (Tools)</b> vào phòng: nối mạng Internet để tự tìm tin tức, lắp công cụ chạy bảng tính để cộng trừ không sai một xu, mở mắt cho nhìn ảnh chụp màn hình và đọc file PDF.
+          </p>
+          <p>
+            Còn <b>Skill</b> thì đi thêm một bước nữa. Trong công ty luôn có những việc lặp đi lặp lại theo đúng một quy chuẩn — như lọc hồ sơ ứng viên, soi rủi ro hợp đồng, hay viết bài Facebook đúng giọng thương hiệu. Nếu mỗi lần làm bạn lại phải viết lại Prompt 20 dòng kèm 3 file tài liệu thì quá mất công. Người ta mới gom sẵn toàn bộ <b>hướng dẫn chuẩn + tài liệu mẫu + đồ nghề cần dùng</b> vào chung một <b>"cuốn sổ tay nghề nghiệp"</b> — gọi là <b>Skill</b> (ngoài đời thực bạn sẽ thấy các hãng đặt tên khác nhau một chút: trên Claude gọi là <i>Skills / Projects</i>, trên ChatGPT gọi là <i>Custom GPTs</i>, trên Gemini gọi là <i>Gems</i>, nhưng bản chất là một!).
+          </p>
+
+          <figure class="wiki-figure">
+            <img src="assets/images/skill-toolkit.jpg" alt="Minh họa Skill là cuốn sổ tay quy chuẩn kết nối với hộp đồ nghề tìm kiếm web, bảng tính, đọc tài liệu và danh sách kiểm tra">
+            <figcaption><b>Cấu tạo một bộ Skill:</b> Bên trái là cuốn sổ tay quy trình bạn chốt sẵn 1 lần; bên phải là hộp đồ nghề (lên mạng, chạy Excel, soi PDF, kiểm tra theo checklist) tự động kích hoạt khi cần.</figcaption>
+          </figure>
+
+          <h4>Một bộ Skill tốt chỉ gồm đúng 3 mảnh đơn giản (ai cũng tự làm được, không cần biết code):</h4>
+          <div class="skill-anatomy">
+            <div class="sa-card">
+              <span class="sa-step">Phần 1 • Sổ tay quy tắc</span>
+              <h4>Prompt chuẩn đã thử kỹ</h4>
+              <p>Chính là câu lệnh 3 Bước bạn học ở Chương 3 sau khi đã sửa đi sửa lại thấy AI làm rất ưng bụng. Giờ lưu cố định lại thay vì gõ mới mỗi lần.</p>
+            </div>
+            <div class="sa-card">
+              <span class="sa-step">Phần 2 • Tủ tài liệu gốc</span>
+              <h4>Context &amp; Bài mẫu đi kèm</h4>
+              <p>Đính sẵn tờ Hồ sơ Ngữ cảnh công ty, bảng giá sản phẩm, biểu mẫu báo cáo hoặc 3 bài viết cũ ưng ý nhất để AI luôn làm ra đúng gu của bạn.</p>
+            </div>
+            <div class="sa-card is-orange">
+              <span class="sa-step">Phần 3 • Đồ nghề bật sẵn</span>
+              <h4>Tools hỗ trợ làm việc thật</h4>
+              <p>Tích chọn đồ nghề cần cho việc đó: bật Tìm web nếu là Skill nghiên cứu thị trường; bật Xử lý file nếu là Skill soi hợp đồng hay tính Excel.</p>
+            </div>
+          </div>
+
+          <p><b>3 bộ Skill văn phòng dùng sướng nhất bạn có thể tự tạo trong 10 phút:</b></p>
+          <ul>
+            <li><b>Skill "Lọc CV chuẩn phòng ban":</b> Lưu sẵn bảng tiêu chí tuyển dụng của công ty + thang chấm 100 điểm + quy tắc xuất bảng 4 cột. Từ sau HR chỉ việc quăng file CV (đã xóa SĐT) vào, 10 giây sau có ngay bảng chấm điểm và câu hỏi phỏng vấn.</li>
+            <li><b>Skill "Viết bài đúng giọng thương hiệu":</b> Lưu sẵn mô tả sản phẩm, chân dung khách hàng, 5 bài đăng cũ có tương tác cao nhất và danh sách từ cấm dùng. Marketing chỉ cần gõ 1 dòng chủ đề là ra bài sát 90% phong cách công ty.</li>
+            <li><b>Skill "Soi lỗi hợp đồng &amp; báo giá":</b> Lưu sẵn 10 điều khoản công ty hay bị đối tác cài bẫy (phạt chậm tiến độ, điều kiện bảo hành, công nợ). Mỗi khi nhận hợp đồng mới, ném PDF vào là nó tự gạch đỏ từng điều khoản bất lợi.</li>
+          </ul>
+        </section>
+
+        <!-- 4.2 AI AGENT -->
+        <section class="doc-section" id="ch4-2">
+          <h3>4.2 AI Agent là gì? Từ "người trực quầy" sang "trợ lý tự chạy từ A đến Z"</h3>
+          <p>
+            Nếu <b>Prompt</b> là một tờ giấy giao việc đơn lẻ, <b>Skill</b> là cuốn sổ tay cho một việc lặp lại, thì <b>AI Agent</b> chính là lúc bạn giao hẳn cả một <b>đích đến lớn</b> rồi để trợ lý tự lên kế hoạch, tự dùng đồ nghề chạy từng bước và tự xoay xở khi gặp trục trặc!
+          </p>
+
+          <figure class="wiki-figure">
+            <img src="assets/images/chatbot-vs-agent.jpg" alt="So sánh trực quan Chatbot hỏi đáp từng câu bị chặn khi gặp rào cản và AI Agent tự đi qua nhiều bước, vòng qua chướng ngại vật để giao báo cáo hoàn chỉnh">
+            <figcaption><b>Trái (Chatbot thường):</b> Hỏi một câu đáp một câu, đụng rào chắn là dừng luôn. <b>Phải (AI Agent):</b> Tự tìm tài liệu, phân tích bảng biểu, gặp đường cụt tự đi đường vòng để hoàn thành báo cáo trao tận tay bạn.</figcaption>
+          </figure>
+
+          <h4>Cơ chế 5 bước tự chạy của một AI Agent ngoài đời thật:</h4>
+          <div class="agent-loop">
+            <div class="al-step">
+              <span class="al-num">Bước 1</span>
+              <b>Nhận đích đến</b>
+              <span>Bạn giao mục tiêu cuối, ví dụ: "Khảo sát giá 3 đối thủ lớn tuần này".</span>
+            </div>
+            <div class="al-step">
+              <span class="al-num">Bước 2</span>
+              <b>Tự chia việc</b>
+              <span>Nó tự liệt kê từng đầu việc nhỏ cần làm mà không cần bạn nhắc từng bước.</span>
+            </div>
+            <div class="al-step">
+              <span class="al-num">Bước 3</span>
+              <b>Tự mở đồ nghề</b>
+              <span>Tự lên mạng mở web đối thủ, đọc bảng giá, mở bảng tính gom số liệu.</span>
+            </div>
+            <div class="al-step">
+              <span class="al-num">Bước 4</span>
+              <b>Gặp lỗi tự né</b>
+              <span>Thấy web đối thủ A bị lỗi, nó tự chuyển qua Fanpage hay sàn TMĐT tìm cho đủ.</span>
+            </div>
+            <div class="al-step">
+              <span class="al-num">Bước 5</span>
+              <b>Tự rà &amp; nộp bài</b>
+              <span>Tự đối chiếu lại xem đã đủ 3 bên chưa rồi kẻ bảng so sánh hoàn chỉnh nộp bạn.</span>
+            </div>
+          </div>
+
+          <h4>So sánh 3 cấp độ để biết khi nào dùng cái nào:</h4>
+          <div class="matrix-card" style="margin:16px 0 22px;">
+            <div class="matrix-scroll">
+              <table class="table-compare">
+                <thead>
+                  <tr>
+                    <th>Cấp độ</th>
+                    <th>Ví dụ đời thường</th>
+                    <th>Khi nào nên dùng?</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><b>1. Chatbot + Prompt</b></td>
+                    <td>Nhắn đồng nghiệp làm nhanh một việc lẻ</td>
+                    <td>Việc phát sinh ngẫu nhiên trong ngày: viết 1 email, dịch 1 đoạn văn, hỏi 1 hàm Excel.</td>
+                  </tr>
+                  <tr>
+                    <td><b>2. Skill (Projects / GPTs / Gems)</b></td>
+                    <td>Đưa cuốn sổ tay quy trình + tủ tài liệu mẫu</td>
+                    <td>Việc lặp đi lặp lại mỗi tuần theo đúng 1 chuẩn cố định: lọc CV, viết bài thương hiệu, soi hợp đồng.</td>
+                  </tr>
+                  <tr>
+                    <td><b>3. AI Agent</b></td>
+                    <td>Giao hẳn dự án trọn gói cho trợ lý tự chạy</td>
+                    <td>Việc nhiều bước tốn hàng giờ: nghiên cứu thị trường đọc 20–30 nguồn (như tính năng <b>Deep Research</b> trên ChatGPT, Gemini, Perplexity), phân tích nhiều file chéo nhau, hoặc tự động phân loại báo cáo.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <h4>Ba rào chắn an toàn bắt buộc khi giao việc cho AI Agent:</h4>
+          <p>Agent rất chủ động, nhưng chính vì nó tự chạy nhiều bước nên nếu giao mơ hồ, nó có thể đi sai hướng hoặc làm quá quyền hạn. Luôn nhớ 3 chốt chặn này:</p>
+          <div class="guardrail-grid">
+            <div class="gr-card">
+              <b>1. Chốt rõ đích đến &amp; phạm vi</b>
+              <p>Đừng nói "tìm hiểu thị trường giúp tôi". Hãy nói rõ: "Chỉ tìm 3 đối thủ tại Việt Nam trong năm nay, tập trung vào giá bán lẻ và chương trình khuyến mãi".</p>
+            </div>
+            <div class="gr-card">
+              <b>2. Chỉ cho làm nháp, KHÔNG cho tự gửi</b>
+              <p>Với những việc đụng ra bên ngoài (gửi email khách hàng, đăng bài lên page, sửa dữ liệu gốc), luôn cài chế độ chỉ lưu <b>bản nháp</b> chờ người duyệt.</p>
+            </div>
+            <div class="gr-card">
+              <b>3. Yêu cầu nộp kèm nguồn kiểm chứng</b>
+              <p>Luôn dặn Agent ghi rõ từng con số lấy từ đường link nào hoặc trang mấy trong file gốc để bạn soát lại trong 1 phút trước khi sử dụng.</p>
+            </div>
+          </div>
+        </section>
+      </article>
+
+
+      <!-- ========================================================
+           CHƯƠNG 5: DÙNG THÔNG MINH VỚI MARKDOWN & TẠO BÁO CÁO HTML
+           ======================================================== -->
+      <article class="doc-chapter" id="ch5-1">
+        <span class="chapter-badge">Chương 5 • Dùng AI Thông Minh</span>
+        <h2 class="chapter-title">5. Mẹo Dùng Markdown &amp; Tự Tạo Báo Cáo HTML Đẹp Như Thiết Kế</h2>
+        <p class="chapter-lead">
+          Đa số mọi người chỉ dùng AI để chép mấy đoạn chữ thô. Nếu biết thêm đúng 2 chiêu cực nhẹ nhàng dưới đây — hiểu 5 ký hiệu Markdown và nhờ AI xuất thẳng Báo cáo HTML — chất lượng bài nộp của bạn sẽ vượt hẳn mặt bằng chung mà không cần biết một dòng code nào.
+        </p>
+
+        <!-- 5.1 MARKDOWN -->
+        <section class="doc-section">
+          <h3>5.1 Markdown là gì? Biết đúng 5 ký hiệu để sai AI chuẩn hơn gấp đôi</h3>
+          <p>
+            Chắc bạn từng thắc mắc: sao cứ copy chữ từ AI ra chỗ khác là lại thấy lòi ra mấy ký hiệu lạ như <code>#</code>, <code>**chữ đậm**</code> hay dấu gạch đứng <code>| |</code>? Đó gọi là <b>Markdown</b>.
+          </p>
+          <p>
+            Đừng thấy tên tiếng Anh mà ngại — Markdown <b>không phải lập trình</b>! Nó chỉ là mấy ký hiệu siêu đơn giản giống như lúc bạn lấy bút đánh dấu tiêu đề, gạch đầu dòng hay kẻ khung trên tờ giấy nháp vậy thôi. AI đọc và viết theo Markdown tự nhiên như hơi thở.
+          </p>
+
+          <div class="md-compare">
+            <div class="md-pane">
+              <div class="md-pane-head is-raw">Khi bạn gõ thô bằng Markdown</div>
+              <pre class="md-raw"># Báo cáo nhanh Thứ 6
+
+**Tóm tắt:** Tuần này vượt chỉ tiêu 12%.
+
+- Kênh bán tốt nhất: Shopee
+- Điểm cần xử lý: Giao hàng chậm ở khu vực miền Trung
+
+| Hạng mục | Thực tế | Mục tiêu |
+| --- | --- | --- |
+| Doanh số | 350 triệu | 310 triệu |
+| Đơn mới | 420 đơn | 380 đơn |</pre>
+            </div>
+            <div class="md-pane">
+              <div class="md-pane-head">Khi hiển thị gọn đẹp (AI / Notion / Docs)</div>
+              <div class="md-rendered">
+                <h5>Báo cáo nhanh Thứ 6</h5>
+                <p style="margin:0 0 8px;"><b>Tóm tắt:</b> Tuần này vượt chỉ tiêu 12%.</p>
+                <ul>
+                  <li>Kênh bán tốt nhất: Shopee</li>
+                  <li>Điểm cần xử lý: Giao hàng chậm ở khu vực miền Trung</li>
+                </ul>
+                <table class="md-mini-table">
+                  <thead>
+                    <tr><th>Hạng mục</th><th>Thực tế</th><th>Mục tiêu</th></tr>
+                  </thead>
+                  <tbody>
+                    <tr><td>Doanh số</td><td>350 triệu</td><td>310 triệu</td></tr>
+                    <tr><td>Đơn mới</td><td>420 đơn</td><td>380 đơn</td></tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <h4>Chỉ cần nhớ đúng 5 ký hiệu này — và 3 cách dùng cực thông minh:</h4>
+          <div class="matrix-card" style="margin:14px 0 20px;">
+            <div class="matrix-scroll">
+              <table class="table-compare">
+                <thead>
+                  <tr>
+                    <th>Ký hiệu</th>
+                    <th>Ý nghĩa</th>
+                    <th>Cách áp dụng khôn ngoan khi làm việc với AI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><code>#</code> hoặc <code>##</code></td>
+                    <td>Tiêu đề lớn / mục nhỏ</td>
+                    <td>Khi viết Prompt dài, chia rõ từng phần <code># Bối cảnh</code>, <code># Yêu cầu</code>, <code># Điều cấm</code> — AI đọc vào không bao giờ bị sót ý!</td>
+                  </tr>
+                  <tr>
+                    <td><code>**chữ**</code></td>
+                    <td>In đậm nhấn mạnh</td>
+                    <td>Dùng để bọc những điều quan trọng nhất bạn muốn AI chú ý kỹ, ví dụ <code>**tuyệt đối dưới 120 chữ**</code>.</td>
+                  </tr>
+                  <tr>
+                    <td><code>- </code></td>
+                    <td>Gạch đầu dòng</td>
+                    <td>Liệt kê ý thô cực nhanh thay vì viết thành một khối chữ dính chùm khó đọc.</td>
+                  </tr>
+                  <tr>
+                    <td><code>""" ... """</code></td>
+                    <td>Đóng khung tài liệu gốc</td>
+                    <td>Bọc đoạn email khách gửi hoặc ghi chú cuộc họp vào trong cặp 3 dấu ngoặc kép để AI tách bạch đâu là <b>lệnh của bạn</b>, đâu là <b>dữ liệu cần xử lý</b>.</td>
+                  </tr>
+                  <tr>
+                    <td><code>| A | B |</code></td>
+                    <td>Kẻ bảng chia cột</td>
+                    <td>Khi muốn AI trả ra bảng chuẩn để dán sang Excel, cứ gõ luôn khung cột mẫu <code>| STT | Việc cần làm | Người làm | Hạn chót |</code>.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="pull-quote">
+            <strong>Mẹo copy từ AI sang Word / Google Docs / Email mà KHÔNG bị dính dấu <code>**</code> xấu xí:</strong>
+            Luôn bấm nút <b>Copy (biểu tượng hai tờ giấy)</b> ở góc dưới câu trả lời của AI thay vì tự lấy chuột bôi đen. Nếu dùng <b>Google Docs</b>, mở menu <i>Công cụ (Tools) &rarr; Tùy chọn (Preferences) &rarr; tick vào ô Tự động phát hiện Markdown</i> (hoặc chuột phải chọn <i>Dán từ Markdown</i>) là tiêu đề, chữ đậm và bảng tự nhảy đẹp y như tự gõ tay!
+          </div>
+        </section>
+
+        <!-- 5.2 HTML GENERATE REPORT -->
+        <section class="doc-section" id="ch5-2">
+          <h3>5.2 Tự tạo Báo cáo HTML đẹp như thuê thiết kế trong 30 giây (Kèm ví dụ sống)</h3>
+          <p>
+            Đây là chiêu làm việc khiến sếp và đối tác bất ngờ nhất mà gần như rất ít nhân sự văn phòng biết tới. Bình thường, cuối tuần hay cuối tháng bạn hay gửi báo cáo kiểu: một đoạn chữ dài dằng dặc trong Zalo, hoặc file Excel dày đặc con số nhìn hoa cả mắt.
+          </p>
+          <p>
+            Thay vì làm vậy, bạn hoàn toàn có thể đưa bảng số liệu (đã ẩn danh) cho <b>Claude</b> hoặc <b>ChatGPT</b> rồi bảo: <b>"Hãy xuất giúp tôi thành 1 file báo cáo HTML đẹp mắt, có thẻ số liệu nổi bật và biểu đồ màu sắc để tôi mở trên trình duyệt hoặc in ra PDF."</b> Bạn <b>không cần hiểu một chữ code nào</b> — AI tự thiết kế từ đầu đến cuối, còn bạn chỉ việc xem và gửi!
+          </p>
+
+          <figure class="wiki-figure">
+            <img src="assets/images/markdown-html-report.jpg" alt="Minh họa quy trình biến ghi chú thô và bảng dữ liệu đơn điệu thành trang báo cáo HTML đẹp mắt có thẻ số liệu, biểu đồ và xuất PDF">
+            <figcaption>Từ đống ghi chú thô và bảng số liệu nhàm chán bên trái, chỉ với 1 câu lệnh, AI dựng ngay thành trang báo cáo trực quan có thẻ KPI, biểu đồ màu và xuất file PDF gọn gàng.</figcaption>
+          </figure>
+
+          <h4>Xem ngay Ví dụ thật: Đây là thứ AI tự dựng ra từ 5 dòng số liệu thô</h4>
+          <p>Bạn có thể nhìn trực tiếp bản mẫu bên dưới, hoặc bấm hai nút trên thanh xanh để <b>mở xem bản báo cáo đầy đủ trong tab mới</b> hay <b>tải file <code>.html</code> về máy bấm thử</b>:</p>
+
+          <div class="report-demo">
+            <div class="report-demo-bar">
+              <span class="rd-file-title">Ví dụ sống: bao-cao-kinh-doanh-thang-10.html</span>
+              <div class="rd-bar-actions">
+                <button class="rd-action-btn" id="btn-preview-report">Mở xem toàn màn hình</button>
+                <button class="rd-action-btn" id="btn-download-report">Tải file mẫu (.html)</button>
+              </div>
+            </div>
+            <div class="report-demo-body">
+              <div class="rd-header">
+                <div>
+                  <h4>Báo Cáo Kết Quả Kinh Doanh — Tháng 10</h4>
+                  <small>Phòng Kinh doanh • Tổng hợp nhanh gửi Ban Giám đốc (Số liệu minh họa)</small>
+                </div>
+                <span class="rd-status-pill">Đạt 112% mục tiêu tháng</span>
+              </div>
+
+              <div class="rd-kpi-grid">
+                <div class="rd-kpi">
+                  <div class="rd-kpi-label">Tổng doanh thu</div>
+                  <div class="rd-kpi-val">1,42 tỷ</div>
+                  <div class="rd-kpi-delta">+18% so với tháng 9</div>
+                </div>
+                <div class="rd-kpi">
+                  <div class="rd-kpi-label">Đơn hàng hoàn tất</div>
+                  <div class="rd-kpi-val">1.280 đơn</div>
+                  <div class="rd-kpi-delta">+12% so với tháng 9</div>
+                </div>
+                <div class="rd-kpi">
+                  <div class="rd-kpi-label">Khách cũ mua lại</div>
+                  <div class="rd-kpi-val">34%</div>
+                  <div class="rd-kpi-delta">+5% nhờ chăm sóc Zalo</div>
+                </div>
+              </div>
+
+              <div class="rd-bars">
+                <div class="rd-bars-title">Tỷ trọng doanh thu theo từng kênh bán</div>
+                <div class="rd-bar-row">
+                  <span>Shopee Mall</span>
+                  <div class="rd-bar-track"><div class="rd-bar-fill" style="width:48%;"></div></div>
+                  <b>48%</b>
+                </div>
+                <div class="rd-bar-row">
+                  <span>Zalo / Khách quen</span>
+                  <div class="rd-bar-track"><div class="rd-bar-fill is-orange" style="width:27%;"></div></div>
+                  <b>27%</b>
+                </div>
+                <div class="rd-bar-row">
+                  <span>Facebook Fanpage</span>
+                  <div class="rd-bar-track"><div class="rd-bar-fill" style="width:16%;"></div></div>
+                  <b>16%</b>
+                </div>
+                <div class="rd-bar-row">
+                  <span>Đại lý / Quà tặng</span>
+                  <div class="rd-bar-track"><div class="rd-bar-fill is-orange" style="width:9%;"></div></div>
+                  <b>9%</b>
+                </div>
+              </div>
+
+              <div class="rd-note-grid">
+                <div class="rd-note is-good">
+                  <b>Điểm sáng nổi bật tháng này</b>
+                  Combo quà tặng cuối tháng giúp giá trị trung bình mỗi đơn tăng từ 920k lên 1,11 triệu; tỷ lệ hoàn đơn giảm xuống dưới 1,8%.
+                </div>
+                <div class="rd-note is-warn">
+                  <b>2 việc cần xử lý ngay tuần tới</b>
+                  1. Kho miền Trung thiếu hàng 2 mã bán chạy cần điều chuyển gấp. 2. Đẩy thêm 1 chiến dịch nhắn khách cũ dịp lễ giữa tháng 11.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>Quy trình 3 bước để tự tạo báo cáo đẹp y chang như trên (0 dòng code):</h4>
+          <ol>
+            <li><b>Bước 1 — Dán Prompt &amp; số liệu vào Claude (ưu tiên) hoặc ChatGPT:</b> Nhớ che tên khách hàng thật bằng <code>Ctrl + H</code> trước. Trên <b>Claude</b> cực kỳ sướng vì nó mở hẳn khung <b>Artifacts</b> vẽ bản báo cáo trực tiếp ngay nửa màn hình bên phải cho bạn nhìn luôn!</li>
+            <li><b>Bước 2 — Sửa giao diện bằng tiếng Việt bình thường:</b> Thấy chỗ nào chưa ưng, bạn cứ nhắn như nói với nhân viên thiết kế: <i>"Đổi màu chủ đạo sang xanh dương đậm", "Cho chữ số liệu to hơn một chút", "Thêm 1 cột ghi chú vào bảng"</i>.</li>
+            <li><b>Bước 3 — Tải về &amp; Xuất PDF gửi sếp:</b> Bấm nút Tải xuống file <code>.html</code> về máy, nhấp đúp mở bằng Chrome/Edge (không cần mạng vẫn xem mượt). Muốn gửi bản PDF cứng cực đẹp, chỉ cần bấm <code>Ctrl + P</code> &rarr; chọn <b>Save as PDF</b> &rarr; nhớ mở mục <i>More settings</i> tick vào ô <b>Background graphics (Đồ họa nền)</b> là giữ trọn màu đẹp y như trên màn hình!</li>
+          </ol>
+
+          <div class="playbook-box">
+            <h4>Câu lệnh mẫu tạo Báo cáo HTML đẹp mắt (Copy dùng ngay)</h4>
+            <p style="margin-bottom:8px;">Dán câu lệnh này cùng số liệu đã ẩn danh của bạn vào Claude hoặc ChatGPT:</p>
+            <div class="playbook-prompt">
+              <pre id="pb-html-report">Bạn là chuyên gia trình bày báo cáo quản trị. Hãy biến số liệu dưới đây thành 1 file báo cáo HTML hoàn chỉnh tự chạy độc lập (gộp sẵn định dạng đẹp bên trong, không cần mạng vẫn xem được, dùng font chữ tiếng Việt dễ đọc, tông màu xanh rêu và cam ấm trang nhã).
+
+Bố cục gồm 4 phần gọn đẹp:
+1. Tiêu đề báo cáo, kỳ báo cáo và 1 nhãn trạng thái nổi bật (VD: Đạt 112% mục tiêu).
+2. Hàng 3 thẻ số liệu KPI to rõ kèm tỷ lệ tăng/giảm so với kỳ trước.
+3. Biểu đồ thanh ngang so sánh tỷ trọng các kênh / nhóm hàng có ghi rõ phần trăm.
+4. Hai khung tóm tắt song song: Điểm sáng nổi bật và 2 việc cần xử lý ngay tuần tới.
+Lưu ý: Căn chỉnh gọn gàng để khi tôi bấm Ctrl + P xuất ra file PDF khổ A4 không bị cắt chữ.
+
+"""
+[Dán bảng số liệu hoặc vài gạch đầu dòng báo cáo của bạn vào đây]
+"""</pre>
+              <button class="btn-copy-card" style="align-self:flex-start;" onclick="copyText(document.getElementById('pb-html-report').textContent, 'Đã sao chép mẫu tạo Báo cáo HTML!')">Sao chép câu lệnh tạo Báo cáo HTML</button>
+            </div>
+          </div>
+        </section>
+      </article>
+
+
+      <!-- ========================================================
+           CHƯƠNG 6: THỰC HÀNH 5 VIỆC VĂN PHÒNG PHỔ BIẾN
+           ======================================================== -->
+      <article class="doc-chapter" id="ch6-1">
+        <span class="chapter-badge">Chương 6</span>
+        <h2 class="chapter-title">6. Thực Hành Chuyên Sâu 5 Việc Văn Phòng Hàng Ngày</h2>
         <p class="chapter-lead">
           Mỗi đầu việc dưới đây đều có cách làm cụ thể và câu lệnh mẫu sẵn để bạn áp dụng ngay trong ngày làm việc hôm nay.
         </p>
 
-        <!-- 4.1 -->
+        <!-- 6.1 -->
         <section class="doc-section">
-          <h3>4.1 Viết Email, Thông báo và Dịch cho bớt mùi máy</h3>
+          <h3>6.1 Viết Email, Thông báo và Dịch cho bớt mùi máy</h3>
           <p>
             Cách nhanh nhất để viết một bức thư hay không phải là ngồi rặn từng câu văn hoa mỹ từ đầu. Bạn cứ gõ hết mọi ý thô đang chạy trong đầu ra — dù lủng củng chưa thành câu cũng kệ — rồi đưa sang <b>Claude</b> để nó gom lại thành văn bản gãy gọn. Tương tự, nếu bạn đã viết một bức thư nhưng sợ lời lẽ hơi gay gắt, hãy nhờ AI "làm mềm giọng" lại mà vẫn giữ đúng quan điểm.
           </p>
@@ -688,9 +1089,9 @@ Yêu cầu: Giữ giọng lịch sự, rõ ràng, ngắn dưới 150 chữ, tuy�
           </div>
         </section>
 
-        <!-- 4.2 -->
-        <section class="doc-section" id="ch4-2">
-          <h3>4.2 Đọc Hợp đồng, Báo cáo PDF dày và Tóm tắt Video YouTube</h3>
+        <!-- 6.2 -->
+        <section class="doc-section" id="ch6-2">
+          <h3>6.2 Đọc Hợp đồng, Báo cáo PDF dày và Tóm tắt Video YouTube</h3>
           <p>
             Nhận được file hợp đồng đối tác hay bộ tài liệu dài hàng chục trang, đừng gõ mỗi câu <i>"tóm tắt giúp tôi"</i> — hỏi chung chung như vậy AI dễ tóm tắt qua loa và lướt qua mất các điều khoản nhỏ nằm ở giữa file. Hãy bấm nút <b>Kẹp ghim</b> tải file lên <b>Claude</b> hoặc <b>NotebookLM</b> rồi hỏi xoáy thẳng vào đúng thứ bạn cần kiểm tra.
           </p>
@@ -710,9 +1111,9 @@ Yêu cầu: Giữ giọng lịch sự, rõ ràng, ngắn dưới 150 chữ, tuy�
           </div>
         </section>
 
-        <!-- 4.3 -->
-        <section class="doc-section" id="ch4-3">
-          <h3>4.3 Làm chủ Excel và Google Sheets không cần thuộc hàm</h3>
+        <!-- 6.3 -->
+        <section class="doc-section" id="ch6-3">
+          <h3>6.3 Làm chủ Excel và Google Sheets không cần thuộc hàm</h3>
           <p>
             Ngoài việc nhờ AI viết công thức mới từ lời nói thường (như VLOOKUP, XLOOKUP, SUMIFS), bạn còn dùng <b>ChatGPT</b> giải quyết được hai ca cực kỳ nhức đầu ở văn phòng:
           </p>
@@ -731,9 +1132,9 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
           </div>
         </section>
 
-        <!-- 4.4 -->
-        <section class="doc-section" id="ch4-4">
-          <h3>4.4 Chụp ảnh màn hình lỗi, Hóa đơn giấy và Lên khung Slide thuyết trình</h3>
+        <!-- 6.4 -->
+        <section class="doc-section" id="ch6-4">
+          <h3>6.4 Chụp ảnh màn hình lỗi, Hóa đơn giấy và Lên khung Slide thuyết trình</h3>
           <p>
             AI nhìn được hình ảnh rất chuẩn mà nhiều người hay quên dùng:
           </p>
@@ -744,9 +1145,9 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
           </ul>
         </section>
 
-        <!-- 4.5 -->
-        <section class="doc-section" id="ch4-5">
-          <h3>4.5 Biến AI thành người tập dượt 1–1 trước buổi họp quan trọng</h3>
+        <!-- 6.5 -->
+        <section class="doc-section" id="ch6-5">
+          <h3>6.5 Biến AI thành người tập dượt 1–1 trước buổi họp quan trọng</h3>
           <p>
             Một cách dùng cực hay nhưng rất ít nhân sự tận dụng: dùng AI làm <b>"quân xanh" tập dượt</b> trước khi bước vào buổi đàm phán khách hàng, buổi bảo vệ ngân sách trước sếp hoặc buổi phỏng vấn.
           </p>
@@ -758,18 +1159,18 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
 
 
       <!-- ========================================================
-           CHƯƠNG 5: KIỂM DUYỆT, XỬ LÝ SỰ CỐ & BẢO MẬT
+           CHƯƠNG 7: KIỂM DUYỆT, BẢO MẬT & XỬ LÝ SỰ CỐ
            ======================================================== -->
-      <article class="doc-chapter" id="ch5-1">
-        <span class="chapter-badge">Chương 5</span>
-        <h2 class="chapter-title">5. Kiểm Duyệt, Bảo Mật &amp; Xử Lý Sự Cố Hay Gặp</h2>
+      <article class="doc-chapter" id="ch7-1">
+        <span class="chapter-badge">Chương 7</span>
+        <h2 class="chapter-title">7. Kiểm Duyệt, Bảo Mật &amp; Xử Lý Sự Cố Hay Gặp</h2>
         <p class="chapter-lead">
           AI lên bản nháp nhanh thật đấy, nhưng bấm nút gửi cho khách hay nộp sếp thì trách nhiệm cuối cùng vẫn nằm ở bạn.
         </p>
 
-        <!-- 5.1 -->
+        <!-- 7.1 -->
         <section class="doc-section">
-          <h3>5.1 Soi lại bài trong 1 phút &amp; Dấu hiệu nhận biết AI đang bịa chuyện</h3>
+          <h3>7.1 Soi lại bài trong 1 phút &amp; Dấu hiệu nhận biết AI đang bịa chuyện</h3>
           <div class="workflow-sample-card">
             <div class="wf-flow">
               <div class="wf-node">
@@ -794,9 +1195,9 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
           </p>
         </section>
 
-        <!-- 5.2 -->
-        <section class="doc-section" id="ch5-2">
-          <h3>5.2 Nguyên tắc Bảo mật 3 mức kiểu Đèn Giao Thông</h3>
+        <!-- 7.2 -->
+        <section class="doc-section" id="ch7-2">
+          <h3>7.2 Nguyên tắc Bảo mật 3 mức kiểu Đèn Giao Thông</h3>
           <p>
             Không cần nhớ điều luật rắc rối — trước khi dán bất kỳ thứ gì lên AI công cộng, bạn chỉ cần đối chiếu đúng 3 mức màu đèn giao thông này:
           </p>
@@ -834,9 +1235,9 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
           </div>
         </section>
 
-        <!-- 5.3 -->
-        <section class="doc-section" id="ch5-3">
-          <h3>5.3 Bảng xử lý nhanh 5 sự cố hay gặp khi đang dùng</h3>
+        <!-- 7.3 -->
+        <section class="doc-section" id="ch7-3">
+          <h3>7.3 Bảng xử lý nhanh 5 sự cố hay gặp khi đang dùng</h3>
           <div class="faq-list" style="max-width:none;">
             <details class="faq-item" open>
               <summary class="faq-question">
@@ -893,22 +1294,22 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
 
 
       <!-- ========================================================
-           CHƯƠNG 6: KHO 16 MẪU VIỆC THEO PHÒNG BAN (CÓ LỌC TAB)
+           CHƯƠNG 8: KHO 18 MẪU VIỆC THEO PHÒNG BAN (CÓ LỌC TAB)
            ======================================================== -->
-      <article class="doc-chapter" id="ch6-1">
-        <span class="chapter-badge">Chương 6 • 16 Mẫu Sẵn Dùng</span>
-        <h2 class="chapter-title">6. Kho Mẫu Giao Việc Theo Từng Phòng Ban</h2>
+      <article class="doc-chapter" id="ch8-1">
+        <span class="chapter-badge">Chương 8 • 18 Mẫu Sẵn Dùng</span>
+        <h2 class="chapter-title">8. Kho Mẫu Giao Việc Theo Từng Phòng Ban</h2>
         <p class="chapter-lead">
-          Chọn đúng bộ phận của bạn ở hàng nút lọc bên dưới. Bấm <b>Sao chép mẫu</b>, thay phần chữ nằm trong ngoặc vuông <code>[...]</code> bằng thông tin thật rồi dán qua ChatGPT hoặc Claude là dùng được ngay.
+          Chọn đúng bộ phận của bạn ở hàng nút lọc bên dưới (đã bổ sung thêm mẫu tạo <b>Context Pack</b> và xuất <b>Báo cáo HTML</b>). Bấm <b>Sao chép mẫu</b>, thay phần chữ trong ngoặc vuông <code>[...]</code> rồi dán qua ChatGPT hoặc Claude là dùng được ngay.
         </p>
 
         <div class="dept-tabs" id="dept-tabs">
-          <button class="dept-tab is-active" data-dept="all">Tất cả (16)</button>
+          <button class="dept-tab is-active" data-dept="all">Tất cả (18)</button>
           <button class="dept-tab" data-dept="hr">Hành chính - Nhân sự</button>
           <button class="dept-tab" data-dept="marketing">Marketing &amp; Nội dung</button>
           <button class="dept-tab" data-dept="sales">Kinh doanh &amp; CSKH</button>
           <button class="dept-tab" data-dept="finance">Kế toán &amp; Excel</button>
-          <button class="dept-tab" data-dept="office">Họp hành &amp; Văn phòng</button>
+          <button class="dept-tab" data-dept="office">Họp hành, Context &amp; Báo cáo</button>
         </div>
 
         <div id="sop-library-list">
@@ -918,18 +1319,18 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
 
 
       <!-- ========================================================
-           CHƯƠNG 7: CÔNG CỤ GHÉP NHANH & TỰ KIỂM TRA 5 TÌNH HUỐNG
+           CHƯƠNG 9: CÔNG CỤ GHÉP NHANH & TỰ KIỂM TRA 7 TÌNH HUỐNG
            ======================================================== -->
       <section class="doc-chapter" id="tool-builder">
-        <span class="chapter-badge">Chương 7 • Thực hành &amp; Tự kiểm tra</span>
-        <h2 class="chapter-title">7. Công Cụ Ghép Câu Lệnh &amp; Tự Kiểm Tra Nhanh</h2>
+        <span class="chapter-badge">Chương 9 • Thực hành &amp; Tự kiểm tra</span>
+        <h2 class="chapter-title">9. Công Cụ Ghép Câu Lệnh &amp; Tự Kiểm Tra Nhanh</h2>
         <p class="chapter-lead">
-          Chưa quen tự viết từ đầu thì chọn nhanh mấy ô bên dưới để ghép câu lệnh chuẩn, sau đó thử làm nhanh 5 câu tình huống thực tế ở cuối trang để chốt lại những điểm quan trọng nhất.
+          Chưa quen tự viết từ đầu thì chọn nhanh mấy ô bên dưới để ghép câu lệnh chuẩn (đã phân mục Markdown rõ ràng), sau đó làm nhanh 7 câu tình huống thực tế ở cuối trang để chốt lại những điểm quan trọng nhất.
         </p>
 
-        <!-- 7.1 Builder -->
+        <!-- 9.1 Builder -->
         <section class="doc-section">
-          <h3>7.1 Công cụ ghép câu lệnh nhanh</h3>
+          <h3>9.1 Công cụ ghép câu lệnh nhanh</h3>
           <div class="builder-card">
             <div class="builder-grid">
               <div class="builder-controls">
@@ -949,7 +1350,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                   <select id="b-goal" class="input-select">
                     <option value="viết một email giải quyết tình huống khéo léo, lịch sự và rõ ràng">Viết email công việc quan trọng</option>
                     <option value="lập kế hoạch bài đăng chi tiết cho 7 ngày">Lập kế hoạch nội dung tuần / tháng</option>
-                    <option value="viết tin tuyển dụng thu hút ứng viên giỏi">Viết tin tuyển dụng nhân sự</option>
+                    <option value="biến số liệu thành 1 trang báo cáo HTML đẹp mắt có thẻ KPI và biểu đồ để in PDF">Tạo Báo cáo HTML đẹp mắt gửi sếp</option>
                     <option value="viết công thức Excel/Google Sheets chính xác và giải thích dễ hiểu">Tạo công thức Excel / Bảng tính</option>
                     <option value="tóm tắt ghi chú cuộc họp thành bảng phân công việc rõ người làm và hạn chót">Tóm tắt biên bản cuộc họp</option>
                   </select>
@@ -976,6 +1377,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
                     <select id="b-format" class="input-select">
                       <option value="Văn bản hoàn chỉnh có tiêu đề rõ ràng, dưới 150 chữ, các ý chính gạch đầu dòng">Bài viết / Email gọn dưới 150 chữ</option>
                       <option value="Bảng chia cột rõ ràng để tiện theo dõi và sao chép">Dạng Bảng chia cột</option>
+                      <option value="1 file báo cáo HTML độc lập đẹp mắt, gọn gàng khi in PDF A4">File Báo cáo HTML tự chạy</option>
                       <option value="Các bước làm việc cụ thể đánh số từ 1 đến hết">Danh sách từng bước (1, 2, 3...)</option>
                     </select>
                   </div>
@@ -999,37 +1401,48 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
           </div>
         </section>
 
-        <!-- 7.2 Interactive Quiz -->
+        <!-- 9.2 Interactive Quiz -->
         <section class="doc-section" id="quiz-section" style="margin-top:44px;">
-          <h3>7.2 Tự kiểm tra nhanh: 5 tình huống thực tế ở văn phòng</h3>
+          <h3>9.2 Tự kiểm tra nhanh: 7 tình huống thực tế ở văn phòng</h3>
           <p>Chọn đáp án bạn thấy hợp lý nhất để xem mình đã nắm chắc cách dùng AI chưa:</p>
 
           <div class="quiz-box" id="quiz-root">
             <!-- Q1 -->
             <div class="quiz-item" data-correct="1">
-              <div class="quiz-q">Câu 1: Sáng nay bạn dùng một khung chat để viết email cho khách. Đến chiều bạn cần nhờ AI viết hàm Excel cho bảng kế toán. Bạn nên làm gì?</div>
+              <div class="quiz-q">Câu 1: Bạn nhờ AI viết bài quảng cáo nhưng nó cứ ra mấy câu chung chung, sai hoàn toàn giọng thương hiệu. Nguyên nhân lớn nhất thường nằm ở đâu?</div>
               <div class="quiz-options">
-                <button class="quiz-opt" data-idx="0">A. Cứ chat tiếp ngay trong khung chat sáng nay cho tiện đỡ mở nhiều.</button>
-                <button class="quiz-opt" data-idx="1">B. Bấm nút New Chat mở cuộc trò chuyện mới để tránh nhiễu ngữ cảnh và đỡ tốn lượt.</button>
-                <button class="quiz-opt" data-idx="2">C. Tắt trình duyệt rồi đăng nhập lại từ đầu.</button>
+                <button class="quiz-opt" data-idx="0">A. Do bạn chưa mua gói trả phí 500k/tháng.</button>
+                <button class="quiz-opt" data-idx="1">B. Do bạn chưa đưa đủ Context (hồ sơ sản phẩm, chân dung người đọc và bài viết mẫu).</button>
+                <button class="quiz-opt" data-idx="2">C. Do mạng Internet công ty hơi chậm.</button>
               </div>
-              <div class="quiz-explain">Chính xác! Xong việc nào nên bấm New Chat ngay để làm sạch "chiếc bàn làm việc", giúp AI tập trung đúng chủ đề mới và không phải đọc lại cả lịch sử sáng nay.</div>
+              <div class="quiz-explain">Chính xác! AI không ngồi họp chung với bạn nên nó không biết chuyện nội bộ. Đưa đủ 4 mảnh Context (hoặc quăng tờ Context Pack lên đầu buổi) là bài viết khác ngay!</div>
             </div>
 
             <!-- Q2 -->
+            <div class="quiz-item" data-correct="1">
+              <div class="quiz-q">Câu 2: Sáng nay bạn dùng một khung chat để viết email cho khách. Đến chiều bạn cần nhờ AI viết hàm Excel cho bảng kế toán. Bạn nên làm gì?</div>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-idx="0">A. Cứ chat tiếp ngay trong khung chat sáng nay cho tiện đỡ mở nhiều.</button>
+                <button class="quiz-opt" data-idx="1">B. Bấm nút New Chat mở cuộc trò chuyện mới để khỏi loãng ngữ cảnh và đỡ tốn lượt.</button>
+                <button class="quiz-opt" data-idx="2">C. Tắt trình duyệt rồi đăng nhập lại từ đầu.</button>
+              </div>
+              <div class="quiz-explain">Chuẩn luôn! Xong việc nào nên bấm New Chat ngay để làm sạch "chiếc bàn làm việc", giúp AI tập trung đúng chủ đề mới.</div>
+            </div>
+
+            <!-- Q3 -->
             <div class="quiz-item" data-correct="2">
-              <div class="quiz-q">Câu 2: Bạn có một file danh sách 200 khách hàng gồm Họ tên thật, Số điện thoại và Doanh số, muốn nhờ AI tìm xem nhóm khách nào mua nhiều nhất. Cách làm nào an toàn?</div>
+              <div class="quiz-q">Câu 3: Bạn có một file danh sách 200 khách hàng gồm Họ tên thật, Số điện thoại và Doanh số, muốn nhờ AI tìm xem nhóm khách nào mua nhiều nhất. Cách làm nào an toàn?</div>
               <div class="quiz-options">
                 <button class="quiz-opt" data-idx="0">A. Tải thẳng file gốc lên ChatGPT miễn phí cho nhanh.</button>
                 <button class="quiz-opt" data-idx="1">B. Chụp ảnh màn hình danh sách số điện thoại gửi lên cho AI đọc hộ.</button>
                 <button class="quiz-opt" data-idx="2">C. Xóa sạch cột Họ tên thật &amp; Số điện thoại (chỉ giữ mã khách hàng ẩn danh), bật Temporary Chat rồi mới đưa lên phân tích.</button>
               </div>
-              <div class="quiz-explain">Chuẩn luôn! Thông tin cá nhân của khách hàng thuộc nhóm Đèn Đỏ tuyệt đối không đưa lên AI công cộng. Luôn xóa hoặc thay thế bằng mã ẩn danh trước.</div>
+              <div class="quiz-explain">Tuyệt vời! Thông tin cá nhân của khách hàng thuộc nhóm Đèn Đỏ tuyệt đối không đưa lên AI công cộng. Luôn ẩn danh trước khi gửi.</div>
             </div>
 
-            <!-- Q3 -->
+            <!-- Q4 -->
             <div class="quiz-item" data-correct="0">
-              <div class="quiz-q">Câu 3: Bạn gõ một câu lệnh nhưng AI hiểu sai ý ngay từ câu trả lời đầu tiên. Cách xử lý gọn nhất là gì?</div>
+              <div class="quiz-q">Câu 4: Bạn gõ một câu lệnh nhưng AI hiểu sai ý ngay từ câu trả lời đầu tiên. Cách xử lý gọn nhất là gì?</div>
               <div class="quiz-options">
                 <button class="quiz-opt" data-idx="0">A. Rê chuột lên câu hỏi gốc, bấm biểu tượng Cây bút (Edit) sửa lại cho rõ ý rồi gửi lại.</button>
                 <button class="quiz-opt" data-idx="1">B. Gõ thêm 4–5 tin nhắn bên dưới để tranh luận và giải thích lại từng chút.</button>
@@ -1038,30 +1451,41 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
               <div class="quiz-explain">Đúng rồi! Bấm Cây bút sửa câu gốc giúp dọn sạch câu trả lời sai cũ, AI không bị dính dấu vết hiểu nhầm khi làm lại.</div>
             </div>
 
-            <!-- Q4 -->
+            <!-- Q5 -->
             <div class="quiz-item" data-correct="1">
-              <div class="quiz-q">Câu 4: Bạn chuẩn bị dùng một trang tạo video AI tính phí theo Credit (xu). Làm thế nào để đỡ mất xu oan?</div>
+              <div class="quiz-q">Câu 5: Tuần nào phòng Nhân sự cũng phải lọc 30 bộ CV theo đúng 1 khung điểm chuẩn của công ty. Để khỏi phải copy-paste Prompt dài lặp đi lặp lại, giải pháp nào hợp lý nhất?</div>
               <div class="quiz-options">
-                <button class="quiz-opt" data-idx="0">A. Gõ đại vài chữ vào trang tạo video xem nó ra thế nào rồi sửa dần 5–6 lần.</button>
-                <button class="quiz-opt" data-idx="1">B. Qua ChatGPT miễn phí chỉnh câu mô tả cảnh quay cho thật kỹ trước, ưng bụng rồi mới copy sang trang video bấm tạo.</button>
-                <button class="quiz-opt" data-idx="2">C. Mở nhiều tài khoản khác nhau để bấm thử lung tung.</button>
+                <button class="quiz-opt" data-idx="0">A. Gõ tay lại hướng dẫn từ đầu mỗi thứ Hai hàng tuần.</button>
+                <button class="quiz-opt" data-idx="1">B. Đóng gói sẵn thành một bộ Skill (Project trên Claude / Custom GPT / Gem) gồm quy tắc chấm điểm và biểu mẫu chuẩn.</button>
+                <button class="quiz-opt" data-idx="2">C. Để AI tự đoán tiêu chí tuyển dụng của công ty.</button>
               </div>
-              <div class="quiz-explain">Chính xác! Mỗi lần bấm tạo video hay ảnh là bị trừ Credit ngay, nên luôn mài giũa câu mô tả chữ cho chuẩn trên ChatGPT trước.</div>
+              <div class="quiz-explain">Quá chuẩn! Skill chính là cuốn sổ tay nghề nghiệp cho những đầu việc lặp lại theo quy chuẩn cố định.</div>
             </div>
 
-            <!-- Q5 -->
+            <!-- Q6 -->
             <div class="quiz-item" data-correct="2">
-              <div class="quiz-q">Câu 5: Bạn vừa nhận một tập quy chế nội bộ 40 trang dạng PDF và cần tra cứu nhanh quy định thanh toán công tác phí mà sợ AI tự bịa thêm. Nên dùng công cụ nào?</div>
+              <div class="quiz-q">Câu 6: Khi cần gửi báo cáo tháng có biểu đồ màu sắc và thẻ KPI đẹp mắt cho sếp từ bảng số liệu Excel thô mà không rành thiết kế, bạn có thể làm cách nào nhanh nhất?</div>
               <div class="quiz-options">
-                <button class="quiz-opt" data-idx="0">A. Hỏi thẳng ChatGPT mà không đính kèm file gì cả.</button>
-                <button class="quiz-opt" data-idx="1">B. Dùng app vẽ ảnh Midjourney.</button>
-                <button class="quiz-opt" data-idx="2">C. Tải file PDF lên Google NotebookLM rồi hỏi thẳng vào mục công tác phí để xem câu trả lời kèm số trang trích dẫn.</button>
+                <button class="quiz-opt" data-idx="0">A. Chép từng dòng chữ dài thượt dán thẳng vào nhóm Zalo.</button>
+                <button class="quiz-opt" data-idx="1">B. Ngồi tự vẽ từng thanh biểu đồ bằng tay trên PowerPoint mất cả buổi.</button>
+                <button class="quiz-opt" data-idx="2">C. Ẩn danh dữ liệu rồi nhờ Claude/ChatGPT xuất thành file Báo cáo HTML hoàn chỉnh, mở Chrome bấm Ctrl + P (bật Background graphics) lưu ra PDF.</button>
               </div>
-              <div class="quiz-explain">Quá chuẩn! NotebookLM miễn phí 100%, chỉ đọc và trả lời đúng theo tài liệu bạn tải lên, lại chỉ rõ nằm ở trang nào để bạn mở ra đối chiếu ngay.</div>
+              <div class="quiz-explain">Chuẩn luôn! Xuất Báo cáo HTML mất chưa tới 1 phút mà nhìn gọn đẹp như thuê thiết kế, in PDF A4 cực kỳ sắc nét.</div>
+            </div>
+
+            <!-- Q7 -->
+            <div class="quiz-item" data-correct="0">
+              <div class="quiz-q">Câu 7: Khi dùng AI Agent hỗ trợ công việc nhiều bước (như đọc và soạn phản hồi email cho khách hàng), rào chắn an toàn nào là quan trọng nhất?</div>
+              <div class="quiz-options">
+                <button class="quiz-opt" data-idx="0">A. Chỉ cho Agent soạn sẵn bản nháp và dừng lại chờ con người đọc duyệt trước khi bấm gửi thật.</button>
+                <button class="quiz-opt" data-idx="1">B. Trao toàn quyền để Agent tự gửi email cho mọi khách hàng không cần kiểm tra.</button>
+                <button class="quiz-opt" data-idx="2">C. Đưa luôn mật khẩu tài khoản ngân hàng cho Agent tiện xử lý.</button>
+              </div>
+              <div class="quiz-explain">Chính xác 100%! Agent rất giỏi chạy việc nhiều bước, nhưng những thao tác gửi ra ngoài hoặc đụng tiền bạc luôn phải có chốt duyệt cuối của con người.</div>
             </div>
 
             <div class="quiz-score-bar">
-              <span id="quiz-score-text">Bạn đã trả lời 0 / 5 câu</span>
+              <span id="quiz-score-text">Bạn đã trả lời 0 / 7 câu</span>
               <button class="btn btn-secondary btn-sm" id="quiz-reset-btn">Làm lại</button>
             </div>
           </div>
@@ -1075,11 +1499,10 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
       <div class="right-toc-card">
         <span class="right-toc-head">Mục lục trang này</span>
         <a href="#ch1-1" class="toc-anchor is-active">1.1 AI là gì?</a>
-        <a href="#ch1-2" class="toc-anchor">1.2 Token &amp; Trí nhớ</a>
-        <a href="#ch1-3" class="toc-anchor">1.3 Credit &amp; Gói trả phí</a>
-        <a href="#ch1-4" class="toc-anchor">1.4 Prompt là gì?</a>
-        <a href="#ch1-5" class="toc-anchor">1.5 Skill &amp; Đồ nghề</a>
-        <a href="#ch1-6" class="toc-anchor">1.6 AI Agent &amp; Bảng 6 từ</a>
+        <a href="#ch1-2" class="toc-anchor">1.2 Context là gì?</a>
+        <a href="#ch1-3" class="toc-anchor">1.3 Token &amp; Trí nhớ</a>
+        <a href="#ch1-4" class="toc-anchor">1.4 Credit &amp; Gói trả phí</a>
+        <a href="#ch1-5" class="toc-anchor">1.5 Prompt &amp; Bảng 5 từ</a>
         <a href="#ch2-1" class="toc-anchor">2.1 Chọn công cụ AI</a>
         <a href="#ch2-2" class="toc-anchor">2.2 3 cài đặt 5 phút đầu</a>
         <a href="#ch2-3" class="toc-anchor">2.3 6 nút &amp; Điện thoại</a>
@@ -1088,17 +1511,21 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
         <a href="#ch3-3" class="toc-anchor">3.3 3 ví dụ thực tế</a>
         <a href="#ch3-4" class="toc-anchor">3.4 5 lỗi hay vướng</a>
         <a href="#ch3-5" class="toc-anchor">3.5 4 câu chữa cháy</a>
-        <a href="#ch4-1" class="toc-anchor">4.1 Email &amp; Dịch thuật</a>
-        <a href="#ch4-2" class="toc-anchor">4.2 Hợp đồng, PDF &amp; YouTube</a>
-        <a href="#ch4-3" class="toc-anchor">4.3 Làm chủ Excel</a>
-        <a href="#ch4-4" class="toc-anchor">4.4 Ảnh lỗi &amp; Slide</a>
-        <a href="#ch4-5" class="toc-anchor">4.5 Tập dượt 1-1</a>
-        <a href="#ch5-1" class="toc-anchor">5.1 Soi lại bài 1 phút</a>
-        <a href="#ch5-2" class="toc-anchor">5.2 Bảo mật 3 mức đèn</a>
-        <a href="#ch5-3" class="toc-anchor">5.3 Xử lý 5 sự cố</a>
-        <a href="#ch6-1" class="toc-anchor">6.1 Kho 16 mẫu việc</a>
-        <a href="#tool-builder" class="toc-anchor">7.1 Ghép câu lệnh</a>
-        <a href="#quiz-section" class="toc-anchor">7.2 Tự kiểm tra 5 câu</a>
+        <a href="#ch4-1" class="toc-anchor">4.1 Skill &amp; Đồ nghề chi tiết</a>
+        <a href="#ch4-2" class="toc-anchor">4.2 AI Agent &amp; 3 rào chắn</a>
+        <a href="#ch5-1" class="toc-anchor">5.1 Markdown 5 ký hiệu</a>
+        <a href="#ch5-2" class="toc-anchor">5.2 Tạo Báo cáo HTML đẹp</a>
+        <a href="#ch6-1" class="toc-anchor">6.1 Email &amp; Dịch thuật</a>
+        <a href="#ch6-2" class="toc-anchor">6.2 Hợp đồng, PDF &amp; YouTube</a>
+        <a href="#ch6-3" class="toc-anchor">6.3 Làm chủ Excel</a>
+        <a href="#ch6-4" class="toc-anchor">6.4 Ảnh lỗi &amp; Slide</a>
+        <a href="#ch6-5" class="toc-anchor">6.5 Tập dượt 1-1</a>
+        <a href="#ch7-1" class="toc-anchor">7.1 Soi lại bài 1 phút</a>
+        <a href="#ch7-2" class="toc-anchor">7.2 Bảo mật 3 mức đèn</a>
+        <a href="#ch7-3" class="toc-anchor">7.3 Xử lý 5 sự cố</a>
+        <a href="#ch8-1" class="toc-anchor">8.1 Kho 18 mẫu việc</a>
+        <a href="#tool-builder" class="toc-anchor">9.1 Ghép câu lệnh</a>
+        <a href="#quiz-section" class="toc-anchor">9.2 Tự kiểm tra 7 câu</a>
       </div>
     </aside>
 
@@ -1176,7 +1603,81 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
       updateActive();
     })();
 
-    // 4. DEPARTMENT SOP LIBRARY WITH FILTER TABS (16 TEMPLATES)
+    // 4. SAMPLE STANDALONE HTML REPORT (PREVIEW & DOWNLOAD)
+    (function initSampleHtmlReport() {
+      const previewBtn = document.getElementById('btn-preview-report');
+      const downloadBtn = document.getElementById('btn-download-report');
+      if (!previewBtn && !downloadBtn) return;
+
+      const sampleHtml = [
+        '<!DOCTYPE html><html lang="vi"><head><meta charset="UTF-8">',
+        '<meta name="viewport" content="width=device-width,initial-scale=1.0">',
+        '<title>Báo Cáo Kết Quả Kinh Doanh - Tháng 10</title>',
+        '<style>',
+        '*{box-sizing:border-box;margin:0;padding:0}',
+        'body{font-family:"Segoe UI",Arial,sans-serif;background:#FFFBF4;color:#2B2116;padding:32px 20px;line-height:1.6}',
+        '.sheet{max-width:860px;margin:0 auto;background:#fff;border:1px solid #E2D7C5;border-radius:18px;padding:34px 38px;box-shadow:0 12px 32px rgba(43,33,22,.08)}',
+        '.top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;border-bottom:2px solid #EFE7DA;padding-bottom:18px;margin-bottom:24px}',
+        '.top h1{font-size:24px;color:#1F4E38;margin-bottom:4px}.top p{font-size:13.5px;color:#7A6B5B}',
+        '.badge{background:#DCFCE7;color:#166534;padding:6px 14px;border-radius:999px;font-size:12.5px;font-weight:700}',
+        '.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}',
+        '.kpi{background:#FFFDF9;border:1px solid #EFE7DA;border-radius:14px;padding:18px}',
+        '.kpi small{color:#7A6B5B;font-size:12.5px;font-weight:600}.kpi b{display:block;font-size:28px;color:#1F4E38;margin:6px 0 4px}.kpi span{font-size:12.5px;font-weight:700;color:#4F7A26}',
+        '.box{background:#FFFDF9;border:1px solid #EFE7DA;border-radius:14px;padding:20px 22px;margin-bottom:20px}',
+        '.box h2{font-size:15.5px;color:#2B2116;margin-bottom:14px}',
+        '.bar-row{display:grid;grid-template-columns:150px 1fr 54px;align-items:center;gap:12px;margin-bottom:11px;font-size:13.5px}',
+        '.track{height:12px;background:#EFE7DA;border-radius:999px;overflow:hidden}',
+        '.fill{height:100%;background:linear-gradient(90deg,#1F4E38,#4F7A26);border-radius:999px}',
+        '.fill.o{background:linear-gradient(90deg,#D96A0F,#F0821E)}',
+        '.notes{display:grid;grid-template-columns:1fr 1fr;gap:14px}',
+        '.note{padding:16px 18px;border-radius:14px;font-size:13.5px}.note.g{background:#F4F9EE;border:1px solid #C8E2AA}.note.w{background:#FFF7ED;border:1px solid #FED7AA}',
+        '.note h3{font-size:14px;margin-bottom:6px}',
+        '.print-bar{max-width:860px;margin:0 auto 14px;display:flex;justify-content:flex-end}',
+        '.print-btn{background:#1F4E38;color:#fff;border:none;padding:9px 16px;border-radius:10px;font-weight:700;font-size:13px;cursor:pointer}',
+        '@media print{body{background:#fff;padding:0}.print-bar{display:none}.sheet{box-shadow:none;border:none;padding:12px}}',
+        '@media (max-width:640px){.kpis,.notes{grid-template-columns:1fr}.sheet{padding:22px 18px}}',
+        '</style></head><body>',
+        '<div class="print-bar"><button class="print-btn" onclick="window.print()">In / Lưu ra file PDF (Ctrl + P)</button></div>',
+        '<div class="sheet">',
+        '<div class="top"><div><h1>Báo Cáo Kết Quả Kinh Doanh — Tháng 10</h1><p>Phòng Kinh doanh • Tổng hợp gửi Ban Giám đốc (Bản mẫu tạo bởi AI)</p></div><span class="badge">Đạt 112% mục tiêu tháng</span></div>',
+        '<div class="kpis">',
+        '<div class="kpi"><small>Tổng doanh thu</small><b>1,42 tỷ</b><span>+18% so với tháng 9</span></div>',
+        '<div class="kpi"><small>Đơn hàng hoàn tất</small><b>1.280 đơn</b><span>+12% so với tháng 9</span></div>',
+        '<div class="kpi"><small>Khách cũ quay lại</small><b>34%</b><span>+5% nhờ chăm sóc Zalo</span></div>',
+        '</div>',
+        '<div class="box"><h2>Tỷ trọng doanh thu theo từng kênh bán</h2>',
+        '<div class="bar-row"><span>Shopee Mall</span><div class="track"><div class="fill" style="width:48%"></div></div><b>48%</b></div>',
+        '<div class="bar-row"><span>Zalo / Khách quen</span><div class="track"><div class="fill o" style="width:27%"></div></div><b>27%</b></div>',
+        '<div class="bar-row"><span>Facebook Fanpage</span><div class="track"><div class="fill" style="width:16%"></div></div><b>16%</b></div>',
+        '<div class="bar-row"><span>Đại lý / Quà tặng</span><div class="track"><div class="fill o" style="width:9%"></div></div><b>9%</b></div>',
+        '</div>',
+        '<div class="notes">',
+        '<div class="note g"><h3>Điểm sáng nổi bật tháng này</h3><p>Combo quà tặng cuối tháng giúp giá trị trung bình mỗi đơn tăng từ 920k lên 1,11 triệu; tỷ lệ hoàn đơn giảm xuống dưới 1,8%.</p></div>',
+        '<div class="note w"><h3>2 việc cần xử lý ngay tuần tới</h3><p>1. Kho miền Trung thiếu hàng 2 mã bán chạy cần điều chuyển gấp.<br>2. Đẩy thêm 1 chiến dịch nhắn khách cũ dịp lễ giữa tháng 11.</p></div>',
+        '</div></div></body></html>'
+      ].join('');
+
+      previewBtn?.addEventListener('click', () => {
+        const blob = new Blob([sampleHtml], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        window.open(url, '_blank');
+      });
+
+      downloadBtn?.addEventListener('click', () => {
+        const blob = new Blob([sampleHtml], { type: 'text/html;charset=utf-8' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'bao-cao-mau-thang-10.html';
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+        if (window.showToast) window.showToast('Đã tải file bao-cao-mau-thang-10.html về máy!');
+      });
+    })();
+
+    // 5. DEPARTMENT SOP LIBRARY WITH FILTER TABS (18 TEMPLATES)
     (function initSopLibrary() {
       const listRoot = document.getElementById('sop-library-list');
       const tabs = document.querySelectorAll('#dept-tabs .dept-tab');
@@ -1240,7 +1741,7 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
       }
     })();
 
-    // 5. INTERACTIVE PROMPT BUILDER
+    // 6. INTERACTIVE PROMPT BUILDER
     (function initPromptBuilder() {
       const roleEl = document.getElementById('b-role');
       const goalEl = document.getElementById('b-goal');
@@ -1258,14 +1759,18 @@ Nếu không có dữ liệu thì trả về số 0 chứ đừng báo lỗi #N/
         const audience = audienceEl.value;
         const format = formatEl.value;
 
-        const generated = `Bạn là ${role}.
-Hãy giúp tôi ${goal} về nội dung sau: "${topic}".
+        const generated = `# Vai trò & Bối cảnh
+Bạn là ${role}.
+Hãy giúp tôi ${goal} về nội dung sau:
+"""
+${topic}
+"""
 
-Yêu cầu chi tiết:
-1. Người đọc chính: ${audience}.
-2. Cách trình bày: ${format}.
-3. Văn phong: Viết tiếng Việt tự nhiên như người thật nói chuyện, đi thẳng vào trọng tâm, bỏ mấy câu chào hỏi sáo rỗng kiểu dịch máy.
-4. Nếu thông tin tôi đưa chưa đủ để làm tốt nhất, đừng viết vội mà hãy hỏi lại tôi 2-3 câu ngắn gọn trước nhé.`;
+# Yêu cầu chi tiết
+- **Người đọc chính:** ${audience}.
+- **Cách trình bày:** ${format}.
+- **Văn phong:** Viết tiếng Việt tự nhiên như người thật nói chuyện, đi thẳng vào trọng tâm, bỏ mấy câu chào hỏi sáo rỗng kiểu dịch máy.
+- **Lưu ý:** Nếu thông tin tôi đưa chưa đủ để làm tốt nhất, đừng viết vội mà hãy hỏi lại tôi 2-3 câu ngắn gọn trước nhé.`;
 
         resultEl.textContent = generated;
       }
@@ -1284,7 +1789,7 @@ Yêu cầu chi tiết:
       });
     })();
 
-    // 6. INTERACTIVE SELF-CHECK QUIZ (5 QUESTIONS)
+    // 7. INTERACTIVE SELF-CHECK QUIZ (7 QUESTIONS)
     (function initQuiz() {
       const items = document.querySelectorAll('#quiz-root .quiz-item');
       const scoreEl = document.getElementById('quiz-score-text');
@@ -1345,7 +1850,7 @@ Yêu cầu chi tiết:
       });
     })();
 
-    // 7. LIVE WIKI SEARCH FILTER (CTRL + K)
+    // 8. LIVE WIKI SEARCH FILTER (CTRL + K)
     (function initWikiSearch() {
       const input = document.getElementById('wiki-quick-search');
       const suggestionsBox = document.querySelector('.search-suggestions');
@@ -1353,30 +1858,33 @@ Yêu cầu chi tiết:
 
       const wikiSections = [
         { title: '1.1 AI là gì? (Bạn thực tập sinh & 3 chuyện hay gặp)', tag: 'Bản chất', href: '#ch1-1' },
-        { title: '1.2 Token, chiếc bàn làm việc & trí nhớ dài hạn', tag: 'Bản chất', href: '#ch1-2' },
-        { title: '1.3 Credit, giới hạn lượt & khi nào nên mua gói trả phí', tag: 'Chi phí', href: '#ch1-3' },
-        { title: '1.4 Prompt là gì? (Khác gì với tìm Google)', tag: 'Bản chất', href: '#ch1-4' },
-        { title: '1.5 Skill (Sổ tay nghề nghiệp) và Đồ nghề gắn thêm', tag: 'Bản chất', href: '#ch1-5' },
-        { title: '1.6 AI Agent khác gì Chatbot? & Bảng nhớ nhanh 6 từ', tag: 'Bản chất', href: '#ch1-6' },
+        { title: '1.2 Context (Ngữ cảnh) là gì? 4 mảnh ghép & Context Pack', tag: 'Context', href: '#ch1-2' },
+        { title: '1.3 Token, chiếc bàn làm việc & trí nhớ dài hạn', tag: 'Bản chất', href: '#ch1-3' },
+        { title: '1.4 Credit, giới hạn lượt & khi nào nên mua gói trả phí', tag: 'Chi phí', href: '#ch1-4' },
+        { title: '1.5 Prompt là gì? & Bảng nhớ nhanh 5 từ nền tảng', tag: 'Bản chất', href: '#ch1-5' },
         { title: '2.1 Việc nào mở công cụ nào? (ChatGPT, Claude, Gemini, NotebookLM...)', tag: 'Công cụ', href: '#ch2-1' },
         { title: '2.2 3 cài đặt làm ngay trong 5 phút đầu (Custom Instructions, Projects)', tag: 'Cài đặt', href: '#ch2-2' },
         { title: '2.3 6 nút bấm trên màn hình & Mẹo dùng trên điện thoại', tag: 'Thao tác', href: '#ch2-3' },
-        { title: '3.1 Công thức 3 Bước + 1 Mẫu để AI làm trúng ý', tag: 'Cách hỏi', href: '#ch3-1' },
-        { title: '3.2 Nói chuyện nhiều vòng (Có hội thoại mẫu 3 vòng)', tag: 'Kỹ năng', href: '#ch3-2' },
+        { title: '3.1 Công thức 3 Bước + 1 Mẫu để AI làm trúng ý', tag: 'Prompt', href: '#ch3-1' },
+        { title: '3.2 Nói chuyện nhiều vòng (Có hội thoại mẫu 3 vòng)', tag: 'Prompt', href: '#ch3-2' },
         { title: '3.3 So sánh 3 tình huống thực tế (Email, Bán hàng, CSKH)', tag: 'Ví dụ', href: '#ch3-3' },
         { title: '3.4 5 lỗi người mới hay vướng và cách sửa ngay', tag: 'Mẹo hay', href: '#ch3-4' },
         { title: '3.5 4 câu chữa cháy khi AI trả lời chưa ưng', tag: 'Mẹo hay', href: '#ch3-5' },
-        { title: '4.1 Viết Email, Thông báo & Dịch cho bớt mùi máy', tag: 'Email', href: '#ch4-1' },
-        { title: '4.2 Đọc Hợp đồng, PDF dày & Tóm tắt Video YouTube', tag: 'PDF/Video', href: '#ch4-2' },
-        { title: '4.3 Làm chủ Excel & Google Sheets không cần thuộc hàm', tag: 'Excel', href: '#ch4-3' },
-        { title: '4.4 Chụp màn hình lỗi, Hóa đơn giấy & Lên khung Slide', tag: 'Hình/Slide', href: '#ch4-4' },
-        { title: '4.5 Biến AI thành người tập dượt 1-1 trước buổi họp', tag: 'Luyện tập', href: '#ch4-5' },
-        { title: '5.1 Soi lại bài 1 phút & Dấu hiệu nhận biết AI bịa chuyện', tag: 'Kiểm duyệt', href: '#ch5-1' },
-        { title: '5.2 Bảo mật 3 mức Đèn Giao Thông & Mẹo ẩn danh Ctrl + H', tag: 'Bảo mật', href: '#ch5-2' },
-        { title: '5.3 Xử lý 5 sự cố hay gặp (Đứng hình, tiếng Anh, vỡ bảng...)', tag: 'Sự cố', href: '#ch5-3' },
-        { title: '6.1 Kho 16 mẫu việc theo phòng ban (HR, Marketing, Sales, Excel, Họp)', tag: 'Mẫu việc', href: '#ch6-1' },
-        { title: '7.1 Công cụ ghép câu lệnh nhanh', tag: 'Tiện ích', href: '#tool-builder' },
-        { title: '7.2 Trắc nghiệm nhanh 5 tình huống văn phòng', tag: 'Kiểm tra', href: '#quiz-section' }
+        { title: '4.1 Skill (Sổ tay quy trình) & Đồ nghề (Tools) chi tiết có minh họa', tag: 'Skill', href: '#ch4-1' },
+        { title: '4.2 AI Agent khác gì Chatbot? Vòng lặp 5 bước & 3 rào chắn an toàn', tag: 'AI Agent', href: '#ch4-2' },
+        { title: '5.1 Markdown là gì? 5 ký hiệu đủ xài & mẹo copy không dính dấu sao', tag: 'Markdown', href: '#ch5-1' },
+        { title: '5.2 Tự tạo Báo cáo HTML đẹp mắt gửi sếp / xuất PDF (Có ví dụ sống)', tag: 'HTML Report', href: '#ch5-2' },
+        { title: '6.1 Viết Email, Thông báo & Dịch cho bớt mùi máy', tag: 'Email', href: '#ch6-1' },
+        { title: '6.2 Đọc Hợp đồng, PDF dày & Tóm tắt Video YouTube', tag: 'PDF/Video', href: '#ch6-2' },
+        { title: '6.3 Làm chủ Excel & Google Sheets không cần thuộc hàm', tag: 'Excel', href: '#ch6-3' },
+        { title: '6.4 Chụp màn hình lỗi, Hóa đơn giấy & Lên khung Slide', tag: 'Hình/Slide', href: '#ch6-4' },
+        { title: '6.5 Biến AI thành người tập dượt 1-1 trước buổi họp', tag: 'Luyện tập', href: '#ch6-5' },
+        { title: '7.1 Soi lại bài 1 phút & Dấu hiệu nhận biết AI bịa chuyện', tag: 'Kiểm duyệt', href: '#ch7-1' },
+        { title: '7.2 Bảo mật 3 mức Đèn Giao Thông & Mẹo ẩn danh Ctrl + H', tag: 'Bảo mật', href: '#ch7-2' },
+        { title: '7.3 Xử lý 5 sự cố hay gặp (Đứng hình, tiếng Anh, vỡ bảng...)', tag: 'Sự cố', href: '#ch7-3' },
+        { title: '8.1 Kho 18 mẫu việc theo phòng ban (HR, Marketing, Sales, Excel, Báo cáo)', tag: 'Mẫu việc', href: '#ch8-1' },
+        { title: '9.1 Công cụ ghép câu lệnh nhanh (chuẩn Markdown)', tag: 'Tiện ích', href: '#tool-builder' },
+        { title: '9.2 Trắc nghiệm nhanh 7 tình huống văn phòng', tag: 'Kiểm tra', href: '#quiz-section' }
       ];
 
       function removeAccents(str) {
